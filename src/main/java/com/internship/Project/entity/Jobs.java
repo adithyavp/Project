@@ -24,6 +24,8 @@ public class Jobs {
     private String memoryType;
     // Cron expression
     private String cronExpression;
+    // The class which has to implement the job
+    private String jobClass;
     // Tells at what time its created
     @Column(updatable = false)
     @CreationTimestamp
@@ -64,6 +66,14 @@ public class Jobs {
 
     public void setCronExpression(String cronExpression) {
         this.cronExpression = cronExpression;
+    }
+
+    public String getJobClass() {
+        return jobClass;
+    }
+
+    public void setJobClass(String jobClass) {
+        this.jobClass = jobClass;
     }
 
     public LocalDateTime getCreatedAt() {

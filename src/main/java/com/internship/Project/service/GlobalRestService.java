@@ -19,6 +19,7 @@ public class GlobalRestService {
     @Autowired
     JobsRepo jobsRepo;
 
+    // Creation of the job details in the jobs table
     public Jobs createJob(Jobs job){
         Jobs newJobToCreate = jobsRepo.findByName(job.getName());
         if(newJobToCreate!=null){
@@ -32,16 +33,19 @@ public class GlobalRestService {
         return  newJobToCreate;
     }
 
+    // To read all the jobs from the jobs table
     public List<Jobs> readAllJobs(){
         Iterable<Jobs> allJobs = jobsRepo.findAll();
         return (List<Jobs>) allJobs;
     }
 
+    // To update the jobs in the Jobs table
     // One can update only the Memory type and the Cron expression and no other data
     public Jobs updateJob(Long jobId, String jobName, Jobs job){
         Jobs isJobPresent = jobsRepo.findByJobIdAndAndName(jobId, jobName);
         if(isJobPresent!=null){
             isJobPresent.setMemoryType(job.getMemoryType());
+            isJobPresent.setJobClass(job.getJobClass());
             isJobPresent.setCronExpression(job.getCronExpression());
 
             jobsRepo.save(isJobPresent);
@@ -51,6 +55,7 @@ public class GlobalRestService {
         return isJobPresent;
     }
 
+    // To delete the jobs from the jobs table
     public void deleteJob(Long jobId){
         Optional<Jobs> jobToDelete = jobsRepo.findById(jobId);
         if(jobToDelete.isPresent()){
