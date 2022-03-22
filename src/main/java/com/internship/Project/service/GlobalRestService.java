@@ -2,6 +2,8 @@ package com.internship.Project.service;
 
 
 import com.internship.Project.entity.Jobs;
+import com.internship.Project.entity.JobsExecutedDetails;
+import com.internship.Project.repository.JobExecutedDetailsRepo;
 import com.internship.Project.repository.JobsRepo;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -16,8 +18,20 @@ public class GlobalRestService {
 
     private static final Logger LOG = LoggerFactory.getLogger(GlobalRestService.class);
 
+
     @Autowired
     JobsRepo jobsRepo;
+
+    @Autowired
+    JobExecutedDetailsRepo jobExecutedDetailsRepo;
+
+    @Autowired
+    MainService mainService;
+
+    // For the Jobs master table
+    //
+    //
+    //
 
     // Creation of the job details in the jobs table
     public Jobs createJob(Jobs job){
@@ -65,5 +79,27 @@ public class GlobalRestService {
         }
     }
 
+    // Scheduling all Global jobs created
+    public void startGlobalJobScheduling(){
+        mainService.scheduleGlobalJob();
+    }
+
+    // Scheduling all Local jobs created
+    public void startLocalJobScheduling(){
+        mainService.scheduleLocalJob();
+    }
+
+
+
+    // For the Jobs Executed Details table
+    //
+    //
+    //
+
+    // To read all the jobs from the jobs table
+    public List<JobsExecutedDetails> readAllJobsExecuted(){
+        Iterable<JobsExecutedDetails> allExecutedJobs = jobExecutedDetailsRepo.findAll();
+        return (List<JobsExecutedDetails>) allExecutedJobs;
+    }
 
 }

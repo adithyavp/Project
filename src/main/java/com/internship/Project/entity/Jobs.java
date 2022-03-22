@@ -2,11 +2,9 @@ package com.internship.Project.entity;
 
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
-import org.springframework.data.annotation.CreatedDate;
-import org.springframework.data.annotation.LastModifiedDate;
-
 import javax.persistence.*;
 import java.time.LocalDateTime;
+
 
 @Entity
 @Table(name = "jobs")
@@ -76,20 +74,20 @@ public class Jobs {
         this.jobClass = jobClass;
     }
 
-    public LocalDateTime getCreatedAt() {
-        return createdAt;
-    }
-
-    public void setCreatedAt(LocalDateTime createdAt) {
-        this.createdAt = createdAt;
-    }
-
     public String getJobWorkingStatus() {
         return jobWorkingStatus;
     }
 
     public void setJobWorkingStatus(String jobWorkingStatus) {
         this.jobWorkingStatus = jobWorkingStatus;
+    }
+
+    public LocalDateTime getCreatedAt() {
+        return createdAt;
+    }
+
+    public void setCreatedAt(LocalDateTime createdAt) {
+        this.createdAt = createdAt;
     }
 
     public LocalDateTime getUpdatedAt() {

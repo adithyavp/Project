@@ -1,5 +1,7 @@
 package com.internship.Project.entity;
 
+import org.hibernate.annotations.CreationTimestamp;
+
 import javax.persistence.*;
 import java.time.LocalDateTime;
 
@@ -13,13 +15,14 @@ public class JobsExecutedDetails {
     // The name of the Instance in which the job has been executed
     private String instanceName;
     // The execution time of the job
+    @CreationTimestamp
     private LocalDateTime executionTime;
     // The status of the job
     private String executionStatus;
     // The message based on the status of the job
     private String executionStatusMessage;
     @OneToOne(fetch = FetchType.EAGER)
-    @JoinColumn(name = "job_id")
+    @JoinColumn(name = "job_id", referencedColumnName = "job_id")
     private Jobs jobs;
 
     public Long getJobsExecutedId() {
