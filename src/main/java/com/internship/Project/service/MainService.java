@@ -29,12 +29,17 @@ public class MainService {
 
         Iterable<Jobs> list = jobsRepo.findByJobWorkingStatusAndAndMemoryType("unscheduled", "jdbc");
         Iterator<Jobs> iterator = list.iterator();
+
+        if (!iterator.hasNext()){
+            LOG.info("All the Global Jobs have been scheduled, Add new jobs for scheduling");
+        }
+
         while(iterator.hasNext()){
             Jobs job = iterator.next();
             String jobName = job.getName();
             String jobMemory = job.getMemoryType();
             String jobCronExp = job.getCronExpression();
-            String jobClass = job.getJobClass();
+            String jobClass = job.getExecutionClass();
 
             JobDataMap dataMap = new JobDataMap();
             dataMap.put("jobId", job.getJobId());
@@ -86,12 +91,17 @@ public class MainService {
 
         Iterable<Jobs> list = jobsRepo.findByJobWorkingStatusAndAndMemoryType("unscheduled", "memory");
         Iterator<Jobs> iterator = list.iterator();
+
+        if (!iterator.hasNext()){
+            LOG.info("All the Local Jobs have been scheduled, Add new jobs for scheduling");
+        }
+
         while (iterator.hasNext()) {
             Jobs job = iterator.next();
             String jobName = job.getName();
             String jobMemory = job.getMemoryType();
             String jobCronExp = job.getCronExpression();
-            String jobClass = job.getJobClass();
+            String jobClass = job.getExecutionClass();
 
             JobDataMap dataMap = new JobDataMap();
             dataMap.put("jobId", job.getJobId());

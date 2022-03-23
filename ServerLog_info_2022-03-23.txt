@@ -1,0 +1,7 @@
+2022-03-23 21:30:31.446  INFO 24400 --- [main] c.i.GlobalJob.GlobalJobApplicationTests  : Starting GlobalJobApplicationTests using Java 17.0.2 on DESKTOP-L0Q733T with PID 24400 (started by adith in E:\Internship\GlobalJob)
+2022-03-23 21:30:36.380  INFO 24400 --- [main] o.s.s.quartz.LocalDataSourceJobStore     : JobStoreCMT initialized.
+2022-03-23 21:30:36.383  INFO 24400 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2022-03-23 21:30:38.455 ERROR 24400 --- [main] c.i.G.services.GlobalRestService         : Scheduler exception while starting Quartz: org.quartz.SchedulerConfigException: Failure occured during job recovery. [See nested exception: org.quartz.impl.jdbcjobstore.LockException: Failure obtaining db row lock: Table 'globaljob.qrtz_locks' doesn't exist [See nested exception: java.sql.SQLSyntaxErrorException: Table 'globaljob.qrtz_locks' doesn't exist]]
+2022-03-23 21:30:40.145  INFO 24400 --- [SpringApplicationShutdownHook] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2022-03-23 21:30:40.146  INFO 24400 --- [SpringApplicationShutdownHook] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2022-03-23 21:30:40.147  INFO 24400 --- [SpringApplicationShutdownHook] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.

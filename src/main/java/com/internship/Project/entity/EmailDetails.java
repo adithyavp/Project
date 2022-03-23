@@ -15,8 +15,8 @@ public class EmailDetails {
     // The Email ID's
     @javax.validation.constraints.Email
     private String emailId;
-    // The matching instance name for the email id
-    private String instanceName;
+    // The jobClassName for which
+    private String jobClassName;
 
     public Long getSrNo() {
         return srNo;
@@ -34,11 +34,11 @@ public class EmailDetails {
         this.emailId = emailId;
     }
 
-    public String getInstanceName() {
-        return instanceName;
+    public String getJobClassName() {
+        return jobClassName;
     }
 
-    public void setInstanceName(String instanceName) {
-        this.instanceName = instanceName;
+    public void setJobClassName(String jobClassName) {
+        this.jobClassName = jobClassName;
     }
 }

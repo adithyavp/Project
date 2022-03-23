@@ -12,15 +12,15 @@ import org.jsoup.nodes.Element;
 import org.quartz.JobDataMap;
 import org.quartz.JobExecutionContext;
 import org.quartz.JobExecutionException;
-import org.quartz.JobKey;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.quartz.QuartzJobBean;
+import org.springframework.stereotype.Component;
 
 import java.io.IOException;
-import java.time.LocalDateTime;
 
+@Component
 public class GlobalJob1 extends QuartzJobBean {
 
     private static final Logger LOG = LoggerFactory.getLogger(GlobalJob1.class);
@@ -67,7 +67,7 @@ public class GlobalJob1 extends QuartzJobBean {
                         currencyData1.setRupeePerCurrency(rupeePerCurrency);
 
                         currencyDataRepo.save(currencyData1);
-                    } else if (currencyData != null) {
+                    } else {
                         currencyData.setRatePerRupee(ratePerRupee);
                         currencyData.setRupeePerCurrency(rupeePerCurrency);
 
@@ -95,7 +95,7 @@ public class GlobalJob1 extends QuartzJobBean {
 
             jobExecutedDetailsRepo.save(jobsExecutedDetails);
 
-            LOG.info("Job1 Completed.");
+            LOG.info("GlobalJob1 Completed.");
 
         } catch (IOException e) {
             LOG.error(e.getMessage(), e);

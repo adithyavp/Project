@@ -1,8 +1,10 @@
 package com.internship.Project.service;
 
 
+import com.internship.Project.entity.EmailDetails;
 import com.internship.Project.entity.Jobs;
 import com.internship.Project.entity.JobsExecutedDetails;
+import com.internship.Project.repository.EmailDetailsRepo;
 import com.internship.Project.repository.JobExecutedDetailsRepo;
 import com.internship.Project.repository.JobsRepo;
 import org.slf4j.Logger;
@@ -10,8 +12,11 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.Iterator;
 import java.util.List;
 import java.util.Optional;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 @Service
 public class GlobalRestService {
@@ -24,6 +29,9 @@ public class GlobalRestService {
 
     @Autowired
     JobExecutedDetailsRepo jobExecutedDetailsRepo;
+
+    @Autowired
+    EmailDetailsRepo emailDetailsRepo;
 
     @Autowired
     MainService mainService;
@@ -59,7 +67,7 @@ public class GlobalRestService {
         Jobs isJobPresent = jobsRepo.findByJobIdAndAndName(jobId, jobName);
         if(isJobPresent!=null){
             isJobPresent.setMemoryType(job.getMemoryType());
-            isJobPresent.setJobClass(job.getJobClass());
+            isJobPresent.setExecutionClass(job.getExecutionClass());
             isJobPresent.setCronExpression(job.getCronExpression());
 
             jobsRepo.save(isJobPresent);
@@ -102,4 +110,69 @@ public class GlobalRestService {
         return (List<JobsExecutedDetails>) allExecutedJobs;
     }
 
+
+    // For the Email Details table
+    //
+    //
+    //
+    String regex = "^[\\w-_\\.+]*[\\w-_\\.]\\@([\\w]+\\.)+[\\w]+[\\w]$";
+    Pattern pattern = Pattern.compile(regex);
+
+    // To create new Email Detail
+    public EmailDetails createEmailDetail(EmailDetails emailDetail) {
+
+        Matcher matcher = pattern.matcher(emailDetail.getEmailId());
+        if(!matcher.matches()){
+            System.out.println("Email Id is incorrect please check Email Id");
+        } else{
+            EmailDetails newEmailDetailsToCreate = emailDetailsRepo.findByEmailIdAndJobClassName(emailDetail.getEmailId(), emailDetail.getJobClassName());
+            if(newEmailDetailsToCreate!=null){
+                emailDetail = newEmailDetailsToCreate;
+                System.out.println("Email Detail is already created");
+            }
+            else{
+                emailDetail = emailDetailsRepo.save(emailDetail);
+            }
+        }
+        return emailDetail;
+    }
+
+    // To read all Email Details
+    public List<EmailDetails> readAllEmailDetails() {
+
+        Iterable<EmailDetails> findAllEmailDetails = emailDetailsRepo.findAll();
+        return (List<EmailDetails>) findAllEmailDetails;
+
+    }
+
+    // To update Email Detail
+    public EmailDetails updateEmailDetail(Long srNo, String emailId, EmailDetails updateEmailDetail) {
+
+        EmailDetails isEmailDetailPresent = emailDetailsRepo.findBySrNoAndEmailId(srNo, emailId);
+        if(isEmailDetailPresent!=null) {
+
+            Matcher matcher = pattern.matcher(updateEmailDetail.getEmailId());
+            if (!matcher.matches()) {
+                System.out.println("Email Id is incorrect please check Email Id");
+            } else {
+                isEmailDetailPresent.setEmailId(updateEmailDetail.getEmailId());
+                isEmailDetailPresent.setJobClassName(updateEmailDetail.getJobClassName());
+
+                emailDetailsRepo.save(isEmailDetailPresent);
+            }
+
+        } else{
+            System.out.println("Email Detail not found");
+        }
+        return isEmailDetailPresent;
+    }
+
+    public void deleteEmailDetail(String emailId, String jobClassName) {
+        EmailDetails emailDetailToDelete = emailDetailsRepo.findByEmailIdAndJobClassName(emailId, jobClassName);
+        if(emailDetailToDelete!=null){
+            emailDetailsRepo.delete(emailDetailToDelete);
+        } else{
+            System.out.println("Email Detail not present");
+        }
+    }
 }
