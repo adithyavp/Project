@@ -87,8 +87,8 @@ public class GlobalJob1 extends QuartzJobBean {
 
 
             // remove while running on docker
-//            jobsExecutedDetails.setInstanceName(DataStore.getInstanceName());
-            jobsExecutedDetails.setInstanceName("get from docker");
+            jobsExecutedDetails.setInstanceName(DataStore.getInstanceName());
+//            jobsExecutedDetails.setInstanceName("get from docker");
             jobsExecutedDetails.setExecutionStatus("Completed");
             jobsExecutedDetails.setExecutionStatusMessage("Job execution successful");
             jobsExecutedDetails.setJobs(job);
@@ -101,8 +101,8 @@ public class GlobalJob1 extends QuartzJobBean {
             LOG.error("Exception during fetching Global Job details from web", e);
 
             // remove while running on docker
-//            jobsExecutedDetails.setInstanceName(DataStore.getInstanceName());
-            jobsExecutedDetails.setInstanceName("get from docker");
+            jobsExecutedDetails.setInstanceName(DataStore.getInstanceName());
+//            jobsExecutedDetails.setInstanceName("get from docker");
             jobsExecutedDetails.setExecutionStatus("Job Failed");
             jobsExecutedDetails.setExecutionStatusMessage("Error while retrieving Job1 data from Web");
             jobsExecutedDetails.setJobs(job);
