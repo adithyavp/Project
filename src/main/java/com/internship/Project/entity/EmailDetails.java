@@ -15,7 +15,7 @@ public class EmailDetails {
     // The Email ID's
     @javax.validation.constraints.Email
     private String emailId;
-    // The jobClassName for which
+    // The jobClassName for which then email needs to be sent
     private String jobClassName;
 
     public Long getSrNo() {

@@ -59,6 +59,8 @@ public class LocalJob1 extends QuartzJobBean {
         //
         //
 
+        // remove while running on docker
+//        String file = "project_logs";
         String file = "E:\\Internship\\GlobalJob\\globaljob_logs";
 
         //
@@ -68,47 +70,37 @@ public class LocalJob1 extends QuartzJobBean {
         LocalDate localDate = LocalDate.now();
 
         SimpleDateFormat dateFormat = new SimpleDateFormat(DATE_FORMAT);
-        Date date = null;
+        Date date;
+
         try {
             date = dateFormat.parse(localDate.toString());
 
-        } catch (ParseException e) {
-            flag = "1";
-            LOG.error("Error while parsing today's date", e);
-        }
+            long previousDayInMilliSeconds = date.getTime()-oneDayInMilliSeconds;
 
-        long previousDayInMilliSeconds = date.getTime()-oneDayInMilliSeconds;
+            Date previousDate = new Date(previousDayInMilliSeconds);
+            String previousDayDate = dateFormat.format(previousDate);
 
-        Date previousDate = new Date(previousDayInMilliSeconds);
-        String previousDayDate = dateFormat.format(previousDate);
+            //
+            // We are now reading the log file and we take in all the data which specifies to the previous date(the date which we calculated and found)
+            Path path = Paths.get(file);
+            List<String> lines = Files.readAllLines(path);
 
-        //
-        // We are now reading the log file and we take in all the data which specifies to the previous date(the date which we calculated and found)
-        Path path = Paths.get(file);
-        List<String> lines = new ArrayList<String>();
-
-        try {
-            lines = Files.readAllLines(path);
-        } catch (IOException e) {
-            flag = "2";
-            LOG.error("Error while reading Log File: ", e);
-        }
-
-        List<String> dataStore = new ArrayList<String>();
-        for(String i : lines){
-            if(i.contains(previousDayDate)){
-                if(i.contains("start")||i.contains("initial")||i.contains("paused")||i.contains("shut")||i.contains("error")) {
-                    dataStore.add(i);
+            List<String> dataStore = new ArrayList<String>();
+            for(String i : lines){
+                if(i.contains(previousDayDate)){
+                    if(i.contains("start")||i.contains("initial")||i.contains("paused")||i.contains("shut")||i.contains("error")) {
+                        dataStore.add(i);
+                    }
                 }
             }
-        }
-        for(String i: dataStore){
-            System.out.println(i);
-        }
+            for(String i: dataStore){
+                System.out.println(i);
+            }
 
-        // This part of the code is to create the file in which we will store the log file with date.
-        Scanner scanner = new Scanner(System.in);
-        try {
+            //
+            // This part of the code is to create the file in which we will store the log file with date.
+            Scanner scanner = new Scanner(System.in);
+
             File newFileObj = new File("ServerLog_info_"+previousDayDate+".txt");
             if(newFileObj.createNewFile()){
                 BufferedWriter writer = new BufferedWriter(new FileWriter(newFileObj.getName()));
@@ -134,14 +126,19 @@ public class LocalJob1 extends QuartzJobBean {
                     LOG.warn("Overwriting denied, file: "+newFileObj.getName());
                 }
             }
+
+        } catch (ParseException e) {
+            flag = "1";
+            LOG.error("Error while parsing today's date", e);
+
         } catch (IOException e) {
-            flag = "3";
-            LOG.error("Error while creating file and storing ServerLog info: ", e);
+            flag = "2";
+            LOG.error("Error while reading Log File/Error while creating file and storing ServerLog info: ", e);
         }
 
         //
-        // If there is no error then we make an entry to the Jobsexecutedtable and send the details via email
-        // If there is an error then we make an entry to the Jobsexecutedtable with the error
+        // If there is no error then we make an entry to the Jobsexecutedtable and send the details via email, in case if
+        // there is an error then we make an entry to the Jobsexecutedtable with the error
         // Email scheduling yet to be done.
         if(flag.equals("0")){
 
@@ -160,10 +157,9 @@ public class LocalJob1 extends QuartzJobBean {
 
             jobExecutedDetailsRepo.save(jobsExecutedDetails);
 
-            LOG.info("LocalJob1 Completed.");
-        } else {
+            LOG.info("LocalJob1 Completed, Data update in JobExecutedDetails Table");
 
-            LOG.error("LocalJob1 failed, Exception while executing ");
+        } else {
 
             // remove while running on docker
 //            jobsExecutedDetails.setInstanceName(DataStore.getInstanceName());
@@ -175,13 +171,12 @@ public class LocalJob1 extends QuartzJobBean {
                 jobsExecutedDetails.setExecutionStatusMessage("Error while parsing date");
             }
             if(flag.equals("2")) {
-                jobsExecutedDetails.setExecutionStatusMessage("Error while reading log file");
-            }
-            if(flag.equals("3")) {
-                jobsExecutedDetails.setExecutionStatusMessage("Error while retrieving Job1 data from Web");
+                jobsExecutedDetails.setExecutionStatusMessage("Error while reading log file/while creating file and storing ServerLog info");
             }
 
             jobExecutedDetailsRepo.save(jobsExecutedDetails);
+
+            LOG.error("LocalJob1 failed - Exception while executing job, Data update in JobExecutedDetails Table");
         }
     }
 

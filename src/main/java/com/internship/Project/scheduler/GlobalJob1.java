@@ -98,7 +98,7 @@ public class GlobalJob1 extends QuartzJobBean {
             LOG.info("GlobalJob1 Completed.");
 
         } catch (IOException e) {
-            LOG.error(e.getMessage(), e);
+            LOG.error("Exception during fetching Global Job details from web", e);
 
             // remove while running on docker
 //            jobsExecutedDetails.setInstanceName(DataStore.getInstanceName());

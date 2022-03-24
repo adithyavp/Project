@@ -113,4 +113,13 @@ public class GlobalRestController {
         return ResponseEntity.status(HttpStatus.NO_CONTENT).body(null);
     }
 
+
+    // Just for reference purpose
+    // This end point is just to check the printing of the Trigger Key hashmap
+    @GetMapping("/print")
+    public ResponseEntity<Void> printHashMap(){
+        globalRestService.printHashMap();
+        return ResponseEntity.status(HttpStatus.OK).body(null);
+    }
+
 }

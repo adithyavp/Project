@@ -64,7 +64,7 @@ public class GlobalRestService {
     // To update the jobs in the Jobs table
     // One can update only the Memory type and the Cron expression and no other data
     public Jobs updateJob(Long jobId, String jobName, Jobs job){
-        Jobs isJobPresent = jobsRepo.findByJobIdAndAndName(jobId, jobName);
+        Jobs isJobPresent = jobsRepo.findByJobIdAndName(jobId, jobName);
         if(isJobPresent!=null){
             isJobPresent.setMemoryType(job.getMemoryType());
             isJobPresent.setExecutionClass(job.getExecutionClass());
@@ -89,12 +89,12 @@ public class GlobalRestService {
 
     // Scheduling all Global jobs created
     public void startGlobalJobScheduling(){
-        mainService.scheduleGlobalJob();
+        mainService.scheduleAllGlobalJob();
     }
 
     // Scheduling all Local jobs created
     public void startLocalJobScheduling(){
-        mainService.scheduleLocalJob();
+        mainService.scheduleAllLocalJob();
     }
 
 
@@ -167,6 +167,7 @@ public class GlobalRestService {
         return isEmailDetailPresent;
     }
 
+    // To delete Email Detail
     public void deleteEmailDetail(String emailId, String jobClassName) {
         EmailDetails emailDetailToDelete = emailDetailsRepo.findByEmailIdAndJobClassName(emailId, jobClassName);
         if(emailDetailToDelete!=null){
@@ -174,5 +175,11 @@ public class GlobalRestService {
         } else{
             System.out.println("Email Detail not present");
         }
+    }
+
+    // Just for check
+    // To print hashMap of Trigger Key
+    public void printHashMap() {
+        mainService.printHashMap();
     }
 }
