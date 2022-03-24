@@ -647,3 +647,1500 @@
 2022-03-24 01:29:46.896  INFO 25548 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2022-03-24 01:29:46.898  INFO 25548 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2022-03-24 01:29:46.906  INFO 25548 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-03-24 12:25:41.518  INFO 17732 --- [restartedMain] c.internship.Project.ProjectApplication  : Starting ProjectApplication using Java 17.0.2 on DESKTOP-L0Q733T with PID 17732 (E:\Internship\Project\target\classes started by adith in E:\Internship\Project)
+2022-03-24 12:25:41.556  INFO 17732 --- [restartedMain] c.internship.Project.ProjectApplication  : No active profile set, falling back to 1 default profile: "default"
+2022-03-24 12:25:41.611  INFO 17732 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-03-24 12:25:41.611  INFO 17732 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-03-24 12:25:43.035  INFO 17732 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-03-24 12:25:43.191  INFO 17732 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 129 ms. Found 4 JPA repository interfaces.
+2022-03-24 12:25:44.446  INFO 17732 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-03-24 12:25:44.463  INFO 17732 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-03-24 12:25:44.463  INFO 17732 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.58]
+2022-03-24 12:25:45.021  INFO 17732 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-03-24 12:25:45.021  INFO 17732 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3409 ms
+2022-03-24 12:25:45.271  INFO 17732 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-03-24 12:25:45.371  INFO 17732 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.5.Final
+2022-03-24 12:25:45.638  INFO 17732 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-03-24 12:25:45.815  INFO 17732 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-03-24 12:25:46.646  INFO 17732 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-03-24 12:25:46.688  INFO 17732 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-03-24 12:25:48.098  INFO 17732 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-03-24 12:25:48.115  INFO 17732 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-03-24 12:25:48.199  INFO 17732 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2022-03-24 12:25:48.210  INFO 17732 --- [restartedMain] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2022-03-24 12:25:48.210  INFO 17732 --- [restartedMain] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.3.2 created.
+2022-03-24 12:25:48.210  INFO 17732 --- [restartedMain] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2022-03-24 12:25:48.226  INFO 17732 --- [restartedMain] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 5 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2022-03-24 12:25:48.226  INFO 17732 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2022-03-24 12:25:48.226  INFO 17732 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.3.2
+2022-03-24 12:25:48.226  INFO 17732 --- [restartedMain] org.quartz.core.QuartzScheduler          : JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@2feb1080
+2022-03-24 12:25:48.226  INFO 17732 --- [restartedMain] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2022-03-24 12:25:48.236  INFO 17732 --- [restartedMain] c.internship.Project.ProjectApplication  : Scheduler has started
+2022-03-24 12:25:49.023  WARN 17732 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-03-24 12:25:49.480  WARN 17732 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2022-03-24 12:25:49.656  INFO 17732 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-03-24 12:25:49.758  INFO 17732 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-03-24 12:25:49.777  INFO 17732 --- [restartedMain] c.internship.Project.ProjectApplication  : Started ProjectApplication in 8.667 seconds (JVM running for 10.61)
+2022-03-24 12:25:55.249  INFO 17732 --- [SpringApplicationShutdownHook] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2022-03-24 12:25:55.282  INFO 17732 --- [SpringApplicationShutdownHook] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2022-03-24 12:25:55.283  INFO 17732 --- [SpringApplicationShutdownHook] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2022-03-24 12:25:55.283  INFO 17732 --- [SpringApplicationShutdownHook] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2022-03-24 12:25:55.283  INFO 17732 --- [SpringApplicationShutdownHook] c.internship.Project.ProjectApplication  : Scheduler has shutdown
+2022-03-24 12:25:55.283  INFO 17732 --- [SpringApplicationShutdownHook] o.s.s.quartz.SchedulerFactoryBean        : Shutting down Quartz Scheduler
+2022-03-24 12:25:55.283  INFO 17732 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-03-24 12:25:55.286  INFO 17732 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-03-24 12:25:55.295  INFO 17732 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-03-24 12:26:31.583  INFO 10712 --- [main] c.i.Project.ProjectApplicationTests      : Starting ProjectApplicationTests using Java 17.0.2 on DESKTOP-L0Q733T with PID 10712 (started by adith in E:\Internship\Project)
+2022-03-24 12:26:31.583  INFO 10712 --- [main] c.i.Project.ProjectApplicationTests      : No active profile set, falling back to 1 default profile: "default"
+2022-03-24 12:26:33.163  INFO 10712 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-03-24 12:26:33.286  INFO 10712 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 106 ms. Found 4 JPA repository interfaces.
+2022-03-24 12:26:34.409  INFO 10712 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-03-24 12:26:34.549  INFO 10712 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.5.Final
+2022-03-24 12:26:34.932  INFO 10712 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-03-24 12:26:35.445  INFO 10712 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-03-24 12:26:36.263  INFO 10712 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-03-24 12:26:36.344  INFO 10712 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-03-24 12:26:38.232  INFO 10712 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-03-24 12:26:38.257  INFO 10712 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-03-24 12:26:38.405  INFO 10712 --- [main] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2022-03-24 12:26:38.442  INFO 10712 --- [main] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2022-03-24 12:26:38.442  INFO 10712 --- [main] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.3.2 created.
+2022-03-24 12:26:38.442  INFO 10712 --- [main] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2022-03-24 12:26:38.442  INFO 10712 --- [main] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 5 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2022-03-24 12:26:38.442  INFO 10712 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2022-03-24 12:26:38.442  INFO 10712 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.3.2
+2022-03-24 12:26:38.442  INFO 10712 --- [main] org.quartz.core.QuartzScheduler          : JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@1ab1d93d
+2022-03-24 12:26:38.456  INFO 10712 --- [main] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2022-03-24 12:26:38.456  INFO 10712 --- [main] c.internship.Project.ProjectApplication  : Scheduler has started
+2022-03-24 12:26:39.840  WARN 10712 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-03-24 12:26:40.808  WARN 10712 --- [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2022-03-24 12:26:41.176  INFO 10712 --- [main] c.i.Project.ProjectApplicationTests      : Started ProjectApplicationTests in 10.163 seconds (JVM running for 14.281)
+2022-03-24 12:26:41.848  INFO 10712 --- [SpringApplicationShutdownHook] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2022-03-24 12:26:41.848  INFO 10712 --- [SpringApplicationShutdownHook] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2022-03-24 12:26:41.848  INFO 10712 --- [SpringApplicationShutdownHook] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2022-03-24 12:26:41.848  INFO 10712 --- [SpringApplicationShutdownHook] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2022-03-24 12:26:41.848  INFO 10712 --- [SpringApplicationShutdownHook] c.internship.Project.ProjectApplication  : Scheduler has shutdown
+2022-03-24 12:26:41.848  INFO 10712 --- [SpringApplicationShutdownHook] o.s.s.quartz.SchedulerFactoryBean        : Shutting down Quartz Scheduler
+2022-03-24 12:26:41.848  INFO 10712 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-03-24 12:26:41.848  INFO 10712 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-03-24 12:26:41.889  INFO 10712 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-03-24 12:37:46.367  INFO 13872 --- [main] c.i.Project.ProjectApplicationTests      : Starting ProjectApplicationTests using Java 17.0.2 on DESKTOP-L0Q733T with PID 13872 (started by adith in E:\Internship\Project)
+2022-03-24 12:37:46.401  INFO 13872 --- [main] c.i.Project.ProjectApplicationTests      : No active profile set, falling back to 1 default profile: "default"
+2022-03-24 12:37:47.249  INFO 13872 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-03-24 12:37:47.338  INFO 13872 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 74 ms. Found 4 JPA repository interfaces.
+2022-03-24 12:37:48.076  INFO 13872 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-03-24 12:37:48.144  INFO 13872 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.5.Final
+2022-03-24 12:37:48.364  INFO 13872 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-03-24 12:37:48.594  INFO 13872 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-03-24 12:37:49.415  INFO 13872 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-03-24 12:37:49.518  INFO 13872 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-03-24 12:37:51.192  INFO 13872 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-03-24 12:37:51.201  INFO 13872 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-03-24 12:37:51.315  INFO 13872 --- [main] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2022-03-24 12:37:51.362  INFO 13872 --- [main] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2022-03-24 12:37:51.362  INFO 13872 --- [main] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.3.2 created.
+2022-03-24 12:37:51.366  INFO 13872 --- [main] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2022-03-24 12:37:51.367  INFO 13872 --- [main] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 5 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2022-03-24 12:37:51.367  INFO 13872 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2022-03-24 12:37:51.367  INFO 13872 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.3.2
+2022-03-24 12:37:51.367  INFO 13872 --- [main] org.quartz.core.QuartzScheduler          : JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@1b7a4930
+2022-03-24 12:37:51.383  INFO 13872 --- [main] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2022-03-24 12:37:51.384  INFO 13872 --- [main] c.internship.Project.ProjectApplication  : Scheduler has started
+2022-03-24 12:37:52.695  WARN 13872 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-03-24 12:37:53.761  WARN 13872 --- [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2022-03-24 12:37:54.120  INFO 13872 --- [main] c.i.Project.ProjectApplicationTests      : Started ProjectApplicationTests in 8.628 seconds (JVM running for 12.405)
+2022-03-24 12:37:54.683  INFO 13872 --- [SpringApplicationShutdownHook] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2022-03-24 12:37:54.689  INFO 13872 --- [SpringApplicationShutdownHook] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2022-03-24 12:37:54.689  INFO 13872 --- [SpringApplicationShutdownHook] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2022-03-24 12:37:54.689  INFO 13872 --- [SpringApplicationShutdownHook] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2022-03-24 12:37:54.689  INFO 13872 --- [SpringApplicationShutdownHook] c.internship.Project.ProjectApplication  : Scheduler has shutdown
+2022-03-24 12:37:54.689  INFO 13872 --- [SpringApplicationShutdownHook] o.s.s.quartz.SchedulerFactoryBean        : Shutting down Quartz Scheduler
+2022-03-24 12:37:54.694  INFO 13872 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-03-24 12:37:54.694  INFO 13872 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-03-24 12:37:54.744  INFO 13872 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-03-24 13:24:40.921  INFO 2504 --- [restartedMain] c.internship.Project.ProjectApplication  : Starting ProjectApplication using Java 17.0.2 on DESKTOP-L0Q733T with PID 2504 (E:\Internship\Project\target\classes started by adith in E:\Internship\Project)
+2022-03-24 13:24:40.955  INFO 2504 --- [restartedMain] c.internship.Project.ProjectApplication  : No active profile set, falling back to 1 default profile: "default"
+2022-03-24 13:24:41.015  INFO 2504 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-03-24 13:24:41.015  INFO 2504 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-03-24 13:24:42.034  INFO 2504 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-03-24 13:24:42.112  INFO 2504 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 66 ms. Found 4 JPA repository interfaces.
+2022-03-24 13:24:43.040  INFO 2504 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-03-24 13:24:43.051  INFO 2504 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-03-24 13:24:43.052  INFO 2504 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.58]
+2022-03-24 13:24:43.677  INFO 2504 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-03-24 13:24:43.678  INFO 2504 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2662 ms
+2022-03-24 13:24:43.825  INFO 2504 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-03-24 13:24:43.895  INFO 2504 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.5.Final
+2022-03-24 13:24:44.051  INFO 2504 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-03-24 13:24:44.152  INFO 2504 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-03-24 13:24:44.572  INFO 2504 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-03-24 13:24:44.593  INFO 2504 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-03-24 13:24:45.567  INFO 2504 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-03-24 13:24:45.577  INFO 2504 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-03-24 13:24:45.637  INFO 2504 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2022-03-24 13:24:45.652  INFO 2504 --- [restartedMain] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2022-03-24 13:24:45.653  INFO 2504 --- [restartedMain] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.3.2 created.
+2022-03-24 13:24:45.653  INFO 2504 --- [restartedMain] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2022-03-24 13:24:45.654  INFO 2504 --- [restartedMain] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 5 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2022-03-24 13:24:45.655  INFO 2504 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2022-03-24 13:24:45.655  INFO 2504 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.3.2
+2022-03-24 13:24:45.655  INFO 2504 --- [restartedMain] org.quartz.core.QuartzScheduler          : JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@3ac26b0a
+2022-03-24 13:24:45.660  INFO 2504 --- [restartedMain] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2022-03-24 13:24:45.661  INFO 2504 --- [restartedMain] c.internship.Project.ProjectApplication  : Scheduler has started
+2022-03-24 13:24:46.186  WARN 2504 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-03-24 13:24:46.648  WARN 2504 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2022-03-24 13:24:46.749  INFO 2504 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-03-24 13:24:46.806  INFO 2504 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-03-24 13:24:46.820  INFO 2504 --- [restartedMain] c.internship.Project.ProjectApplication  : Started ProjectApplication in 6.396 seconds (JVM running for 8.062)
+2022-03-24 13:25:41.977  INFO 2504 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-03-24 13:25:41.978  INFO 2504 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-03-24 13:25:41.984  INFO 2504 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2022-03-24 13:25:42.054  INFO 2504 --- [http-nio-8080-exec-2] c.i.P.controller.GlobalRestController    : Schedule all Global Jobs - Jobs Master Table
+2022-03-24 13:25:42.056  INFO 2504 --- [http-nio-8080-exec-2] c.i.Project.service.MainService          : Scheduling all Global jobs from Jobs master table
+2022-03-24 13:25:42.396  INFO 2504 --- [http-nio-8080-exec-2] c.i.Project.service.MainService          : Global job Scheduled Successfully
+2022-03-24 13:26:00.040  INFO 2504 --- [quartzScheduler_Worker-1] c.i.Project.scheduler.GlobalJob1         : GlobalJob1 started
+2022-03-24 13:26:02.456  INFO 2504 --- [quartzScheduler_Worker-1] c.i.Project.scheduler.GlobalJob1         : Currency Data Saved.
+2022-03-24 13:26:02.481 ERROR 2504 --- [quartzScheduler_Worker-1] c.i.Project.scheduler.DataStore          : Cannot run program "uname": CreateProcess error=2, The system cannot find the file specified
+
+java.io.IOException: Cannot run program "uname": CreateProcess error=2, The system cannot find the file specified
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1143) ~[na:na]
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1073) ~[na:na]
+	at java.base/java.lang.Runtime.exec(Runtime.java:594) ~[na:na]
+	at java.base/java.lang.Runtime.exec(Runtime.java:418) ~[na:na]
+	at java.base/java.lang.Runtime.exec(Runtime.java:315) ~[na:na]
+	at com.internship.Project.scheduler.DataStore.getInstanceName(DataStore.java:21) ~[classes/:na]
+	at com.internship.Project.scheduler.GlobalJob1.executeInternal(GlobalJob1.java:90) ~[classes/:na]
+	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:75) ~[spring-context-support-5.3.16.jar:5.3.16]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.3.2.jar:na]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) ~[quartz-2.3.2.jar:na]
+Caused by: java.io.IOException: CreateProcess error=2, The system cannot find the file specified
+	at java.base/java.lang.ProcessImpl.create(Native Method) ~[na:na]
+	at java.base/java.lang.ProcessImpl.<init>(ProcessImpl.java:494) ~[na:na]
+	at java.base/java.lang.ProcessImpl.start(ProcessImpl.java:159) ~[na:na]
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1110) ~[na:na]
+	... 9 common frames omitted
+
+2022-03-24 13:26:02.536  INFO 2504 --- [quartzScheduler_Worker-1] c.i.Project.scheduler.GlobalJob1         : GlobalJob1 Completed.
+2022-03-24 13:27:00.004  INFO 2504 --- [quartzScheduler_Worker-2] c.i.Project.scheduler.GlobalJob1         : GlobalJob1 started
+2022-03-24 13:27:01.835  INFO 2504 --- [quartzScheduler_Worker-2] c.i.Project.scheduler.GlobalJob1         : Currency Data Saved.
+2022-03-24 13:27:01.842 ERROR 2504 --- [quartzScheduler_Worker-2] c.i.Project.scheduler.DataStore          : Cannot run program "uname": CreateProcess error=2, The system cannot find the file specified
+
+java.io.IOException: Cannot run program "uname": CreateProcess error=2, The system cannot find the file specified
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1143) ~[na:na]
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1073) ~[na:na]
+	at java.base/java.lang.Runtime.exec(Runtime.java:594) ~[na:na]
+	at java.base/java.lang.Runtime.exec(Runtime.java:418) ~[na:na]
+	at java.base/java.lang.Runtime.exec(Runtime.java:315) ~[na:na]
+	at com.internship.Project.scheduler.DataStore.getInstanceName(DataStore.java:21) ~[classes/:na]
+	at com.internship.Project.scheduler.GlobalJob1.executeInternal(GlobalJob1.java:90) ~[classes/:na]
+	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:75) ~[spring-context-support-5.3.16.jar:5.3.16]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.3.2.jar:na]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) ~[quartz-2.3.2.jar:na]
+Caused by: java.io.IOException: CreateProcess error=2, The system cannot find the file specified
+	at java.base/java.lang.ProcessImpl.create(Native Method) ~[na:na]
+	at java.base/java.lang.ProcessImpl.<init>(ProcessImpl.java:494) ~[na:na]
+	at java.base/java.lang.ProcessImpl.start(ProcessImpl.java:159) ~[na:na]
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1110) ~[na:na]
+	... 9 common frames omitted
+
+2022-03-24 13:27:01.863  INFO 2504 --- [quartzScheduler_Worker-2] c.i.Project.scheduler.GlobalJob1         : GlobalJob1 Completed.
+2022-03-24 13:28:00.003  INFO 2504 --- [quartzScheduler_Worker-3] c.i.Project.scheduler.GlobalJob1         : GlobalJob1 started
+2022-03-24 13:28:01.466  INFO 2504 --- [quartzScheduler_Worker-3] c.i.Project.scheduler.GlobalJob1         : Currency Data Saved.
+2022-03-24 13:28:01.470 ERROR 2504 --- [quartzScheduler_Worker-3] c.i.Project.scheduler.DataStore          : Cannot run program "uname": CreateProcess error=2, The system cannot find the file specified
+
+java.io.IOException: Cannot run program "uname": CreateProcess error=2, The system cannot find the file specified
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1143) ~[na:na]
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1073) ~[na:na]
+	at java.base/java.lang.Runtime.exec(Runtime.java:594) ~[na:na]
+	at java.base/java.lang.Runtime.exec(Runtime.java:418) ~[na:na]
+	at java.base/java.lang.Runtime.exec(Runtime.java:315) ~[na:na]
+	at com.internship.Project.scheduler.DataStore.getInstanceName(DataStore.java:21) ~[classes/:na]
+	at com.internship.Project.scheduler.GlobalJob1.executeInternal(GlobalJob1.java:90) ~[classes/:na]
+	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:75) ~[spring-context-support-5.3.16.jar:5.3.16]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.3.2.jar:na]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) ~[quartz-2.3.2.jar:na]
+Caused by: java.io.IOException: CreateProcess error=2, The system cannot find the file specified
+	at java.base/java.lang.ProcessImpl.create(Native Method) ~[na:na]
+	at java.base/java.lang.ProcessImpl.<init>(ProcessImpl.java:494) ~[na:na]
+	at java.base/java.lang.ProcessImpl.start(ProcessImpl.java:159) ~[na:na]
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1110) ~[na:na]
+	... 9 common frames omitted
+
+2022-03-24 13:28:01.481  INFO 2504 --- [quartzScheduler_Worker-3] c.i.Project.scheduler.GlobalJob1         : GlobalJob1 Completed.
+2022-03-24 13:29:00.002  INFO 2504 --- [quartzScheduler_Worker-4] c.i.Project.scheduler.GlobalJob1         : GlobalJob1 started
+2022-03-24 13:29:01.388  INFO 2504 --- [quartzScheduler_Worker-4] c.i.Project.scheduler.GlobalJob1         : Currency Data Saved.
+2022-03-24 13:29:01.394 ERROR 2504 --- [quartzScheduler_Worker-4] c.i.Project.scheduler.DataStore          : Cannot run program "uname": CreateProcess error=2, The system cannot find the file specified
+
+java.io.IOException: Cannot run program "uname": CreateProcess error=2, The system cannot find the file specified
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1143) ~[na:na]
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1073) ~[na:na]
+	at java.base/java.lang.Runtime.exec(Runtime.java:594) ~[na:na]
+	at java.base/java.lang.Runtime.exec(Runtime.java:418) ~[na:na]
+	at java.base/java.lang.Runtime.exec(Runtime.java:315) ~[na:na]
+	at com.internship.Project.scheduler.DataStore.getInstanceName(DataStore.java:21) ~[classes/:na]
+	at com.internship.Project.scheduler.GlobalJob1.executeInternal(GlobalJob1.java:90) ~[classes/:na]
+	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:75) ~[spring-context-support-5.3.16.jar:5.3.16]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.3.2.jar:na]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) ~[quartz-2.3.2.jar:na]
+Caused by: java.io.IOException: CreateProcess error=2, The system cannot find the file specified
+	at java.base/java.lang.ProcessImpl.create(Native Method) ~[na:na]
+	at java.base/java.lang.ProcessImpl.<init>(ProcessImpl.java:494) ~[na:na]
+	at java.base/java.lang.ProcessImpl.start(ProcessImpl.java:159) ~[na:na]
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1110) ~[na:na]
+	... 9 common frames omitted
+
+2022-03-24 13:29:01.409  INFO 2504 --- [quartzScheduler_Worker-4] c.i.Project.scheduler.GlobalJob1         : GlobalJob1 Completed.
+2022-03-24 13:30:00.002  INFO 2504 --- [quartzScheduler_Worker-5] c.i.Project.scheduler.GlobalJob1         : GlobalJob1 started
+2022-03-24 13:30:01.261  INFO 2504 --- [quartzScheduler_Worker-5] c.i.Project.scheduler.GlobalJob1         : Currency Data Saved.
+2022-03-24 13:30:01.263 ERROR 2504 --- [quartzScheduler_Worker-5] c.i.Project.scheduler.DataStore          : Cannot run program "uname": CreateProcess error=2, The system cannot find the file specified
+
+java.io.IOException: Cannot run program "uname": CreateProcess error=2, The system cannot find the file specified
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1143) ~[na:na]
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1073) ~[na:na]
+	at java.base/java.lang.Runtime.exec(Runtime.java:594) ~[na:na]
+	at java.base/java.lang.Runtime.exec(Runtime.java:418) ~[na:na]
+	at java.base/java.lang.Runtime.exec(Runtime.java:315) ~[na:na]
+	at com.internship.Project.scheduler.DataStore.getInstanceName(DataStore.java:21) ~[classes/:na]
+	at com.internship.Project.scheduler.GlobalJob1.executeInternal(GlobalJob1.java:90) ~[classes/:na]
+	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:75) ~[spring-context-support-5.3.16.jar:5.3.16]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.3.2.jar:na]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) ~[quartz-2.3.2.jar:na]
+Caused by: java.io.IOException: CreateProcess error=2, The system cannot find the file specified
+	at java.base/java.lang.ProcessImpl.create(Native Method) ~[na:na]
+	at java.base/java.lang.ProcessImpl.<init>(ProcessImpl.java:494) ~[na:na]
+	at java.base/java.lang.ProcessImpl.start(ProcessImpl.java:159) ~[na:na]
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1110) ~[na:na]
+	... 9 common frames omitted
+
+2022-03-24 13:30:01.277  INFO 2504 --- [quartzScheduler_Worker-5] c.i.Project.scheduler.GlobalJob1         : GlobalJob1 Completed.
+2022-03-24 13:31:00.002  INFO 2504 --- [quartzScheduler_Worker-1] c.i.Project.scheduler.GlobalJob1         : GlobalJob1 started
+2022-03-24 13:31:01.764  INFO 2504 --- [quartzScheduler_Worker-1] c.i.Project.scheduler.GlobalJob1         : Currency Data Saved.
+2022-03-24 13:31:01.773 ERROR 2504 --- [quartzScheduler_Worker-1] c.i.Project.scheduler.DataStore          : Cannot run program "uname": CreateProcess error=2, The system cannot find the file specified
+
+java.io.IOException: Cannot run program "uname": CreateProcess error=2, The system cannot find the file specified
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1143) ~[na:na]
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1073) ~[na:na]
+	at java.base/java.lang.Runtime.exec(Runtime.java:594) ~[na:na]
+	at java.base/java.lang.Runtime.exec(Runtime.java:418) ~[na:na]
+	at java.base/java.lang.Runtime.exec(Runtime.java:315) ~[na:na]
+	at com.internship.Project.scheduler.DataStore.getInstanceName(DataStore.java:21) ~[classes/:na]
+	at com.internship.Project.scheduler.GlobalJob1.executeInternal(GlobalJob1.java:90) ~[classes/:na]
+	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:75) ~[spring-context-support-5.3.16.jar:5.3.16]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.3.2.jar:na]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) ~[quartz-2.3.2.jar:na]
+Caused by: java.io.IOException: CreateProcess error=2, The system cannot find the file specified
+	at java.base/java.lang.ProcessImpl.create(Native Method) ~[na:na]
+	at java.base/java.lang.ProcessImpl.<init>(ProcessImpl.java:494) ~[na:na]
+	at java.base/java.lang.ProcessImpl.start(ProcessImpl.java:159) ~[na:na]
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1110) ~[na:na]
+	... 9 common frames omitted
+
+2022-03-24 13:31:01.790  INFO 2504 --- [quartzScheduler_Worker-1] c.i.Project.scheduler.GlobalJob1         : GlobalJob1 Completed.
+2022-03-24 13:32:00.001  INFO 2504 --- [quartzScheduler_Worker-2] c.i.Project.scheduler.GlobalJob1         : GlobalJob1 started
+2022-03-24 13:32:01.043  INFO 2504 --- [quartzScheduler_Worker-2] c.i.Project.scheduler.GlobalJob1         : Currency Data Saved.
+2022-03-24 13:32:01.048 ERROR 2504 --- [quartzScheduler_Worker-2] c.i.Project.scheduler.DataStore          : Cannot run program "uname": CreateProcess error=2, The system cannot find the file specified
+
+java.io.IOException: Cannot run program "uname": CreateProcess error=2, The system cannot find the file specified
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1143) ~[na:na]
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1073) ~[na:na]
+	at java.base/java.lang.Runtime.exec(Runtime.java:594) ~[na:na]
+	at java.base/java.lang.Runtime.exec(Runtime.java:418) ~[na:na]
+	at java.base/java.lang.Runtime.exec(Runtime.java:315) ~[na:na]
+	at com.internship.Project.scheduler.DataStore.getInstanceName(DataStore.java:21) ~[classes/:na]
+	at com.internship.Project.scheduler.GlobalJob1.executeInternal(GlobalJob1.java:90) ~[classes/:na]
+	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:75) ~[spring-context-support-5.3.16.jar:5.3.16]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.3.2.jar:na]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) ~[quartz-2.3.2.jar:na]
+Caused by: java.io.IOException: CreateProcess error=2, The system cannot find the file specified
+	at java.base/java.lang.ProcessImpl.create(Native Method) ~[na:na]
+	at java.base/java.lang.ProcessImpl.<init>(ProcessImpl.java:494) ~[na:na]
+	at java.base/java.lang.ProcessImpl.start(ProcessImpl.java:159) ~[na:na]
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1110) ~[na:na]
+	... 9 common frames omitted
+
+2022-03-24 13:32:01.072  INFO 2504 --- [quartzScheduler_Worker-2] c.i.Project.scheduler.GlobalJob1         : GlobalJob1 Completed.
+2022-03-24 13:33:00.003  INFO 2504 --- [quartzScheduler_Worker-3] c.i.Project.scheduler.GlobalJob1         : GlobalJob1 started
+2022-03-24 13:33:01.214  INFO 2504 --- [quartzScheduler_Worker-3] c.i.Project.scheduler.GlobalJob1         : Currency Data Saved.
+2022-03-24 13:33:01.217 ERROR 2504 --- [quartzScheduler_Worker-3] c.i.Project.scheduler.DataStore          : Cannot run program "uname": CreateProcess error=2, The system cannot find the file specified
+
+java.io.IOException: Cannot run program "uname": CreateProcess error=2, The system cannot find the file specified
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1143) ~[na:na]
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1073) ~[na:na]
+	at java.base/java.lang.Runtime.exec(Runtime.java:594) ~[na:na]
+	at java.base/java.lang.Runtime.exec(Runtime.java:418) ~[na:na]
+	at java.base/java.lang.Runtime.exec(Runtime.java:315) ~[na:na]
+	at com.internship.Project.scheduler.DataStore.getInstanceName(DataStore.java:21) ~[classes/:na]
+	at com.internship.Project.scheduler.GlobalJob1.executeInternal(GlobalJob1.java:90) ~[classes/:na]
+	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:75) ~[spring-context-support-5.3.16.jar:5.3.16]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.3.2.jar:na]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) ~[quartz-2.3.2.jar:na]
+Caused by: java.io.IOException: CreateProcess error=2, The system cannot find the file specified
+	at java.base/java.lang.ProcessImpl.create(Native Method) ~[na:na]
+	at java.base/java.lang.ProcessImpl.<init>(ProcessImpl.java:494) ~[na:na]
+	at java.base/java.lang.ProcessImpl.start(ProcessImpl.java:159) ~[na:na]
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1110) ~[na:na]
+	... 9 common frames omitted
+
+2022-03-24 13:33:01.230  INFO 2504 --- [quartzScheduler_Worker-3] c.i.Project.scheduler.GlobalJob1         : GlobalJob1 Completed.
+2022-03-24 13:34:00.003  INFO 2504 --- [quartzScheduler_Worker-4] c.i.Project.scheduler.GlobalJob1         : GlobalJob1 started
+2022-03-24 13:34:01.493  INFO 2504 --- [quartzScheduler_Worker-4] c.i.Project.scheduler.GlobalJob1         : Currency Data Saved.
+2022-03-24 13:34:01.497 ERROR 2504 --- [quartzScheduler_Worker-4] c.i.Project.scheduler.DataStore          : Cannot run program "uname": CreateProcess error=2, The system cannot find the file specified
+
+java.io.IOException: Cannot run program "uname": CreateProcess error=2, The system cannot find the file specified
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1143) ~[na:na]
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1073) ~[na:na]
+	at java.base/java.lang.Runtime.exec(Runtime.java:594) ~[na:na]
+	at java.base/java.lang.Runtime.exec(Runtime.java:418) ~[na:na]
+	at java.base/java.lang.Runtime.exec(Runtime.java:315) ~[na:na]
+	at com.internship.Project.scheduler.DataStore.getInstanceName(DataStore.java:21) ~[classes/:na]
+	at com.internship.Project.scheduler.GlobalJob1.executeInternal(GlobalJob1.java:90) ~[classes/:na]
+	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:75) ~[spring-context-support-5.3.16.jar:5.3.16]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.3.2.jar:na]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) ~[quartz-2.3.2.jar:na]
+Caused by: java.io.IOException: CreateProcess error=2, The system cannot find the file specified
+	at java.base/java.lang.ProcessImpl.create(Native Method) ~[na:na]
+	at java.base/java.lang.ProcessImpl.<init>(ProcessImpl.java:494) ~[na:na]
+	at java.base/java.lang.ProcessImpl.start(ProcessImpl.java:159) ~[na:na]
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1110) ~[na:na]
+	... 9 common frames omitted
+
+2022-03-24 13:34:01.510  INFO 2504 --- [quartzScheduler_Worker-4] c.i.Project.scheduler.GlobalJob1         : GlobalJob1 Completed.
+2022-03-24 13:35:00.002  INFO 2504 --- [quartzScheduler_Worker-5] c.i.Project.scheduler.GlobalJob1         : GlobalJob1 started
+2022-03-24 13:35:01.452  INFO 2504 --- [quartzScheduler_Worker-5] c.i.Project.scheduler.GlobalJob1         : Currency Data Saved.
+2022-03-24 13:35:01.456 ERROR 2504 --- [quartzScheduler_Worker-5] c.i.Project.scheduler.DataStore          : Cannot run program "uname": CreateProcess error=2, The system cannot find the file specified
+
+java.io.IOException: Cannot run program "uname": CreateProcess error=2, The system cannot find the file specified
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1143) ~[na:na]
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1073) ~[na:na]
+	at java.base/java.lang.Runtime.exec(Runtime.java:594) ~[na:na]
+	at java.base/java.lang.Runtime.exec(Runtime.java:418) ~[na:na]
+	at java.base/java.lang.Runtime.exec(Runtime.java:315) ~[na:na]
+	at com.internship.Project.scheduler.DataStore.getInstanceName(DataStore.java:21) ~[classes/:na]
+	at com.internship.Project.scheduler.GlobalJob1.executeInternal(GlobalJob1.java:90) ~[classes/:na]
+	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:75) ~[spring-context-support-5.3.16.jar:5.3.16]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.3.2.jar:na]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) ~[quartz-2.3.2.jar:na]
+Caused by: java.io.IOException: CreateProcess error=2, The system cannot find the file specified
+	at java.base/java.lang.ProcessImpl.create(Native Method) ~[na:na]
+	at java.base/java.lang.ProcessImpl.<init>(ProcessImpl.java:494) ~[na:na]
+	at java.base/java.lang.ProcessImpl.start(ProcessImpl.java:159) ~[na:na]
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1110) ~[na:na]
+	... 9 common frames omitted
+
+2022-03-24 13:35:01.469  INFO 2504 --- [quartzScheduler_Worker-5] c.i.Project.scheduler.GlobalJob1         : GlobalJob1 Completed.
+2022-03-24 13:36:00.002  INFO 2504 --- [quartzScheduler_Worker-1] c.i.Project.scheduler.GlobalJob1         : GlobalJob1 started
+2022-03-24 13:36:01.212  INFO 2504 --- [quartzScheduler_Worker-1] c.i.Project.scheduler.GlobalJob1         : Currency Data Saved.
+2022-03-24 13:36:01.216 ERROR 2504 --- [quartzScheduler_Worker-1] c.i.Project.scheduler.DataStore          : Cannot run program "uname": CreateProcess error=2, The system cannot find the file specified
+
+java.io.IOException: Cannot run program "uname": CreateProcess error=2, The system cannot find the file specified
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1143) ~[na:na]
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1073) ~[na:na]
+	at java.base/java.lang.Runtime.exec(Runtime.java:594) ~[na:na]
+	at java.base/java.lang.Runtime.exec(Runtime.java:418) ~[na:na]
+	at java.base/java.lang.Runtime.exec(Runtime.java:315) ~[na:na]
+	at com.internship.Project.scheduler.DataStore.getInstanceName(DataStore.java:21) ~[classes/:na]
+	at com.internship.Project.scheduler.GlobalJob1.executeInternal(GlobalJob1.java:90) ~[classes/:na]
+	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:75) ~[spring-context-support-5.3.16.jar:5.3.16]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.3.2.jar:na]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) ~[quartz-2.3.2.jar:na]
+Caused by: java.io.IOException: CreateProcess error=2, The system cannot find the file specified
+	at java.base/java.lang.ProcessImpl.create(Native Method) ~[na:na]
+	at java.base/java.lang.ProcessImpl.<init>(ProcessImpl.java:494) ~[na:na]
+	at java.base/java.lang.ProcessImpl.start(ProcessImpl.java:159) ~[na:na]
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1110) ~[na:na]
+	... 9 common frames omitted
+
+2022-03-24 13:36:01.228  INFO 2504 --- [quartzScheduler_Worker-1] c.i.Project.scheduler.GlobalJob1         : GlobalJob1 Completed.
+2022-03-24 13:37:00.001  INFO 2504 --- [quartzScheduler_Worker-2] c.i.Project.scheduler.GlobalJob1         : GlobalJob1 started
+2022-03-24 13:37:01.342  INFO 2504 --- [quartzScheduler_Worker-2] c.i.Project.scheduler.GlobalJob1         : Currency Data Saved.
+2022-03-24 13:37:01.348 ERROR 2504 --- [quartzScheduler_Worker-2] c.i.Project.scheduler.DataStore          : Cannot run program "uname": CreateProcess error=2, The system cannot find the file specified
+
+java.io.IOException: Cannot run program "uname": CreateProcess error=2, The system cannot find the file specified
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1143) ~[na:na]
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1073) ~[na:na]
+	at java.base/java.lang.Runtime.exec(Runtime.java:594) ~[na:na]
+	at java.base/java.lang.Runtime.exec(Runtime.java:418) ~[na:na]
+	at java.base/java.lang.Runtime.exec(Runtime.java:315) ~[na:na]
+	at com.internship.Project.scheduler.DataStore.getInstanceName(DataStore.java:21) ~[classes/:na]
+	at com.internship.Project.scheduler.GlobalJob1.executeInternal(GlobalJob1.java:90) ~[classes/:na]
+	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:75) ~[spring-context-support-5.3.16.jar:5.3.16]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.3.2.jar:na]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) ~[quartz-2.3.2.jar:na]
+Caused by: java.io.IOException: CreateProcess error=2, The system cannot find the file specified
+	at java.base/java.lang.ProcessImpl.create(Native Method) ~[na:na]
+	at java.base/java.lang.ProcessImpl.<init>(ProcessImpl.java:494) ~[na:na]
+	at java.base/java.lang.ProcessImpl.start(ProcessImpl.java:159) ~[na:na]
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1110) ~[na:na]
+	... 9 common frames omitted
+
+2022-03-24 13:37:01.364  INFO 2504 --- [quartzScheduler_Worker-2] c.i.Project.scheduler.GlobalJob1         : GlobalJob1 Completed.
+2022-03-24 13:38:00.002  INFO 2504 --- [quartzScheduler_Worker-3] c.i.Project.scheduler.GlobalJob1         : GlobalJob1 started
+2022-03-24 13:38:01.594  INFO 2504 --- [quartzScheduler_Worker-3] c.i.Project.scheduler.GlobalJob1         : Currency Data Saved.
+2022-03-24 13:38:01.599 ERROR 2504 --- [quartzScheduler_Worker-3] c.i.Project.scheduler.DataStore          : Cannot run program "uname": CreateProcess error=2, The system cannot find the file specified
+
+java.io.IOException: Cannot run program "uname": CreateProcess error=2, The system cannot find the file specified
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1143) ~[na:na]
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1073) ~[na:na]
+	at java.base/java.lang.Runtime.exec(Runtime.java:594) ~[na:na]
+	at java.base/java.lang.Runtime.exec(Runtime.java:418) ~[na:na]
+	at java.base/java.lang.Runtime.exec(Runtime.java:315) ~[na:na]
+	at com.internship.Project.scheduler.DataStore.getInstanceName(DataStore.java:21) ~[classes/:na]
+	at com.internship.Project.scheduler.GlobalJob1.executeInternal(GlobalJob1.java:90) ~[classes/:na]
+	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:75) ~[spring-context-support-5.3.16.jar:5.3.16]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.3.2.jar:na]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) ~[quartz-2.3.2.jar:na]
+Caused by: java.io.IOException: CreateProcess error=2, The system cannot find the file specified
+	at java.base/java.lang.ProcessImpl.create(Native Method) ~[na:na]
+	at java.base/java.lang.ProcessImpl.<init>(ProcessImpl.java:494) ~[na:na]
+	at java.base/java.lang.ProcessImpl.start(ProcessImpl.java:159) ~[na:na]
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1110) ~[na:na]
+	... 9 common frames omitted
+
+2022-03-24 13:38:01.613  INFO 2504 --- [quartzScheduler_Worker-3] c.i.Project.scheduler.GlobalJob1         : GlobalJob1 Completed.
+2022-03-24 13:39:00.002  INFO 2504 --- [quartzScheduler_Worker-4] c.i.Project.scheduler.GlobalJob1         : GlobalJob1 started
+2022-03-24 13:39:01.210  INFO 2504 --- [quartzScheduler_Worker-4] c.i.Project.scheduler.GlobalJob1         : Currency Data Saved.
+2022-03-24 13:39:01.215 ERROR 2504 --- [quartzScheduler_Worker-4] c.i.Project.scheduler.DataStore          : Cannot run program "uname": CreateProcess error=2, The system cannot find the file specified
+
+java.io.IOException: Cannot run program "uname": CreateProcess error=2, The system cannot find the file specified
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1143) ~[na:na]
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1073) ~[na:na]
+	at java.base/java.lang.Runtime.exec(Runtime.java:594) ~[na:na]
+	at java.base/java.lang.Runtime.exec(Runtime.java:418) ~[na:na]
+	at java.base/java.lang.Runtime.exec(Runtime.java:315) ~[na:na]
+	at com.internship.Project.scheduler.DataStore.getInstanceName(DataStore.java:21) ~[classes/:na]
+	at com.internship.Project.scheduler.GlobalJob1.executeInternal(GlobalJob1.java:90) ~[classes/:na]
+	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:75) ~[spring-context-support-5.3.16.jar:5.3.16]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.3.2.jar:na]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) ~[quartz-2.3.2.jar:na]
+Caused by: java.io.IOException: CreateProcess error=2, The system cannot find the file specified
+	at java.base/java.lang.ProcessImpl.create(Native Method) ~[na:na]
+	at java.base/java.lang.ProcessImpl.<init>(ProcessImpl.java:494) ~[na:na]
+	at java.base/java.lang.ProcessImpl.start(ProcessImpl.java:159) ~[na:na]
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1110) ~[na:na]
+	... 9 common frames omitted
+
+2022-03-24 13:39:01.229  INFO 2504 --- [quartzScheduler_Worker-4] c.i.Project.scheduler.GlobalJob1         : GlobalJob1 Completed.
+2022-03-24 13:40:00.004  INFO 2504 --- [quartzScheduler_Worker-5] c.i.Project.scheduler.GlobalJob1         : GlobalJob1 started
+2022-03-24 13:40:01.650  INFO 2504 --- [quartzScheduler_Worker-5] c.i.Project.scheduler.GlobalJob1         : Currency Data Saved.
+2022-03-24 13:40:01.660 ERROR 2504 --- [quartzScheduler_Worker-5] c.i.Project.scheduler.DataStore          : Cannot run program "uname": CreateProcess error=2, The system cannot find the file specified
+
+java.io.IOException: Cannot run program "uname": CreateProcess error=2, The system cannot find the file specified
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1143) ~[na:na]
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1073) ~[na:na]
+	at java.base/java.lang.Runtime.exec(Runtime.java:594) ~[na:na]
+	at java.base/java.lang.Runtime.exec(Runtime.java:418) ~[na:na]
+	at java.base/java.lang.Runtime.exec(Runtime.java:315) ~[na:na]
+	at com.internship.Project.scheduler.DataStore.getInstanceName(DataStore.java:21) ~[classes/:na]
+	at com.internship.Project.scheduler.GlobalJob1.executeInternal(GlobalJob1.java:90) ~[classes/:na]
+	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:75) ~[spring-context-support-5.3.16.jar:5.3.16]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.3.2.jar:na]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) ~[quartz-2.3.2.jar:na]
+Caused by: java.io.IOException: CreateProcess error=2, The system cannot find the file specified
+	at java.base/java.lang.ProcessImpl.create(Native Method) ~[na:na]
+	at java.base/java.lang.ProcessImpl.<init>(ProcessImpl.java:494) ~[na:na]
+	at java.base/java.lang.ProcessImpl.start(ProcessImpl.java:159) ~[na:na]
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1110) ~[na:na]
+	... 9 common frames omitted
+
+2022-03-24 13:40:01.674  INFO 2504 --- [quartzScheduler_Worker-5] c.i.Project.scheduler.GlobalJob1         : GlobalJob1 Completed.
+2022-03-24 13:41:00.003  INFO 2504 --- [quartzScheduler_Worker-1] c.i.Project.scheduler.GlobalJob1         : GlobalJob1 started
+2022-03-24 13:41:01.264  INFO 2504 --- [quartzScheduler_Worker-1] c.i.Project.scheduler.GlobalJob1         : Currency Data Saved.
+2022-03-24 13:41:01.273 ERROR 2504 --- [quartzScheduler_Worker-1] c.i.Project.scheduler.DataStore          : Cannot run program "uname": CreateProcess error=2, The system cannot find the file specified
+
+java.io.IOException: Cannot run program "uname": CreateProcess error=2, The system cannot find the file specified
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1143) ~[na:na]
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1073) ~[na:na]
+	at java.base/java.lang.Runtime.exec(Runtime.java:594) ~[na:na]
+	at java.base/java.lang.Runtime.exec(Runtime.java:418) ~[na:na]
+	at java.base/java.lang.Runtime.exec(Runtime.java:315) ~[na:na]
+	at com.internship.Project.scheduler.DataStore.getInstanceName(DataStore.java:21) ~[classes/:na]
+	at com.internship.Project.scheduler.GlobalJob1.executeInternal(GlobalJob1.java:90) ~[classes/:na]
+	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:75) ~[spring-context-support-5.3.16.jar:5.3.16]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.3.2.jar:na]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) ~[quartz-2.3.2.jar:na]
+Caused by: java.io.IOException: CreateProcess error=2, The system cannot find the file specified
+	at java.base/java.lang.ProcessImpl.create(Native Method) ~[na:na]
+	at java.base/java.lang.ProcessImpl.<init>(ProcessImpl.java:494) ~[na:na]
+	at java.base/java.lang.ProcessImpl.start(ProcessImpl.java:159) ~[na:na]
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1110) ~[na:na]
+	... 9 common frames omitted
+
+2022-03-24 13:41:01.292  INFO 2504 --- [quartzScheduler_Worker-1] c.i.Project.scheduler.GlobalJob1         : GlobalJob1 Completed.
+2022-03-24 13:42:00.003  INFO 2504 --- [quartzScheduler_Worker-2] c.i.Project.scheduler.GlobalJob1         : GlobalJob1 started
+2022-03-24 13:42:00.992  INFO 2504 --- [quartzScheduler_Worker-2] c.i.Project.scheduler.GlobalJob1         : Currency Data Saved.
+2022-03-24 13:42:00.997 ERROR 2504 --- [quartzScheduler_Worker-2] c.i.Project.scheduler.DataStore          : Cannot run program "uname": CreateProcess error=2, The system cannot find the file specified
+
+java.io.IOException: Cannot run program "uname": CreateProcess error=2, The system cannot find the file specified
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1143) ~[na:na]
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1073) ~[na:na]
+	at java.base/java.lang.Runtime.exec(Runtime.java:594) ~[na:na]
+	at java.base/java.lang.Runtime.exec(Runtime.java:418) ~[na:na]
+	at java.base/java.lang.Runtime.exec(Runtime.java:315) ~[na:na]
+	at com.internship.Project.scheduler.DataStore.getInstanceName(DataStore.java:21) ~[classes/:na]
+	at com.internship.Project.scheduler.GlobalJob1.executeInternal(GlobalJob1.java:90) ~[classes/:na]
+	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:75) ~[spring-context-support-5.3.16.jar:5.3.16]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.3.2.jar:na]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) ~[quartz-2.3.2.jar:na]
+Caused by: java.io.IOException: CreateProcess error=2, The system cannot find the file specified
+	at java.base/java.lang.ProcessImpl.create(Native Method) ~[na:na]
+	at java.base/java.lang.ProcessImpl.<init>(ProcessImpl.java:494) ~[na:na]
+	at java.base/java.lang.ProcessImpl.start(ProcessImpl.java:159) ~[na:na]
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1110) ~[na:na]
+	... 9 common frames omitted
+
+2022-03-24 13:42:01.015  INFO 2504 --- [quartzScheduler_Worker-2] c.i.Project.scheduler.GlobalJob1         : GlobalJob1 Completed.
+2022-03-24 13:43:00.010  INFO 2504 --- [quartzScheduler_Worker-3] c.i.Project.scheduler.GlobalJob1         : GlobalJob1 started
+2022-03-24 13:43:01.584  INFO 2504 --- [quartzScheduler_Worker-3] c.i.Project.scheduler.GlobalJob1         : Currency Data Saved.
+2022-03-24 13:43:01.588 ERROR 2504 --- [quartzScheduler_Worker-3] c.i.Project.scheduler.DataStore          : Cannot run program "uname": CreateProcess error=2, The system cannot find the file specified
+
+java.io.IOException: Cannot run program "uname": CreateProcess error=2, The system cannot find the file specified
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1143) ~[na:na]
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1073) ~[na:na]
+	at java.base/java.lang.Runtime.exec(Runtime.java:594) ~[na:na]
+	at java.base/java.lang.Runtime.exec(Runtime.java:418) ~[na:na]
+	at java.base/java.lang.Runtime.exec(Runtime.java:315) ~[na:na]
+	at com.internship.Project.scheduler.DataStore.getInstanceName(DataStore.java:21) ~[classes/:na]
+	at com.internship.Project.scheduler.GlobalJob1.executeInternal(GlobalJob1.java:90) ~[classes/:na]
+	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:75) ~[spring-context-support-5.3.16.jar:5.3.16]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.3.2.jar:na]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) ~[quartz-2.3.2.jar:na]
+Caused by: java.io.IOException: CreateProcess error=2, The system cannot find the file specified
+	at java.base/java.lang.ProcessImpl.create(Native Method) ~[na:na]
+	at java.base/java.lang.ProcessImpl.<init>(ProcessImpl.java:494) ~[na:na]
+	at java.base/java.lang.ProcessImpl.start(ProcessImpl.java:159) ~[na:na]
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1110) ~[na:na]
+	... 9 common frames omitted
+
+2022-03-24 13:43:01.598  INFO 2504 --- [quartzScheduler_Worker-3] c.i.Project.scheduler.GlobalJob1         : GlobalJob1 Completed.
+2022-03-24 13:44:00.004  INFO 2504 --- [quartzScheduler_Worker-4] c.i.Project.scheduler.GlobalJob1         : GlobalJob1 started
+2022-03-24 13:44:01.706  INFO 2504 --- [quartzScheduler_Worker-4] c.i.Project.scheduler.GlobalJob1         : Currency Data Saved.
+2022-03-24 13:44:01.729 ERROR 2504 --- [quartzScheduler_Worker-4] c.i.Project.scheduler.DataStore          : Cannot run program "uname": CreateProcess error=2, The system cannot find the file specified
+
+java.io.IOException: Cannot run program "uname": CreateProcess error=2, The system cannot find the file specified
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1143) ~[na:na]
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1073) ~[na:na]
+	at java.base/java.lang.Runtime.exec(Runtime.java:594) ~[na:na]
+	at java.base/java.lang.Runtime.exec(Runtime.java:418) ~[na:na]
+	at java.base/java.lang.Runtime.exec(Runtime.java:315) ~[na:na]
+	at com.internship.Project.scheduler.DataStore.getInstanceName(DataStore.java:21) ~[classes/:na]
+	at com.internship.Project.scheduler.GlobalJob1.executeInternal(GlobalJob1.java:90) ~[classes/:na]
+	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:75) ~[spring-context-support-5.3.16.jar:5.3.16]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.3.2.jar:na]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) ~[quartz-2.3.2.jar:na]
+Caused by: java.io.IOException: CreateProcess error=2, The system cannot find the file specified
+	at java.base/java.lang.ProcessImpl.create(Native Method) ~[na:na]
+	at java.base/java.lang.ProcessImpl.<init>(ProcessImpl.java:494) ~[na:na]
+	at java.base/java.lang.ProcessImpl.start(ProcessImpl.java:159) ~[na:na]
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1110) ~[na:na]
+	... 9 common frames omitted
+
+2022-03-24 13:44:01.751  INFO 2504 --- [quartzScheduler_Worker-4] c.i.Project.scheduler.GlobalJob1         : GlobalJob1 Completed.
+2022-03-24 13:45:00.003  INFO 2504 --- [quartzScheduler_Worker-5] c.i.Project.scheduler.GlobalJob1         : GlobalJob1 started
+2022-03-24 13:45:01.703  INFO 2504 --- [quartzScheduler_Worker-5] c.i.Project.scheduler.GlobalJob1         : Currency Data Saved.
+2022-03-24 13:45:01.716 ERROR 2504 --- [quartzScheduler_Worker-5] c.i.Project.scheduler.DataStore          : Cannot run program "uname": CreateProcess error=2, The system cannot find the file specified
+
+java.io.IOException: Cannot run program "uname": CreateProcess error=2, The system cannot find the file specified
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1143) ~[na:na]
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1073) ~[na:na]
+	at java.base/java.lang.Runtime.exec(Runtime.java:594) ~[na:na]
+	at java.base/java.lang.Runtime.exec(Runtime.java:418) ~[na:na]
+	at java.base/java.lang.Runtime.exec(Runtime.java:315) ~[na:na]
+	at com.internship.Project.scheduler.DataStore.getInstanceName(DataStore.java:21) ~[classes/:na]
+	at com.internship.Project.scheduler.GlobalJob1.executeInternal(GlobalJob1.java:90) ~[classes/:na]
+	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:75) ~[spring-context-support-5.3.16.jar:5.3.16]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.3.2.jar:na]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) ~[quartz-2.3.2.jar:na]
+Caused by: java.io.IOException: CreateProcess error=2, The system cannot find the file specified
+	at java.base/java.lang.ProcessImpl.create(Native Method) ~[na:na]
+	at java.base/java.lang.ProcessImpl.<init>(ProcessImpl.java:494) ~[na:na]
+	at java.base/java.lang.ProcessImpl.start(ProcessImpl.java:159) ~[na:na]
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1110) ~[na:na]
+	... 9 common frames omitted
+
+2022-03-24 13:45:01.751  INFO 2504 --- [quartzScheduler_Worker-5] c.i.Project.scheduler.GlobalJob1         : GlobalJob1 Completed.
+2022-03-24 13:46:00.009  INFO 2504 --- [quartzScheduler_Worker-1] c.i.Project.scheduler.GlobalJob1         : GlobalJob1 started
+2022-03-24 13:46:01.676  INFO 2504 --- [quartzScheduler_Worker-1] c.i.Project.scheduler.GlobalJob1         : Currency Data Saved.
+2022-03-24 13:46:01.685 ERROR 2504 --- [quartzScheduler_Worker-1] c.i.Project.scheduler.DataStore          : Cannot run program "uname": CreateProcess error=2, The system cannot find the file specified
+
+java.io.IOException: Cannot run program "uname": CreateProcess error=2, The system cannot find the file specified
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1143) ~[na:na]
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1073) ~[na:na]
+	at java.base/java.lang.Runtime.exec(Runtime.java:594) ~[na:na]
+	at java.base/java.lang.Runtime.exec(Runtime.java:418) ~[na:na]
+	at java.base/java.lang.Runtime.exec(Runtime.java:315) ~[na:na]
+	at com.internship.Project.scheduler.DataStore.getInstanceName(DataStore.java:21) ~[classes/:na]
+	at com.internship.Project.scheduler.GlobalJob1.executeInternal(GlobalJob1.java:90) ~[classes/:na]
+	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:75) ~[spring-context-support-5.3.16.jar:5.3.16]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.3.2.jar:na]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) ~[quartz-2.3.2.jar:na]
+Caused by: java.io.IOException: CreateProcess error=2, The system cannot find the file specified
+	at java.base/java.lang.ProcessImpl.create(Native Method) ~[na:na]
+	at java.base/java.lang.ProcessImpl.<init>(ProcessImpl.java:494) ~[na:na]
+	at java.base/java.lang.ProcessImpl.start(ProcessImpl.java:159) ~[na:na]
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1110) ~[na:na]
+	... 9 common frames omitted
+
+2022-03-24 13:46:01.702  INFO 2504 --- [quartzScheduler_Worker-1] c.i.Project.scheduler.GlobalJob1         : GlobalJob1 Completed.
+2022-03-24 13:47:00.006  INFO 2504 --- [quartzScheduler_Worker-2] c.i.Project.scheduler.GlobalJob1         : GlobalJob1 started
+2022-03-24 13:47:01.596  INFO 2504 --- [quartzScheduler_Worker-2] c.i.Project.scheduler.GlobalJob1         : Currency Data Saved.
+2022-03-24 13:47:01.603 ERROR 2504 --- [quartzScheduler_Worker-2] c.i.Project.scheduler.DataStore          : Cannot run program "uname": CreateProcess error=2, The system cannot find the file specified
+
+java.io.IOException: Cannot run program "uname": CreateProcess error=2, The system cannot find the file specified
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1143) ~[na:na]
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1073) ~[na:na]
+	at java.base/java.lang.Runtime.exec(Runtime.java:594) ~[na:na]
+	at java.base/java.lang.Runtime.exec(Runtime.java:418) ~[na:na]
+	at java.base/java.lang.Runtime.exec(Runtime.java:315) ~[na:na]
+	at com.internship.Project.scheduler.DataStore.getInstanceName(DataStore.java:21) ~[classes/:na]
+	at com.internship.Project.scheduler.GlobalJob1.executeInternal(GlobalJob1.java:90) ~[classes/:na]
+	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:75) ~[spring-context-support-5.3.16.jar:5.3.16]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.3.2.jar:na]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) ~[quartz-2.3.2.jar:na]
+Caused by: java.io.IOException: CreateProcess error=2, The system cannot find the file specified
+	at java.base/java.lang.ProcessImpl.create(Native Method) ~[na:na]
+	at java.base/java.lang.ProcessImpl.<init>(ProcessImpl.java:494) ~[na:na]
+	at java.base/java.lang.ProcessImpl.start(ProcessImpl.java:159) ~[na:na]
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1110) ~[na:na]
+	... 9 common frames omitted
+
+2022-03-24 13:47:01.624  INFO 2504 --- [quartzScheduler_Worker-2] c.i.Project.scheduler.GlobalJob1         : GlobalJob1 Completed.
+2022-03-24 13:48:00.003  INFO 2504 --- [quartzScheduler_Worker-3] c.i.Project.scheduler.GlobalJob1         : GlobalJob1 started
+2022-03-24 13:48:01.323  INFO 2504 --- [quartzScheduler_Worker-3] c.i.Project.scheduler.GlobalJob1         : Currency Data Saved.
+2022-03-24 13:48:01.332 ERROR 2504 --- [quartzScheduler_Worker-3] c.i.Project.scheduler.DataStore          : Cannot run program "uname": CreateProcess error=2, The system cannot find the file specified
+
+java.io.IOException: Cannot run program "uname": CreateProcess error=2, The system cannot find the file specified
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1143) ~[na:na]
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1073) ~[na:na]
+	at java.base/java.lang.Runtime.exec(Runtime.java:594) ~[na:na]
+	at java.base/java.lang.Runtime.exec(Runtime.java:418) ~[na:na]
+	at java.base/java.lang.Runtime.exec(Runtime.java:315) ~[na:na]
+	at com.internship.Project.scheduler.DataStore.getInstanceName(DataStore.java:21) ~[classes/:na]
+	at com.internship.Project.scheduler.GlobalJob1.executeInternal(GlobalJob1.java:90) ~[classes/:na]
+	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:75) ~[spring-context-support-5.3.16.jar:5.3.16]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.3.2.jar:na]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) ~[quartz-2.3.2.jar:na]
+Caused by: java.io.IOException: CreateProcess error=2, The system cannot find the file specified
+	at java.base/java.lang.ProcessImpl.create(Native Method) ~[na:na]
+	at java.base/java.lang.ProcessImpl.<init>(ProcessImpl.java:494) ~[na:na]
+	at java.base/java.lang.ProcessImpl.start(ProcessImpl.java:159) ~[na:na]
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1110) ~[na:na]
+	... 9 common frames omitted
+
+2022-03-24 13:48:01.349  INFO 2504 --- [quartzScheduler_Worker-3] c.i.Project.scheduler.GlobalJob1         : GlobalJob1 Completed.
+2022-03-24 13:49:00.001  INFO 2504 --- [quartzScheduler_Worker-4] c.i.Project.scheduler.GlobalJob1         : GlobalJob1 started
+2022-03-24 13:49:01.566  INFO 2504 --- [quartzScheduler_Worker-4] c.i.Project.scheduler.GlobalJob1         : Currency Data Saved.
+2022-03-24 13:49:01.572 ERROR 2504 --- [quartzScheduler_Worker-4] c.i.Project.scheduler.DataStore          : Cannot run program "uname": CreateProcess error=2, The system cannot find the file specified
+
+java.io.IOException: Cannot run program "uname": CreateProcess error=2, The system cannot find the file specified
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1143) ~[na:na]
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1073) ~[na:na]
+	at java.base/java.lang.Runtime.exec(Runtime.java:594) ~[na:na]
+	at java.base/java.lang.Runtime.exec(Runtime.java:418) ~[na:na]
+	at java.base/java.lang.Runtime.exec(Runtime.java:315) ~[na:na]
+	at com.internship.Project.scheduler.DataStore.getInstanceName(DataStore.java:21) ~[classes/:na]
+	at com.internship.Project.scheduler.GlobalJob1.executeInternal(GlobalJob1.java:90) ~[classes/:na]
+	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:75) ~[spring-context-support-5.3.16.jar:5.3.16]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.3.2.jar:na]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) ~[quartz-2.3.2.jar:na]
+Caused by: java.io.IOException: CreateProcess error=2, The system cannot find the file specified
+	at java.base/java.lang.ProcessImpl.create(Native Method) ~[na:na]
+	at java.base/java.lang.ProcessImpl.<init>(ProcessImpl.java:494) ~[na:na]
+	at java.base/java.lang.ProcessImpl.start(ProcessImpl.java:159) ~[na:na]
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1110) ~[na:na]
+	... 9 common frames omitted
+
+2022-03-24 13:49:01.587  INFO 2504 --- [quartzScheduler_Worker-4] c.i.Project.scheduler.GlobalJob1         : GlobalJob1 Completed.
+2022-03-24 13:50:00.003  INFO 2504 --- [quartzScheduler_Worker-5] c.i.Project.scheduler.GlobalJob1         : GlobalJob1 started
+2022-03-24 13:50:01.043  INFO 2504 --- [quartzScheduler_Worker-5] c.i.Project.scheduler.GlobalJob1         : Currency Data Saved.
+2022-03-24 13:50:01.049 ERROR 2504 --- [quartzScheduler_Worker-5] c.i.Project.scheduler.DataStore          : Cannot run program "uname": CreateProcess error=2, The system cannot find the file specified
+
+java.io.IOException: Cannot run program "uname": CreateProcess error=2, The system cannot find the file specified
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1143) ~[na:na]
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1073) ~[na:na]
+	at java.base/java.lang.Runtime.exec(Runtime.java:594) ~[na:na]
+	at java.base/java.lang.Runtime.exec(Runtime.java:418) ~[na:na]
+	at java.base/java.lang.Runtime.exec(Runtime.java:315) ~[na:na]
+	at com.internship.Project.scheduler.DataStore.getInstanceName(DataStore.java:21) ~[classes/:na]
+	at com.internship.Project.scheduler.GlobalJob1.executeInternal(GlobalJob1.java:90) ~[classes/:na]
+	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:75) ~[spring-context-support-5.3.16.jar:5.3.16]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.3.2.jar:na]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) ~[quartz-2.3.2.jar:na]
+Caused by: java.io.IOException: CreateProcess error=2, The system cannot find the file specified
+	at java.base/java.lang.ProcessImpl.create(Native Method) ~[na:na]
+	at java.base/java.lang.ProcessImpl.<init>(ProcessImpl.java:494) ~[na:na]
+	at java.base/java.lang.ProcessImpl.start(ProcessImpl.java:159) ~[na:na]
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1110) ~[na:na]
+	... 9 common frames omitted
+
+2022-03-24 13:50:01.063  INFO 2504 --- [quartzScheduler_Worker-5] c.i.Project.scheduler.GlobalJob1         : GlobalJob1 Completed.
+2022-03-24 13:51:00.002  INFO 2504 --- [quartzScheduler_Worker-1] c.i.Project.scheduler.GlobalJob1         : GlobalJob1 started
+2022-03-24 13:51:01.548  INFO 2504 --- [quartzScheduler_Worker-1] c.i.Project.scheduler.GlobalJob1         : Currency Data Saved.
+2022-03-24 13:51:01.555 ERROR 2504 --- [quartzScheduler_Worker-1] c.i.Project.scheduler.DataStore          : Cannot run program "uname": CreateProcess error=2, The system cannot find the file specified
+
+java.io.IOException: Cannot run program "uname": CreateProcess error=2, The system cannot find the file specified
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1143) ~[na:na]
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1073) ~[na:na]
+	at java.base/java.lang.Runtime.exec(Runtime.java:594) ~[na:na]
+	at java.base/java.lang.Runtime.exec(Runtime.java:418) ~[na:na]
+	at java.base/java.lang.Runtime.exec(Runtime.java:315) ~[na:na]
+	at com.internship.Project.scheduler.DataStore.getInstanceName(DataStore.java:21) ~[classes/:na]
+	at com.internship.Project.scheduler.GlobalJob1.executeInternal(GlobalJob1.java:90) ~[classes/:na]
+	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:75) ~[spring-context-support-5.3.16.jar:5.3.16]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.3.2.jar:na]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) ~[quartz-2.3.2.jar:na]
+Caused by: java.io.IOException: CreateProcess error=2, The system cannot find the file specified
+	at java.base/java.lang.ProcessImpl.create(Native Method) ~[na:na]
+	at java.base/java.lang.ProcessImpl.<init>(ProcessImpl.java:494) ~[na:na]
+	at java.base/java.lang.ProcessImpl.start(ProcessImpl.java:159) ~[na:na]
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1110) ~[na:na]
+	... 9 common frames omitted
+
+2022-03-24 13:51:01.569  INFO 2504 --- [quartzScheduler_Worker-1] c.i.Project.scheduler.GlobalJob1         : GlobalJob1 Completed.
+2022-03-24 13:52:00.004  INFO 2504 --- [quartzScheduler_Worker-2] c.i.Project.scheduler.GlobalJob1         : GlobalJob1 started
+2022-03-24 13:52:01.495  INFO 2504 --- [quartzScheduler_Worker-2] c.i.Project.scheduler.GlobalJob1         : Currency Data Saved.
+2022-03-24 13:52:01.499 ERROR 2504 --- [quartzScheduler_Worker-2] c.i.Project.scheduler.DataStore          : Cannot run program "uname": CreateProcess error=2, The system cannot find the file specified
+
+java.io.IOException: Cannot run program "uname": CreateProcess error=2, The system cannot find the file specified
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1143) ~[na:na]
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1073) ~[na:na]
+	at java.base/java.lang.Runtime.exec(Runtime.java:594) ~[na:na]
+	at java.base/java.lang.Runtime.exec(Runtime.java:418) ~[na:na]
+	at java.base/java.lang.Runtime.exec(Runtime.java:315) ~[na:na]
+	at com.internship.Project.scheduler.DataStore.getInstanceName(DataStore.java:21) ~[classes/:na]
+	at com.internship.Project.scheduler.GlobalJob1.executeInternal(GlobalJob1.java:90) ~[classes/:na]
+	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:75) ~[spring-context-support-5.3.16.jar:5.3.16]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.3.2.jar:na]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) ~[quartz-2.3.2.jar:na]
+Caused by: java.io.IOException: CreateProcess error=2, The system cannot find the file specified
+	at java.base/java.lang.ProcessImpl.create(Native Method) ~[na:na]
+	at java.base/java.lang.ProcessImpl.<init>(ProcessImpl.java:494) ~[na:na]
+	at java.base/java.lang.ProcessImpl.start(ProcessImpl.java:159) ~[na:na]
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1110) ~[na:na]
+	... 9 common frames omitted
+
+2022-03-24 13:52:01.510  INFO 2504 --- [quartzScheduler_Worker-2] c.i.Project.scheduler.GlobalJob1         : GlobalJob1 Completed.
+2022-03-24 13:53:00.001  INFO 2504 --- [quartzScheduler_Worker-3] c.i.Project.scheduler.GlobalJob1         : GlobalJob1 started
+2022-03-24 13:53:01.610  INFO 2504 --- [quartzScheduler_Worker-3] c.i.Project.scheduler.GlobalJob1         : Currency Data Saved.
+2022-03-24 13:53:01.618 ERROR 2504 --- [quartzScheduler_Worker-3] c.i.Project.scheduler.DataStore          : Cannot run program "uname": CreateProcess error=2, The system cannot find the file specified
+
+java.io.IOException: Cannot run program "uname": CreateProcess error=2, The system cannot find the file specified
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1143) ~[na:na]
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1073) ~[na:na]
+	at java.base/java.lang.Runtime.exec(Runtime.java:594) ~[na:na]
+	at java.base/java.lang.Runtime.exec(Runtime.java:418) ~[na:na]
+	at java.base/java.lang.Runtime.exec(Runtime.java:315) ~[na:na]
+	at com.internship.Project.scheduler.DataStore.getInstanceName(DataStore.java:21) ~[classes/:na]
+	at com.internship.Project.scheduler.GlobalJob1.executeInternal(GlobalJob1.java:90) ~[classes/:na]
+	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:75) ~[spring-context-support-5.3.16.jar:5.3.16]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.3.2.jar:na]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) ~[quartz-2.3.2.jar:na]
+Caused by: java.io.IOException: CreateProcess error=2, The system cannot find the file specified
+	at java.base/java.lang.ProcessImpl.create(Native Method) ~[na:na]
+	at java.base/java.lang.ProcessImpl.<init>(ProcessImpl.java:494) ~[na:na]
+	at java.base/java.lang.ProcessImpl.start(ProcessImpl.java:159) ~[na:na]
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1110) ~[na:na]
+	... 9 common frames omitted
+
+2022-03-24 13:53:01.632  INFO 2504 --- [quartzScheduler_Worker-3] c.i.Project.scheduler.GlobalJob1         : GlobalJob1 Completed.
+2022-03-24 13:54:00.007  INFO 2504 --- [quartzScheduler_Worker-4] c.i.Project.scheduler.GlobalJob1         : GlobalJob1 started
+2022-03-24 13:54:01.486  INFO 2504 --- [quartzScheduler_Worker-4] c.i.Project.scheduler.GlobalJob1         : Currency Data Saved.
+2022-03-24 13:54:01.489 ERROR 2504 --- [quartzScheduler_Worker-4] c.i.Project.scheduler.DataStore          : Cannot run program "uname": CreateProcess error=2, The system cannot find the file specified
+
+java.io.IOException: Cannot run program "uname": CreateProcess error=2, The system cannot find the file specified
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1143) ~[na:na]
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1073) ~[na:na]
+	at java.base/java.lang.Runtime.exec(Runtime.java:594) ~[na:na]
+	at java.base/java.lang.Runtime.exec(Runtime.java:418) ~[na:na]
+	at java.base/java.lang.Runtime.exec(Runtime.java:315) ~[na:na]
+	at com.internship.Project.scheduler.DataStore.getInstanceName(DataStore.java:21) ~[classes/:na]
+	at com.internship.Project.scheduler.GlobalJob1.executeInternal(GlobalJob1.java:90) ~[classes/:na]
+	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:75) ~[spring-context-support-5.3.16.jar:5.3.16]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.3.2.jar:na]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) ~[quartz-2.3.2.jar:na]
+Caused by: java.io.IOException: CreateProcess error=2, The system cannot find the file specified
+	at java.base/java.lang.ProcessImpl.create(Native Method) ~[na:na]
+	at java.base/java.lang.ProcessImpl.<init>(ProcessImpl.java:494) ~[na:na]
+	at java.base/java.lang.ProcessImpl.start(ProcessImpl.java:159) ~[na:na]
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1110) ~[na:na]
+	... 9 common frames omitted
+
+2022-03-24 13:54:01.502  INFO 2504 --- [quartzScheduler_Worker-4] c.i.Project.scheduler.GlobalJob1         : GlobalJob1 Completed.
+2022-03-24 13:55:00.002  INFO 2504 --- [quartzScheduler_Worker-5] c.i.Project.scheduler.GlobalJob1         : GlobalJob1 started
+2022-03-24 13:55:01.477  INFO 2504 --- [quartzScheduler_Worker-5] c.i.Project.scheduler.GlobalJob1         : Currency Data Saved.
+2022-03-24 13:55:01.480 ERROR 2504 --- [quartzScheduler_Worker-5] c.i.Project.scheduler.DataStore          : Cannot run program "uname": CreateProcess error=2, The system cannot find the file specified
+
+java.io.IOException: Cannot run program "uname": CreateProcess error=2, The system cannot find the file specified
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1143) ~[na:na]
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1073) ~[na:na]
+	at java.base/java.lang.Runtime.exec(Runtime.java:594) ~[na:na]
+	at java.base/java.lang.Runtime.exec(Runtime.java:418) ~[na:na]
+	at java.base/java.lang.Runtime.exec(Runtime.java:315) ~[na:na]
+	at com.internship.Project.scheduler.DataStore.getInstanceName(DataStore.java:21) ~[classes/:na]
+	at com.internship.Project.scheduler.GlobalJob1.executeInternal(GlobalJob1.java:90) ~[classes/:na]
+	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:75) ~[spring-context-support-5.3.16.jar:5.3.16]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.3.2.jar:na]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) ~[quartz-2.3.2.jar:na]
+Caused by: java.io.IOException: CreateProcess error=2, The system cannot find the file specified
+	at java.base/java.lang.ProcessImpl.create(Native Method) ~[na:na]
+	at java.base/java.lang.ProcessImpl.<init>(ProcessImpl.java:494) ~[na:na]
+	at java.base/java.lang.ProcessImpl.start(ProcessImpl.java:159) ~[na:na]
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1110) ~[na:na]
+	... 9 common frames omitted
+
+2022-03-24 13:55:01.492  INFO 2504 --- [quartzScheduler_Worker-5] c.i.Project.scheduler.GlobalJob1         : GlobalJob1 Completed.
+2022-03-24 13:56:00.001  INFO 2504 --- [quartzScheduler_Worker-1] c.i.Project.scheduler.GlobalJob1         : GlobalJob1 started
+2022-03-24 13:56:01.608  INFO 2504 --- [quartzScheduler_Worker-1] c.i.Project.scheduler.GlobalJob1         : Currency Data Saved.
+2022-03-24 13:56:01.612 ERROR 2504 --- [quartzScheduler_Worker-1] c.i.Project.scheduler.DataStore          : Cannot run program "uname": CreateProcess error=2, The system cannot find the file specified
+
+java.io.IOException: Cannot run program "uname": CreateProcess error=2, The system cannot find the file specified
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1143) ~[na:na]
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1073) ~[na:na]
+	at java.base/java.lang.Runtime.exec(Runtime.java:594) ~[na:na]
+	at java.base/java.lang.Runtime.exec(Runtime.java:418) ~[na:na]
+	at java.base/java.lang.Runtime.exec(Runtime.java:315) ~[na:na]
+	at com.internship.Project.scheduler.DataStore.getInstanceName(DataStore.java:21) ~[classes/:na]
+	at com.internship.Project.scheduler.GlobalJob1.executeInternal(GlobalJob1.java:90) ~[classes/:na]
+	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:75) ~[spring-context-support-5.3.16.jar:5.3.16]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.3.2.jar:na]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) ~[quartz-2.3.2.jar:na]
+Caused by: java.io.IOException: CreateProcess error=2, The system cannot find the file specified
+	at java.base/java.lang.ProcessImpl.create(Native Method) ~[na:na]
+	at java.base/java.lang.ProcessImpl.<init>(ProcessImpl.java:494) ~[na:na]
+	at java.base/java.lang.ProcessImpl.start(ProcessImpl.java:159) ~[na:na]
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1110) ~[na:na]
+	... 9 common frames omitted
+
+2022-03-24 13:56:01.624  INFO 2504 --- [quartzScheduler_Worker-1] c.i.Project.scheduler.GlobalJob1         : GlobalJob1 Completed.
+2022-03-24 13:57:00.003  INFO 2504 --- [quartzScheduler_Worker-2] c.i.Project.scheduler.GlobalJob1         : GlobalJob1 started
+2022-03-24 13:57:01.543  INFO 2504 --- [quartzScheduler_Worker-2] c.i.Project.scheduler.GlobalJob1         : Currency Data Saved.
+2022-03-24 13:57:01.549 ERROR 2504 --- [quartzScheduler_Worker-2] c.i.Project.scheduler.DataStore          : Cannot run program "uname": CreateProcess error=2, The system cannot find the file specified
+
+java.io.IOException: Cannot run program "uname": CreateProcess error=2, The system cannot find the file specified
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1143) ~[na:na]
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1073) ~[na:na]
+	at java.base/java.lang.Runtime.exec(Runtime.java:594) ~[na:na]
+	at java.base/java.lang.Runtime.exec(Runtime.java:418) ~[na:na]
+	at java.base/java.lang.Runtime.exec(Runtime.java:315) ~[na:na]
+	at com.internship.Project.scheduler.DataStore.getInstanceName(DataStore.java:21) ~[classes/:na]
+	at com.internship.Project.scheduler.GlobalJob1.executeInternal(GlobalJob1.java:90) ~[classes/:na]
+	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:75) ~[spring-context-support-5.3.16.jar:5.3.16]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.3.2.jar:na]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) ~[quartz-2.3.2.jar:na]
+Caused by: java.io.IOException: CreateProcess error=2, The system cannot find the file specified
+	at java.base/java.lang.ProcessImpl.create(Native Method) ~[na:na]
+	at java.base/java.lang.ProcessImpl.<init>(ProcessImpl.java:494) ~[na:na]
+	at java.base/java.lang.ProcessImpl.start(ProcessImpl.java:159) ~[na:na]
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1110) ~[na:na]
+	... 9 common frames omitted
+
+2022-03-24 13:57:01.566  INFO 2504 --- [quartzScheduler_Worker-2] c.i.Project.scheduler.GlobalJob1         : GlobalJob1 Completed.
+2022-03-24 13:58:00.003  INFO 2504 --- [quartzScheduler_Worker-3] c.i.Project.scheduler.GlobalJob1         : GlobalJob1 started
+2022-03-24 13:58:01.554  INFO 2504 --- [quartzScheduler_Worker-3] c.i.Project.scheduler.GlobalJob1         : Currency Data Saved.
+2022-03-24 13:58:01.559 ERROR 2504 --- [quartzScheduler_Worker-3] c.i.Project.scheduler.DataStore          : Cannot run program "uname": CreateProcess error=2, The system cannot find the file specified
+
+java.io.IOException: Cannot run program "uname": CreateProcess error=2, The system cannot find the file specified
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1143) ~[na:na]
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1073) ~[na:na]
+	at java.base/java.lang.Runtime.exec(Runtime.java:594) ~[na:na]
+	at java.base/java.lang.Runtime.exec(Runtime.java:418) ~[na:na]
+	at java.base/java.lang.Runtime.exec(Runtime.java:315) ~[na:na]
+	at com.internship.Project.scheduler.DataStore.getInstanceName(DataStore.java:21) ~[classes/:na]
+	at com.internship.Project.scheduler.GlobalJob1.executeInternal(GlobalJob1.java:90) ~[classes/:na]
+	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:75) ~[spring-context-support-5.3.16.jar:5.3.16]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.3.2.jar:na]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) ~[quartz-2.3.2.jar:na]
+Caused by: java.io.IOException: CreateProcess error=2, The system cannot find the file specified
+	at java.base/java.lang.ProcessImpl.create(Native Method) ~[na:na]
+	at java.base/java.lang.ProcessImpl.<init>(ProcessImpl.java:494) ~[na:na]
+	at java.base/java.lang.ProcessImpl.start(ProcessImpl.java:159) ~[na:na]
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1110) ~[na:na]
+	... 9 common frames omitted
+
+2022-03-24 13:58:01.574  INFO 2504 --- [quartzScheduler_Worker-3] c.i.Project.scheduler.GlobalJob1         : GlobalJob1 Completed.
+2022-03-24 13:59:00.013  INFO 2504 --- [quartzScheduler_Worker-4] c.i.Project.scheduler.GlobalJob1         : GlobalJob1 started
+2022-03-24 13:59:01.551  INFO 2504 --- [quartzScheduler_Worker-4] c.i.Project.scheduler.GlobalJob1         : Currency Data Saved.
+2022-03-24 13:59:01.557 ERROR 2504 --- [quartzScheduler_Worker-4] c.i.Project.scheduler.DataStore          : Cannot run program "uname": CreateProcess error=2, The system cannot find the file specified
+
+java.io.IOException: Cannot run program "uname": CreateProcess error=2, The system cannot find the file specified
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1143) ~[na:na]
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1073) ~[na:na]
+	at java.base/java.lang.Runtime.exec(Runtime.java:594) ~[na:na]
+	at java.base/java.lang.Runtime.exec(Runtime.java:418) ~[na:na]
+	at java.base/java.lang.Runtime.exec(Runtime.java:315) ~[na:na]
+	at com.internship.Project.scheduler.DataStore.getInstanceName(DataStore.java:21) ~[classes/:na]
+	at com.internship.Project.scheduler.GlobalJob1.executeInternal(GlobalJob1.java:90) ~[classes/:na]
+	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:75) ~[spring-context-support-5.3.16.jar:5.3.16]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.3.2.jar:na]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) ~[quartz-2.3.2.jar:na]
+Caused by: java.io.IOException: CreateProcess error=2, The system cannot find the file specified
+	at java.base/java.lang.ProcessImpl.create(Native Method) ~[na:na]
+	at java.base/java.lang.ProcessImpl.<init>(ProcessImpl.java:494) ~[na:na]
+	at java.base/java.lang.ProcessImpl.start(ProcessImpl.java:159) ~[na:na]
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1110) ~[na:na]
+	... 9 common frames omitted
+
+2022-03-24 13:59:01.570  INFO 2504 --- [quartzScheduler_Worker-4] c.i.Project.scheduler.GlobalJob1         : GlobalJob1 Completed.
+2022-03-24 14:00:00.003  INFO 2504 --- [quartzScheduler_Worker-5] c.i.Project.scheduler.GlobalJob1         : GlobalJob1 started
+2022-03-24 14:00:01.152  INFO 2504 --- [quartzScheduler_Worker-5] c.i.Project.scheduler.GlobalJob1         : Currency Data Saved.
+2022-03-24 14:00:01.160 ERROR 2504 --- [quartzScheduler_Worker-5] c.i.Project.scheduler.DataStore          : Cannot run program "uname": CreateProcess error=2, The system cannot find the file specified
+
+java.io.IOException: Cannot run program "uname": CreateProcess error=2, The system cannot find the file specified
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1143) ~[na:na]
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1073) ~[na:na]
+	at java.base/java.lang.Runtime.exec(Runtime.java:594) ~[na:na]
+	at java.base/java.lang.Runtime.exec(Runtime.java:418) ~[na:na]
+	at java.base/java.lang.Runtime.exec(Runtime.java:315) ~[na:na]
+	at com.internship.Project.scheduler.DataStore.getInstanceName(DataStore.java:21) ~[classes/:na]
+	at com.internship.Project.scheduler.GlobalJob1.executeInternal(GlobalJob1.java:90) ~[classes/:na]
+	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:75) ~[spring-context-support-5.3.16.jar:5.3.16]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.3.2.jar:na]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) ~[quartz-2.3.2.jar:na]
+Caused by: java.io.IOException: CreateProcess error=2, The system cannot find the file specified
+	at java.base/java.lang.ProcessImpl.create(Native Method) ~[na:na]
+	at java.base/java.lang.ProcessImpl.<init>(ProcessImpl.java:494) ~[na:na]
+	at java.base/java.lang.ProcessImpl.start(ProcessImpl.java:159) ~[na:na]
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1110) ~[na:na]
+	... 9 common frames omitted
+
+2022-03-24 14:00:01.180  INFO 2504 --- [quartzScheduler_Worker-5] c.i.Project.scheduler.GlobalJob1         : GlobalJob1 Completed.
+2022-03-24 14:01:00.001  INFO 2504 --- [quartzScheduler_Worker-1] c.i.Project.scheduler.GlobalJob1         : GlobalJob1 started
+2022-03-24 14:01:01.342  INFO 2504 --- [quartzScheduler_Worker-1] c.i.Project.scheduler.GlobalJob1         : Currency Data Saved.
+2022-03-24 14:01:01.351 ERROR 2504 --- [quartzScheduler_Worker-1] c.i.Project.scheduler.DataStore          : Cannot run program "uname": CreateProcess error=2, The system cannot find the file specified
+
+java.io.IOException: Cannot run program "uname": CreateProcess error=2, The system cannot find the file specified
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1143) ~[na:na]
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1073) ~[na:na]
+	at java.base/java.lang.Runtime.exec(Runtime.java:594) ~[na:na]
+	at java.base/java.lang.Runtime.exec(Runtime.java:418) ~[na:na]
+	at java.base/java.lang.Runtime.exec(Runtime.java:315) ~[na:na]
+	at com.internship.Project.scheduler.DataStore.getInstanceName(DataStore.java:21) ~[classes/:na]
+	at com.internship.Project.scheduler.GlobalJob1.executeInternal(GlobalJob1.java:90) ~[classes/:na]
+	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:75) ~[spring-context-support-5.3.16.jar:5.3.16]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.3.2.jar:na]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) ~[quartz-2.3.2.jar:na]
+Caused by: java.io.IOException: CreateProcess error=2, The system cannot find the file specified
+	at java.base/java.lang.ProcessImpl.create(Native Method) ~[na:na]
+	at java.base/java.lang.ProcessImpl.<init>(ProcessImpl.java:494) ~[na:na]
+	at java.base/java.lang.ProcessImpl.start(ProcessImpl.java:159) ~[na:na]
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1110) ~[na:na]
+	... 9 common frames omitted
+
+2022-03-24 14:01:01.366  INFO 2504 --- [quartzScheduler_Worker-1] c.i.Project.scheduler.GlobalJob1         : GlobalJob1 Completed.
+2022-03-24 14:02:00.003  INFO 2504 --- [quartzScheduler_Worker-2] c.i.Project.scheduler.GlobalJob1         : GlobalJob1 started
+2022-03-24 14:02:01.349  INFO 2504 --- [quartzScheduler_Worker-2] c.i.Project.scheduler.GlobalJob1         : Currency Data Saved.
+2022-03-24 14:02:01.359 ERROR 2504 --- [quartzScheduler_Worker-2] c.i.Project.scheduler.DataStore          : Cannot run program "uname": CreateProcess error=2, The system cannot find the file specified
+
+java.io.IOException: Cannot run program "uname": CreateProcess error=2, The system cannot find the file specified
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1143) ~[na:na]
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1073) ~[na:na]
+	at java.base/java.lang.Runtime.exec(Runtime.java:594) ~[na:na]
+	at java.base/java.lang.Runtime.exec(Runtime.java:418) ~[na:na]
+	at java.base/java.lang.Runtime.exec(Runtime.java:315) ~[na:na]
+	at com.internship.Project.scheduler.DataStore.getInstanceName(DataStore.java:21) ~[classes/:na]
+	at com.internship.Project.scheduler.GlobalJob1.executeInternal(GlobalJob1.java:90) ~[classes/:na]
+	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:75) ~[spring-context-support-5.3.16.jar:5.3.16]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.3.2.jar:na]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) ~[quartz-2.3.2.jar:na]
+Caused by: java.io.IOException: CreateProcess error=2, The system cannot find the file specified
+	at java.base/java.lang.ProcessImpl.create(Native Method) ~[na:na]
+	at java.base/java.lang.ProcessImpl.<init>(ProcessImpl.java:494) ~[na:na]
+	at java.base/java.lang.ProcessImpl.start(ProcessImpl.java:159) ~[na:na]
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1110) ~[na:na]
+	... 9 common frames omitted
+
+2022-03-24 14:02:01.376  INFO 2504 --- [quartzScheduler_Worker-2] c.i.Project.scheduler.GlobalJob1         : GlobalJob1 Completed.
+2022-03-24 14:03:00.004  INFO 2504 --- [quartzScheduler_Worker-3] c.i.Project.scheduler.GlobalJob1         : GlobalJob1 started
+2022-03-24 14:03:01.361  INFO 2504 --- [quartzScheduler_Worker-3] c.i.Project.scheduler.GlobalJob1         : Currency Data Saved.
+2022-03-24 14:03:01.367 ERROR 2504 --- [quartzScheduler_Worker-3] c.i.Project.scheduler.DataStore          : Cannot run program "uname": CreateProcess error=2, The system cannot find the file specified
+
+java.io.IOException: Cannot run program "uname": CreateProcess error=2, The system cannot find the file specified
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1143) ~[na:na]
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1073) ~[na:na]
+	at java.base/java.lang.Runtime.exec(Runtime.java:594) ~[na:na]
+	at java.base/java.lang.Runtime.exec(Runtime.java:418) ~[na:na]
+	at java.base/java.lang.Runtime.exec(Runtime.java:315) ~[na:na]
+	at com.internship.Project.scheduler.DataStore.getInstanceName(DataStore.java:21) ~[classes/:na]
+	at com.internship.Project.scheduler.GlobalJob1.executeInternal(GlobalJob1.java:90) ~[classes/:na]
+	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:75) ~[spring-context-support-5.3.16.jar:5.3.16]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.3.2.jar:na]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) ~[quartz-2.3.2.jar:na]
+Caused by: java.io.IOException: CreateProcess error=2, The system cannot find the file specified
+	at java.base/java.lang.ProcessImpl.create(Native Method) ~[na:na]
+	at java.base/java.lang.ProcessImpl.<init>(ProcessImpl.java:494) ~[na:na]
+	at java.base/java.lang.ProcessImpl.start(ProcessImpl.java:159) ~[na:na]
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1110) ~[na:na]
+	... 9 common frames omitted
+
+2022-03-24 14:03:01.382  INFO 2504 --- [quartzScheduler_Worker-3] c.i.Project.scheduler.GlobalJob1         : GlobalJob1 Completed.
+2022-03-24 14:04:00.002  INFO 2504 --- [quartzScheduler_Worker-4] c.i.Project.scheduler.GlobalJob1         : GlobalJob1 started
+2022-03-24 14:04:01.380  INFO 2504 --- [quartzScheduler_Worker-4] c.i.Project.scheduler.GlobalJob1         : Currency Data Saved.
+2022-03-24 14:04:01.387 ERROR 2504 --- [quartzScheduler_Worker-4] c.i.Project.scheduler.DataStore          : Cannot run program "uname": CreateProcess error=2, The system cannot find the file specified
+
+java.io.IOException: Cannot run program "uname": CreateProcess error=2, The system cannot find the file specified
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1143) ~[na:na]
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1073) ~[na:na]
+	at java.base/java.lang.Runtime.exec(Runtime.java:594) ~[na:na]
+	at java.base/java.lang.Runtime.exec(Runtime.java:418) ~[na:na]
+	at java.base/java.lang.Runtime.exec(Runtime.java:315) ~[na:na]
+	at com.internship.Project.scheduler.DataStore.getInstanceName(DataStore.java:21) ~[classes/:na]
+	at com.internship.Project.scheduler.GlobalJob1.executeInternal(GlobalJob1.java:90) ~[classes/:na]
+	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:75) ~[spring-context-support-5.3.16.jar:5.3.16]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.3.2.jar:na]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) ~[quartz-2.3.2.jar:na]
+Caused by: java.io.IOException: CreateProcess error=2, The system cannot find the file specified
+	at java.base/java.lang.ProcessImpl.create(Native Method) ~[na:na]
+	at java.base/java.lang.ProcessImpl.<init>(ProcessImpl.java:494) ~[na:na]
+	at java.base/java.lang.ProcessImpl.start(ProcessImpl.java:159) ~[na:na]
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1110) ~[na:na]
+	... 9 common frames omitted
+
+2022-03-24 14:04:01.411  INFO 2504 --- [quartzScheduler_Worker-4] c.i.Project.scheduler.GlobalJob1         : GlobalJob1 Completed.
+2022-03-24 14:05:00.008  INFO 2504 --- [quartzScheduler_Worker-5] c.i.Project.scheduler.GlobalJob1         : GlobalJob1 started
+2022-03-24 14:05:01.832  INFO 2504 --- [quartzScheduler_Worker-5] c.i.Project.scheduler.GlobalJob1         : Currency Data Saved.
+2022-03-24 14:05:01.838 ERROR 2504 --- [quartzScheduler_Worker-5] c.i.Project.scheduler.DataStore          : Cannot run program "uname": CreateProcess error=2, The system cannot find the file specified
+
+java.io.IOException: Cannot run program "uname": CreateProcess error=2, The system cannot find the file specified
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1143) ~[na:na]
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1073) ~[na:na]
+	at java.base/java.lang.Runtime.exec(Runtime.java:594) ~[na:na]
+	at java.base/java.lang.Runtime.exec(Runtime.java:418) ~[na:na]
+	at java.base/java.lang.Runtime.exec(Runtime.java:315) ~[na:na]
+	at com.internship.Project.scheduler.DataStore.getInstanceName(DataStore.java:21) ~[classes/:na]
+	at com.internship.Project.scheduler.GlobalJob1.executeInternal(GlobalJob1.java:90) ~[classes/:na]
+	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:75) ~[spring-context-support-5.3.16.jar:5.3.16]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.3.2.jar:na]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) ~[quartz-2.3.2.jar:na]
+Caused by: java.io.IOException: CreateProcess error=2, The system cannot find the file specified
+	at java.base/java.lang.ProcessImpl.create(Native Method) ~[na:na]
+	at java.base/java.lang.ProcessImpl.<init>(ProcessImpl.java:494) ~[na:na]
+	at java.base/java.lang.ProcessImpl.start(ProcessImpl.java:159) ~[na:na]
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1110) ~[na:na]
+	... 9 common frames omitted
+
+2022-03-24 14:05:01.851  INFO 2504 --- [quartzScheduler_Worker-5] c.i.Project.scheduler.GlobalJob1         : GlobalJob1 Completed.
+2022-03-24 14:05:11.809  INFO 2504 --- [SpringApplicationShutdownHook] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2022-03-24 14:05:11.896  INFO 2504 --- [SpringApplicationShutdownHook] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2022-03-24 14:05:11.897  INFO 2504 --- [SpringApplicationShutdownHook] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2022-03-24 14:05:11.898  INFO 2504 --- [SpringApplicationShutdownHook] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2022-03-24 14:05:11.898  INFO 2504 --- [SpringApplicationShutdownHook] c.internship.Project.ProjectApplication  : Scheduler has shutdown
+2022-03-24 14:05:11.899  INFO 2504 --- [SpringApplicationShutdownHook] o.s.s.quartz.SchedulerFactoryBean        : Shutting down Quartz Scheduler
+2022-03-24 14:05:11.899  INFO 2504 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-03-24 14:05:11.915  INFO 2504 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-03-24 14:05:11.939  INFO 2504 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-03-24 14:05:25.565  INFO 21708 --- [restartedMain] c.internship.Project.ProjectApplication  : Starting ProjectApplication using Java 17.0.2 on DESKTOP-L0Q733T with PID 21708 (E:\Internship\Project\target\classes started by adith in E:\Internship\Project)
+2022-03-24 14:05:25.567  INFO 21708 --- [restartedMain] c.internship.Project.ProjectApplication  : No active profile set, falling back to 1 default profile: "default"
+2022-03-24 14:05:25.619  INFO 21708 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-03-24 14:05:25.620  INFO 21708 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-03-24 14:05:26.410  INFO 21708 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-03-24 14:05:26.468  INFO 21708 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 48 ms. Found 4 JPA repository interfaces.
+2022-03-24 14:05:27.151  INFO 21708 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-03-24 14:05:27.162  INFO 21708 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-03-24 14:05:27.163  INFO 21708 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.58]
+2022-03-24 14:05:27.735  INFO 21708 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-03-24 14:05:27.736  INFO 21708 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2115 ms
+2022-03-24 14:05:27.902  INFO 21708 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-03-24 14:05:27.961  INFO 21708 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.5.Final
+2022-03-24 14:05:28.129  INFO 21708 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-03-24 14:05:28.231  INFO 21708 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-03-24 14:05:28.686  INFO 21708 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-03-24 14:05:28.704  INFO 21708 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-03-24 14:05:29.897  INFO 21708 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-03-24 14:05:29.907  INFO 21708 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-03-24 14:05:29.955  INFO 21708 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2022-03-24 14:05:29.967  INFO 21708 --- [restartedMain] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2022-03-24 14:05:29.967  INFO 21708 --- [restartedMain] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.3.2 created.
+2022-03-24 14:05:29.967  INFO 21708 --- [restartedMain] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2022-03-24 14:05:29.968  INFO 21708 --- [restartedMain] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 5 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2022-03-24 14:05:29.969  INFO 21708 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2022-03-24 14:05:29.969  INFO 21708 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.3.2
+2022-03-24 14:05:29.969  INFO 21708 --- [restartedMain] org.quartz.core.QuartzScheduler          : JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@3ac26b0a
+2022-03-24 14:05:29.971  INFO 21708 --- [restartedMain] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2022-03-24 14:05:29.973  INFO 21708 --- [restartedMain] c.internship.Project.ProjectApplication  : Scheduler has started
+2022-03-24 14:05:30.473  WARN 21708 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-03-24 14:05:30.786  WARN 21708 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2022-03-24 14:05:30.898  INFO 21708 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-03-24 14:05:30.960  INFO 21708 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-03-24 14:05:30.977  INFO 21708 --- [restartedMain] c.internship.Project.ProjectApplication  : Started ProjectApplication in 5.835 seconds (JVM running for 7.345)
+2022-03-24 15:02:50.278  INFO 21708 --- [SpringApplicationShutdownHook] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2022-03-24 15:02:50.378  INFO 21708 --- [SpringApplicationShutdownHook] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2022-03-24 15:02:50.378  INFO 21708 --- [SpringApplicationShutdownHook] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2022-03-24 15:02:50.379  INFO 21708 --- [SpringApplicationShutdownHook] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2022-03-24 15:02:50.379  INFO 21708 --- [SpringApplicationShutdownHook] c.internship.Project.ProjectApplication  : Scheduler has shutdown
+2022-03-24 15:02:50.379  INFO 21708 --- [SpringApplicationShutdownHook] o.s.s.quartz.SchedulerFactoryBean        : Shutting down Quartz Scheduler
+2022-03-24 15:02:50.380  INFO 21708 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-03-24 15:02:50.404  INFO 21708 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-03-24 15:02:50.413  INFO 21708 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-03-24 20:27:53.858  INFO 19428 --- [restartedMain] c.internship.Project.ProjectApplication  : Starting ProjectApplication using Java 17.0.2 on DESKTOP-L0Q733T with PID 19428 (E:\Internship\Project\target\classes started by adith in E:\Internship\Project)
+2022-03-24 20:27:53.865  INFO 19428 --- [restartedMain] c.internship.Project.ProjectApplication  : No active profile set, falling back to 1 default profile: "default"
+2022-03-24 20:27:53.912  INFO 19428 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-03-24 20:27:53.912  INFO 19428 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-03-24 20:27:54.600  INFO 19428 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-03-24 20:27:54.659  INFO 19428 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 49 ms. Found 4 JPA repository interfaces.
+2022-03-24 20:27:55.224  INFO 19428 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-03-24 20:27:55.231  INFO 19428 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-03-24 20:27:55.231  INFO 19428 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.58]
+2022-03-24 20:27:55.762  INFO 19428 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-03-24 20:27:55.764  INFO 19428 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1851 ms
+2022-03-24 20:27:55.920  INFO 19428 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-03-24 20:27:55.972  INFO 19428 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.5.Final
+2022-03-24 20:27:56.105  INFO 19428 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-03-24 20:27:56.195  INFO 19428 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-03-24 20:27:56.600  INFO 19428 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-03-24 20:27:56.625  INFO 19428 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-03-24 20:27:57.318  INFO 19428 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-03-24 20:27:57.320  INFO 19428 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-03-24 20:27:57.378  INFO 19428 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2022-03-24 20:27:57.390  INFO 19428 --- [restartedMain] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2022-03-24 20:27:57.390  INFO 19428 --- [restartedMain] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.3.2 created.
+2022-03-24 20:27:57.391  INFO 19428 --- [restartedMain] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2022-03-24 20:27:57.391  INFO 19428 --- [restartedMain] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 5 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2022-03-24 20:27:57.392  INFO 19428 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2022-03-24 20:27:57.392  INFO 19428 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.3.2
+2022-03-24 20:27:57.392  INFO 19428 --- [restartedMain] org.quartz.core.QuartzScheduler          : JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@cdba09e
+2022-03-24 20:27:57.655  INFO 19428 --- [restartedMain] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2022-03-24 20:27:57.660  INFO 19428 --- [restartedMain] c.internship.Project.ProjectApplication  : Quartz Scheduler started
+2022-03-24 20:27:57.740  WARN 19428 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-03-24 20:27:57.982  WARN 19428 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2022-03-24 20:27:58.062  INFO 19428 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-03-24 20:27:58.121  INFO 19428 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-03-24 20:27:58.132  INFO 19428 --- [restartedMain] c.internship.Project.ProjectApplication  : Started ProjectApplication in 4.892 seconds (JVM running for 7.039)
+2022-03-24 20:28:23.779  INFO 19428 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-03-24 20:28:23.779  INFO 19428 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-03-24 20:28:23.781  INFO 19428 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-03-24 20:28:23.830  INFO 19428 --- [http-nio-8080-exec-1] c.i.P.controller.GlobalRestController    : Read all Jobs - Jobs Master Table
+2022-03-24 20:28:47.586  WARN 19428 --- [http-nio-8080-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2022-03-24 20:28:52.570  INFO 19428 --- [http-nio-8080-exec-4] c.i.P.controller.GlobalRestController    : Schedule all Global Jobs - Jobs Master Table
+2022-03-24 20:28:52.570  INFO 19428 --- [http-nio-8080-exec-4] c.i.Project.service.MainService          : Scheduling all Global jobs from Jobs master table
+2022-03-24 20:28:52.629  INFO 19428 --- [http-nio-8080-exec-4] c.i.Project.service.MainService          : Job Scheduled Successfully
+2022-03-24 20:29:00.008  INFO 19428 --- [quartzScheduler_Worker-1] c.i.Project.scheduler.GlobalJob1         : GlobalJob1 started
+2022-03-24 20:29:02.023  INFO 19428 --- [quartzScheduler_Worker-1] c.i.Project.scheduler.GlobalJob1         : Currency Data Saved.
+2022-03-24 20:29:02.031 ERROR 19428 --- [quartzScheduler_Worker-1] c.i.Project.scheduler.DataStore          : Error while retrieving Docker instance name
+
+java.io.IOException: Cannot run program "uname": CreateProcess error=2, The system cannot find the file specified
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1143) ~[na:na]
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1073) ~[na:na]
+	at java.base/java.lang.Runtime.exec(Runtime.java:594) ~[na:na]
+	at java.base/java.lang.Runtime.exec(Runtime.java:418) ~[na:na]
+	at java.base/java.lang.Runtime.exec(Runtime.java:315) ~[na:na]
+	at com.internship.Project.scheduler.DataStore.getInstanceName(DataStore.java:21) ~[classes/:na]
+	at com.internship.Project.scheduler.GlobalJob1.executeInternal(GlobalJob1.java:90) ~[classes/:na]
+	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:75) ~[spring-context-support-5.3.16.jar:5.3.16]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.3.2.jar:na]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) ~[quartz-2.3.2.jar:na]
+Caused by: java.io.IOException: CreateProcess error=2, The system cannot find the file specified
+	at java.base/java.lang.ProcessImpl.create(Native Method) ~[na:na]
+	at java.base/java.lang.ProcessImpl.<init>(ProcessImpl.java:494) ~[na:na]
+	at java.base/java.lang.ProcessImpl.start(ProcessImpl.java:159) ~[na:na]
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1110) ~[na:na]
+	... 9 common frames omitted
+
+2022-03-24 20:29:02.067  INFO 19428 --- [quartzScheduler_Worker-1] c.i.Project.scheduler.GlobalJob1         : GlobalJob1 Completed.
+2022-03-24 20:29:57.101  INFO 19428 --- [SpringApplicationShutdownHook] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2022-03-24 20:29:57.134  INFO 19428 --- [SpringApplicationShutdownHook] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2022-03-24 20:29:57.134  INFO 19428 --- [SpringApplicationShutdownHook] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2022-03-24 20:29:57.135  INFO 19428 --- [SpringApplicationShutdownHook] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2022-03-24 20:29:57.154  INFO 19428 --- [SpringApplicationShutdownHook] c.internship.Project.ProjectApplication  : Quartz Scheduler shutdown
+2022-03-24 20:29:57.154  INFO 19428 --- [SpringApplicationShutdownHook] c.internship.Project.ProjectApplication  : The active jobs status updated to unscheduled, create triggers again - Jobs Master Table
+2022-03-24 20:29:57.155  INFO 19428 --- [SpringApplicationShutdownHook] o.s.s.quartz.SchedulerFactoryBean        : Shutting down Quartz Scheduler
+2022-03-24 20:29:57.155  INFO 19428 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-03-24 20:29:57.158  INFO 19428 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-03-24 20:29:57.169  INFO 19428 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-03-24 20:30:05.669  INFO 9968 --- [restartedMain] c.internship.Project.ProjectApplication  : Starting ProjectApplication using Java 17.0.2 on DESKTOP-L0Q733T with PID 9968 (E:\Internship\Project\target\classes started by adith in E:\Internship\Project)
+2022-03-24 20:30:05.670  INFO 9968 --- [restartedMain] c.internship.Project.ProjectApplication  : No active profile set, falling back to 1 default profile: "default"
+2022-03-24 20:30:05.718  INFO 9968 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-03-24 20:30:05.718  INFO 9968 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-03-24 20:30:06.302  INFO 9968 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-03-24 20:30:06.371  INFO 9968 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 54 ms. Found 4 JPA repository interfaces.
+2022-03-24 20:30:06.855  INFO 9968 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-03-24 20:30:06.862  INFO 9968 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-03-24 20:30:06.863  INFO 9968 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.58]
+2022-03-24 20:30:07.381  INFO 9968 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-03-24 20:30:07.381  INFO 9968 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1662 ms
+2022-03-24 20:30:07.530  INFO 9968 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-03-24 20:30:07.564  INFO 9968 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.5.Final
+2022-03-24 20:30:07.666  INFO 9968 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-03-24 20:30:07.744  INFO 9968 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-03-24 20:30:08.141  INFO 9968 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-03-24 20:30:08.156  INFO 9968 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-03-24 20:30:08.842  INFO 9968 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-03-24 20:30:08.842  INFO 9968 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-03-24 20:30:08.897  INFO 9968 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2022-03-24 20:30:08.905  INFO 9968 --- [restartedMain] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2022-03-24 20:30:08.905  INFO 9968 --- [restartedMain] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.3.2 created.
+2022-03-24 20:30:08.906  INFO 9968 --- [restartedMain] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2022-03-24 20:30:08.907  INFO 9968 --- [restartedMain] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 5 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2022-03-24 20:30:08.907  INFO 9968 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2022-03-24 20:30:08.907  INFO 9968 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.3.2
+2022-03-24 20:30:08.907  INFO 9968 --- [restartedMain] org.quartz.core.QuartzScheduler          : JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@3bd3b08e
+2022-03-24 20:30:09.136  INFO 9968 --- [restartedMain] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2022-03-24 20:30:09.136  INFO 9968 --- [restartedMain] c.internship.Project.ProjectApplication  : Quartz Scheduler started
+2022-03-24 20:30:09.221  WARN 9968 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-03-24 20:30:09.417  WARN 9968 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2022-03-24 20:30:09.491  INFO 9968 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-03-24 20:30:09.541  INFO 9968 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-03-24 20:30:09.552  INFO 9968 --- [restartedMain] c.internship.Project.ProjectApplication  : Started ProjectApplication in 4.235 seconds (JVM running for 5.866)
+2022-03-24 20:30:26.224  INFO 9968 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-03-24 20:30:26.225  INFO 9968 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-03-24 20:30:26.226  INFO 9968 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-03-24 20:30:26.254  INFO 9968 --- [http-nio-8080-exec-1] c.i.P.controller.GlobalRestController    : Schedule all Global Jobs - Jobs Master Table
+2022-03-24 20:30:26.255  INFO 9968 --- [http-nio-8080-exec-1] c.i.Project.service.MainService          : Scheduling all Global jobs from Jobs master table
+2022-03-24 20:30:26.493  INFO 9968 --- [http-nio-8080-exec-1] c.i.Project.service.MainService          : Job Scheduled Successfully
+2022-03-24 20:31:00.028  INFO 9968 --- [quartzScheduler_Worker-1] c.i.Project.scheduler.GlobalJob1         : GlobalJob1 started
+2022-03-24 20:31:02.259  INFO 9968 --- [quartzScheduler_Worker-1] c.i.Project.scheduler.GlobalJob1         : Currency Data Saved.
+2022-03-24 20:31:02.300  INFO 9968 --- [quartzScheduler_Worker-1] c.i.Project.scheduler.GlobalJob1         : GlobalJob1 Completed.
+2022-03-24 20:31:48.198  INFO 9968 --- [SpringApplicationShutdownHook] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2022-03-24 20:31:48.227  INFO 9968 --- [SpringApplicationShutdownHook] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2022-03-24 20:31:48.227  INFO 9968 --- [SpringApplicationShutdownHook] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2022-03-24 20:31:48.228  INFO 9968 --- [SpringApplicationShutdownHook] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2022-03-24 20:31:48.238  INFO 9968 --- [SpringApplicationShutdownHook] c.internship.Project.ProjectApplication  : Quartz Scheduler shutdown
+2022-03-24 20:31:48.238  INFO 9968 --- [SpringApplicationShutdownHook] c.internship.Project.ProjectApplication  : The active jobs status updated to unscheduled, create triggers again - Jobs Master Table
+2022-03-24 20:31:48.240  INFO 9968 --- [SpringApplicationShutdownHook] o.s.s.quartz.SchedulerFactoryBean        : Shutting down Quartz Scheduler
+2022-03-24 20:31:48.240  INFO 9968 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-03-24 20:31:48.241  INFO 9968 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-03-24 20:31:48.248  INFO 9968 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-03-24 20:34:50.771  INFO 13860 --- [main] c.i.Project.ProjectApplicationTests      : Starting ProjectApplicationTests using Java 17.0.2 on DESKTOP-L0Q733T with PID 13860 (started by adith in E:\Internship\Project)
+2022-03-24 20:34:50.815  INFO 13860 --- [main] c.i.Project.ProjectApplicationTests      : No active profile set, falling back to 1 default profile: "default"
+2022-03-24 20:34:52.028  INFO 13860 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-03-24 20:34:52.183  INFO 13860 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 142 ms. Found 4 JPA repository interfaces.
+2022-03-24 20:34:53.604  INFO 13860 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-03-24 20:34:53.731  INFO 13860 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.5.Final
+2022-03-24 20:34:54.267  INFO 13860 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-03-24 20:34:54.768  INFO 13860 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-03-24 20:34:55.658  INFO 13860 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-03-24 20:34:55.752  INFO 13860 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-03-24 20:34:57.671  INFO 13860 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-03-24 20:34:57.686  INFO 13860 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-03-24 20:34:57.835  INFO 13860 --- [main] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2022-03-24 20:34:57.874  INFO 13860 --- [main] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2022-03-24 20:34:57.875  INFO 13860 --- [main] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.3.2 created.
+2022-03-24 20:34:57.877  INFO 13860 --- [main] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2022-03-24 20:34:57.879  INFO 13860 --- [main] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 5 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2022-03-24 20:34:57.880  INFO 13860 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2022-03-24 20:34:57.880  INFO 13860 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.3.2
+2022-03-24 20:34:57.881  INFO 13860 --- [main] org.quartz.core.QuartzScheduler          : JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@6b5e1fc5
+2022-03-24 20:34:58.536  INFO 13860 --- [main] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2022-03-24 20:34:58.541  INFO 13860 --- [main] c.internship.Project.ProjectApplication  : Quartz Scheduler started
+2022-03-24 20:34:59.265  WARN 13860 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-03-24 20:35:00.202  WARN 13860 --- [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2022-03-24 20:35:00.639  INFO 13860 --- [main] c.i.Project.ProjectApplicationTests      : Started ProjectApplicationTests in 10.589 seconds (JVM running for 14.832)
+2022-03-24 20:35:01.295  INFO 13860 --- [SpringApplicationShutdownHook] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2022-03-24 20:35:01.299  INFO 13860 --- [SpringApplicationShutdownHook] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2022-03-24 20:35:01.299  INFO 13860 --- [SpringApplicationShutdownHook] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2022-03-24 20:35:01.300  INFO 13860 --- [SpringApplicationShutdownHook] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2022-03-24 20:35:01.547  INFO 13860 --- [SpringApplicationShutdownHook] c.internship.Project.ProjectApplication  : Quartz Scheduler shutdown
+2022-03-24 20:35:01.547  INFO 13860 --- [SpringApplicationShutdownHook] c.internship.Project.ProjectApplication  : The active jobs status updated to unscheduled, create triggers again - Jobs Master Table
+2022-03-24 20:35:01.547  INFO 13860 --- [SpringApplicationShutdownHook] o.s.s.quartz.SchedulerFactoryBean        : Shutting down Quartz Scheduler
+2022-03-24 20:35:01.547  INFO 13860 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-03-24 20:35:01.556  INFO 13860 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-03-24 20:35:01.571  INFO 13860 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-03-24 21:10:08.545  INFO 2892 --- [main] c.i.Project.ProjectApplicationTests      : Starting ProjectApplicationTests using Java 17.0.2 on DESKTOP-L0Q733T with PID 2892 (started by adith in E:\Internship\Project)
+2022-03-24 21:10:08.555  INFO 2892 --- [main] c.i.Project.ProjectApplicationTests      : No active profile set, falling back to 1 default profile: "default"
+2022-03-24 21:10:09.536  INFO 2892 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-03-24 21:10:09.649  INFO 2892 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 96 ms. Found 4 JPA repository interfaces.
+2022-03-24 21:10:10.383  INFO 2892 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-03-24 21:10:10.997  INFO 2892 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-03-24 21:10:11.178  INFO 2892 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-03-24 21:10:11.331  INFO 2892 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.5.Final
+2022-03-24 21:10:11.691  INFO 2892 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-03-24 21:10:11.878  INFO 2892 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-03-24 21:10:12.850  INFO 2892 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-03-24 21:10:12.863  INFO 2892 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-03-24 21:10:12.996  INFO 2892 --- [main] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2022-03-24 21:10:13.016  INFO 2892 --- [main] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2022-03-24 21:10:13.016  INFO 2892 --- [main] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.3.2 created.
+2022-03-24 21:10:13.020  INFO 2892 --- [main] o.s.s.quartz.LocalDataSourceJobStore     : Using db table-based data access locking (synchronization).
+2022-03-24 21:10:13.023  INFO 2892 --- [main] o.s.s.quartz.LocalDataSourceJobStore     : JobStoreCMT initialized.
+2022-03-24 21:10:13.024  INFO 2892 --- [main] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 5 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is not clustered.
+
+2022-03-24 21:10:13.025  INFO 2892 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2022-03-24 21:10:13.025  INFO 2892 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.3.2
+2022-03-24 21:10:13.026  INFO 2892 --- [main] org.quartz.core.QuartzScheduler          : JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@6247c08c
+2022-03-24 21:10:15.548 ERROR 2892 --- [main] c.internship.Project.ProjectApplication  : Quartz scheduler exception while starting: 
+
+org.quartz.SchedulerConfigException: Failure occured during job recovery.
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.schedulerStarted(JobStoreSupport.java:697) ~[quartz-2.3.2.jar:na]
+	at org.quartz.core.QuartzScheduler.start(QuartzScheduler.java:539) ~[quartz-2.3.2.jar:na]
+	at org.quartz.impl.StdScheduler.start(StdScheduler.java:142) ~[quartz-2.3.2.jar:na]
+	at com.internship.Project.ProjectApplication.postConstruct(ProjectApplication.java:35) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:389) ~[spring-beans-5.3.16.jar:5.3.16]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:333) ~[spring-beans-5.3.16.jar:5.3.16]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:157) ~[spring-beans-5.3.16.jar:5.3.16]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:440) ~[spring-beans-5.3.16.jar:5.3.16]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1796) ~[spring-beans-5.3.16.jar:5.3.16]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620) ~[spring-beans-5.3.16.jar:5.3.16]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.16.jar:5.3.16]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.16.jar:5.3.16]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.16.jar:5.3.16]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.16.jar:5.3.16]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.16.jar:5.3.16]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953) ~[spring-beans-5.3.16.jar:5.3.16]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.16.jar:5.3.16]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.16.jar:5.3.16]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:740) ~[spring-boot-2.6.4.jar:2.6.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:415) ~[spring-boot-2.6.4.jar:2.6.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) ~[spring-boot-2.6.4.jar:2.6.4]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:136) ~[spring-boot-test-2.6.4.jar:2.6.4]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.3.16.jar:5.3.16]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124) ~[spring-test-5.3.16.jar:5.3.16]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124) ~[spring-test-5.3.16.jar:5.3.16]
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190) ~[spring-test-5.3.16.jar:5.3.16]
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132) ~[spring-test-5.3.16.jar:5.3.16]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:248) ~[spring-test-5.3.16.jar:5.3.16]
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:138) ~[spring-test-5.3.16.jar:5.3.16]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$8(ClassBasedTestDescriptor.java:363) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:368) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$9(ClassBasedTestDescriptor.java:363) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179) ~[na:na]
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[na:na]
+	at java.base/java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:310) ~[na:na]
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:735) ~[na:na]
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:734) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762) ~[na:na]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:362) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$6(ClassBasedTestDescriptor.java:283) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:282) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$4(ClassBasedTestDescriptor.java:272) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at java.base/java.util.Optional.orElseGet(Optional.java:364) ~[na:na]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$5(ClassBasedTestDescriptor.java:271) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:102) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:101) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:66) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$2(NodeTestTask.java:123) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:123) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:90) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) ~[na:na]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) ~[na:na]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:220) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$6(DefaultLauncher.java:188) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:202) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:181) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:128) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:150) ~[surefire-junit-platform-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:124) ~[surefire-junit-platform-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384) ~[surefire-booter-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345) ~[surefire-booter-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126) ~[surefire-booter-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418) ~[surefire-booter-2.22.2.jar:2.22.2]
+Caused by: org.quartz.impl.jdbcjobstore.LockException: Failure obtaining db row lock: Table 'project.qrtz_locks' doesn't exist
+	at org.quartz.impl.jdbcjobstore.StdRowLockSemaphore.executeSQL(StdRowLockSemaphore.java:184) ~[quartz-2.3.2.jar:na]
+	at org.quartz.impl.jdbcjobstore.DBSemaphore.obtainLock(DBSemaphore.java:113) ~[quartz-2.3.2.jar:na]
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.executeInNonManagedTXLock(JobStoreSupport.java:3857) ~[quartz-2.3.2.jar:na]
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.recoverJobs(JobStoreSupport.java:839) ~[quartz-2.3.2.jar:na]
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.schedulerStarted(JobStoreSupport.java:695) ~[quartz-2.3.2.jar:na]
+	... 94 common frames omitted
+Caused by: java.sql.SQLSyntaxErrorException: Table 'project.qrtz_locks' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:1009) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeQuery(HikariProxyPreparedStatement.java) ~[HikariCP-4.0.3.jar:na]
+	at org.quartz.impl.jdbcjobstore.StdRowLockSemaphore.executeSQL(StdRowLockSemaphore.java:123) ~[quartz-2.3.2.jar:na]
+	... 98 common frames omitted
+
+2022-03-24 21:10:15.987  WARN 2892 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-03-24 21:10:17.033  WARN 2892 --- [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2022-03-24 21:10:17.295  INFO 2892 --- [main] c.i.Project.ProjectApplicationTests      : Started ProjectApplicationTests in 9.29 seconds (JVM running for 11.088)
+2022-03-24 21:10:17.596  INFO 2892 --- [SpringApplicationShutdownHook] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2022-03-24 21:10:17.596  INFO 2892 --- [SpringApplicationShutdownHook] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2022-03-24 21:10:17.596  INFO 2892 --- [SpringApplicationShutdownHook] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2022-03-24 21:10:17.822  INFO 2892 --- [SpringApplicationShutdownHook] c.internship.Project.ProjectApplication  : Quartz Scheduler shutdown
+2022-03-24 21:10:17.823  INFO 2892 --- [SpringApplicationShutdownHook] c.internship.Project.ProjectApplication  : The active jobs status updated to unscheduled, create triggers again - Jobs Master Table
+2022-03-24 21:10:17.824  INFO 2892 --- [SpringApplicationShutdownHook] o.s.s.quartz.SchedulerFactoryBean        : Shutting down Quartz Scheduler
+2022-03-24 21:10:17.824  INFO 2892 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-03-24 21:10:17.826  INFO 2892 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-03-24 21:10:17.840  INFO 2892 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

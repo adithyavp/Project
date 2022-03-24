@@ -8,11 +8,13 @@ import java.util.List;
 
 public interface JobsRepo extends CrudRepository<Jobs, Long> {
 
-    Jobs findByJobIdAndAndName(Long jobId, String name);
+    Jobs findByJobIdAndName(Long jobId, String name);
 
     Jobs findByName(String name);
 
     List<Jobs> findByJobWorkingStatusAndAndMemoryType(String jobWorkingStatus, String memoryType);
 
     Jobs findByJobId(Long jobId);
+
+    List<Jobs> findByJobWorkingStatus(String jobWorkingStatus);
 }

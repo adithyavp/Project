@@ -64,7 +64,7 @@ public class GlobalRestService {
     // To update the jobs in the Jobs table
     // One can update only the Memory type and the Cron expression and no other data
     public Jobs updateJob(Long jobId, String jobName, Jobs job){
-        Jobs isJobPresent = jobsRepo.findByJobIdAndAndName(jobId, jobName);
+        Jobs isJobPresent = jobsRepo.findByJobIdAndName(jobId, jobName);
         if(isJobPresent!=null){
             isJobPresent.setMemoryType(job.getMemoryType());
             isJobPresent.setExecutionClass(job.getExecutionClass());
@@ -89,12 +89,12 @@ public class GlobalRestService {
 
     // Scheduling all Global jobs created
     public void startGlobalJobScheduling(){
-        mainService.scheduleGlobalJob();
+        mainService.scheduleAllGlobalJob();
     }
 
     // Scheduling all Local jobs created
     public void startLocalJobScheduling(){
-        mainService.scheduleLocalJob();
+        mainService.scheduleAllLocalJob();
     }
 
 

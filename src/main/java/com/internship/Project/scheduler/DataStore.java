@@ -34,13 +34,13 @@ public class DataStore {
 
             LOG.info("Docker instance name read successful");
         } catch (IOException e) {
-            LOG.error(e.getMessage(), e);
+            LOG.error("Error while retrieving Docker instance name", e);
         }
 
         return instanceName;
     }
 
-    public void setInstanceName(String instanceName) {
-        this.instanceName = instanceName;
+    public static void setInstanceName(String instanceName) {
+        DataStore.instanceName = instanceName;
     }
 }
