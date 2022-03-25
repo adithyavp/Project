@@ -130,10 +130,12 @@ public class LocalJob1 extends QuartzJobBean {
         } catch (ParseException e) {
             flag = "1";
             LOG.error("Error while parsing today's date", e);
+            jobsExecutedDetails.setExecutionStatusMessage("Error while parsing date");
 
         } catch (IOException e) {
             flag = "2";
             LOG.error("Error while reading Log File/Error while creating file and storing ServerLog info: ", e);
+            jobsExecutedDetails.setExecutionStatusMessage("Error while reading log file/while creating file and storing ServerLog info");
         }
 
         //
@@ -149,8 +151,8 @@ public class LocalJob1 extends QuartzJobBean {
 
 
             // remove while running on docker
-//            jobsExecutedDetails.setInstanceName(DataStore.getInstanceName());
-            jobsExecutedDetails.setInstanceName("get from docker");
+            jobsExecutedDetails.setInstanceName(DataStore.getInstanceName());
+//            jobsExecutedDetails.setInstanceName("get from docker");
             jobsExecutedDetails.setExecutionStatus("Completed");
             jobsExecutedDetails.setExecutionStatusMessage("Job execution successful");
             jobsExecutedDetails.setJobs(job);
@@ -162,17 +164,10 @@ public class LocalJob1 extends QuartzJobBean {
         } else {
 
             // remove while running on docker
-//            jobsExecutedDetails.setInstanceName(DataStore.getInstanceName());
-            jobsExecutedDetails.setInstanceName("get from docker");
+            jobsExecutedDetails.setInstanceName(DataStore.getInstanceName());
+//            jobsExecutedDetails.setInstanceName("get from docker");
             jobsExecutedDetails.setExecutionStatus("Job Failed");
             jobsExecutedDetails.setJobs(job);
-
-            if(flag.equals("1")) {
-                jobsExecutedDetails.setExecutionStatusMessage("Error while parsing date");
-            }
-            if(flag.equals("2")) {
-                jobsExecutedDetails.setExecutionStatusMessage("Error while reading log file/while creating file and storing ServerLog info");
-            }
 
             jobExecutedDetailsRepo.save(jobsExecutedDetails);
 
