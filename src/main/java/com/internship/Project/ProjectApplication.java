@@ -2,7 +2,6 @@ package com.internship.Project;
 
 import com.internship.Project.entity.Jobs;
 import com.internship.Project.repository.JobsRepo;
-import com.internship.Project.service.GlobalRestService;
 import org.quartz.JobKey;
 import org.quartz.Scheduler;
 import org.quartz.SchedulerException;
@@ -14,7 +13,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
-import java.util.Iterator;
 
 @SpringBootApplication
 public class ProjectApplication {

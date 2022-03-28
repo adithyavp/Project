@@ -47,11 +47,11 @@ public class LocalJob1 extends QuartzJobBean {
         JobDataMap dataMap = context.getMergedJobDataMap();
         Long jobId = (Long) dataMap.get("jobId");
 
+        int count = (int) dataMap.get("count");
+
         Jobs job = jobsRepo.findByJobId(jobId);
 
         JobsExecutedDetails jobsExecutedDetails = new JobsExecutedDetails();
-
-        String flag = "0";
 
         //
         //
@@ -75,7 +75,7 @@ public class LocalJob1 extends QuartzJobBean {
         try {
             date = dateFormat.parse(localDate.toString());
 
-            long previousDayInMilliSeconds = date.getTime()-oneDayInMilliSeconds;
+            long previousDayInMilliSeconds = date.getTime() - oneDayInMilliSeconds;
 
             Date previousDate = new Date(previousDayInMilliSeconds);
             String previousDayDate = dateFormat.format(previousDate);
@@ -86,14 +86,14 @@ public class LocalJob1 extends QuartzJobBean {
             List<String> lines = Files.readAllLines(path);
 
             List<String> dataStore = new ArrayList<String>();
-            for(String i : lines){
-                if(i.contains(previousDayDate)){
-                    if(i.contains("start")||i.contains("initial")||i.contains("paused")||i.contains("shut")||i.contains("error")) {
+            for (String i : lines) {
+                if (i.contains(previousDayDate)) {
+                    if (i.contains("start") || i.contains("initial") || i.contains("paused") || i.contains("shut") || i.contains("error")) {
                         dataStore.add(i);
                     }
                 }
             }
-            for(String i: dataStore){
+            for (String i : dataStore) {
                 System.out.println(i);
             }
 
@@ -101,48 +101,31 @@ public class LocalJob1 extends QuartzJobBean {
             // This part of the code is to create the file in which we will store the log file with date.
             Scanner scanner = new Scanner(System.in);
 
-            File newFileObj = new File("ServerLog_info_"+previousDayDate+".txt");
-            if(newFileObj.createNewFile()){
+            File newFileObj = new File("ServerLog_info_" + previousDayDate + ".txt");
+            if (newFileObj.createNewFile()) {
                 BufferedWriter writer = new BufferedWriter(new FileWriter(newFileObj.getName()));
-                for(String i: dataStore){
-                    writer.write(i+"\n");
+                for (String i : dataStore) {
+                    writer.write(i + "\n");
                 }
                 writer.close();
-                LOG.info("File created and write completed, Path: "+newFileObj.getAbsolutePath());
+                LOG.info("File created and write completed, Path: " + newFileObj.getAbsolutePath());
             } else {
                 System.out.println("Server log file already Exists");
-                LOG.warn(newFileObj.getName()+" - File already present");
+                LOG.warn(newFileObj.getName() + " - File already present");
                 System.out.println("Do you want to overwrite?\nSelect: Yes/No");
                 String answer = scanner.nextLine().trim().toLowerCase();
-                if(answer.equals("yes")){
-                    LOG.warn("Overwriting request for created file: "+newFileObj.getName());
+                if (answer.equals("yes")) {
+                    LOG.warn("Overwriting request for created file: " + newFileObj.getName());
                     BufferedWriter writer = new BufferedWriter(new FileWriter(newFileObj.getName()));
-                    for(String i: dataStore){
-                        writer.write(i+"\n");
+                    for (String i : dataStore) {
+                        writer.write(i + "\n");
                     }
                     writer.close();
-                    LOG.info("Overwrite completed, Path: "+newFileObj.getAbsolutePath());
-                } else{
-                    LOG.warn("Overwriting denied, file: "+newFileObj.getName());
+                    LOG.info("Overwrite completed, Path: " + newFileObj.getAbsolutePath());
+                } else {
+                    LOG.warn("Overwriting denied, file: " + newFileObj.getName());
                 }
             }
-
-        } catch (ParseException e) {
-            flag = "1";
-            LOG.error("Error while parsing today's date", e);
-            jobsExecutedDetails.setExecutionStatusMessage("Error while parsing date");
-
-        } catch (IOException e) {
-            flag = "2";
-            LOG.error("Error while reading Log File/Error while creating file and storing ServerLog info: ", e);
-            jobsExecutedDetails.setExecutionStatusMessage("Error while reading log file/while creating file and storing ServerLog info");
-        }
-
-        //
-        // If there is no error then we make an entry to the Jobsexecutedtable and send the details via email, in case if
-        // there is an error then we make an entry to the Jobsexecutedtable with the error
-        // Email scheduling yet to be done.
-        if(flag.equals("0")){
 
             // Code for how the output to be given
             // ....
@@ -161,18 +144,46 @@ public class LocalJob1 extends QuartzJobBean {
 
             LOG.info("LocalJob1 Completed, Data update in JobExecutedDetails Table");
 
-        } else {
+            dataMap.put("count", 0);
 
-            // remove while running on docker
-            jobsExecutedDetails.setInstanceName(DataStore.getInstanceName());
-//            jobsExecutedDetails.setInstanceName("get from docker");
-            jobsExecutedDetails.setExecutionStatus("Job Failed");
-            jobsExecutedDetails.setJobs(job);
 
-            jobExecutedDetailsRepo.save(jobsExecutedDetails);
+        } catch (ParseException | IOException e) {
+            count++;
 
-            LOG.error("LocalJob1 failed - Exception while executing job, Data update in JobExecutedDetails Table");
+            if(count > 5){
+                JobExecutionException jobExecutionException = new JobExecutionException("Job Failed");
+                jobExecutionException.setUnscheduleAllTriggers(true);
+
+                // remove while running on docker
+//                jobsExecutedDetails.setInstanceName(DataStore.getInstanceName());
+                jobsExecutedDetails.setInstanceName("get from docker");
+                jobsExecutedDetails.setExecutionStatus("Job Failed");
+                jobsExecutedDetails.setExecutionStatusMessage("Exception due to: "+ e.getMessage());
+                jobsExecutedDetails.setJobs(job);
+
+                jobExecutedDetailsRepo.save(jobsExecutedDetails);
+
+                LOG.error("LocalJob1 failed - Exception while executing job, Data update in JobExecutedDetails Table");
+                LOG.warn("All triggers related to the job are Unscheduled");
+                throw jobExecutionException;
+
+            } else {
+                LOG.error("Exception during Local Job1 execution - retrying - Count: " + count + "\n" + e);
+
+                dataMap.put("count", count);
+
+                JobExecutionException jobExecutionException = new JobExecutionException(e);
+
+                try {
+                    Thread.sleep(10000);
+                } catch (InterruptedException ex) {
+                    LOG.error("Exception while waiting for Thread to hold before firing Job again", e);
+                }
+
+                jobExecutionException.setRefireImmediately(true);
+                throw jobExecutionException;
+
+            }
         }
     }
-
 }

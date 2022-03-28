@@ -34,7 +34,7 @@ public class MainService {
         Iterator<Jobs> iterator = list.iterator();
 
         if (!iterator.hasNext()){
-            LOG.info("All the Global Jobs have been scheduled, Add new jobs for scheduling");
+            LOG.info("Add new jobs for scheduling");
         }
 
         while(iterator.hasNext()){
@@ -53,7 +53,7 @@ public class MainService {
         Iterator<Jobs> iterator = list.iterator();
 
         if (!iterator.hasNext()){
-            LOG.info("All the Local Jobs have been scheduled, Add new jobs for scheduling");
+            LOG.info("Add new jobs for scheduling");
         }
 
         while (iterator.hasNext()) {
@@ -71,7 +71,7 @@ public class MainService {
 
         JobDataMap dataMap = new JobDataMap();
         dataMap.put("jobId", job.getJobId());
-
+        dataMap.put("count", 0);
         JobDetail jobDetail = null;
         try {
             jobDetail = JobBuilder
