@@ -7,12 +7,9 @@ import com.internship.Project.entity.JobsExecutedDetails;
 import com.internship.Project.repository.EmailDetailsRepo;
 import com.internship.Project.repository.JobExecutedDetailsRepo;
 import com.internship.Project.repository.JobsRepo;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.Iterator;
 import java.util.List;
 import java.util.Optional;
 import java.util.regex.Matcher;
@@ -20,9 +17,6 @@ import java.util.regex.Pattern;
 
 @Service
 public class GlobalRestService {
-
-    private static final Logger LOG = LoggerFactory.getLogger(GlobalRestService.class);
-
 
     @Autowired
     JobsRepo jobsRepo;

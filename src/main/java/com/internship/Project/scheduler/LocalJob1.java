@@ -4,14 +4,9 @@ import com.internship.Project.entity.Jobs;
 import com.internship.Project.entity.JobsExecutedDetails;
 import com.internship.Project.repository.JobExecutedDetailsRepo;
 import com.internship.Project.repository.JobsRepo;
-import org.quartz.JobDataMap;
-import org.quartz.JobExecutionContext;
-import org.quartz.JobExecutionException;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import lombok.extern.slf4j.Slf4j;
+import org.quartz.*;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.scheduling.quartz.QuartzJobBean;
-import org.springframework.stereotype.Component;
 
 import java.io.BufferedWriter;
 import java.io.File;
@@ -28,40 +23,30 @@ import java.util.Date;
 import java.util.List;
 import java.util.Scanner;
 
-@Component
-public class LocalJob1 extends QuartzJobBean {
-
-    private static final Logger LOG = LoggerFactory.getLogger(LocalJob1.class);
+@Slf4j
+@PersistJobDataAfterExecution
+@DisallowConcurrentExecution
+public class LocalJob1 implements Job {
 
     @Autowired
     JobExecutedDetailsRepo jobExecutedDetailsRepo;
 
     @Autowired
-    JobsRepo jobsRepo;
+    JobsRepo JobsRepo;
 
-    @Override
-    protected void executeInternal(JobExecutionContext context) throws JobExecutionException {
+    protected void handle(JobExecutionContext context) throws JobExecutionException {
 
-        LOG.info("LocalJob1 started");
+        log.info("LocalJob1 started");
 
         JobDataMap dataMap = context.getMergedJobDataMap();
         Long jobId = (Long) dataMap.get("jobId");
 
         int count = (int) dataMap.get("count");
 
-        Jobs job = jobsRepo.findByJobId(jobId);
+        Jobs job = JobsRepo.findByJobId(jobId);
 
         JobsExecutedDetails jobsExecutedDetails = new JobsExecutedDetails();
 
-        //
-        //
-        // Check for the file path in Docker container and change it
-        //
-        //
-
-        // remove while running on docker
-//        String file = "project_logs";
-        String file = "E:\\Internship\\GlobalJob\\globaljob_logs";
 
         //
         // This part of the code is for getting previous day's date
@@ -82,48 +67,49 @@ public class LocalJob1 extends QuartzJobBean {
 
             //
             // We are now reading the log file and we take in all the data which specifies to the previous date(the date which we calculated and found)
+
+            // remove while running on docker
+//            String file = "logs\\projectLogs-"+previousDayDate;
+            String file = "E:\\Internship\\Project\\logs\\projectLogs-"+previousDayDate+".txt";
+
             Path path = Paths.get(file);
             List<String> lines = Files.readAllLines(path);
 
             List<String> dataStore = new ArrayList<String>();
             for (String i : lines) {
-                if (i.contains(previousDayDate)) {
-                    if (i.contains("start") || i.contains("initial") || i.contains("paused") || i.contains("shut") || i.contains("error")) {
-                        dataStore.add(i);
-                    }
+                if (i.contains("start") || i.contains("initial") || i.contains("paused") || i.contains("shut") || i.contains("error")) {
+                    dataStore.add(i);
                 }
             }
-            for (String i : dataStore) {
-                System.out.println(i);
-            }
+
 
             //
             // This part of the code is to create the file in which we will store the log file with date.
             Scanner scanner = new Scanner(System.in);
 
-            File newFileObj = new File("ServerLog_info_" + previousDayDate + ".txt");
+            File newFileObj = new File("LocalJob1\\ServerLog_info_" + previousDayDate + ".txt");
             if (newFileObj.createNewFile()) {
                 BufferedWriter writer = new BufferedWriter(new FileWriter(newFileObj.getName()));
                 for (String i : dataStore) {
                     writer.write(i + "\n");
                 }
                 writer.close();
-                LOG.info("File created and write completed, Path: " + newFileObj.getAbsolutePath());
+                log.info("File created and write completed, Path: " + newFileObj.getAbsolutePath());
             } else {
                 System.out.println("Server log file already Exists");
-                LOG.warn(newFileObj.getName() + " - File already present");
+                log.warn(newFileObj.getName() + " - File already present");
                 System.out.println("Do you want to overwrite?\nSelect: Yes/No");
                 String answer = scanner.nextLine().trim().toLowerCase();
                 if (answer.equals("yes")) {
-                    LOG.warn("Overwriting request for created file: " + newFileObj.getName());
+                    log.warn("Overwriting request for created file: " + newFileObj.getName());
                     BufferedWriter writer = new BufferedWriter(new FileWriter(newFileObj.getName()));
                     for (String i : dataStore) {
                         writer.write(i + "\n");
                     }
                     writer.close();
-                    LOG.info("Overwrite completed, Path: " + newFileObj.getAbsolutePath());
+                    log.info("Overwrite completed, Path: " + newFileObj.getAbsolutePath());
                 } else {
-                    LOG.warn("Overwriting denied, file: " + newFileObj.getName());
+                    log.warn("Overwriting denied, file: " + newFileObj.getName());
                 }
             }
 
@@ -134,15 +120,15 @@ public class LocalJob1 extends QuartzJobBean {
 
 
             // remove while running on docker
-            jobsExecutedDetails.setInstanceName(DataStore.getInstanceName());
-//            jobsExecutedDetails.setInstanceName("get from docker");
+//            jobsExecutedDetails.setInstanceName(DataStore.getInstanceName());
+            jobsExecutedDetails.setInstanceName("get from docker");
             jobsExecutedDetails.setExecutionStatus("Completed");
             jobsExecutedDetails.setExecutionStatusMessage("Job execution successful");
             jobsExecutedDetails.setJobs(job);
 
             jobExecutedDetailsRepo.save(jobsExecutedDetails);
 
-            LOG.info("LocalJob1 Completed, Data update in JobExecutedDetails Table");
+            log.info("LocalJob1 Completed, Data update in JobExecutedDetails Table");
 
             dataMap.put("count", 0);
 
@@ -163,12 +149,12 @@ public class LocalJob1 extends QuartzJobBean {
 
                 jobExecutedDetailsRepo.save(jobsExecutedDetails);
 
-                LOG.error("LocalJob1 failed - Exception while executing job, Data update in JobExecutedDetails Table");
-                LOG.warn("All triggers related to the job are Unscheduled");
+                log.error("LocalJob1 failed - Exception while executing job, Data update in JobExecutedDetails Table");
+                log.warn("All triggers related to the job are Unscheduled");
                 throw jobExecutionException;
 
             } else {
-                LOG.error("Exception during Local Job1 execution - retrying - Count: " + count + "\n" + e);
+                log.error("Exception during Local Job1 execution - retrying - Count: " + count + "\n" + e);
 
                 dataMap.put("count", count);
 
@@ -177,7 +163,7 @@ public class LocalJob1 extends QuartzJobBean {
                 try {
                     Thread.sleep(10000);
                 } catch (InterruptedException ex) {
-                    LOG.error("Exception while waiting for Thread to hold before firing Job again", e);
+                    log.error("Exception while waiting for Thread to hold before firing Job again", e);
                 }
 
                 jobExecutionException.setRefireImmediately(true);
@@ -185,5 +171,10 @@ public class LocalJob1 extends QuartzJobBean {
 
             }
         }
+    }
+
+    @Override
+    public void execute(JobExecutionContext context) throws JobExecutionException {
+        handle(context);
     }
 }

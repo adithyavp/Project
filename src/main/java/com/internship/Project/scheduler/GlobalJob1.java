@@ -6,48 +6,64 @@ import com.internship.Project.entity.JobsExecutedDetails;
 import com.internship.Project.repository.CurrencyDataRepo;
 import com.internship.Project.repository.JobExecutedDetailsRepo;
 import com.internship.Project.repository.JobsRepo;
+import com.internship.Project.service.MainService;
+import lombok.extern.slf4j.Slf4j;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.quartz.*;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.scheduling.quartz.QuartzJobBean;
-import org.springframework.stereotype.Component;
 
 import java.io.IOException;
 import java.util.List;
 
-@Component
+@Slf4j
 @PersistJobDataAfterExecution
 @DisallowConcurrentExecution
-public class GlobalJob1 extends QuartzJobBean {
-
-    private static final Logger LOG = LoggerFactory.getLogger(GlobalJob1.class);
+public class GlobalJob1 implements Job {
 
     @Autowired
-    CurrencyDataRepo currencyDataRepo;
+    MainService serviceClassCheck;
+
+    JobsRepo jobsRepo;
+
+//    public GlobalJob1(JobsRepo jobsRepo) {
+//        this.jobsRepo = jobsRepo;
+//    }
+//
+//    public GlobalJob1(){
+//
+//    }
 
     @Autowired
     JobExecutedDetailsRepo jobExecutedDetailsRepo;
 
     @Autowired
-    JobsRepo jobsRepo;
+    CurrencyDataRepo currencyDataRepo;
 
     @Value("${my.instance.all}")
     private List<String> listInstanceNames;
 
-    @Override
-    protected void executeInternal(JobExecutionContext context) throws JobExecutionException {
 
-        LOG.info("GlobalJob1 started");
+    private void handle(JobExecutionContext context) throws JobExecutionException {
+
+        log.info("GlobalJob1 started");
+
+//        ApplicationContext applicationContext = new ClassPathXmlApplicationContext("applicationContext.xml");
+//        MainService mainService = (MainService)applicationContext.getBean("a");
+//        jobsRepo = mainService.getJobsRepo();
 
         JobDataMap dataMap = context.getMergedJobDataMap();
         Long jobId = (Long) dataMap.get("jobId");
-
         int count = (int) dataMap.get("count");
+
+        try {
+            jobsRepo = (JobsRepo) context.getScheduler().getContext().get("jobRepository");
+        } catch (SchedulerException e) {
+            log.error("Exception while reading from Scheduler context: ", e);
+        }
 
         Jobs job = jobsRepo.findByJobId(jobId);
 
@@ -84,7 +100,7 @@ public class GlobalJob1 extends QuartzJobBean {
 //            // This line of code is used to fetch the date and time when the website data has been updated.
 //            final String fetchUpdateDateTime = document.select("span.ratesTimestamp").get(1).text();
 //
-            LOG.info("Currency Data Saved.");
+            log.info("Currency Data Saved.");
 
                 /* Code for how the output to be given
                 ....
@@ -101,7 +117,38 @@ public class GlobalJob1 extends QuartzJobBean {
 
             jobExecutedDetailsRepo.save(jobsExecutedDetails);
 
-            LOG.info("GlobalJob1 Completed.");
+//            JobsExecutedDetails jobsExecuted = jobExecutedDetailsRepo.findTopByOrderByJobsExecutedIdDesc();
+//
+//            String lastInstance = "lastExecutedInstance";
+//
+//            String nextInstanceReq = "instance";
+//
+//
+//            if(jobsExecuted == null) {
+//
+//                nextInstanceReq = listInstanceNames.get(0);
+//
+//            } else {
+//
+//                lastInstance = jobsExecuted.getInstanceName();
+//
+//                int lastInstanceIndex = 0;
+//                for(int i = 0; i< listInstanceNames.size(); i++){
+//                    if(lastInstance.equals(listInstanceNames.get(i))){
+//                        lastInstanceIndex = i;
+//                    }
+//                }
+//
+//                if((lastInstanceIndex+1)==listInstanceNames.size()){
+//                    nextInstanceReq = listInstanceNames.get(0);
+//                } else {
+//                    nextInstanceReq = listInstanceNames.get(lastInstanceIndex+1);
+//                }
+//            }
+//
+//            jobsRepo.setInstanceNameInDB(nextInstanceReq);
+
+            log.info("GlobalJob1 Completed.");
 
             dataMap.put("count", 0);
 
@@ -121,12 +168,12 @@ public class GlobalJob1 extends QuartzJobBean {
 
                 jobExecutedDetailsRepo.save(jobsExecutedDetails);
 
-                LOG.error("GlobalJob1 failed - Exception while executing job, Data update in JobExecutedDetails Table");
-                LOG.warn("All triggers related to the job are Unscheduled");
+                log.error("GlobalJob1 failed - Exception while executing job, Data update in JobExecutedDetails Table");
+                log.warn("All triggers related to the job are Unscheduled");
                 throw jobExecutionException;
 
             } else {
-                LOG.error("Exception during Global Job1 execution - retrying - Count: "+count+"\n"+e);
+                log.error("Exception during Global Job1 execution - retrying - Count: "+count+"\n"+e);
 
                 dataMap.put("count", count);
 
@@ -135,7 +182,7 @@ public class GlobalJob1 extends QuartzJobBean {
                 try {
                     Thread.sleep(10000);
                 } catch (InterruptedException ex) {
-                    LOG.error("Exception while waiting for Thread to hold before firing Job again", e);
+                    log.error("Exception while waiting for Thread to hold before firing Job again", e);
                 }
 
                 jobExecutionException.setRefireImmediately(true);
@@ -143,34 +190,6 @@ public class GlobalJob1 extends QuartzJobBean {
             }
         }
 
-//        JobsExecutedDetails jobsExecuted = jobExecutedDetailsRepo.findTopByOrderByJobsExecutedIdDesc();
-//
-//        String lastInstance = "lastExecutedInstance";
-//
-//        String nextInstanceReq = "instance";
-//
-//
-//        if(jobsExecuted == null) {
-//
-//            nextInstanceReq = listInstanceNames.get(0);
-//
-//        } else {
-//
-//            lastInstance = jobsExecuted.getInstanceName();
-//
-//            int lastInstanceIndex = 0;
-//            for(int i = 0; i< listInstanceNames.size(); i++){
-//                if(lastInstance.equals(listInstanceNames.get(i))){
-//                    lastInstanceIndex = i;
-//                }
-//            }
-//
-//            if((lastInstanceIndex+1)==listInstanceNames.size()){
-//                nextInstanceReq = listInstanceNames.get(0);
-//            } else {
-//                nextInstanceReq = listInstanceNames.get(lastInstanceIndex+1);
-//            }
-//        }
 //
 //        if(DataStore.getInstanceName().equals(nextInstanceReq)){
 //
@@ -182,5 +201,11 @@ public class GlobalJob1 extends QuartzJobBean {
 //
 //            throw jobExecutionException;
 //        }
+
+    }
+
+    @Override
+    public void execute(JobExecutionContext context) throws JobExecutionException {
+        handle(context);
     }
 }
