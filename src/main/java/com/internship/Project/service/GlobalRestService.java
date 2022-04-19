@@ -15,6 +15,8 @@ import java.util.Optional;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+/* This class is basically having all the necessary methods and function definitions which are used in the
+   GlobalRestController class which is having all the API endpoints */
 @Service
 public class GlobalRestService {
 
@@ -30,12 +32,12 @@ public class GlobalRestService {
     @Autowired
     MainService mainService;
 
-    // For the Jobs master table
-    //
-    //
-    //
+    /* For the Jobs master table
 
-    // Creation of the job details in the jobs table
+
+    */
+
+    // Creation of the job details in the jobs master table
     public Jobs createJob(Jobs job){
         Jobs newJobToCreate = jobsRepo.findByName(job.getName());
         if(newJobToCreate!=null){
@@ -49,14 +51,14 @@ public class GlobalRestService {
         return  newJobToCreate;
     }
 
-    // To read all the jobs from the jobs table
+    // To read all the jobs from the jobs master table
     public List<Jobs> readAllJobs(){
         Iterable<Jobs> allJobs = jobsRepo.findAll();
         return (List<Jobs>) allJobs;
     }
 
-    // To update the jobs in the Jobs table
-    // One can update only the Memory type and the Cron expression and no other data
+    /* To update the jobs in the jobs master table
+       One can update only the Memory type and the Cron expression and no other data */
     public Jobs updateJob(Long jobId, String jobName, Jobs job){
         Jobs isJobPresent = jobsRepo.findByJobIdAndName(jobId, jobName);
         if(isJobPresent!=null){
@@ -71,7 +73,7 @@ public class GlobalRestService {
         return isJobPresent;
     }
 
-    // To delete the jobs from the jobs table
+    // To delete the jobs from the jobs master table
     public void deleteJob(Long jobId){
         Optional<Jobs> jobToDelete = jobsRepo.findById(jobId);
         if(jobToDelete.isPresent()){
@@ -81,34 +83,34 @@ public class GlobalRestService {
         }
     }
 
-    // Scheduling all Global jobs created
+    // Scheduling all Global jobs which are created in the jobs master table
     public void startGlobalJobScheduling(){
         mainService.scheduleAllGlobalJob();
     }
 
-    // Scheduling all Local jobs created
+    // Scheduling all Local jobs created which are created in the jobs master table
     public void startLocalJobScheduling(){
         mainService.scheduleAllLocalJob();
     }
 
 
 
-    // For the Jobs Executed Details table
-    //
-    //
-    //
+    /* For the Jobs Executed Details table
 
-    // To read all the jobs from the jobs table
+
+    */
+
+    // To read all the jobs from the jobs executed table
     public List<JobsExecutedDetails> readAllJobsExecuted(){
         Iterable<JobsExecutedDetails> allExecutedJobs = jobExecutedDetailsRepo.findAll();
         return (List<JobsExecutedDetails>) allExecutedJobs;
     }
 
 
-    // For the Email Details table
-    //
-    //
-    //
+    /* For the Email Details table
+
+
+    */
     String regex = "^[\\w-_\\.+]*[\\w-_\\.]\\@([\\w]+\\.)+[\\w]+[\\w]$";
     Pattern pattern = Pattern.compile(regex);
 
@@ -171,8 +173,9 @@ public class GlobalRestService {
         }
     }
 
-    // Just for check
-    // To print hashMap of Trigger Key
+    /* Just for check
+
+       To print hashMap of Trigger Key */
     public void printHashMap() {
         mainService.printHashMap();
     }

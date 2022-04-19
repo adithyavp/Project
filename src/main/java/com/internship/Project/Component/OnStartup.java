@@ -14,7 +14,7 @@ public class OnStartup {
 	@Autowired
 	private MainService mainService;
 
-	/* Run this when the application starts */
+	/* Run this when the application is starting */
 	@EventListener(ApplicationReadyEvent.class)
 	public void runOnStartUp() throws Exception {
 		log.info("-------OnStartup class called-------");

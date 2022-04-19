@@ -6,9 +6,12 @@ import javax.persistence.Id;
 @Entity
 public class CurrencyData {
 
+    // The name of the Currency
     @Id
     private String currencyName;
+    // The value of 1 Indian rupee to their currency
     private String ratePerRupee;
+    // The value of 1 currency money to Indian rupee
     private String rupeePerCurrency;
 
     public String getCurrencyName() {

@@ -23,6 +23,8 @@ import java.util.Date;
 import java.util.List;
 import java.util.Scanner;
 
+/* This class has the necessary functionality that the LocalJob1 needs to perform in here we do the Server data
+   retrieval which is from the Log file (Created using a custom Logger) */
 @Slf4j
 @PersistJobDataAfterExecution
 @DisallowConcurrentExecution
@@ -47,17 +49,16 @@ public class LocalJob1 implements Job {
 
         JobsExecutedDetails jobsExecutedDetails = new JobsExecutedDetails();
 
-
-        //
-        // This part of the code is for getting previous day's date
-        String DATE_FORMAT = "yyyy-MM-dd";
-        long oneDayInMilliSeconds = 24 * 60 * 60 * 1000;
-        LocalDate localDate = LocalDate.now();
-
-        SimpleDateFormat dateFormat = new SimpleDateFormat(DATE_FORMAT);
-        Date date;
-
         try {
+            // This part of the code is for getting previous day's date
+
+            String DATE_FORMAT = "yyyy-MM-dd";
+            long oneDayInMilliSeconds = 24 * 60 * 60 * 1000;
+            LocalDate localDate = LocalDate.now();
+
+            SimpleDateFormat dateFormat = new SimpleDateFormat(DATE_FORMAT);
+            Date date;
+
             date = dateFormat.parse(localDate.toString());
 
             long previousDayInMilliSeconds = date.getTime() - oneDayInMilliSeconds;
@@ -65,10 +66,10 @@ public class LocalJob1 implements Job {
             Date previousDate = new Date(previousDayInMilliSeconds);
             String previousDayDate = dateFormat.format(previousDate);
 
-            //
-            // We are now reading the log file and we take in all the data which specifies to the previous date(the date which we calculated and found)
+             // We are now reading the log file, and we take in all the data which specifies to the previous date(the date which we calculated and found)
 
             // remove while running on docker
+
 //            String file = "logs\\projectLogs-"+previousDayDate;
             String file = "E:\\Internship\\Project\\logs\\projectLogs-"+previousDayDate+".txt";
 
@@ -82,8 +83,6 @@ public class LocalJob1 implements Job {
                 }
             }
 
-
-            //
             // This part of the code is to create the file in which we will store the log file with date.
             Scanner scanner = new Scanner(System.in);
 
@@ -113,13 +112,14 @@ public class LocalJob1 implements Job {
                 }
             }
 
-            // Code for how the output to be given
-            // ....
-            // ....
-            // (Or we can also have a separate job for this)
+            /* Code for how the output to be given
+             ....
+             ....
+             (Or we can also have a separate job for this) */
 
 
             // remove while running on docker
+
 //            jobsExecutedDetails.setInstanceName(DataStore.getInstanceName());
             jobsExecutedDetails.setInstanceName("get from docker");
             jobsExecutedDetails.setExecutionStatus("Completed");
@@ -141,6 +141,7 @@ public class LocalJob1 implements Job {
                 jobExecutionException.setUnscheduleAllTriggers(true);
 
                 // remove while running on docker
+
 //                jobsExecutedDetails.setInstanceName(DataStore.getInstanceName());
                 jobsExecutedDetails.setInstanceName("get from docker");
                 jobsExecutedDetails.setExecutionStatus("Job Failed");

@@ -11,6 +11,8 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
+/* This class is used to store the necessary objects which need to be accessed all over the application, and they are of
+*  type static for this reason */
 @Slf4j
 public class DataStore {
 
@@ -60,6 +62,7 @@ public class DataStore {
     @Autowired
     static JobExecutedDetailsRepo jobExecutedDetailsRepo;
 
+    /* This part was used to check if the reading or sending of the Repository happens from different class or not */
     public static JobsRepo getJobsRepo() {
         return jobsRepo;
     }

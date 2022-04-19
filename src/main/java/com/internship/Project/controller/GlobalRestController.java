@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+/* This class has all the API endpoints which are necessary and required for the functionality of the Application */
 @RestController
 @Slf4j
 public class GlobalRestController {
@@ -19,9 +20,9 @@ public class GlobalRestController {
     @Autowired
     GlobalRestService globalRestService;
 
-    // This part is for CRUD operations of the Jobs master table
-    //
-    //
+    /* This part is for CRUD operations of the Jobs master table
+    *
+    * */
     @PostMapping("/jobs/create")
     public ResponseEntity<Jobs> createJob(@RequestBody Jobs jobDetails){
         log.info("Create new Job - Jobs Master Table");
@@ -50,10 +51,9 @@ public class GlobalRestController {
         return ResponseEntity.status(HttpStatus.NO_CONTENT).body(null);
     }
 
-
-    // This part is for scheduling the jobs created in the Jobs master table
-    //
-    //
+    /* This part is for scheduling the jobs(Local and Global) created in the Jobs master table
+     *
+     * */
     @PostMapping("/jobs/scheduleAllGlobal")
     public ResponseEntity<Void> scheduleAllGlobalJobs(){
         log.info("Schedule all Global Jobs - Jobs Master Table");
@@ -69,9 +69,9 @@ public class GlobalRestController {
     }
 
 
-    // This part is for the Jobs Executed Table
-    //
-    //
+    /* This part is for the Jobs Executed Table
+    *
+    * */
     @GetMapping("/jobsExecuted/read")
     public ResponseEntity<List<JobsExecutedDetails>> readAllJobsExecuted(){
         log.info("Read all Jobs - Jobs Executed Details Table");
@@ -80,9 +80,9 @@ public class GlobalRestController {
     }
 
 
-    // This part is for the CRUD operations of the EmailDetails table
-    //
-    //
+    /* This part is for the CRUD operations of the EmailDetails table
+    *
+    * */
     @PostMapping("/emailDetails/create")
     public ResponseEntity<EmailDetails> createEmailDetail(@RequestBody EmailDetails emailDetail){
         log.info("Create new Email Detail - Email Details Table");
@@ -112,8 +112,10 @@ public class GlobalRestController {
     }
 
 
-    // Just for reference purpose
-    // This end point is just to check the printing of the Trigger Key hashmap
+     /* Just for reference purpose
+     *  This end point is just to check the printing of the Trigger Key hashmap
+     *
+     * */
     @GetMapping("/print")
     public ResponseEntity<Void> printHashMap(){
         globalRestService.printHashMap();

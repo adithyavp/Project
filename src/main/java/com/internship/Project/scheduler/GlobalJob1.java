@@ -19,6 +19,8 @@ import org.springframework.beans.factory.annotation.Value;
 import java.io.IOException;
 import java.util.List;
 
+/* This class has the necessary functionality that the GlobalJob1 needs to perform in here we do the currency data
+   retrieval from one particular website */
 @Slf4j
 @PersistJobDataAfterExecution
 @DisallowConcurrentExecution
@@ -97,9 +99,10 @@ public class GlobalJob1 implements Job {
                     }
                 }
             }
-//            // This line of code is used to fetch the date and time when the website data has been updated.
+            // This line of code is used to fetch the date and time when the website data has been updated.
+
 //            final String fetchUpdateDateTime = document.select("span.ratesTimestamp").get(1).text();
-//
+
             log.info("Currency Data Saved.");
 
                 /* Code for how the output to be given
@@ -109,6 +112,7 @@ public class GlobalJob1 implements Job {
 
 
             // remove while running on docker
+
 //            jobsExecutedDetails.setInstanceName(DataStore.getInstanceName());
             jobsExecutedDetails.setInstanceName("get from docker");
             jobsExecutedDetails.setExecutionStatus("Completed");
@@ -160,6 +164,7 @@ public class GlobalJob1 implements Job {
                 jobExecutionException.setUnscheduleAllTriggers(true);
 
                 // remove while running on docker
+
 //                jobsExecutedDetails.setInstanceName(DataStore.getInstanceName());
                 jobsExecutedDetails.setInstanceName("get from docker");
                 jobsExecutedDetails.setExecutionStatus("Job Failed");

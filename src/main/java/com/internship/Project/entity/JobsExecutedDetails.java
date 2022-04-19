@@ -21,6 +21,7 @@ public class JobsExecutedDetails {
     private String executionStatus;
     // The message based on the status of the job
     private String executionStatusMessage;
+    // Foreign key to the Jobs Master Table - So we are adding the reference
     @OneToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "job_id", referencedColumnName = "job_id")
     private Jobs jobs;

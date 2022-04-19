@@ -18,6 +18,8 @@ import java.util.Iterator;
 import java.util.Map;
 import java.util.Properties;
 
+/* This is the main service class which has all the required method executions for the GlobalRestService and other
+   functionalities required */
 @Service
 @Slf4j
 public class MainService {
@@ -52,7 +54,7 @@ public class MainService {
 
             // This part is for the initialization of the scheduler instance for the Global Jobs
             StdSchedulerFactory stdSchedulerFactoryGlobal = new StdSchedulerFactory("globalQuartz.properties");
-//
+
 //            Properties overAllPropertiesGlobal = readQuartzProperties("globalQuartz.properties");
 //
 //            stdSchedulerFactoryGlobal.initialize(overAllPropertiesGlobal);
@@ -113,7 +115,8 @@ public class MainService {
 //            scheduler.shutdown();
 
             log.info("Quartz Scheduler shutdown");
-//			log.info("The active jobs status updated to unscheduled, the jobs related to it have been deleted - Jobs Master Table, Quartz Job Tables(qrtz_triggers, qrtz_cron_triggers, qrtz_job_details)");
+			log.info("The active jobs status updated to unscheduled, the jobs related to it have been deleted - Jobs Master Table, Quartz Job Tables(qrtz_triggers, qrtz_cron_triggers, qrtz_job_details)");
+
         } catch (SchedulerException e) {
             log.error("Exception - Shutting down Quartz scheduler: ");
         }
@@ -198,7 +201,7 @@ public class MainService {
         }
 
         // This line of code is to check the constructor
-        //        GlobalJob1 globalJob1 = new GlobalJob1(jobsRepo);
+//        GlobalJob1 globalJob1 = new GlobalJob1(jobsRepo);
 
 
         Trigger jobTrigger = TriggerBuilder
