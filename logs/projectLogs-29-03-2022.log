@@ -1,0 +1,193 @@
+21:05:22.335 [restartedMain] INFO  ProjectApplication[logStarting:55] - Starting ProjectApplication using Java 17.0.2 on DESKTOP-L0Q733T with PID 25504 (E:\Internship\Project\target\classes started by adith in E:\Internship\Project)
+21:05:22.335 [background-preinit] INFO  Version[<clinit>:21] - HV000001: Hibernate Validator 6.2.2.Final
+21:05:22.336 [restartedMain] INFO  ProjectApplication[logStartupProfileInfo:640] - No active profile set, falling back to 1 default profile: "default"
+21:05:22.385 [restartedMain] INFO  DevToolsPropertyDefaultsPostProcessor[logTo:255] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+21:05:22.387 [restartedMain] INFO  DevToolsPropertyDefaultsPostProcessor[logTo:255] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+21:05:23.011 [restartedMain] INFO  RepositoryConfigurationDelegate[registerRepositoriesIn:132] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+21:05:23.062 [restartedMain] INFO  RepositoryConfigurationDelegate[registerRepositoriesIn:201] - Finished Spring Data repository scanning in 43 ms. Found 4 JPA repository interfaces.
+21:05:23.823 [restartedMain] INFO  TomcatWebServer[initialize:108] - Tomcat initialized with port(s): 8080 (http)
+21:05:23.834 [restartedMain] INFO  Http11NioProtocol[log:173] - Initializing ProtocolHandler ["http-nio-8080"]
+21:05:23.834 [restartedMain] INFO  StandardService[log:173] - Starting service [Tomcat]
+21:05:23.834 [restartedMain] INFO  StandardEngine[log:173] - Starting Servlet engine: [Apache Tomcat/9.0.58]
+21:05:24.292 [restartedMain] INFO  [/][log:173] - Initializing Spring embedded WebApplicationContext
+21:05:24.297 [restartedMain] INFO  ServletWebServerApplicationContext[prepareWebApplicationContext:290] - Root WebApplicationContext: initialization completed in 1908 ms
+21:05:24.385 [restartedMain] INFO  HikariDataSource[getConnection:110] - HikariPool-1 - Starting...
+21:05:24.894 [restartedMain] INFO  HikariDataSource[getConnection:123] - HikariPool-1 - Start completed.
+21:05:25.034 [restartedMain] INFO  LogHelper[logPersistenceUnitInformation:31] - HHH000204: Processing PersistenceUnitInfo [name: default]
+21:05:25.103 [restartedMain] INFO  Version[logVersion:44] - HHH000412: Hibernate ORM core version 5.6.5.Final
+21:05:25.358 [restartedMain] INFO  Version[<clinit>:56] - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+21:05:25.565 [restartedMain] INFO  Dialect[<init>:175] - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+21:05:26.524 [restartedMain] INFO  JtaPlatformInitiator[initiateService:52] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+21:05:26.526 [restartedMain] INFO  LocalContainerEntityManagerFactoryBean[buildNativeEntityManagerFactory:437] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+21:05:26.582 [restartedMain] INFO  StdSchedulerFactory[instantiate:1220] - Using default implementation for ThreadExecutor
+21:05:26.594 [restartedMain] INFO  SchedulerSignalerImpl[<init>:61] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+21:05:26.594 [restartedMain] INFO  QuartzScheduler[<init>:229] - Quartz Scheduler v.2.3.2 created.
+21:05:26.596 [restartedMain] INFO  LocalDataSourceJobStore[initialize:672] - Using db table-based data access locking (synchronization).
+21:05:26.598 [restartedMain] INFO  LocalDataSourceJobStore[initialize:145] - JobStoreCMT initialized.
+21:05:26.598 [restartedMain] INFO  QuartzScheduler[initialize:294] - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'MyClusteredScheduler' with instanceId 'DESKTOP-L0Q733T1648568126583'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of qrtzJobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 5 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
+
+21:05:26.599 [restartedMain] INFO  StdSchedulerFactory[instantiate:1374] - Quartz scheduler 'MyClusteredScheduler' initialized from an externally provided properties instance.
+21:05:26.599 [restartedMain] INFO  StdSchedulerFactory[instantiate:1378] - Quartz scheduler version: 2.3.2
+21:05:26.599 [restartedMain] INFO  QuartzScheduler[setJobFactory:2293] - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@743f9a1e
+21:05:26.977 [restartedMain] INFO  QuartzScheduler[start:547] - Scheduler MyClusteredScheduler_$_DESKTOP-L0Q733T1648568126583 started.
+21:05:26.978 [restartedMain] INFO  ProjectApplication[postConstruct:35] - Quartz Scheduler started
+21:05:27.340 [restartedMain] WARN  JpaBaseConfiguration$JpaWebConfiguration[openEntityManagerInViewInterceptor:219] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+21:05:27.850 [restartedMain] WARN  ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration[checkTemplateLocationExists:106] - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+21:05:28.061 [restartedMain] INFO  OptionalLiveReloadServer[startServer:58] - LiveReload server is running on port 35729
+21:05:28.099 [restartedMain] INFO  Http11NioProtocol[log:173] - Starting ProtocolHandler ["http-nio-8080"]
+21:05:28.139 [restartedMain] INFO  TomcatWebServer[start:220] - Tomcat started on port(s): 8080 (http) with context path ''
+21:05:28.161 [restartedMain] INFO  ProjectApplication[logStarted:61] - Started ProjectApplication in 6.186 seconds (JVM running for 7.738)
+21:05:34.490 [QuartzScheduler_MyClusteredScheduler-DESKTOP-L0Q733T1648568126583_ClusterManager] INFO  LocalDataSourceJobStore[logWarnIfNonZero:3644] - ClusterManager: detected 1 failed or restarted instances.
+21:05:34.491 [QuartzScheduler_MyClusteredScheduler-DESKTOP-L0Q733T1648568126583_ClusterManager] INFO  LocalDataSourceJobStore[clusterRecover:3503] - ClusterManager: Scanning for instance "DESKTOP-L0Q733T1648567901937"'s failed in-progress qrtzJobs.
+21:06:02.746 [http-nio-8080-exec-2] INFO  [/][log:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+21:06:02.746 [http-nio-8080-exec-2] INFO  DispatcherServlet[initServletBean:525] - Initializing Servlet 'dispatcherServlet'
+21:06:02.747 [http-nio-8080-exec-2] INFO  DispatcherServlet[initServletBean:547] - Completed initialization in 1 ms
+21:06:02.763 [http-nio-8080-exec-2] WARN  DefaultHandlerExceptionResolver[logException:208] - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+21:06:06.564 [http-nio-8080-exec-3] INFO  GlobalRestController[readAllJobs:36] - Read all Jobs - Jobs Master Table
+21:06:40.027 [http-nio-8080-exec-4] INFO  GlobalRestController[createJob:29] - Create new Job - Jobs Master Table
+21:06:57.232 [http-nio-8080-exec-5] INFO  GlobalRestController[scheduleAllLocalJobs:68] - Schedule all Local Jobs - Jobs Master Table
+21:06:57.232 [http-nio-8080-exec-5] INFO  MainService[scheduleAllLocalJob:51] - Scheduling all Local qrtzJobs from Jobs master table
+21:06:57.359 [http-nio-8080-exec-5] INFO  MainService[scheduleJobMethod:104] - Job Scheduled Successfully
+21:07:00.073 [MyClusteredScheduler_Worker-1] INFO  LocalJob1[executeInternal:45] - LocalJob1 started
+21:07:00.116 [MyClusteredScheduler_Worker-1] ERROR LocalJob1[executeInternal:165] - Exception during Local Job1 execution - retrying - Count: 1
+java.nio.file.NoSuchFileException: E:\Internship\Project\logs\projectLogs-11-09-0034
+21:07:04.571 [QuartzScheduler_MyClusteredScheduler-DESKTOP-L0Q733T1648568126583_ClusterManager] WARN  LocalDataSourceJobStore[findFailedInstances:3411] - This scheduler instance (DESKTOP-L0Q733T1648568126583) is still active but was recovered by another instance in the cluster.  This may cause inconsistent behavior.
+21:07:10.128 [MyClusteredScheduler_Worker-1] INFO  JobRunShell[run:207] - Job memory.Server Log Generate threw a JobExecutionException: 
+org.quartz.JobExecutionException: java.nio.file.NoSuchFileException: E:\Internship\Project\logs\projectLogs-11-09-0034
+	at com.internship.Project.scheduler.LocalJob1.executeInternal(LocalJob1.java:169)
+	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:75)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.nio.file.NoSuchFileException: E:\Internship\Project\logs\projectLogs-11-09-0034
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:236)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:380)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:432)
+	at java.base/java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:422)
+	at java.base/java.nio.file.Files.newInputStream(Files.java:160)
+	at java.base/java.nio.file.Files.newBufferedReader(Files.java:2922)
+	at java.base/java.nio.file.Files.readAllLines(Files.java:3412)
+	at java.base/java.nio.file.Files.readAllLines(Files.java:3453)
+	at com.internship.Project.scheduler.LocalJob1.executeInternal(LocalJob1.java:82)
+	... 3 common frames omitted
+21:07:10.130 [MyClusteredScheduler_Worker-1] INFO  LocalJob1[executeInternal:45] - LocalJob1 started
+21:07:10.139 [MyClusteredScheduler_Worker-1] ERROR LocalJob1[executeInternal:165] - Exception during Local Job1 execution - retrying - Count: 2
+java.nio.file.NoSuchFileException: E:\Internship\Project\logs\projectLogs-11-09-0034
+21:07:12.087 [QuartzScheduler_MyClusteredScheduler-DESKTOP-L0Q733T1648568126583_ClusterManager] INFO  LocalDataSourceJobStore[logWarnIfNonZero:3644] - ClusterManager: detected 1 failed or restarted instances.
+21:07:12.088 [QuartzScheduler_MyClusteredScheduler-DESKTOP-L0Q733T1648568126583_ClusterManager] INFO  LocalDataSourceJobStore[clusterRecover:3503] - ClusterManager: Scanning for instance "Check"'s failed in-progress qrtzJobs.
+21:07:20.144 [MyClusteredScheduler_Worker-1] INFO  JobRunShell[run:207] - Job memory.Server Log Generate threw a JobExecutionException: 
+org.quartz.JobExecutionException: java.nio.file.NoSuchFileException: E:\Internship\Project\logs\projectLogs-11-09-0034
+	at com.internship.Project.scheduler.LocalJob1.executeInternal(LocalJob1.java:169)
+	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:75)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.nio.file.NoSuchFileException: E:\Internship\Project\logs\projectLogs-11-09-0034
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:236)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:380)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:432)
+	at java.base/java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:422)
+	at java.base/java.nio.file.Files.newInputStream(Files.java:160)
+	at java.base/java.nio.file.Files.newBufferedReader(Files.java:2922)
+	at java.base/java.nio.file.Files.readAllLines(Files.java:3412)
+	at java.base/java.nio.file.Files.readAllLines(Files.java:3453)
+	at com.internship.Project.scheduler.LocalJob1.executeInternal(LocalJob1.java:82)
+	... 3 common frames omitted
+21:07:20.145 [MyClusteredScheduler_Worker-1] INFO  LocalJob1[executeInternal:45] - LocalJob1 started
+21:07:20.151 [MyClusteredScheduler_Worker-1] ERROR LocalJob1[executeInternal:165] - Exception during Local Job1 execution - retrying - Count: 3
+java.nio.file.NoSuchFileException: E:\Internship\Project\logs\projectLogs-11-09-0034
+21:07:30.155 [MyClusteredScheduler_Worker-1] INFO  JobRunShell[run:207] - Job memory.Server Log Generate threw a JobExecutionException: 
+org.quartz.JobExecutionException: java.nio.file.NoSuchFileException: E:\Internship\Project\logs\projectLogs-11-09-0034
+	at com.internship.Project.scheduler.LocalJob1.executeInternal(LocalJob1.java:169)
+	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:75)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.nio.file.NoSuchFileException: E:\Internship\Project\logs\projectLogs-11-09-0034
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:236)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:380)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:432)
+	at java.base/java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:422)
+	at java.base/java.nio.file.Files.newInputStream(Files.java:160)
+	at java.base/java.nio.file.Files.newBufferedReader(Files.java:2922)
+	at java.base/java.nio.file.Files.readAllLines(Files.java:3412)
+	at java.base/java.nio.file.Files.readAllLines(Files.java:3453)
+	at com.internship.Project.scheduler.LocalJob1.executeInternal(LocalJob1.java:82)
+	... 3 common frames omitted
+21:07:30.157 [MyClusteredScheduler_Worker-1] INFO  LocalJob1[executeInternal:45] - LocalJob1 started
+21:07:30.166 [MyClusteredScheduler_Worker-1] ERROR LocalJob1[executeInternal:165] - Exception during Local Job1 execution - retrying - Count: 4
+java.nio.file.NoSuchFileException: E:\Internship\Project\logs\projectLogs-11-09-0034
+21:07:40.170 [MyClusteredScheduler_Worker-1] INFO  JobRunShell[run:207] - Job memory.Server Log Generate threw a JobExecutionException: 
+org.quartz.JobExecutionException: java.nio.file.NoSuchFileException: E:\Internship\Project\logs\projectLogs-11-09-0034
+	at com.internship.Project.scheduler.LocalJob1.executeInternal(LocalJob1.java:169)
+	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:75)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.nio.file.NoSuchFileException: E:\Internship\Project\logs\projectLogs-11-09-0034
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:236)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:380)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:432)
+	at java.base/java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:422)
+	at java.base/java.nio.file.Files.newInputStream(Files.java:160)
+	at java.base/java.nio.file.Files.newBufferedReader(Files.java:2922)
+	at java.base/java.nio.file.Files.readAllLines(Files.java:3412)
+	at java.base/java.nio.file.Files.readAllLines(Files.java:3453)
+	at com.internship.Project.scheduler.LocalJob1.executeInternal(LocalJob1.java:82)
+	... 3 common frames omitted
+21:07:40.172 [MyClusteredScheduler_Worker-1] INFO  LocalJob1[executeInternal:45] - LocalJob1 started
+21:07:40.184 [MyClusteredScheduler_Worker-1] ERROR LocalJob1[executeInternal:165] - Exception during Local Job1 execution - retrying - Count: 5
+java.nio.file.NoSuchFileException: E:\Internship\Project\logs\projectLogs-11-09-0034
+21:07:50.188 [MyClusteredScheduler_Worker-1] INFO  JobRunShell[run:207] - Job memory.Server Log Generate threw a JobExecutionException: 
+org.quartz.JobExecutionException: java.nio.file.NoSuchFileException: E:\Internship\Project\logs\projectLogs-11-09-0034
+	at com.internship.Project.scheduler.LocalJob1.executeInternal(LocalJob1.java:169)
+	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:75)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.nio.file.NoSuchFileException: E:\Internship\Project\logs\projectLogs-11-09-0034
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:236)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:380)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:432)
+	at java.base/java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:422)
+	at java.base/java.nio.file.Files.newInputStream(Files.java:160)
+	at java.base/java.nio.file.Files.newBufferedReader(Files.java:2922)
+	at java.base/java.nio.file.Files.readAllLines(Files.java:3412)
+	at java.base/java.nio.file.Files.readAllLines(Files.java:3453)
+	at com.internship.Project.scheduler.LocalJob1.executeInternal(LocalJob1.java:82)
+	... 3 common frames omitted
+21:07:50.189 [MyClusteredScheduler_Worker-1] INFO  LocalJob1[executeInternal:45] - LocalJob1 started
+21:07:50.222 [MyClusteredScheduler_Worker-1] ERROR LocalJob1[executeInternal:160] - LocalJob1 failed - Exception while executing job, Data update in JobExecutedDetails Table
+21:07:50.223 [MyClusteredScheduler_Worker-1] WARN  LocalJob1[executeInternal:161] - All triggers related to the job are Unscheduled
+21:07:50.224 [MyClusteredScheduler_Worker-1] INFO  JobRunShell[run:207] - Job memory.Server Log Generate threw a JobExecutionException: 
+org.quartz.JobExecutionException: Job Failed
+	at com.internship.Project.scheduler.LocalJob1.executeInternal(LocalJob1.java:148)
+	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:75)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+21:08:35.729 [SpringApplicationShutdownHook] INFO  QuartzScheduler[standby:585] - Scheduler MyClusteredScheduler_$_DESKTOP-L0Q733T1648568126583 paused.
+21:08:35.794 [SpringApplicationShutdownHook] INFO  QuartzScheduler[shutdown:666] - Scheduler MyClusteredScheduler_$_DESKTOP-L0Q733T1648568126583 shutting down.
+21:08:35.795 [SpringApplicationShutdownHook] INFO  QuartzScheduler[standby:585] - Scheduler MyClusteredScheduler_$_DESKTOP-L0Q733T1648568126583 paused.
+21:08:35.796 [SpringApplicationShutdownHook] INFO  QuartzScheduler[shutdown:740] - Scheduler MyClusteredScheduler_$_DESKTOP-L0Q733T1648568126583 shutdown complete.
+21:08:35.796 [SpringApplicationShutdownHook] INFO  ProjectApplication[preDestroy:59] - Quartz Scheduler shutdown
+21:08:35.796 [SpringApplicationShutdownHook] INFO  ProjectApplication[preDestroy:60] - The active qrtzJobs status updated to unscheduled, the qrtzJobs related to it have been deleted - Jobs Master Table, Quartz Job Tables(qrtz_triggers, qrtz_cron_triggers, qrtz_job_details)
+21:08:35.796 [SpringApplicationShutdownHook] INFO  SchedulerFactoryBean[destroy:847] - Shutting down Quartz Scheduler
+21:08:35.797 [SpringApplicationShutdownHook] INFO  LocalContainerEntityManagerFactoryBean[destroy:651] - Closing JPA EntityManagerFactory for persistence unit 'default'
+21:08:35.799 [SpringApplicationShutdownHook] INFO  HikariDataSource[close:350] - HikariPool-1 - Shutdown initiated...
+21:08:35.804 [SpringApplicationShutdownHook] INFO  HikariDataSource[close:352] - HikariPool-1 - Shutdown completed.

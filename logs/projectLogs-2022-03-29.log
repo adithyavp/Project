@@ -1,0 +1,443 @@
+21:11:44.445 [restartedMain] INFO  ProjectApplication[logStarting:55] - Starting ProjectApplication using Java 17.0.2 on DESKTOP-L0Q733T with PID 23192 (E:\Internship\Project\target\classes started by adith in E:\Internship\Project)
+21:11:44.444 [background-preinit] INFO  Version[<clinit>:21] - HV000001: Hibernate Validator 6.2.2.Final
+21:11:44.448 [restartedMain] INFO  ProjectApplication[logStartupProfileInfo:640] - No active profile set, falling back to 1 default profile: "default"
+21:11:44.498 [restartedMain] INFO  DevToolsPropertyDefaultsPostProcessor[logTo:255] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+21:11:44.498 [restartedMain] INFO  DevToolsPropertyDefaultsPostProcessor[logTo:255] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+21:11:45.119 [restartedMain] INFO  RepositoryConfigurationDelegate[registerRepositoriesIn:132] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+21:11:45.171 [restartedMain] INFO  RepositoryConfigurationDelegate[registerRepositoriesIn:201] - Finished Spring Data repository scanning in 43 ms. Found 4 JPA repository interfaces.
+21:11:45.799 [restartedMain] INFO  TomcatWebServer[initialize:108] - Tomcat initialized with port(s): 8080 (http)
+21:11:45.816 [restartedMain] INFO  Http11NioProtocol[log:173] - Initializing ProtocolHandler ["http-nio-8080"]
+21:11:45.817 [restartedMain] INFO  StandardService[log:173] - Starting service [Tomcat]
+21:11:45.818 [restartedMain] INFO  StandardEngine[log:173] - Starting Servlet engine: [Apache Tomcat/9.0.58]
+21:11:46.267 [restartedMain] INFO  [/][log:173] - Initializing Spring embedded WebApplicationContext
+21:11:46.269 [restartedMain] INFO  ServletWebServerApplicationContext[prepareWebApplicationContext:290] - Root WebApplicationContext: initialization completed in 1769 ms
+21:11:46.391 [restartedMain] INFO  HikariDataSource[getConnection:110] - HikariPool-1 - Starting...
+21:11:46.980 [restartedMain] INFO  HikariDataSource[getConnection:123] - HikariPool-1 - Start completed.
+21:11:47.117 [restartedMain] INFO  LogHelper[logPersistenceUnitInformation:31] - HHH000204: Processing PersistenceUnitInfo [name: default]
+21:11:47.195 [restartedMain] INFO  Version[logVersion:44] - HHH000412: Hibernate ORM core version 5.6.5.Final
+21:11:47.504 [restartedMain] INFO  Version[<clinit>:56] - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+21:11:47.727 [restartedMain] INFO  Dialect[<init>:175] - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+21:11:48.636 [restartedMain] INFO  JtaPlatformInitiator[initiateService:52] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+21:11:48.649 [restartedMain] INFO  LocalContainerEntityManagerFactoryBean[buildNativeEntityManagerFactory:437] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+21:11:48.762 [restartedMain] INFO  StdSchedulerFactory[instantiate:1220] - Using default implementation for ThreadExecutor
+21:11:48.783 [restartedMain] INFO  SchedulerSignalerImpl[<init>:61] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+21:11:48.783 [restartedMain] INFO  QuartzScheduler[<init>:229] - Quartz Scheduler v.2.3.2 created.
+21:11:48.783 [restartedMain] INFO  LocalDataSourceJobStore[initialize:672] - Using db table-based data access locking (synchronization).
+21:11:48.790 [restartedMain] INFO  LocalDataSourceJobStore[initialize:145] - JobStoreCMT initialized.
+21:11:48.791 [restartedMain] INFO  QuartzScheduler[initialize:294] - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'MyClusteredScheduler' with instanceId 'DESKTOP-L0Q733T1648568508770'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of qrtzJobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 5 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
+
+21:11:48.793 [restartedMain] INFO  StdSchedulerFactory[instantiate:1374] - Quartz scheduler 'MyClusteredScheduler' initialized from an externally provided properties instance.
+21:11:48.794 [restartedMain] INFO  StdSchedulerFactory[instantiate:1378] - Quartz scheduler version: 2.3.2
+21:11:48.796 [restartedMain] INFO  QuartzScheduler[setJobFactory:2293] - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@9510be8
+21:11:49.306 [restartedMain] INFO  LocalDataSourceJobStore[logWarnIfNonZero:3644] - ClusterManager: detected 1 failed or restarted instances.
+21:11:49.307 [restartedMain] INFO  LocalDataSourceJobStore[clusterRecover:3503] - ClusterManager: Scanning for instance "DESKTOP-L0Q733T1648568126583"'s failed in-progress qrtzJobs.
+21:11:49.321 [restartedMain] INFO  QuartzScheduler[start:547] - Scheduler MyClusteredScheduler_$_DESKTOP-L0Q733T1648568508770 started.
+21:11:49.322 [restartedMain] INFO  ProjectApplication[postConstruct:35] - Quartz Scheduler started
+21:11:49.500 [restartedMain] WARN  JpaBaseConfiguration$JpaWebConfiguration[openEntityManagerInViewInterceptor:219] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+21:11:49.909 [restartedMain] WARN  ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration[checkTemplateLocationExists:106] - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+21:11:50.025 [restartedMain] INFO  OptionalLiveReloadServer[startServer:58] - LiveReload server is running on port 35729
+21:11:50.067 [restartedMain] INFO  Http11NioProtocol[log:173] - Starting ProtocolHandler ["http-nio-8080"]
+21:11:50.115 [restartedMain] INFO  TomcatWebServer[start:220] - Tomcat started on port(s): 8080 (http) with context path ''
+21:11:50.134 [restartedMain] INFO  ProjectApplication[logStarted:61] - Started ProjectApplication in 6.21 seconds (JVM running for 7.531)
+21:11:52.719 [http-nio-8080-exec-2] INFO  [/][log:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+21:11:52.720 [http-nio-8080-exec-2] INFO  DispatcherServlet[initServletBean:525] - Initializing Servlet 'dispatcherServlet'
+21:11:52.723 [http-nio-8080-exec-2] INFO  DispatcherServlet[initServletBean:547] - Completed initialization in 2 ms
+21:11:52.766 [http-nio-8080-exec-2] INFO  GlobalRestController[scheduleAllLocalJobs:68] - Schedule all Local Jobs - Jobs Master Table
+21:11:52.766 [http-nio-8080-exec-2] INFO  MainService[scheduleAllLocalJob:51] - Scheduling all Local qrtzJobs from Jobs master table
+21:11:53.119 [http-nio-8080-exec-2] INFO  MainService[scheduleJobMethod:104] - Job Scheduled Successfully
+21:11:56.837 [QuartzScheduler_MyClusteredScheduler-DESKTOP-L0Q733T1648568508770_ClusterManager] WARN  LocalDataSourceJobStore[findFailedInstances:3411] - This scheduler instance (DESKTOP-L0Q733T1648568508770) is still active but was recovered by another instance in the cluster.  This may cause inconsistent behavior.
+21:12:00.049 [MyClusteredScheduler_Worker-1] INFO  LocalJob1[executeInternal:45] - LocalJob1 started
+21:12:00.072 [MyClusteredScheduler_Worker-1] ERROR LocalJob1[executeInternal:165] - Exception during Local Job1 execution - retrying - Count: 1
+java.nio.file.NoSuchFileException: E:\Internship\Project\logs\projectLogs-2022-03-28
+21:12:04.366 [QuartzScheduler_MyClusteredScheduler-DESKTOP-L0Q733T1648568508770_ClusterManager] INFO  LocalDataSourceJobStore[logWarnIfNonZero:3644] - ClusterManager: detected 1 failed or restarted instances.
+21:12:04.367 [QuartzScheduler_MyClusteredScheduler-DESKTOP-L0Q733T1648568508770_ClusterManager] INFO  LocalDataSourceJobStore[clusterRecover:3503] - ClusterManager: Scanning for instance "Check"'s failed in-progress qrtzJobs.
+21:12:10.080 [MyClusteredScheduler_Worker-1] INFO  JobRunShell[run:207] - Job memory.Server Log Generate threw a JobExecutionException: 
+org.quartz.JobExecutionException: java.nio.file.NoSuchFileException: E:\Internship\Project\logs\projectLogs-2022-03-28
+	at com.internship.Project.scheduler.LocalJob1.executeInternal(LocalJob1.java:169)
+	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:75)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.nio.file.NoSuchFileException: E:\Internship\Project\logs\projectLogs-2022-03-28
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:236)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:380)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:432)
+	at java.base/java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:422)
+	at java.base/java.nio.file.Files.newInputStream(Files.java:160)
+	at java.base/java.nio.file.Files.newBufferedReader(Files.java:2922)
+	at java.base/java.nio.file.Files.readAllLines(Files.java:3412)
+	at java.base/java.nio.file.Files.readAllLines(Files.java:3453)
+	at com.internship.Project.scheduler.LocalJob1.executeInternal(LocalJob1.java:82)
+	... 3 common frames omitted
+21:12:10.083 [MyClusteredScheduler_Worker-1] INFO  LocalJob1[executeInternal:45] - LocalJob1 started
+21:12:10.093 [MyClusteredScheduler_Worker-1] ERROR LocalJob1[executeInternal:165] - Exception during Local Job1 execution - retrying - Count: 2
+java.nio.file.NoSuchFileException: E:\Internship\Project\logs\projectLogs-2022-03-28
+21:12:20.097 [MyClusteredScheduler_Worker-1] INFO  JobRunShell[run:207] - Job memory.Server Log Generate threw a JobExecutionException: 
+org.quartz.JobExecutionException: java.nio.file.NoSuchFileException: E:\Internship\Project\logs\projectLogs-2022-03-28
+	at com.internship.Project.scheduler.LocalJob1.executeInternal(LocalJob1.java:169)
+	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:75)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.nio.file.NoSuchFileException: E:\Internship\Project\logs\projectLogs-2022-03-28
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:236)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:380)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:432)
+	at java.base/java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:422)
+	at java.base/java.nio.file.Files.newInputStream(Files.java:160)
+	at java.base/java.nio.file.Files.newBufferedReader(Files.java:2922)
+	at java.base/java.nio.file.Files.readAllLines(Files.java:3412)
+	at java.base/java.nio.file.Files.readAllLines(Files.java:3453)
+	at com.internship.Project.scheduler.LocalJob1.executeInternal(LocalJob1.java:82)
+	... 3 common frames omitted
+21:12:20.098 [MyClusteredScheduler_Worker-1] INFO  LocalJob1[executeInternal:45] - LocalJob1 started
+21:12:20.106 [MyClusteredScheduler_Worker-1] ERROR LocalJob1[executeInternal:165] - Exception during Local Job1 execution - retrying - Count: 3
+java.nio.file.NoSuchFileException: E:\Internship\Project\logs\projectLogs-2022-03-28
+21:12:30.110 [MyClusteredScheduler_Worker-1] INFO  JobRunShell[run:207] - Job memory.Server Log Generate threw a JobExecutionException: 
+org.quartz.JobExecutionException: java.nio.file.NoSuchFileException: E:\Internship\Project\logs\projectLogs-2022-03-28
+	at com.internship.Project.scheduler.LocalJob1.executeInternal(LocalJob1.java:169)
+	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:75)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.nio.file.NoSuchFileException: E:\Internship\Project\logs\projectLogs-2022-03-28
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:236)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:380)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:432)
+	at java.base/java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:422)
+	at java.base/java.nio.file.Files.newInputStream(Files.java:160)
+	at java.base/java.nio.file.Files.newBufferedReader(Files.java:2922)
+	at java.base/java.nio.file.Files.readAllLines(Files.java:3412)
+	at java.base/java.nio.file.Files.readAllLines(Files.java:3453)
+	at com.internship.Project.scheduler.LocalJob1.executeInternal(LocalJob1.java:82)
+	... 3 common frames omitted
+21:12:30.112 [MyClusteredScheduler_Worker-1] INFO  LocalJob1[executeInternal:45] - LocalJob1 started
+21:12:30.121 [MyClusteredScheduler_Worker-1] ERROR LocalJob1[executeInternal:165] - Exception during Local Job1 execution - retrying - Count: 4
+java.nio.file.NoSuchFileException: E:\Internship\Project\logs\projectLogs-2022-03-28
+21:12:40.125 [MyClusteredScheduler_Worker-1] INFO  JobRunShell[run:207] - Job memory.Server Log Generate threw a JobExecutionException: 
+org.quartz.JobExecutionException: java.nio.file.NoSuchFileException: E:\Internship\Project\logs\projectLogs-2022-03-28
+	at com.internship.Project.scheduler.LocalJob1.executeInternal(LocalJob1.java:169)
+	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:75)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.nio.file.NoSuchFileException: E:\Internship\Project\logs\projectLogs-2022-03-28
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:236)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:380)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:432)
+	at java.base/java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:422)
+	at java.base/java.nio.file.Files.newInputStream(Files.java:160)
+	at java.base/java.nio.file.Files.newBufferedReader(Files.java:2922)
+	at java.base/java.nio.file.Files.readAllLines(Files.java:3412)
+	at java.base/java.nio.file.Files.readAllLines(Files.java:3453)
+	at com.internship.Project.scheduler.LocalJob1.executeInternal(LocalJob1.java:82)
+	... 3 common frames omitted
+21:12:40.127 [MyClusteredScheduler_Worker-1] INFO  LocalJob1[executeInternal:45] - LocalJob1 started
+21:12:40.137 [MyClusteredScheduler_Worker-1] ERROR LocalJob1[executeInternal:165] - Exception during Local Job1 execution - retrying - Count: 5
+java.nio.file.NoSuchFileException: E:\Internship\Project\logs\projectLogs-2022-03-28
+21:12:50.142 [MyClusteredScheduler_Worker-1] INFO  JobRunShell[run:207] - Job memory.Server Log Generate threw a JobExecutionException: 
+org.quartz.JobExecutionException: java.nio.file.NoSuchFileException: E:\Internship\Project\logs\projectLogs-2022-03-28
+	at com.internship.Project.scheduler.LocalJob1.executeInternal(LocalJob1.java:169)
+	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:75)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.nio.file.NoSuchFileException: E:\Internship\Project\logs\projectLogs-2022-03-28
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:236)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:380)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:432)
+	at java.base/java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:422)
+	at java.base/java.nio.file.Files.newInputStream(Files.java:160)
+	at java.base/java.nio.file.Files.newBufferedReader(Files.java:2922)
+	at java.base/java.nio.file.Files.readAllLines(Files.java:3412)
+	at java.base/java.nio.file.Files.readAllLines(Files.java:3453)
+	at com.internship.Project.scheduler.LocalJob1.executeInternal(LocalJob1.java:82)
+	... 3 common frames omitted
+21:12:50.145 [MyClusteredScheduler_Worker-1] INFO  LocalJob1[executeInternal:45] - LocalJob1 started
+21:12:50.201 [MyClusteredScheduler_Worker-1] ERROR LocalJob1[executeInternal:160] - LocalJob1 failed - Exception while executing job, Data update in JobExecutedDetails Table
+21:12:50.201 [MyClusteredScheduler_Worker-1] WARN  LocalJob1[executeInternal:161] - All triggers related to the job are Unscheduled
+21:12:50.201 [MyClusteredScheduler_Worker-1] INFO  JobRunShell[run:207] - Job memory.Server Log Generate threw a JobExecutionException: 
+org.quartz.JobExecutionException: Job Failed
+	at com.internship.Project.scheduler.LocalJob1.executeInternal(LocalJob1.java:148)
+	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:75)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+21:25:38.379 [SpringApplicationShutdownHook] INFO  QuartzScheduler[standby:585] - Scheduler MyClusteredScheduler_$_DESKTOP-L0Q733T1648568508770 paused.
+21:25:38.478 [SpringApplicationShutdownHook] INFO  QuartzScheduler[shutdown:666] - Scheduler MyClusteredScheduler_$_DESKTOP-L0Q733T1648568508770 shutting down.
+21:25:38.478 [SpringApplicationShutdownHook] INFO  QuartzScheduler[standby:585] - Scheduler MyClusteredScheduler_$_DESKTOP-L0Q733T1648568508770 paused.
+21:25:38.479 [SpringApplicationShutdownHook] INFO  QuartzScheduler[shutdown:740] - Scheduler MyClusteredScheduler_$_DESKTOP-L0Q733T1648568508770 shutdown complete.
+21:25:38.479 [SpringApplicationShutdownHook] INFO  ProjectApplication[preDestroy:59] - Quartz Scheduler shutdown
+21:25:38.479 [SpringApplicationShutdownHook] INFO  ProjectApplication[preDestroy:60] - The active qrtzJobs status updated to unscheduled, the qrtzJobs related to it have been deleted - Jobs Master Table, Quartz Job Tables(qrtz_triggers, qrtz_cron_triggers, qrtz_job_details)
+21:25:38.480 [SpringApplicationShutdownHook] INFO  SchedulerFactoryBean[destroy:847] - Shutting down Quartz Scheduler
+21:25:38.480 [SpringApplicationShutdownHook] INFO  LocalContainerEntityManagerFactoryBean[destroy:651] - Closing JPA EntityManagerFactory for persistence unit 'default'
+21:25:38.483 [SpringApplicationShutdownHook] INFO  HikariDataSource[close:350] - HikariPool-1 - Shutdown initiated...
+21:25:38.493 [SpringApplicationShutdownHook] INFO  HikariDataSource[close:352] - HikariPool-1 - Shutdown completed.
+21:25:48.825 [restartedMain] INFO  ProjectApplication[logStarting:55] - Starting ProjectApplication using Java 17.0.2 on DESKTOP-L0Q733T with PID 21452 (E:\Internship\Project\target\classes started by adith in E:\Internship\Project)
+21:25:48.827 [background-preinit] INFO  Version[<clinit>:21] - HV000001: Hibernate Validator 6.2.2.Final
+21:25:48.831 [restartedMain] INFO  ProjectApplication[logStartupProfileInfo:640] - No active profile set, falling back to 1 default profile: "default"
+21:25:48.899 [restartedMain] INFO  DevToolsPropertyDefaultsPostProcessor[logTo:255] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+21:25:48.900 [restartedMain] INFO  DevToolsPropertyDefaultsPostProcessor[logTo:255] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+21:25:49.553 [restartedMain] INFO  RepositoryConfigurationDelegate[registerRepositoriesIn:132] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+21:25:49.607 [restartedMain] INFO  RepositoryConfigurationDelegate[registerRepositoriesIn:201] - Finished Spring Data repository scanning in 46 ms. Found 4 JPA repository interfaces.
+21:25:50.098 [restartedMain] INFO  TomcatWebServer[initialize:108] - Tomcat initialized with port(s): 8080 (http)
+21:25:50.105 [restartedMain] INFO  Http11NioProtocol[log:173] - Initializing ProtocolHandler ["http-nio-8080"]
+21:25:50.105 [restartedMain] INFO  StandardService[log:173] - Starting service [Tomcat]
+21:25:50.106 [restartedMain] INFO  StandardEngine[log:173] - Starting Servlet engine: [Apache Tomcat/9.0.58]
+21:25:50.579 [restartedMain] INFO  [/][log:173] - Initializing Spring embedded WebApplicationContext
+21:25:50.580 [restartedMain] INFO  ServletWebServerApplicationContext[prepareWebApplicationContext:290] - Root WebApplicationContext: initialization completed in 1680 ms
+21:25:50.656 [restartedMain] INFO  HikariDataSource[getConnection:110] - HikariPool-1 - Starting...
+21:25:50.942 [restartedMain] INFO  HikariDataSource[getConnection:123] - HikariPool-1 - Start completed.
+21:25:51.004 [restartedMain] INFO  LogHelper[logPersistenceUnitInformation:31] - HHH000204: Processing PersistenceUnitInfo [name: default]
+21:25:51.043 [restartedMain] INFO  Version[logVersion:44] - HHH000412: Hibernate ORM core version 5.6.5.Final
+21:25:51.194 [restartedMain] INFO  Version[<clinit>:56] - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+21:25:51.298 [restartedMain] INFO  Dialect[<init>:175] - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+21:25:51.866 [restartedMain] INFO  JtaPlatformInitiator[initiateService:52] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+21:25:51.869 [restartedMain] INFO  LocalContainerEntityManagerFactoryBean[buildNativeEntityManagerFactory:437] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+21:25:51.926 [restartedMain] INFO  StdSchedulerFactory[instantiate:1220] - Using default implementation for ThreadExecutor
+21:25:51.934 [restartedMain] INFO  SchedulerSignalerImpl[<init>:61] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+21:25:51.934 [restartedMain] INFO  QuartzScheduler[<init>:229] - Quartz Scheduler v.2.3.2 created.
+21:25:51.937 [restartedMain] INFO  LocalDataSourceJobStore[initialize:672] - Using db table-based data access locking (synchronization).
+21:25:51.938 [restartedMain] INFO  LocalDataSourceJobStore[initialize:145] - JobStoreCMT initialized.
+21:25:51.940 [restartedMain] INFO  QuartzScheduler[initialize:294] - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'MyClusteredScheduler' with instanceId 'DESKTOP-L0Q733T1648569351927'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of qrtzJobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 5 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
+
+21:25:51.940 [restartedMain] INFO  StdSchedulerFactory[instantiate:1374] - Quartz scheduler 'MyClusteredScheduler' initialized from an externally provided properties instance.
+21:25:51.940 [restartedMain] INFO  StdSchedulerFactory[instantiate:1378] - Quartz scheduler version: 2.3.2
+21:25:51.940 [restartedMain] INFO  QuartzScheduler[setJobFactory:2293] - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@5e135dbf
+21:25:52.238 [restartedMain] INFO  LocalDataSourceJobStore[logWarnIfNonZero:3644] - ClusterManager: detected 1 failed or restarted instances.
+21:25:52.238 [restartedMain] INFO  LocalDataSourceJobStore[clusterRecover:3503] - ClusterManager: Scanning for instance "DESKTOP-L0Q733T1648568508770"'s failed in-progress qrtzJobs.
+21:25:52.250 [restartedMain] INFO  QuartzScheduler[start:547] - Scheduler MyClusteredScheduler_$_DESKTOP-L0Q733T1648569351927 started.
+21:25:52.250 [restartedMain] INFO  ProjectApplication[postConstruct:35] - Quartz Scheduler started
+21:25:52.359 [restartedMain] WARN  JpaBaseConfiguration$JpaWebConfiguration[openEntityManagerInViewInterceptor:219] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+21:25:52.570 [restartedMain] WARN  ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration[checkTemplateLocationExists:106] - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+21:25:52.648 [restartedMain] INFO  OptionalLiveReloadServer[startServer:58] - LiveReload server is running on port 35729
+21:25:52.666 [restartedMain] INFO  Http11NioProtocol[log:173] - Starting ProtocolHandler ["http-nio-8080"]
+21:25:52.688 [restartedMain] INFO  TomcatWebServer[start:220] - Tomcat started on port(s): 8080 (http) with context path ''
+21:25:52.699 [restartedMain] INFO  ProjectApplication[logStarted:61] - Started ProjectApplication in 4.288 seconds (JVM running for 5.589)
+21:25:54.603 [http-nio-8080-exec-2] INFO  [/][log:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+21:25:54.603 [http-nio-8080-exec-2] INFO  DispatcherServlet[initServletBean:525] - Initializing Servlet 'dispatcherServlet'
+21:25:54.605 [http-nio-8080-exec-2] INFO  DispatcherServlet[initServletBean:547] - Completed initialization in 2 ms
+21:25:54.624 [http-nio-8080-exec-2] INFO  GlobalRestController[readAllJobs:36] - Read all Jobs - Jobs Master Table
+21:26:29.808 [QuartzScheduler_MyClusteredScheduler-DESKTOP-L0Q733T1648569351927_ClusterManager] WARN  ProxyConnection[checkException:182] - HikariPool-1 - Connection com.mysql.cj.jdbc.ConnectionImpl@2d23c55f marked as broken because of SQLSTATE(08S01), ErrorCode(0)
+com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 14 milliseconds ago. The last packet sent successfully to the server was 15 milliseconds ago.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64)
+	at com.mysql.cj.jdbc.ConnectionImpl.setAutoCommit(ConnectionImpl.java:2053)
+	at com.zaxxer.hikari.pool.ProxyConnection.setAutoCommit(ProxyConnection.java:414)
+	at com.zaxxer.hikari.pool.HikariProxyConnection.setAutoCommit(HikariProxyConnection.java)
+	at org.quartz.impl.jdbcjobstore.AttributeRestoringConnectionInvocationHandler.setAutoCommit(AttributeRestoringConnectionInvocationHandler.java:98)
+	at org.quartz.impl.jdbcjobstore.AttributeRestoringConnectionInvocationHandler.invoke(AttributeRestoringConnectionInvocationHandler.java:66)
+	at jdk.proxy3/jdk.proxy3.$Proxy125.setAutoCommit(Unknown Source)
+	at org.quartz.impl.jdbcjobstore.JobStoreCMT.getNonManagedTXConnection(JobStoreCMT.java:191)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.doCheckin(JobStoreSupport.java:3322)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport$ClusterManager.manage(JobStoreSupport.java:3935)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport$ClusterManager.run(JobStoreSupport.java:3972)
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 14 milliseconds ago. The last packet sent successfully to the server was 15 milliseconds ago.
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167)
+	at com.mysql.cj.protocol.a.NativeProtocol.readMessage(NativeProtocol.java:520)
+	at com.mysql.cj.protocol.a.NativeProtocol.checkErrorMessage(NativeProtocol.java:700)
+	at com.mysql.cj.protocol.a.NativeProtocol.sendCommand(NativeProtocol.java:639)
+	at com.mysql.cj.protocol.a.NativeProtocol.sendQueryPacket(NativeProtocol.java:987)
+	at com.mysql.cj.protocol.a.NativeProtocol.sendQueryString(NativeProtocol.java:933)
+	at com.mysql.cj.NativeSession.execSQL(NativeSession.java:664)
+	at com.mysql.cj.jdbc.ConnectionImpl.setAutoCommit(ConnectionImpl.java:2036)
+	... 9 common frames omitted
+Caused by: java.net.SocketException: An established connection was aborted by the software in your host machine
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:325)
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:350)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:803)
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:966)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:478)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.readHeader(SSLSocketInputRecord.java:472)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.bytesInCompletePacket(SSLSocketInputRecord.java:70)
+	at java.base/sun.security.ssl.SSLSocketImpl.readApplicationRecord(SSLSocketImpl.java:1455)
+	at java.base/sun.security.ssl.SSLSocketImpl$AppInputStream.read(SSLSocketImpl.java:1059)
+	at java.base/java.io.FilterInputStream.read(FilterInputStream.java:132)
+	at com.mysql.cj.protocol.FullReadInputStream.readFully(FullReadInputStream.java:64)
+	at com.mysql.cj.protocol.a.SimplePacketReader.readHeaderLocal(SimplePacketReader.java:81)
+	at com.mysql.cj.protocol.a.SimplePacketReader.readHeader(SimplePacketReader.java:63)
+	at com.mysql.cj.protocol.a.SimplePacketReader.readHeader(SimplePacketReader.java:45)
+	at com.mysql.cj.protocol.a.TimeTrackingPacketReader.readHeader(TimeTrackingPacketReader.java:52)
+	at com.mysql.cj.protocol.a.TimeTrackingPacketReader.readHeader(TimeTrackingPacketReader.java:41)
+	at com.mysql.cj.protocol.a.MultiPacketReader.readHeader(MultiPacketReader.java:54)
+	at com.mysql.cj.protocol.a.MultiPacketReader.readHeader(MultiPacketReader.java:44)
+	at com.mysql.cj.protocol.a.NativeProtocol.readMessage(NativeProtocol.java:514)
+	... 15 common frames omitted
+21:26:29.813 [QuartzScheduler_MyClusteredScheduler-DESKTOP-L0Q733T1648569351927_ClusterManager] WARN  LocalDataSourceJobStore[getNonManagedTXConnection:198] - Failed to override connection auto commit/transaction isolation.
+com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 14 milliseconds ago. The last packet sent successfully to the server was 15 milliseconds ago.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64)
+	at com.mysql.cj.jdbc.ConnectionImpl.setAutoCommit(ConnectionImpl.java:2053)
+	at com.zaxxer.hikari.pool.ProxyConnection.setAutoCommit(ProxyConnection.java:414)
+	at com.zaxxer.hikari.pool.HikariProxyConnection.setAutoCommit(HikariProxyConnection.java)
+	at org.quartz.impl.jdbcjobstore.AttributeRestoringConnectionInvocationHandler.setAutoCommit(AttributeRestoringConnectionInvocationHandler.java:98)
+	at org.quartz.impl.jdbcjobstore.AttributeRestoringConnectionInvocationHandler.invoke(AttributeRestoringConnectionInvocationHandler.java:66)
+	at jdk.proxy3/jdk.proxy3.$Proxy125.setAutoCommit(Unknown Source)
+	at org.quartz.impl.jdbcjobstore.JobStoreCMT.getNonManagedTXConnection(JobStoreCMT.java:191)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.doCheckin(JobStoreSupport.java:3322)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport$ClusterManager.manage(JobStoreSupport.java:3935)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport$ClusterManager.run(JobStoreSupport.java:3972)
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 14 milliseconds ago. The last packet sent successfully to the server was 15 milliseconds ago.
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167)
+	at com.mysql.cj.protocol.a.NativeProtocol.readMessage(NativeProtocol.java:520)
+	at com.mysql.cj.protocol.a.NativeProtocol.checkErrorMessage(NativeProtocol.java:700)
+	at com.mysql.cj.protocol.a.NativeProtocol.sendCommand(NativeProtocol.java:639)
+	at com.mysql.cj.protocol.a.NativeProtocol.sendQueryPacket(NativeProtocol.java:987)
+	at com.mysql.cj.protocol.a.NativeProtocol.sendQueryString(NativeProtocol.java:933)
+	at com.mysql.cj.NativeSession.execSQL(NativeSession.java:664)
+	at com.mysql.cj.jdbc.ConnectionImpl.setAutoCommit(ConnectionImpl.java:2036)
+	... 9 common frames omitted
+Caused by: java.net.SocketException: An established connection was aborted by the software in your host machine
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:325)
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:350)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:803)
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:966)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:478)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.readHeader(SSLSocketInputRecord.java:472)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.bytesInCompletePacket(SSLSocketInputRecord.java:70)
+	at java.base/sun.security.ssl.SSLSocketImpl.readApplicationRecord(SSLSocketImpl.java:1455)
+	at java.base/sun.security.ssl.SSLSocketImpl$AppInputStream.read(SSLSocketImpl.java:1059)
+	at java.base/java.io.FilterInputStream.read(FilterInputStream.java:132)
+	at com.mysql.cj.protocol.FullReadInputStream.readFully(FullReadInputStream.java:64)
+	at com.mysql.cj.protocol.a.SimplePacketReader.readHeaderLocal(SimplePacketReader.java:81)
+	at com.mysql.cj.protocol.a.SimplePacketReader.readHeader(SimplePacketReader.java:63)
+	at com.mysql.cj.protocol.a.SimplePacketReader.readHeader(SimplePacketReader.java:45)
+	at com.mysql.cj.protocol.a.TimeTrackingPacketReader.readHeader(TimeTrackingPacketReader.java:52)
+	at com.mysql.cj.protocol.a.TimeTrackingPacketReader.readHeader(TimeTrackingPacketReader.java:41)
+	at com.mysql.cj.protocol.a.MultiPacketReader.readHeader(MultiPacketReader.java:54)
+	at com.mysql.cj.protocol.a.MultiPacketReader.readHeader(MultiPacketReader.java:44)
+	at com.mysql.cj.protocol.a.NativeProtocol.readMessage(NativeProtocol.java:514)
+	... 15 common frames omitted
+21:26:29.816 [QuartzScheduler_MyClusteredScheduler-DESKTOP-L0Q733T1648569351927_ClusterManager] ERROR LocalDataSourceJobStore[rollbackConnection:3729] - Couldn't rollback jdbc connection. Connection is closed
+java.sql.SQLException: Connection is closed
+	at com.zaxxer.hikari.pool.ProxyConnection$ClosedConnection.lambda$getClosedConnection$0(ProxyConnection.java:515)
+	at jdk.proxy4/jdk.proxy4.$Proxy72.rollback(Unknown Source)
+	at com.zaxxer.hikari.pool.ProxyConnection.rollback(ProxyConnection.java:396)
+	at com.zaxxer.hikari.pool.HikariProxyConnection.rollback(HikariProxyConnection.java)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.quartz.impl.jdbcjobstore.AttributeRestoringConnectionInvocationHandler.invoke(AttributeRestoringConnectionInvocationHandler.java:73)
+	at jdk.proxy3/jdk.proxy3.$Proxy125.rollback(Unknown Source)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.rollbackConnection(JobStoreSupport.java:3727)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.doCheckin(JobStoreSupport.java:3354)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport$ClusterManager.manage(JobStoreSupport.java:3935)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport$ClusterManager.run(JobStoreSupport.java:3972)
+21:26:29.818 [QuartzScheduler_MyClusteredScheduler-DESKTOP-L0Q733T1648569351927_ClusterManager] WARN  AttributeRestoringConnectionInvocationHandler[restoreOriginalAtributes:144] - Failed restore connection's original auto commit setting.
+java.sql.SQLException: Connection is closed
+	at com.zaxxer.hikari.pool.ProxyConnection$ClosedConnection.lambda$getClosedConnection$0(ProxyConnection.java:515)
+	at jdk.proxy4/jdk.proxy4.$Proxy72.setAutoCommit(Unknown Source)
+	at com.zaxxer.hikari.pool.ProxyConnection.setAutoCommit(ProxyConnection.java:414)
+	at com.zaxxer.hikari.pool.HikariProxyConnection.setAutoCommit(HikariProxyConnection.java)
+	at org.quartz.impl.jdbcjobstore.AttributeRestoringConnectionInvocationHandler.restoreOriginalAtributes(AttributeRestoringConnectionInvocationHandler.java:141)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.cleanupConnection(JobStoreSupport.java:3677)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.doCheckin(JobStoreSupport.java:3363)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport$ClusterManager.manage(JobStoreSupport.java:3935)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport$ClusterManager.run(JobStoreSupport.java:3972)
+21:26:29.819 [QuartzScheduler_MyClusteredScheduler-DESKTOP-L0Q733T1648569351927_ClusterManager] ERROR LocalDataSourceJobStore[manage:3941] - ClusterManager: Error managing cluster: Failure identifying failed instances when checking-in: Connection is closed
+org.quartz.JobPersistenceException: Failure identifying failed instances when checking-in: Connection is closed
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.findFailedInstances(JobStoreSupport.java:3420)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.clusterCheckIn(JobStoreSupport.java:3470)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.doCheckin(JobStoreSupport.java:3330)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport$ClusterManager.manage(JobStoreSupport.java:3935)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport$ClusterManager.run(JobStoreSupport.java:3972)
+Caused by: java.sql.SQLException: Connection is closed
+	at com.zaxxer.hikari.pool.ProxyConnection$ClosedConnection.lambda$getClosedConnection$0(ProxyConnection.java:515)
+	at jdk.proxy4/jdk.proxy4.$Proxy72.prepareStatement(Unknown Source)
+	at com.zaxxer.hikari.pool.ProxyConnection.prepareStatement(ProxyConnection.java:337)
+	at com.zaxxer.hikari.pool.HikariProxyConnection.prepareStatement(HikariProxyConnection.java)
+	at jdk.internal.reflect.GeneratedMethodAccessor57.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.quartz.impl.jdbcjobstore.AttributeRestoringConnectionInvocationHandler.invoke(AttributeRestoringConnectionInvocationHandler.java:73)
+	at jdk.proxy3/jdk.proxy3.$Proxy125.prepareStatement(Unknown Source)
+	at org.quartz.impl.jdbcjobstore.StdJDBCDelegate.selectSchedulerStateRecords(StdJDBCDelegate.java:2992)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.findFailedInstances(JobStoreSupport.java:3384)
+	... 4 common frames omitted
+21:26:44.824 [QuartzScheduler_MyClusteredScheduler-DESKTOP-L0Q733T1648569351927_ClusterManager] WARN  PoolBase[isConnectionAlive:184] - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@41b22696 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+21:26:44.825 [QuartzScheduler_MyClusteredScheduler-DESKTOP-L0Q733T1648569351927_ClusterManager] WARN  PoolBase[isConnectionAlive:184] - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@19bd7c38 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+21:26:44.827 [QuartzScheduler_MyClusteredScheduler-DESKTOP-L0Q733T1648569351927_ClusterManager] WARN  PoolBase[isConnectionAlive:184] - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@2fbe033a (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+21:26:44.828 [QuartzScheduler_MyClusteredScheduler-DESKTOP-L0Q733T1648569351927_ClusterManager] WARN  PoolBase[isConnectionAlive:184] - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@7f6806cd (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+21:26:44.830 [QuartzScheduler_MyClusteredScheduler-DESKTOP-L0Q733T1648569351927_ClusterManager] WARN  PoolBase[isConnectionAlive:184] - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@3eed8b5d (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+21:26:44.831 [QuartzScheduler_MyClusteredScheduler-DESKTOP-L0Q733T1648569351927_ClusterManager] WARN  PoolBase[isConnectionAlive:184] - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@2cda23b1 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+21:26:44.832 [QuartzScheduler_MyClusteredScheduler-DESKTOP-L0Q733T1648569351927_ClusterManager] WARN  PoolBase[isConnectionAlive:184] - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@7e3fe214 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+21:26:44.833 [QuartzScheduler_MyClusteredScheduler-DESKTOP-L0Q733T1648569351927_ClusterManager] WARN  PoolBase[isConnectionAlive:184] - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@1f0a6e22 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+21:26:44.834 [QuartzScheduler_MyClusteredScheduler-DESKTOP-L0Q733T1648569351927_ClusterManager] WARN  PoolBase[isConnectionAlive:184] - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@1e240095 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+21:26:45.192 [SpringApplicationShutdownHook] INFO  QuartzScheduler[standby:585] - Scheduler MyClusteredScheduler_$_DESKTOP-L0Q733T1648569351927 paused.
+21:27:15.258 [SpringApplicationShutdownHook] WARN  SqlExceptionHelper[logExceptions:137] - SQL Error: 0, SQLState: 08S01
+21:27:15.259 [SpringApplicationShutdownHook] ERROR SqlExceptionHelper[logExceptions:142] - HikariPool-1 - Connection is not available, request timed out after 30000ms.
+21:27:15.259 [SpringApplicationShutdownHook] ERROR SqlExceptionHelper[logExceptions:142] - Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+21:27:15.269 [SpringApplicationShutdownHook] WARN  CommonAnnotationBeanPostProcessor[postProcessBeforeDestruction:185] - Destroy method on bean with name 'projectApplication' threw an exception: org.springframework.dao.DataAccessResourceFailureException: Unable to acquire JDBC Connection; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to acquire JDBC Connection
+21:27:15.270 [SpringApplicationShutdownHook] INFO  SchedulerFactoryBean[destroy:847] - Shutting down Quartz Scheduler
+21:27:15.271 [SpringApplicationShutdownHook] INFO  QuartzScheduler[shutdown:666] - Scheduler MyClusteredScheduler_$_DESKTOP-L0Q733T1648569351927 shutting down.
+21:27:15.271 [SpringApplicationShutdownHook] INFO  QuartzScheduler[standby:585] - Scheduler MyClusteredScheduler_$_DESKTOP-L0Q733T1648569351927 paused.
+21:27:15.272 [QuartzScheduler_MyClusteredScheduler-DESKTOP-L0Q733T1648569351927_MisfireHandler] ERROR LocalDataSourceJobStore[manage:4017] - MisfireHandler: Error handling misfires: Failed to obtain DB connection from data source 'springNonTxDataSource.MyClusteredScheduler': java.sql.SQLException: HikariPool-1 - Interrupted during connection acquisition
+org.quartz.JobPersistenceException: Failed to obtain DB connection from data source 'springNonTxDataSource.MyClusteredScheduler': java.sql.SQLException: HikariPool-1 - Interrupted during connection acquisition
+	at org.quartz.impl.jdbcjobstore.JobStoreCMT.getNonManagedTXConnection(JobStoreCMT.java:168)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.doRecoverMisfires(JobStoreSupport.java:3246)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport$MisfireHandler.manage(JobStoreSupport.java:4012)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport$MisfireHandler.run(JobStoreSupport.java:4033)
+Caused by: java.sql.SQLException: HikariPool-1 - Interrupted during connection acquisition
+	at com.zaxxer.hikari.pool.HikariPool.getConnection(HikariPool.java:201)
+	at com.zaxxer.hikari.pool.HikariPool.getConnection(HikariPool.java:162)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:128)
+	at org.springframework.scheduling.quartz.LocalDataSourceJobStore$2.getConnection(LocalDataSourceJobStore.java:140)
+	at org.quartz.utils.DBConnectionManager.getConnection(DBConnectionManager.java:108)
+	at org.quartz.impl.jdbcjobstore.JobStoreCMT.getNonManagedTXConnection(JobStoreCMT.java:165)
+	... 3 common frames omitted
+Caused by: java.lang.InterruptedException: null
+	at java.base/java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:906)
+	at com.zaxxer.hikari.util.ConcurrentBag.borrow(ConcurrentBag.java:151)
+	at com.zaxxer.hikari.pool.HikariPool.getConnection(HikariPool.java:180)
+	... 8 common frames omitted
+21:27:15.273 [SpringApplicationShutdownHook] INFO  QuartzScheduler[shutdown:740] - Scheduler MyClusteredScheduler_$_DESKTOP-L0Q733T1648569351927 shutdown complete.
+21:27:15.273 [SpringApplicationShutdownHook] INFO  LocalContainerEntityManagerFactoryBean[destroy:651] - Closing JPA EntityManagerFactory for persistence unit 'default'
+21:27:15.277 [SpringApplicationShutdownHook] INFO  HikariDataSource[close:350] - HikariPool-1 - Shutdown initiated...
