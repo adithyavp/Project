@@ -1,0 +1,754 @@
+12:57:01.356 [background-preinit] INFO  Version[<clinit>:21] - HV000001: Hibernate Validator 6.2.2.Final
+12:57:01.368 [restartedMain] INFO  ProjectApplication[logStarting:55] - Starting ProjectApplication using Java 17.0.2 on DESKTOP-L0Q733T with PID 17840 (E:\Internship\Project\target\classes started by adith in E:\Internship\Project)
+12:57:01.370 [restartedMain] INFO  ProjectApplication[logStartupProfileInfo:640] - No active profile set, falling back to 1 default profile: "default"
+12:57:01.437 [restartedMain] INFO  ChangeableUrls[logTo:255] - The Class-Path manifest attribute in C:\Users\adith\.m2\repository\com\mchange\c3p0\0.9.5.5\c3p0-0.9.5.5.jar referenced one or more files that do not exist: file:/C:/Users/adith/.m2/repository/com/mchange/c3p0/0.9.5.5/mchange-commons-java-0.2.19.jar
+12:57:01.439 [restartedMain] INFO  DevToolsPropertyDefaultsPostProcessor[logTo:255] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+12:57:01.439 [restartedMain] INFO  DevToolsPropertyDefaultsPostProcessor[logTo:255] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+12:57:02.261 [restartedMain] INFO  RepositoryConfigurationDelegate[registerRepositoriesIn:132] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+12:57:02.325 [restartedMain] INFO  RepositoryConfigurationDelegate[registerRepositoriesIn:201] - Finished Spring Data repository scanning in 52 ms. Found 4 JPA repository interfaces.
+12:57:03.386 [restartedMain] INFO  TomcatWebServer[initialize:108] - Tomcat initialized with port(s): 8080 (http)
+12:57:03.397 [restartedMain] INFO  Http11NioProtocol[log:173] - Initializing ProtocolHandler ["http-nio-8080"]
+12:57:03.398 [restartedMain] INFO  StandardService[log:173] - Starting service [Tomcat]
+12:57:03.398 [restartedMain] INFO  StandardEngine[log:173] - Starting Servlet engine: [Apache Tomcat/9.0.58]
+12:57:03.505 [restartedMain] INFO  [/][log:173] - Initializing Spring embedded WebApplicationContext
+12:57:03.505 [restartedMain] INFO  ServletWebServerApplicationContext[prepareWebApplicationContext:290] - Root WebApplicationContext: initialization completed in 2065 ms
+12:57:03.667 [restartedMain] INFO  LogHelper[logPersistenceUnitInformation:31] - HHH000204: Processing PersistenceUnitInfo [name: default]
+12:57:03.738 [restartedMain] INFO  Version[logVersion:44] - HHH000412: Hibernate ORM core version 5.6.5.Final
+12:57:03.943 [restartedMain] INFO  Version[<clinit>:56] - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+12:57:04.068 [restartedMain] INFO  HikariDataSource[getConnection:110] - HikariPool-1 - Starting...
+12:57:04.538 [restartedMain] INFO  HikariDataSource[getConnection:123] - HikariPool-1 - Start completed.
+12:57:04.561 [restartedMain] INFO  Dialect[<init>:175] - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+12:57:05.426 [restartedMain] INFO  JtaPlatformInitiator[initiateService:52] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+12:57:05.453 [restartedMain] INFO  LocalContainerEntityManagerFactoryBean[buildNativeEntityManagerFactory:437] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+12:57:05.550 [restartedMain] INFO  StdSchedulerFactory[instantiate:1220] - Using default implementation for ThreadExecutor
+12:57:05.574 [restartedMain] INFO  SchedulerSignalerImpl[<init>:61] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+12:57:05.577 [restartedMain] INFO  QuartzScheduler[<init>:229] - Quartz Scheduler v.2.3.2 created.
+12:57:05.578 [restartedMain] INFO  RAMJobStore[initialize:155] - RAMJobStore initialized.
+12:57:05.580 [restartedMain] INFO  QuartzScheduler[initialize:294] - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+12:57:05.580 [restartedMain] INFO  StdSchedulerFactory[instantiate:1374] - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+12:57:05.581 [restartedMain] INFO  StdSchedulerFactory[instantiate:1378] - Quartz scheduler version: 2.3.2
+12:57:05.581 [restartedMain] INFO  QuartzScheduler[setJobFactory:2293] - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@6ff5873
+12:57:06.153 [restartedMain] WARN  JpaBaseConfiguration$JpaWebConfiguration[openEntityManagerInViewInterceptor:219] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+12:57:06.443 [restartedMain] WARN  ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration[checkTemplateLocationExists:106] - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+12:57:06.567 [restartedMain] INFO  OptionalLiveReloadServer[startServer:58] - LiveReload server is running on port 35729
+12:57:06.599 [restartedMain] INFO  Http11NioProtocol[log:173] - Starting ProtocolHandler ["http-nio-8080"]
+12:57:06.627 [restartedMain] INFO  TomcatWebServer[start:220] - Tomcat started on port(s): 8080 (http) with context path ''
+12:57:06.629 [restartedMain] INFO  SchedulerFactoryBean[startScheduler:729] - Starting Quartz Scheduler now
+12:57:06.629 [restartedMain] INFO  QuartzScheduler[start:547] - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+12:57:06.639 [restartedMain] INFO  ProjectApplication[logStarted:61] - Started ProjectApplication in 5.769 seconds (JVM running for 7.992)
+12:57:06.643 [restartedMain] INFO  OnStartup[runOnStartUp:20] - -------OnStartup class called-------
+12:57:06.690 [restartedMain] INFO  StdSchedulerFactory[instantiate:1036] - Using ConnectionProvider class 'org.quartz.utils.C3p0PoolingConnectionProvider' for data source 'myDS'
+12:57:06.720 [MLog-Init-Reporter] INFO  MLog[log:212] - MLog clients using slf4j logging.
+12:57:06.752 [restartedMain] INFO  C3P0Registry[log:212] - Initializing c3p0-0.9.5.5 [built 11-December-2019 22:18:33 -0800; debug? true; trace: 10]
+12:57:06.791 [restartedMain] INFO  StdSchedulerFactory[instantiate:1220] - Using default implementation for ThreadExecutor
+12:57:06.792 [restartedMain] INFO  SchedulerSignalerImpl[<init>:61] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+12:57:06.793 [restartedMain] INFO  QuartzScheduler[<init>:229] - Quartz Scheduler v.2.3.2 created.
+12:57:06.793 [restartedMain] INFO  JobStoreCMT[initialize:672] - Using db table-based data access locking (synchronization).
+12:57:06.796 [restartedMain] INFO  JobStoreCMT[initialize:145] - JobStoreCMT initialized.
+12:57:06.796 [restartedMain] INFO  QuartzScheduler[initialize:294] - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'MySchedulerGlobal' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 5 threads.
+  Using job-store 'org.quartz.impl.jdbcjobstore.JobStoreCMT' - which supports persistence. and is not clustered.
+
+12:57:06.796 [restartedMain] INFO  StdSchedulerFactory[instantiate:1374] - Quartz scheduler 'MySchedulerGlobal' initialized from the specified file : 'globalQuartz.properties' from the class resource path.
+12:57:06.796 [restartedMain] INFO  StdSchedulerFactory[instantiate:1378] - Quartz scheduler version: 2.3.2
+12:57:06.818 [restartedMain] INFO  AbstractPoolBackedDataSource[log:212] - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hge0z1aoktbugp1r9puq5|74b4d9fb, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hge0z1aoktbugp1r9puq5|74b4d9fb, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://localhost:3306/project, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 10, maxStatements -> 0, maxStatementsPerConnection -> 120, minPoolSize -> 1, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {password=******, user=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+12:57:06.900 [restartedMain] INFO  JobStoreCMT[recoverJobs:866] - Freed 0 triggers from 'acquired' / 'blocked' state.
+12:57:06.909 [restartedMain] INFO  JobStoreCMT[recoverJobs:876] - Recovering 0 jobs that were in-progress at the time of the last shut-down.
+12:57:06.911 [restartedMain] INFO  JobStoreCMT[recoverJobs:889] - Recovery complete.
+12:57:06.912 [restartedMain] INFO  JobStoreCMT[recoverJobs:896] - Removed 0 'complete' triggers.
+12:57:06.916 [restartedMain] INFO  JobStoreCMT[recoverJobs:901] - Removed 0 stale fired job entries.
+12:57:06.923 [restartedMain] INFO  QuartzScheduler[start:547] - Scheduler MySchedulerGlobal_$_NON_CLUSTERED started.
+12:57:06.924 [restartedMain] INFO  MainService[start:69] - Quartz Global Scheduler has started
+12:57:06.927 [restartedMain] INFO  StdSchedulerFactory[instantiate:1036] - Using ConnectionProvider class 'org.quartz.utils.C3p0PoolingConnectionProvider' for data source 'myDS'
+12:57:06.963 [restartedMain] INFO  StdSchedulerFactory[instantiate:1220] - Using default implementation for ThreadExecutor
+12:57:06.966 [restartedMain] INFO  SchedulerSignalerImpl[<init>:61] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+12:57:06.966 [restartedMain] INFO  QuartzScheduler[<init>:229] - Quartz Scheduler v.2.3.2 created.
+12:57:06.967 [restartedMain] INFO  RAMJobStore[initialize:155] - RAMJobStore initialized.
+12:57:06.967 [restartedMain] INFO  QuartzScheduler[initialize:294] - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'MySchedulerLocal' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 5 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+12:57:06.972 [restartedMain] INFO  StdSchedulerFactory[instantiate:1374] - Quartz scheduler 'MySchedulerLocal' initialized from the specified file : 'localQuartz.properties' from the class resource path.
+12:57:06.972 [restartedMain] INFO  StdSchedulerFactory[instantiate:1378] - Quartz scheduler version: 2.3.2
+12:57:06.972 [restartedMain] INFO  QuartzScheduler[start:547] - Scheduler MySchedulerLocal_$_NON_CLUSTERED started.
+12:57:06.973 [restartedMain] INFO  MainService[start:84] - Quartz Local Scheduler has started
+12:57:07.315 [http-nio-8080-exec-2] INFO  [/][log:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+12:57:07.317 [http-nio-8080-exec-2] INFO  DispatcherServlet[initServletBean:525] - Initializing Servlet 'dispatcherServlet'
+12:57:07.320 [http-nio-8080-exec-2] INFO  DispatcherServlet[initServletBean:547] - Completed initialization in 3 ms
+12:57:07.370 [http-nio-8080-exec-2] INFO  GlobalRestController[scheduleAllGlobalJobs:59] - Schedule all Global Jobs - Jobs Master Table
+12:57:07.370 [http-nio-8080-exec-2] INFO  MainService[scheduleAllGlobalJob:145] - Scheduling all Global jobs from Jobs master table
+12:57:07.832 [http-nio-8080-exec-2] INFO  AbstractPoolBackedDataSource[log:212] - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hge0z1aoktbugp1r9puq5|43610ab1, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hge0z1aoktbugp1r9puq5|43610ab1, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://localhost:3306/project, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 10, maxStatements -> 0, maxStatementsPerConnection -> 120, minPoolSize -> 1, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {password=******, user=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+12:57:07.912 [http-nio-8080-exec-2] INFO  MainService[scheduleJobMethod:226] - Job Scheduled Successfully
+12:58:00.042 [MySchedulerGlobal_Worker-1] INFO  GlobalJob1[handle:54] - GlobalJob1 started
+12:59:07.780 [HikariPool-1 housekeeper] WARN  HikariPool[run:788] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m33s118ms417µs500ns).
+12:59:07.787 [MySchedulerGlobal_Worker-1] ERROR JobRunShell[run:211] - Job jdbc.Currency finder threw an unhandled Exception: 
+java.lang.NullPointerException: Cannot invoke "com.internship.Project.repository.JobsRepo.findByJobId(java.lang.Long)" because "this.jobsRepo" is null
+	at com.internship.Project.scheduler.GlobalJob1.handle(GlobalJob1.java:72)
+	at com.internship.Project.scheduler.GlobalJob1.execute(GlobalJob1.java:216)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+12:59:07.788 [MySchedulerGlobal_Worker-1] ERROR ErrorLogger[schedulerError:2407] - Job (jdbc.Currency finder threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception.
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.lang.NullPointerException: Cannot invoke "com.internship.Project.repository.JobsRepo.findByJobId(java.lang.Long)" because "this.jobsRepo" is null
+	at com.internship.Project.scheduler.GlobalJob1.handle(GlobalJob1.java:72)
+	at com.internship.Project.scheduler.GlobalJob1.execute(GlobalJob1.java:216)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 common frames omitted
+12:59:07.828 [MySchedulerGlobal_Worker-2] INFO  GlobalJob1[handle:54] - GlobalJob1 started
+12:59:07.828 [MySchedulerGlobal_Worker-2] ERROR JobRunShell[run:211] - Job jdbc.Currency finder threw an unhandled Exception: 
+java.lang.NullPointerException: Cannot invoke "com.internship.Project.repository.JobsRepo.findByJobId(java.lang.Long)" because "this.jobsRepo" is null
+	at com.internship.Project.scheduler.GlobalJob1.handle(GlobalJob1.java:72)
+	at com.internship.Project.scheduler.GlobalJob1.execute(GlobalJob1.java:216)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+12:59:07.829 [MySchedulerGlobal_Worker-2] ERROR ErrorLogger[schedulerError:2407] - Job (jdbc.Currency finder threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception.
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.lang.NullPointerException: Cannot invoke "com.internship.Project.repository.JobsRepo.findByJobId(java.lang.Long)" because "this.jobsRepo" is null
+	at com.internship.Project.scheduler.GlobalJob1.handle(GlobalJob1.java:72)
+	at com.internship.Project.scheduler.GlobalJob1.execute(GlobalJob1.java:216)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 common frames omitted
+12:59:08.491 [SpringApplicationShutdownHook] INFO  QuartzScheduler[standby:585] - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+12:59:08.520 [SpringApplicationShutdownHook] INFO  OnDestroy[runOnDestroy:20] - -------OnDestroy class called-------
+12:59:08.607 [SpringApplicationShutdownHook] INFO  QuartzScheduler[shutdown:666] - Scheduler MySchedulerGlobal_$_NON_CLUSTERED shutting down.
+12:59:08.608 [SpringApplicationShutdownHook] INFO  QuartzScheduler[standby:585] - Scheduler MySchedulerGlobal_$_NON_CLUSTERED paused.
+12:59:08.622 [SpringApplicationShutdownHook] INFO  QuartzScheduler[shutdown:740] - Scheduler MySchedulerGlobal_$_NON_CLUSTERED shutdown complete.
+12:59:08.623 [SpringApplicationShutdownHook] INFO  QuartzScheduler[shutdown:666] - Scheduler MySchedulerLocal_$_NON_CLUSTERED shutting down.
+12:59:08.623 [SpringApplicationShutdownHook] INFO  QuartzScheduler[standby:585] - Scheduler MySchedulerLocal_$_NON_CLUSTERED paused.
+12:59:08.623 [SpringApplicationShutdownHook] INFO  QuartzScheduler[shutdown:740] - Scheduler MySchedulerLocal_$_NON_CLUSTERED shutdown complete.
+12:59:08.623 [SpringApplicationShutdownHook] INFO  MainService[stop:118] - Quartz Scheduler shutdown
+12:59:08.623 [SpringApplicationShutdownHook] INFO  MainService[stop:119] - The active jobs status updated to unscheduled, the jobs related to it have been deleted - Jobs Master Table, Quartz Job Tables(qrtz_triggers, qrtz_cron_triggers, qrtz_job_details)
+12:59:08.637 [SpringApplicationShutdownHook] INFO  SchedulerFactoryBean[destroy:847] - Shutting down Quartz Scheduler
+12:59:08.638 [SpringApplicationShutdownHook] INFO  QuartzScheduler[shutdown:666] - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+12:59:08.639 [SpringApplicationShutdownHook] INFO  QuartzScheduler[standby:585] - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+12:59:08.640 [SpringApplicationShutdownHook] INFO  QuartzScheduler[shutdown:740] - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+12:59:08.640 [SpringApplicationShutdownHook] INFO  LocalContainerEntityManagerFactoryBean[destroy:651] - Closing JPA EntityManagerFactory for persistence unit 'default'
+12:59:08.653 [SpringApplicationShutdownHook] INFO  HikariDataSource[close:350] - HikariPool-1 - Shutdown initiated...
+12:59:08.686 [SpringApplicationShutdownHook] INFO  HikariDataSource[close:352] - HikariPool-1 - Shutdown completed.
+12:59:16.886 [background-preinit] INFO  Version[<clinit>:21] - HV000001: Hibernate Validator 6.2.2.Final
+12:59:16.891 [restartedMain] INFO  ProjectApplication[logStarting:55] - Starting ProjectApplication using Java 17.0.2 on DESKTOP-L0Q733T with PID 5932 (E:\Internship\Project\target\classes started by adith in E:\Internship\Project)
+12:59:16.892 [restartedMain] INFO  ProjectApplication[logStartupProfileInfo:640] - No active profile set, falling back to 1 default profile: "default"
+12:59:16.972 [restartedMain] INFO  ChangeableUrls[logTo:255] - The Class-Path manifest attribute in C:\Users\adith\.m2\repository\com\mchange\c3p0\0.9.5.5\c3p0-0.9.5.5.jar referenced one or more files that do not exist: file:/C:/Users/adith/.m2/repository/com/mchange/c3p0/0.9.5.5/mchange-commons-java-0.2.19.jar
+12:59:16.973 [restartedMain] INFO  DevToolsPropertyDefaultsPostProcessor[logTo:255] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+12:59:16.975 [restartedMain] INFO  DevToolsPropertyDefaultsPostProcessor[logTo:255] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+12:59:17.890 [restartedMain] INFO  RepositoryConfigurationDelegate[registerRepositoriesIn:132] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+12:59:18.118 [restartedMain] INFO  RepositoryConfigurationDelegate[registerRepositoriesIn:201] - Finished Spring Data repository scanning in 151 ms. Found 4 JPA repository interfaces.
+12:59:19.286 [restartedMain] INFO  TomcatWebServer[initialize:108] - Tomcat initialized with port(s): 8080 (http)
+12:59:19.294 [restartedMain] INFO  Http11NioProtocol[log:173] - Initializing ProtocolHandler ["http-nio-8080"]
+12:59:19.295 [restartedMain] INFO  StandardService[log:173] - Starting service [Tomcat]
+12:59:19.295 [restartedMain] INFO  StandardEngine[log:173] - Starting Servlet engine: [Apache Tomcat/9.0.58]
+12:59:19.385 [restartedMain] INFO  [/][log:173] - Initializing Spring embedded WebApplicationContext
+12:59:19.385 [restartedMain] INFO  ServletWebServerApplicationContext[prepareWebApplicationContext:290] - Root WebApplicationContext: initialization completed in 2409 ms
+12:59:19.501 [restartedMain] INFO  LogHelper[logPersistenceUnitInformation:31] - HHH000204: Processing PersistenceUnitInfo [name: default]
+12:59:19.542 [restartedMain] INFO  Version[logVersion:44] - HHH000412: Hibernate ORM core version 5.6.5.Final
+12:59:19.649 [restartedMain] INFO  Version[<clinit>:56] - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+12:59:19.726 [restartedMain] INFO  HikariDataSource[getConnection:110] - HikariPool-1 - Starting...
+12:59:20.056 [restartedMain] INFO  HikariDataSource[getConnection:123] - HikariPool-1 - Start completed.
+12:59:20.077 [restartedMain] INFO  Dialect[<init>:175] - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+12:59:20.785 [restartedMain] INFO  JtaPlatformInitiator[initiateService:52] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+12:59:20.795 [restartedMain] INFO  LocalContainerEntityManagerFactoryBean[buildNativeEntityManagerFactory:437] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+12:59:20.848 [restartedMain] INFO  StdSchedulerFactory[instantiate:1220] - Using default implementation for ThreadExecutor
+12:59:20.866 [restartedMain] INFO  SchedulerSignalerImpl[<init>:61] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+12:59:20.867 [restartedMain] INFO  QuartzScheduler[<init>:229] - Quartz Scheduler v.2.3.2 created.
+12:59:20.868 [restartedMain] INFO  RAMJobStore[initialize:155] - RAMJobStore initialized.
+12:59:20.869 [restartedMain] INFO  QuartzScheduler[initialize:294] - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+12:59:20.870 [restartedMain] INFO  StdSchedulerFactory[instantiate:1374] - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+12:59:20.870 [restartedMain] INFO  StdSchedulerFactory[instantiate:1378] - Quartz scheduler version: 2.3.2
+12:59:20.870 [restartedMain] INFO  QuartzScheduler[setJobFactory:2293] - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@3378108d
+12:59:21.333 [restartedMain] WARN  JpaBaseConfiguration$JpaWebConfiguration[openEntityManagerInViewInterceptor:219] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+12:59:21.564 [restartedMain] WARN  ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration[checkTemplateLocationExists:106] - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+12:59:21.675 [restartedMain] INFO  OptionalLiveReloadServer[startServer:58] - LiveReload server is running on port 35729
+12:59:21.699 [restartedMain] INFO  Http11NioProtocol[log:173] - Starting ProtocolHandler ["http-nio-8080"]
+12:59:21.725 [restartedMain] INFO  TomcatWebServer[start:220] - Tomcat started on port(s): 8080 (http) with context path ''
+12:59:21.726 [restartedMain] INFO  SchedulerFactoryBean[startScheduler:729] - Starting Quartz Scheduler now
+12:59:21.727 [restartedMain] INFO  QuartzScheduler[start:547] - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+12:59:21.739 [restartedMain] INFO  ProjectApplication[logStarted:61] - Started ProjectApplication in 5.618 seconds (JVM running for 7.316)
+12:59:21.742 [restartedMain] INFO  OnStartup[runOnStartUp:20] - -------OnStartup class called-------
+12:59:21.752 [restartedMain] INFO  StdSchedulerFactory[instantiate:1036] - Using ConnectionProvider class 'org.quartz.utils.C3p0PoolingConnectionProvider' for data source 'myDS'
+12:59:21.766 [MLog-Init-Reporter] INFO  MLog[log:212] - MLog clients using slf4j logging.
+12:59:21.797 [restartedMain] INFO  C3P0Registry[log:212] - Initializing c3p0-0.9.5.5 [built 11-December-2019 22:18:33 -0800; debug? true; trace: 10]
+12:59:21.834 [restartedMain] INFO  StdSchedulerFactory[instantiate:1220] - Using default implementation for ThreadExecutor
+12:59:21.836 [restartedMain] INFO  SchedulerSignalerImpl[<init>:61] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+12:59:21.836 [restartedMain] INFO  QuartzScheduler[<init>:229] - Quartz Scheduler v.2.3.2 created.
+12:59:21.837 [restartedMain] INFO  JobStoreCMT[initialize:672] - Using db table-based data access locking (synchronization).
+12:59:21.839 [restartedMain] INFO  JobStoreCMT[initialize:145] - JobStoreCMT initialized.
+12:59:21.840 [restartedMain] INFO  QuartzScheduler[initialize:294] - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'MySchedulerGlobal' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 5 threads.
+  Using job-store 'org.quartz.impl.jdbcjobstore.JobStoreCMT' - which supports persistence. and is not clustered.
+
+12:59:21.840 [restartedMain] INFO  StdSchedulerFactory[instantiate:1374] - Quartz scheduler 'MySchedulerGlobal' initialized from the specified file : 'globalQuartz.properties' from the class resource path.
+12:59:21.840 [restartedMain] INFO  StdSchedulerFactory[instantiate:1378] - Quartz scheduler version: 2.3.2
+12:59:21.863 [restartedMain] INFO  AbstractPoolBackedDataSource[log:212] - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hge0z1aokteqnxqa22w2|3e9ace03, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hge0z1aokteqnxqa22w2|3e9ace03, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://localhost:3306/project, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 10, maxStatements -> 0, maxStatementsPerConnection -> 120, minPoolSize -> 1, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {password=******, user=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+12:59:21.939 [restartedMain] INFO  JobStoreCMT[recoverJobs:866] - Freed 0 triggers from 'acquired' / 'blocked' state.
+12:59:21.943 [restartedMain] INFO  JobStoreCMT[recoverJobs:876] - Recovering 0 jobs that were in-progress at the time of the last shut-down.
+12:59:21.944 [restartedMain] INFO  JobStoreCMT[recoverJobs:889] - Recovery complete.
+12:59:21.946 [restartedMain] INFO  JobStoreCMT[recoverJobs:896] - Removed 0 'complete' triggers.
+12:59:21.947 [restartedMain] INFO  JobStoreCMT[recoverJobs:901] - Removed 0 stale fired job entries.
+12:59:21.954 [restartedMain] INFO  QuartzScheduler[start:547] - Scheduler MySchedulerGlobal_$_NON_CLUSTERED started.
+12:59:21.955 [restartedMain] INFO  MainService[start:69] - Quartz Global Scheduler has started
+12:59:21.958 [restartedMain] INFO  StdSchedulerFactory[instantiate:1036] - Using ConnectionProvider class 'org.quartz.utils.C3p0PoolingConnectionProvider' for data source 'myDS'
+12:59:22.006 [restartedMain] INFO  StdSchedulerFactory[instantiate:1220] - Using default implementation for ThreadExecutor
+12:59:22.010 [restartedMain] INFO  SchedulerSignalerImpl[<init>:61] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+12:59:22.010 [restartedMain] INFO  QuartzScheduler[<init>:229] - Quartz Scheduler v.2.3.2 created.
+12:59:22.011 [restartedMain] INFO  RAMJobStore[initialize:155] - RAMJobStore initialized.
+12:59:22.011 [restartedMain] INFO  QuartzScheduler[initialize:294] - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'MySchedulerLocal' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 5 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+12:59:22.013 [restartedMain] INFO  StdSchedulerFactory[instantiate:1374] - Quartz scheduler 'MySchedulerLocal' initialized from the specified file : 'localQuartz.properties' from the class resource path.
+12:59:22.013 [restartedMain] INFO  StdSchedulerFactory[instantiate:1378] - Quartz scheduler version: 2.3.2
+12:59:22.014 [restartedMain] INFO  QuartzScheduler[start:547] - Scheduler MySchedulerLocal_$_NON_CLUSTERED started.
+12:59:22.014 [restartedMain] INFO  MainService[start:84] - Quartz Local Scheduler has started
+12:59:22.196 [http-nio-8080-exec-2] INFO  [/][log:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+12:59:22.197 [http-nio-8080-exec-2] INFO  DispatcherServlet[initServletBean:525] - Initializing Servlet 'dispatcherServlet'
+12:59:22.198 [http-nio-8080-exec-2] INFO  DispatcherServlet[initServletBean:547] - Completed initialization in 1 ms
+12:59:22.228 [http-nio-8080-exec-2] INFO  GlobalRestController[scheduleAllGlobalJobs:59] - Schedule all Global Jobs - Jobs Master Table
+12:59:22.228 [http-nio-8080-exec-2] INFO  MainService[scheduleAllGlobalJob:145] - Scheduling all Global jobs from Jobs master table
+12:59:22.514 [http-nio-8080-exec-2] INFO  AbstractPoolBackedDataSource[log:212] - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hge0z1aokteqnxqa22w2|4b93a072, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hge0z1aokteqnxqa22w2|4b93a072, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://localhost:3306/project, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 10, maxStatements -> 0, maxStatementsPerConnection -> 120, minPoolSize -> 1, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {password=******, user=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+12:59:22.577 [http-nio-8080-exec-2] INFO  MainService[scheduleJobMethod:226] - Job Scheduled Successfully
+13:00:00.042 [MySchedulerGlobal_Worker-1] INFO  GlobalJob1[handle:54] - GlobalJob1 started
+13:00:42.850 [HikariPool-1 housekeeper] WARN  HikariPool[run:788] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=52s671ms913µs700ns).
+13:00:42.860 [MySchedulerGlobal_Worker-1] ERROR JobRunShell[run:211] - Job jdbc.Currency finder threw an unhandled Exception: 
+java.lang.NullPointerException: Cannot invoke "com.internship.Project.repository.JobsRepo.findByJobId(java.lang.Long)" because "this.jobsRepo" is null
+	at com.internship.Project.scheduler.GlobalJob1.handle(GlobalJob1.java:72)
+	at com.internship.Project.scheduler.GlobalJob1.execute(GlobalJob1.java:216)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+13:00:42.861 [MySchedulerGlobal_Worker-1] ERROR ErrorLogger[schedulerError:2407] - Job (jdbc.Currency finder threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception.
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.lang.NullPointerException: Cannot invoke "com.internship.Project.repository.JobsRepo.findByJobId(java.lang.Long)" because "this.jobsRepo" is null
+	at com.internship.Project.scheduler.GlobalJob1.handle(GlobalJob1.java:72)
+	at com.internship.Project.scheduler.GlobalJob1.execute(GlobalJob1.java:216)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 common frames omitted
+13:00:42.921 [SpringApplicationShutdownHook] INFO  QuartzScheduler[standby:585] - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+13:00:42.950 [SpringApplicationShutdownHook] INFO  OnDestroy[runOnDestroy:20] - -------OnDestroy class called-------
+13:00:43.012 [SpringApplicationShutdownHook] INFO  QuartzScheduler[shutdown:666] - Scheduler MySchedulerGlobal_$_NON_CLUSTERED shutting down.
+13:00:43.012 [SpringApplicationShutdownHook] INFO  QuartzScheduler[standby:585] - Scheduler MySchedulerGlobal_$_NON_CLUSTERED paused.
+13:00:43.014 [SpringApplicationShutdownHook] INFO  QuartzScheduler[shutdown:740] - Scheduler MySchedulerGlobal_$_NON_CLUSTERED shutdown complete.
+13:00:43.014 [SpringApplicationShutdownHook] INFO  QuartzScheduler[shutdown:666] - Scheduler MySchedulerLocal_$_NON_CLUSTERED shutting down.
+13:00:43.014 [SpringApplicationShutdownHook] INFO  QuartzScheduler[standby:585] - Scheduler MySchedulerLocal_$_NON_CLUSTERED paused.
+13:00:43.014 [SpringApplicationShutdownHook] INFO  QuartzScheduler[shutdown:740] - Scheduler MySchedulerLocal_$_NON_CLUSTERED shutdown complete.
+13:00:43.015 [SpringApplicationShutdownHook] INFO  MainService[stop:118] - Quartz Scheduler shutdown
+13:00:43.015 [SpringApplicationShutdownHook] INFO  MainService[stop:119] - The active jobs status updated to unscheduled, the jobs related to it have been deleted - Jobs Master Table, Quartz Job Tables(qrtz_triggers, qrtz_cron_triggers, qrtz_job_details)
+13:00:43.015 [SpringApplicationShutdownHook] INFO  SchedulerFactoryBean[destroy:847] - Shutting down Quartz Scheduler
+13:00:43.015 [SpringApplicationShutdownHook] INFO  QuartzScheduler[shutdown:666] - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+13:00:43.015 [SpringApplicationShutdownHook] INFO  QuartzScheduler[standby:585] - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+13:00:43.015 [SpringApplicationShutdownHook] INFO  QuartzScheduler[shutdown:740] - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+13:00:43.016 [SpringApplicationShutdownHook] INFO  LocalContainerEntityManagerFactoryBean[destroy:651] - Closing JPA EntityManagerFactory for persistence unit 'default'
+13:00:43.019 [SpringApplicationShutdownHook] INFO  HikariDataSource[close:350] - HikariPool-1 - Shutdown initiated...
+13:00:43.027 [SpringApplicationShutdownHook] INFO  HikariDataSource[close:352] - HikariPool-1 - Shutdown completed.
+14:28:38.260 [background-preinit] INFO  Version[<clinit>:21] - HV000001: Hibernate Validator 6.2.2.Final
+14:28:38.267 [restartedMain] INFO  ProjectApplication[logStarting:55] - Starting ProjectApplication using Java 17.0.2 on DESKTOP-L0Q733T with PID 19684 (E:\Internship\Project\target\classes started by adith in E:\Internship\Project)
+14:28:38.272 [restartedMain] INFO  ProjectApplication[logStartupProfileInfo:640] - No active profile set, falling back to 1 default profile: "default"
+14:28:38.314 [restartedMain] INFO  ChangeableUrls[logTo:255] - The Class-Path manifest attribute in C:\Users\adith\.m2\repository\com\mchange\c3p0\0.9.5.5\c3p0-0.9.5.5.jar referenced one or more files that do not exist: file:/C:/Users/adith/.m2/repository/com/mchange/c3p0/0.9.5.5/mchange-commons-java-0.2.19.jar
+14:28:38.315 [restartedMain] INFO  DevToolsPropertyDefaultsPostProcessor[logTo:255] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+14:28:38.315 [restartedMain] INFO  DevToolsPropertyDefaultsPostProcessor[logTo:255] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+14:28:39.066 [restartedMain] INFO  RepositoryConfigurationDelegate[registerRepositoriesIn:132] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+14:28:39.137 [restartedMain] INFO  RepositoryConfigurationDelegate[registerRepositoriesIn:201] - Finished Spring Data repository scanning in 58 ms. Found 4 JPA repository interfaces.
+14:28:39.715 [restartedMain] INFO  TomcatWebServer[initialize:108] - Tomcat initialized with port(s): 8080 (http)
+14:28:39.726 [restartedMain] INFO  Http11NioProtocol[log:173] - Initializing ProtocolHandler ["http-nio-8080"]
+14:28:39.727 [restartedMain] INFO  StandardService[log:173] - Starting service [Tomcat]
+14:28:39.728 [restartedMain] INFO  StandardEngine[log:173] - Starting Servlet engine: [Apache Tomcat/9.0.58]
+14:28:39.829 [restartedMain] INFO  [/][log:173] - Initializing Spring embedded WebApplicationContext
+14:28:39.829 [restartedMain] INFO  ServletWebServerApplicationContext[prepareWebApplicationContext:290] - Root WebApplicationContext: initialization completed in 1513 ms
+14:28:39.955 [restartedMain] INFO  LogHelper[logPersistenceUnitInformation:31] - HHH000204: Processing PersistenceUnitInfo [name: default]
+14:28:40.017 [restartedMain] INFO  Version[logVersion:44] - HHH000412: Hibernate ORM core version 5.6.5.Final
+14:28:40.173 [restartedMain] INFO  Version[<clinit>:56] - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+14:28:40.267 [restartedMain] INFO  HikariDataSource[getConnection:110] - HikariPool-1 - Starting...
+14:28:40.614 [restartedMain] INFO  HikariDataSource[getConnection:123] - HikariPool-1 - Start completed.
+14:28:40.632 [restartedMain] INFO  Dialect[<init>:175] - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+14:28:41.363 [restartedMain] INFO  JtaPlatformInitiator[initiateService:52] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+14:28:41.369 [restartedMain] INFO  LocalContainerEntityManagerFactoryBean[buildNativeEntityManagerFactory:437] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+14:28:41.405 [restartedMain] INFO  StdSchedulerFactory[instantiate:1220] - Using default implementation for ThreadExecutor
+14:28:41.415 [restartedMain] INFO  SchedulerSignalerImpl[<init>:61] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+14:28:41.416 [restartedMain] INFO  QuartzScheduler[<init>:229] - Quartz Scheduler v.2.3.2 created.
+14:28:41.416 [restartedMain] INFO  RAMJobStore[initialize:155] - RAMJobStore initialized.
+14:28:41.417 [restartedMain] INFO  QuartzScheduler[initialize:294] - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+14:28:41.417 [restartedMain] INFO  StdSchedulerFactory[instantiate:1374] - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+14:28:41.418 [restartedMain] INFO  StdSchedulerFactory[instantiate:1378] - Quartz scheduler version: 2.3.2
+14:28:41.418 [restartedMain] INFO  QuartzScheduler[setJobFactory:2293] - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@73456a3d
+14:28:41.791 [restartedMain] WARN  JpaBaseConfiguration$JpaWebConfiguration[openEntityManagerInViewInterceptor:219] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+14:28:42.032 [restartedMain] WARN  ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration[checkTemplateLocationExists:106] - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+14:28:42.121 [restartedMain] INFO  OptionalLiveReloadServer[startServer:58] - LiveReload server is running on port 35729
+14:28:42.139 [restartedMain] INFO  Http11NioProtocol[log:173] - Starting ProtocolHandler ["http-nio-8080"]
+14:28:42.159 [restartedMain] INFO  TomcatWebServer[start:220] - Tomcat started on port(s): 8080 (http) with context path ''
+14:28:42.160 [restartedMain] INFO  SchedulerFactoryBean[startScheduler:729] - Starting Quartz Scheduler now
+14:28:42.161 [restartedMain] INFO  QuartzScheduler[start:547] - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+14:28:42.170 [restartedMain] INFO  ProjectApplication[logStarted:61] - Started ProjectApplication in 4.432 seconds (JVM running for 5.652)
+14:28:42.172 [restartedMain] INFO  OnStartup[runOnStartUp:20] - -------OnStartup class called-------
+14:28:42.229 [restartedMain] INFO  StdSchedulerFactory[instantiate:1036] - Using ConnectionProvider class 'org.quartz.utils.C3p0PoolingConnectionProvider' for data source 'myDS'
+14:28:42.270 [MLog-Init-Reporter] INFO  MLog[log:212] - MLog clients using slf4j logging.
+14:28:42.300 [restartedMain] INFO  C3P0Registry[log:212] - Initializing c3p0-0.9.5.5 [built 11-December-2019 22:18:33 -0800; debug? true; trace: 10]
+14:28:42.336 [restartedMain] INFO  StdSchedulerFactory[instantiate:1220] - Using default implementation for ThreadExecutor
+14:28:42.337 [restartedMain] INFO  SchedulerSignalerImpl[<init>:61] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+14:28:42.337 [restartedMain] INFO  QuartzScheduler[<init>:229] - Quartz Scheduler v.2.3.2 created.
+14:28:42.338 [restartedMain] INFO  JobStoreCMT[initialize:672] - Using db table-based data access locking (synchronization).
+14:28:42.339 [restartedMain] INFO  JobStoreCMT[initialize:145] - JobStoreCMT initialized.
+14:28:42.339 [restartedMain] INFO  QuartzScheduler[initialize:294] - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'MySchedulerGlobal' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 5 threads.
+  Using job-store 'org.quartz.impl.jdbcjobstore.JobStoreCMT' - which supports persistence. and is not clustered.
+
+14:28:42.339 [restartedMain] INFO  StdSchedulerFactory[instantiate:1374] - Quartz scheduler 'MySchedulerGlobal' initialized from the specified file : 'globalQuartz.properties' from the class resource path.
+14:28:42.339 [restartedMain] INFO  StdSchedulerFactory[instantiate:1378] - Quartz scheduler version: 2.3.2
+14:28:42.361 [restartedMain] INFO  AbstractPoolBackedDataSource[log:212] - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hge0z1aokwlmurjcmns3|6833fbae, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hge0z1aokwlmurjcmns3|6833fbae, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://localhost:3306/project, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 10, maxStatements -> 0, maxStatementsPerConnection -> 120, minPoolSize -> 1, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {password=******, user=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+14:28:42.433 [restartedMain] INFO  JobStoreCMT[recoverJobs:866] - Freed 0 triggers from 'acquired' / 'blocked' state.
+14:28:42.440 [restartedMain] INFO  JobStoreCMT[recoverJobs:876] - Recovering 0 jobs that were in-progress at the time of the last shut-down.
+14:28:42.440 [restartedMain] INFO  JobStoreCMT[recoverJobs:889] - Recovery complete.
+14:28:42.441 [restartedMain] INFO  JobStoreCMT[recoverJobs:896] - Removed 0 'complete' triggers.
+14:28:42.444 [restartedMain] INFO  JobStoreCMT[recoverJobs:901] - Removed 0 stale fired job entries.
+14:28:42.449 [restartedMain] INFO  QuartzScheduler[start:547] - Scheduler MySchedulerGlobal_$_NON_CLUSTERED started.
+14:28:42.450 [restartedMain] INFO  MainService[start:69] - Quartz Global Scheduler has started
+14:28:42.454 [restartedMain] INFO  StdSchedulerFactory[instantiate:1036] - Using ConnectionProvider class 'org.quartz.utils.C3p0PoolingConnectionProvider' for data source 'myDS'
+14:28:42.474 [restartedMain] INFO  StdSchedulerFactory[instantiate:1220] - Using default implementation for ThreadExecutor
+14:28:42.475 [restartedMain] INFO  SchedulerSignalerImpl[<init>:61] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+14:28:42.476 [restartedMain] INFO  QuartzScheduler[<init>:229] - Quartz Scheduler v.2.3.2 created.
+14:28:42.476 [restartedMain] INFO  RAMJobStore[initialize:155] - RAMJobStore initialized.
+14:28:42.478 [restartedMain] INFO  QuartzScheduler[initialize:294] - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'MySchedulerLocal' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 5 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+14:28:42.479 [restartedMain] INFO  StdSchedulerFactory[instantiate:1374] - Quartz scheduler 'MySchedulerLocal' initialized from the specified file : 'localQuartz.properties' from the class resource path.
+14:28:42.480 [restartedMain] INFO  StdSchedulerFactory[instantiate:1378] - Quartz scheduler version: 2.3.2
+14:28:42.480 [restartedMain] INFO  QuartzScheduler[start:547] - Scheduler MySchedulerLocal_$_NON_CLUSTERED started.
+14:28:42.480 [restartedMain] INFO  MainService[start:84] - Quartz Local Scheduler has started
+14:28:44.881 [http-nio-8080-exec-1] INFO  [/][log:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+14:28:44.881 [http-nio-8080-exec-1] INFO  DispatcherServlet[initServletBean:525] - Initializing Servlet 'dispatcherServlet'
+14:28:44.882 [http-nio-8080-exec-1] INFO  DispatcherServlet[initServletBean:547] - Completed initialization in 1 ms
+14:28:44.903 [http-nio-8080-exec-1] INFO  GlobalRestController[scheduleAllGlobalJobs:59] - Schedule all Global Jobs - Jobs Master Table
+14:28:44.903 [http-nio-8080-exec-1] INFO  MainService[scheduleAllGlobalJob:145] - Scheduling all Global jobs from Jobs master table
+14:28:45.060 [http-nio-8080-exec-1] INFO  AbstractPoolBackedDataSource[log:212] - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hge0z1aokwlmurjcmns3|6be8c783, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hge0z1aokwlmurjcmns3|6be8c783, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://localhost:3306/project, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 10, maxStatements -> 0, maxStatementsPerConnection -> 120, minPoolSize -> 1, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {password=******, user=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+14:28:45.138 [http-nio-8080-exec-1] INFO  MainService[scheduleJobMethod:226] - Job Scheduled Successfully
+14:29:00.060 [MySchedulerGlobal_Worker-1] INFO  GlobalJob1[handle:55] - GlobalJob1 started
+14:30:30.666 [HikariPool-1 housekeeper] WARN  HikariPool[run:788] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m49s942ms810µs300ns).
+14:30:30.680 [MySchedulerGlobal_Worker-1] ERROR JobRunShell[run:211] - Job jdbc.Currency finder threw an unhandled Exception: 
+java.lang.NullPointerException: Cannot invoke "com.internship.Project.repository.JobsRepo.findByJobId(java.lang.Long)" because "jobsRepo" is null
+	at com.internship.Project.scheduler.GlobalJob1.handle(GlobalJob1.java:73)
+	at com.internship.Project.scheduler.GlobalJob1.execute(GlobalJob1.java:217)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+14:30:30.681 [MySchedulerGlobal_Worker-1] ERROR ErrorLogger[schedulerError:2407] - Job (jdbc.Currency finder threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception.
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.lang.NullPointerException: Cannot invoke "com.internship.Project.repository.JobsRepo.findByJobId(java.lang.Long)" because "jobsRepo" is null
+	at com.internship.Project.scheduler.GlobalJob1.handle(GlobalJob1.java:73)
+	at com.internship.Project.scheduler.GlobalJob1.execute(GlobalJob1.java:217)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 common frames omitted
+14:30:30.724 [MySchedulerGlobal_Worker-2] INFO  GlobalJob1[handle:55] - GlobalJob1 started
+14:30:30.724 [MySchedulerGlobal_Worker-2] ERROR JobRunShell[run:211] - Job jdbc.Currency finder threw an unhandled Exception: 
+java.lang.NullPointerException: Cannot invoke "com.internship.Project.repository.JobsRepo.findByJobId(java.lang.Long)" because "jobsRepo" is null
+	at com.internship.Project.scheduler.GlobalJob1.handle(GlobalJob1.java:73)
+	at com.internship.Project.scheduler.GlobalJob1.execute(GlobalJob1.java:217)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+14:30:30.724 [MySchedulerGlobal_Worker-2] ERROR ErrorLogger[schedulerError:2407] - Job (jdbc.Currency finder threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception.
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.lang.NullPointerException: Cannot invoke "com.internship.Project.repository.JobsRepo.findByJobId(java.lang.Long)" because "jobsRepo" is null
+	at com.internship.Project.scheduler.GlobalJob1.handle(GlobalJob1.java:73)
+	at com.internship.Project.scheduler.GlobalJob1.execute(GlobalJob1.java:217)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 common frames omitted
+14:30:31.017 [SpringApplicationShutdownHook] INFO  QuartzScheduler[standby:585] - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+14:30:31.049 [SpringApplicationShutdownHook] INFO  OnDestroy[runOnDestroy:20] - -------OnDestroy class called-------
+14:30:31.266 [SpringApplicationShutdownHook] INFO  QuartzScheduler[shutdown:666] - Scheduler MySchedulerGlobal_$_NON_CLUSTERED shutting down.
+14:30:31.266 [SpringApplicationShutdownHook] INFO  QuartzScheduler[standby:585] - Scheduler MySchedulerGlobal_$_NON_CLUSTERED paused.
+14:30:31.276 [SpringApplicationShutdownHook] INFO  QuartzScheduler[shutdown:740] - Scheduler MySchedulerGlobal_$_NON_CLUSTERED shutdown complete.
+14:30:31.313 [SpringApplicationShutdownHook] INFO  QuartzScheduler[shutdown:666] - Scheduler MySchedulerLocal_$_NON_CLUSTERED shutting down.
+14:30:31.313 [SpringApplicationShutdownHook] INFO  QuartzScheduler[standby:585] - Scheduler MySchedulerLocal_$_NON_CLUSTERED paused.
+14:30:31.314 [SpringApplicationShutdownHook] INFO  QuartzScheduler[shutdown:740] - Scheduler MySchedulerLocal_$_NON_CLUSTERED shutdown complete.
+14:30:31.317 [SpringApplicationShutdownHook] INFO  MainService[stop:118] - Quartz Scheduler shutdown
+14:30:31.317 [SpringApplicationShutdownHook] INFO  MainService[stop:119] - The active jobs status updated to unscheduled, the jobs related to it have been deleted - Jobs Master Table, Quartz Job Tables(qrtz_triggers, qrtz_cron_triggers, qrtz_job_details)
+14:30:31.324 [SpringApplicationShutdownHook] INFO  SchedulerFactoryBean[destroy:847] - Shutting down Quartz Scheduler
+14:30:31.324 [SpringApplicationShutdownHook] INFO  QuartzScheduler[shutdown:666] - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+14:30:31.325 [SpringApplicationShutdownHook] INFO  QuartzScheduler[standby:585] - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+14:30:31.325 [SpringApplicationShutdownHook] INFO  QuartzScheduler[shutdown:740] - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+14:30:31.325 [SpringApplicationShutdownHook] INFO  LocalContainerEntityManagerFactoryBean[destroy:651] - Closing JPA EntityManagerFactory for persistence unit 'default'
+14:30:31.340 [SpringApplicationShutdownHook] INFO  HikariDataSource[close:350] - HikariPool-1 - Shutdown initiated...
+14:30:31.632 [SpringApplicationShutdownHook] INFO  HikariDataSource[close:352] - HikariPool-1 - Shutdown completed.
+14:31:44.286 [background-preinit] INFO  Version[<clinit>:21] - HV000001: Hibernate Validator 6.2.2.Final
+14:31:44.289 [restartedMain] INFO  ProjectApplication[logStarting:55] - Starting ProjectApplication using Java 17.0.2 on DESKTOP-L0Q733T with PID 21968 (E:\Internship\Project\target\classes started by adith in E:\Internship\Project)
+14:31:44.291 [restartedMain] INFO  ProjectApplication[logStartupProfileInfo:640] - No active profile set, falling back to 1 default profile: "default"
+14:31:44.340 [restartedMain] INFO  ChangeableUrls[logTo:255] - The Class-Path manifest attribute in C:\Users\adith\.m2\repository\com\mchange\c3p0\0.9.5.5\c3p0-0.9.5.5.jar referenced one or more files that do not exist: file:/C:/Users/adith/.m2/repository/com/mchange/c3p0/0.9.5.5/mchange-commons-java-0.2.19.jar
+14:31:44.340 [restartedMain] INFO  DevToolsPropertyDefaultsPostProcessor[logTo:255] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+14:31:44.342 [restartedMain] INFO  DevToolsPropertyDefaultsPostProcessor[logTo:255] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+14:31:44.979 [restartedMain] INFO  RepositoryConfigurationDelegate[registerRepositoriesIn:132] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+14:31:45.035 [restartedMain] INFO  RepositoryConfigurationDelegate[registerRepositoriesIn:201] - Finished Spring Data repository scanning in 46 ms. Found 4 JPA repository interfaces.
+14:31:45.522 [restartedMain] INFO  TomcatWebServer[initialize:108] - Tomcat initialized with port(s): 8080 (http)
+14:31:45.532 [restartedMain] INFO  Http11NioProtocol[log:173] - Initializing ProtocolHandler ["http-nio-8080"]
+14:31:45.532 [restartedMain] INFO  StandardService[log:173] - Starting service [Tomcat]
+14:31:45.532 [restartedMain] INFO  StandardEngine[log:173] - Starting Servlet engine: [Apache Tomcat/9.0.58]
+14:31:45.616 [restartedMain] INFO  [/][log:173] - Initializing Spring embedded WebApplicationContext
+14:31:45.617 [restartedMain] INFO  ServletWebServerApplicationContext[prepareWebApplicationContext:290] - Root WebApplicationContext: initialization completed in 1274 ms
+14:31:45.727 [restartedMain] INFO  LogHelper[logPersistenceUnitInformation:31] - HHH000204: Processing PersistenceUnitInfo [name: default]
+14:31:45.762 [restartedMain] INFO  Version[logVersion:44] - HHH000412: Hibernate ORM core version 5.6.5.Final
+14:31:45.875 [restartedMain] INFO  Version[<clinit>:56] - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+14:31:45.947 [restartedMain] INFO  HikariDataSource[getConnection:110] - HikariPool-1 - Starting...
+14:31:46.218 [restartedMain] INFO  HikariDataSource[getConnection:123] - HikariPool-1 - Start completed.
+14:31:46.232 [restartedMain] INFO  Dialect[<init>:175] - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+14:31:46.539 [restartedMain] ERROR LocalContainerEntityManagerFactoryBean[buildNativeEntityManagerFactory:426] - Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not determine type for: com.internship.Project.repository.JobsRepo, at table: jobs, for columns: [org.hibernate.mapping.Column(jobs_repo)]
+14:31:46.541 [restartedMain] WARN  AnnotationConfigServletWebServerApplicationContext[refresh:591] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not determine type for: com.internship.Project.repository.JobsRepo, at table: jobs, for columns: [org.hibernate.mapping.Column(jobs_repo)]
+14:31:46.546 [restartedMain] INFO  HikariDataSource[close:350] - HikariPool-1 - Shutdown initiated...
+14:31:46.556 [restartedMain] INFO  HikariDataSource[close:352] - HikariPool-1 - Shutdown completed.
+14:31:46.557 [restartedMain] INFO  StandardService[log:173] - Stopping service [Tomcat]
+14:31:46.573 [restartedMain] INFO  ConditionEvaluationReportLoggingListener[logMessage:136] - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+14:31:46.602 [restartedMain] ERROR SpringApplication[reportFailure:830] - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not determine type for: com.internship.Project.repository.JobsRepo, at table: jobs, for columns: [org.hibernate.mapping.Column(jobs_repo)]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:740)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:415)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at com.internship.Project.ProjectApplication.main(ProjectApplication.java:10)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not determine type for: com.internship.Project.repository.JobsRepo, at table: jobs, for columns: [org.hibernate.mapping.Column(jobs_repo)]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:421)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 21 common frames omitted
+Caused by: org.hibernate.MappingException: Could not determine type for: com.internship.Project.repository.JobsRepo, at table: jobs, for columns: [org.hibernate.mapping.Column(jobs_repo)]
+	at org.hibernate.mapping.SimpleValue.getType(SimpleValue.java:515)
+	at org.hibernate.mapping.SimpleValue.isValid(SimpleValue.java:482)
+	at org.hibernate.mapping.Property.isValid(Property.java:231)
+	at org.hibernate.mapping.PersistentClass.validate(PersistentClass.java:627)
+	at org.hibernate.mapping.RootClass.validate(RootClass.java:267)
+	at org.hibernate.boot.internal.MetadataImpl.validate(MetadataImpl.java:359)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:314)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:471)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1498)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	... 25 common frames omitted
+15:10:22.827 [background-preinit] INFO  Version[<clinit>:21] - HV000001: Hibernate Validator 6.2.2.Final
+15:10:22.830 [restartedMain] INFO  ProjectApplication[logStarting:55] - Starting ProjectApplication using Java 17.0.2 on DESKTOP-L0Q733T with PID 14060 (E:\Internship\Project\target\classes started by adith in E:\Internship\Project)
+15:10:22.831 [restartedMain] INFO  ProjectApplication[logStartupProfileInfo:640] - No active profile set, falling back to 1 default profile: "default"
+15:10:22.875 [restartedMain] INFO  ChangeableUrls[logTo:255] - The Class-Path manifest attribute in C:\Users\adith\.m2\repository\com\mchange\c3p0\0.9.5.5\c3p0-0.9.5.5.jar referenced one or more files that do not exist: file:/C:/Users/adith/.m2/repository/com/mchange/c3p0/0.9.5.5/mchange-commons-java-0.2.19.jar
+15:10:22.876 [restartedMain] INFO  DevToolsPropertyDefaultsPostProcessor[logTo:255] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+15:10:22.876 [restartedMain] INFO  DevToolsPropertyDefaultsPostProcessor[logTo:255] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+15:10:23.481 [restartedMain] INFO  RepositoryConfigurationDelegate[registerRepositoriesIn:132] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+15:10:23.533 [restartedMain] INFO  RepositoryConfigurationDelegate[registerRepositoriesIn:201] - Finished Spring Data repository scanning in 43 ms. Found 4 JPA repository interfaces.
+15:10:24.031 [restartedMain] INFO  TomcatWebServer[initialize:108] - Tomcat initialized with port(s): 8080 (http)
+15:10:24.040 [restartedMain] INFO  Http11NioProtocol[log:173] - Initializing ProtocolHandler ["http-nio-8080"]
+15:10:24.041 [restartedMain] INFO  StandardService[log:173] - Starting service [Tomcat]
+15:10:24.041 [restartedMain] INFO  StandardEngine[log:173] - Starting Servlet engine: [Apache Tomcat/9.0.58]
+15:10:24.131 [restartedMain] INFO  [/][log:173] - Initializing Spring embedded WebApplicationContext
+15:10:24.132 [restartedMain] INFO  ServletWebServerApplicationContext[prepareWebApplicationContext:290] - Root WebApplicationContext: initialization completed in 1255 ms
+15:10:24.240 [restartedMain] INFO  LogHelper[logPersistenceUnitInformation:31] - HHH000204: Processing PersistenceUnitInfo [name: default]
+15:10:24.282 [restartedMain] INFO  Version[logVersion:44] - HHH000412: Hibernate ORM core version 5.6.5.Final
+15:10:24.400 [restartedMain] INFO  Version[<clinit>:56] - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+15:10:24.470 [restartedMain] INFO  HikariDataSource[getConnection:110] - HikariPool-1 - Starting...
+15:10:24.778 [restartedMain] INFO  HikariDataSource[getConnection:123] - HikariPool-1 - Start completed.
+15:10:24.794 [restartedMain] INFO  Dialect[<init>:175] - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+15:10:25.455 [restartedMain] INFO  JtaPlatformInitiator[initiateService:52] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+15:10:25.462 [restartedMain] INFO  LocalContainerEntityManagerFactoryBean[buildNativeEntityManagerFactory:437] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+15:10:25.494 [restartedMain] INFO  StdSchedulerFactory[instantiate:1220] - Using default implementation for ThreadExecutor
+15:10:25.503 [restartedMain] INFO  SchedulerSignalerImpl[<init>:61] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+15:10:25.503 [restartedMain] INFO  QuartzScheduler[<init>:229] - Quartz Scheduler v.2.3.2 created.
+15:10:25.504 [restartedMain] INFO  RAMJobStore[initialize:155] - RAMJobStore initialized.
+15:10:25.505 [restartedMain] INFO  QuartzScheduler[initialize:294] - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+15:10:25.505 [restartedMain] INFO  StdSchedulerFactory[instantiate:1374] - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+15:10:25.505 [restartedMain] INFO  StdSchedulerFactory[instantiate:1378] - Quartz scheduler version: 2.3.2
+15:10:25.505 [restartedMain] INFO  QuartzScheduler[setJobFactory:2293] - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@1ffb0942
+15:10:25.824 [restartedMain] WARN  JpaBaseConfiguration$JpaWebConfiguration[openEntityManagerInViewInterceptor:219] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+15:10:26.020 [restartedMain] WARN  ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration[checkTemplateLocationExists:106] - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+15:10:26.107 [restartedMain] INFO  OptionalLiveReloadServer[startServer:58] - LiveReload server is running on port 35729
+15:10:26.125 [restartedMain] INFO  Http11NioProtocol[log:173] - Starting ProtocolHandler ["http-nio-8080"]
+15:10:26.146 [restartedMain] INFO  TomcatWebServer[start:220] - Tomcat started on port(s): 8080 (http) with context path ''
+15:10:26.147 [restartedMain] INFO  SchedulerFactoryBean[startScheduler:729] - Starting Quartz Scheduler now
+15:10:26.147 [restartedMain] INFO  QuartzScheduler[start:547] - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+15:10:26.157 [restartedMain] INFO  ProjectApplication[logStarted:61] - Started ProjectApplication in 3.77 seconds (JVM running for 5.075)
+15:10:26.160 [restartedMain] INFO  OnStartup[runOnStartUp:20] - -------OnStartup class called-------
+15:10:26.169 [restartedMain] INFO  StdSchedulerFactory[instantiate:1036] - Using ConnectionProvider class 'org.quartz.utils.C3p0PoolingConnectionProvider' for data source 'myDS'
+15:10:26.182 [MLog-Init-Reporter] INFO  MLog[log:212] - MLog clients using slf4j logging.
+15:10:26.200 [restartedMain] INFO  C3P0Registry[log:212] - Initializing c3p0-0.9.5.5 [built 11-December-2019 22:18:33 -0800; debug? true; trace: 10]
+15:10:26.228 [restartedMain] INFO  StdSchedulerFactory[instantiate:1220] - Using default implementation for ThreadExecutor
+15:10:26.230 [restartedMain] INFO  SchedulerSignalerImpl[<init>:61] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+15:10:26.230 [restartedMain] INFO  QuartzScheduler[<init>:229] - Quartz Scheduler v.2.3.2 created.
+15:10:26.230 [restartedMain] INFO  JobStoreCMT[initialize:672] - Using db table-based data access locking (synchronization).
+15:10:26.232 [restartedMain] INFO  JobStoreCMT[initialize:145] - JobStoreCMT initialized.
+15:10:26.232 [restartedMain] INFO  QuartzScheduler[initialize:294] - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'MySchedulerGlobal' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 5 threads.
+  Using job-store 'org.quartz.impl.jdbcjobstore.JobStoreCMT' - which supports persistence. and is not clustered.
+
+15:10:26.232 [restartedMain] INFO  StdSchedulerFactory[instantiate:1374] - Quartz scheduler 'MySchedulerGlobal' initialized from the specified file : 'globalQuartz.properties' from the class resource path.
+15:10:26.232 [restartedMain] INFO  StdSchedulerFactory[instantiate:1378] - Quartz scheduler version: 2.3.2
+15:10:26.248 [restartedMain] INFO  AbstractPoolBackedDataSource[log:212] - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hge0z1aoky3avn13c8qzq|5b8543de, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hge0z1aoky3avn13c8qzq|5b8543de, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://localhost:3306/project, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 10, maxStatements -> 0, maxStatementsPerConnection -> 120, minPoolSize -> 1, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {password=******, user=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+15:10:26.309 [restartedMain] INFO  JobStoreCMT[recoverJobs:866] - Freed 0 triggers from 'acquired' / 'blocked' state.
+15:10:26.314 [restartedMain] INFO  JobStoreCMT[recoverJobs:876] - Recovering 0 jobs that were in-progress at the time of the last shut-down.
+15:10:26.314 [restartedMain] INFO  JobStoreCMT[recoverJobs:889] - Recovery complete.
+15:10:26.315 [restartedMain] INFO  JobStoreCMT[recoverJobs:896] - Removed 0 'complete' triggers.
+15:10:26.316 [restartedMain] INFO  JobStoreCMT[recoverJobs:901] - Removed 0 stale fired job entries.
+15:10:26.319 [restartedMain] INFO  QuartzScheduler[start:547] - Scheduler MySchedulerGlobal_$_NON_CLUSTERED started.
+15:10:26.319 [restartedMain] INFO  MainService[start:69] - Quartz Global Scheduler has started
+15:10:26.321 [restartedMain] INFO  StdSchedulerFactory[instantiate:1036] - Using ConnectionProvider class 'org.quartz.utils.C3p0PoolingConnectionProvider' for data source 'myDS'
+15:10:26.341 [restartedMain] INFO  StdSchedulerFactory[instantiate:1220] - Using default implementation for ThreadExecutor
+15:10:26.343 [restartedMain] INFO  SchedulerSignalerImpl[<init>:61] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+15:10:26.343 [restartedMain] INFO  QuartzScheduler[<init>:229] - Quartz Scheduler v.2.3.2 created.
+15:10:26.343 [restartedMain] INFO  RAMJobStore[initialize:155] - RAMJobStore initialized.
+15:10:26.343 [restartedMain] INFO  QuartzScheduler[initialize:294] - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'MySchedulerLocal' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 5 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+15:10:26.344 [restartedMain] INFO  StdSchedulerFactory[instantiate:1374] - Quartz scheduler 'MySchedulerLocal' initialized from the specified file : 'localQuartz.properties' from the class resource path.
+15:10:26.344 [restartedMain] INFO  StdSchedulerFactory[instantiate:1378] - Quartz scheduler version: 2.3.2
+15:10:26.344 [restartedMain] INFO  QuartzScheduler[start:547] - Scheduler MySchedulerLocal_$_NON_CLUSTERED started.
+15:10:26.344 [restartedMain] INFO  MainService[start:84] - Quartz Local Scheduler has started
+15:10:30.094 [http-nio-8080-exec-2] INFO  [/][log:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+15:10:30.095 [http-nio-8080-exec-2] INFO  DispatcherServlet[initServletBean:525] - Initializing Servlet 'dispatcherServlet'
+15:10:30.097 [http-nio-8080-exec-2] INFO  DispatcherServlet[initServletBean:547] - Completed initialization in 2 ms
+15:10:30.116 [http-nio-8080-exec-2] INFO  GlobalRestController[scheduleAllGlobalJobs:59] - Schedule all Global Jobs - Jobs Master Table
+15:10:30.116 [http-nio-8080-exec-2] INFO  MainService[scheduleAllGlobalJob:145] - Scheduling all Global jobs from Jobs master table
+15:10:30.254 [http-nio-8080-exec-2] INFO  AbstractPoolBackedDataSource[log:212] - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hge0z1aoky3avn13c8qzq|5ab06570, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hge0z1aoky3avn13c8qzq|5ab06570, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://localhost:3306/project, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 10, maxStatements -> 0, maxStatementsPerConnection -> 120, minPoolSize -> 1, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {password=******, user=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+15:10:30.306 [http-nio-8080-exec-2] INFO  MainService[scheduleJobMethod:226] - Job Scheduled Successfully
+15:11:00.045 [MySchedulerGlobal_Worker-1] INFO  GlobalJob1[handle:54] - GlobalJob1 started
+15:11:46.770 [HikariPool-1 housekeeper] WARN  HikariPool[run:788] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=51s882ms929µs600ns).
+15:11:46.782 [MySchedulerGlobal_Worker-1] ERROR JobRunShell[run:211] - Job jdbc.Currency finder threw an unhandled Exception: 
+java.lang.NullPointerException: Cannot invoke "com.internship.Project.repository.JobsRepo.findByJobId(java.lang.Long)" because "this.jobsRepo" is null
+	at com.internship.Project.scheduler.GlobalJob1.handle(GlobalJob1.java:74)
+	at com.internship.Project.scheduler.GlobalJob1.execute(GlobalJob1.java:218)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+15:11:46.783 [MySchedulerGlobal_Worker-1] ERROR ErrorLogger[schedulerError:2407] - Job (jdbc.Currency finder threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception.
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.lang.NullPointerException: Cannot invoke "com.internship.Project.repository.JobsRepo.findByJobId(java.lang.Long)" because "this.jobsRepo" is null
+	at com.internship.Project.scheduler.GlobalJob1.handle(GlobalJob1.java:74)
+	at com.internship.Project.scheduler.GlobalJob1.execute(GlobalJob1.java:218)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 common frames omitted
+15:11:46.857 [SpringApplicationShutdownHook] INFO  QuartzScheduler[standby:585] - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+15:11:46.896 [SpringApplicationShutdownHook] INFO  OnDestroy[runOnDestroy:20] - -------OnDestroy class called-------
+15:11:46.956 [SpringApplicationShutdownHook] INFO  QuartzScheduler[shutdown:666] - Scheduler MySchedulerGlobal_$_NON_CLUSTERED shutting down.
+15:11:46.957 [SpringApplicationShutdownHook] INFO  QuartzScheduler[standby:585] - Scheduler MySchedulerGlobal_$_NON_CLUSTERED paused.
+15:11:46.959 [SpringApplicationShutdownHook] INFO  QuartzScheduler[shutdown:740] - Scheduler MySchedulerGlobal_$_NON_CLUSTERED shutdown complete.
+15:11:46.960 [SpringApplicationShutdownHook] INFO  QuartzScheduler[shutdown:666] - Scheduler MySchedulerLocal_$_NON_CLUSTERED shutting down.
+15:11:46.960 [SpringApplicationShutdownHook] INFO  QuartzScheduler[standby:585] - Scheduler MySchedulerLocal_$_NON_CLUSTERED paused.
+15:11:46.960 [SpringApplicationShutdownHook] INFO  QuartzScheduler[shutdown:740] - Scheduler MySchedulerLocal_$_NON_CLUSTERED shutdown complete.
+15:11:46.960 [SpringApplicationShutdownHook] INFO  MainService[stop:118] - Quartz Scheduler shutdown
+15:11:46.961 [SpringApplicationShutdownHook] INFO  MainService[stop:119] - The active jobs status updated to unscheduled, the jobs related to it have been deleted - Jobs Master Table, Quartz Job Tables(qrtz_triggers, qrtz_cron_triggers, qrtz_job_details)
+15:11:46.961 [SpringApplicationShutdownHook] INFO  SchedulerFactoryBean[destroy:847] - Shutting down Quartz Scheduler
+15:11:46.962 [SpringApplicationShutdownHook] INFO  QuartzScheduler[shutdown:666] - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+15:11:46.962 [SpringApplicationShutdownHook] INFO  QuartzScheduler[standby:585] - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+15:11:46.962 [SpringApplicationShutdownHook] INFO  QuartzScheduler[shutdown:740] - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+15:11:46.963 [SpringApplicationShutdownHook] INFO  LocalContainerEntityManagerFactoryBean[destroy:651] - Closing JPA EntityManagerFactory for persistence unit 'default'
+15:11:46.968 [SpringApplicationShutdownHook] INFO  HikariDataSource[close:350] - HikariPool-1 - Shutdown initiated...
+15:11:46.976 [SpringApplicationShutdownHook] INFO  HikariDataSource[close:352] - HikariPool-1 - Shutdown completed.
+15:12:17.503 [background-preinit] INFO  Version[<clinit>:21] - HV000001: Hibernate Validator 6.2.2.Final
+15:12:17.503 [restartedMain] INFO  ProjectApplication[logStarting:55] - Starting ProjectApplication using Java 17.0.2 on DESKTOP-L0Q733T with PID 22560 (E:\Internship\Project\target\classes started by adith in E:\Internship\Project)
+15:12:17.504 [restartedMain] INFO  ProjectApplication[logStartupProfileInfo:640] - No active profile set, falling back to 1 default profile: "default"
+15:12:17.541 [restartedMain] INFO  ChangeableUrls[logTo:255] - The Class-Path manifest attribute in C:\Users\adith\.m2\repository\com\mchange\c3p0\0.9.5.5\c3p0-0.9.5.5.jar referenced one or more files that do not exist: file:/C:/Users/adith/.m2/repository/com/mchange/c3p0/0.9.5.5/mchange-commons-java-0.2.19.jar
+15:12:17.541 [restartedMain] INFO  DevToolsPropertyDefaultsPostProcessor[logTo:255] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+15:12:17.541 [restartedMain] INFO  DevToolsPropertyDefaultsPostProcessor[logTo:255] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+15:12:18.155 [restartedMain] INFO  RepositoryConfigurationDelegate[registerRepositoriesIn:132] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+15:12:18.206 [restartedMain] INFO  RepositoryConfigurationDelegate[registerRepositoriesIn:201] - Finished Spring Data repository scanning in 42 ms. Found 4 JPA repository interfaces.
+15:12:18.705 [restartedMain] INFO  TomcatWebServer[initialize:108] - Tomcat initialized with port(s): 8080 (http)
+15:12:18.712 [restartedMain] INFO  Http11NioProtocol[log:173] - Initializing ProtocolHandler ["http-nio-8080"]
+15:12:18.712 [restartedMain] INFO  StandardService[log:173] - Starting service [Tomcat]
+15:12:18.712 [restartedMain] INFO  StandardEngine[log:173] - Starting Servlet engine: [Apache Tomcat/9.0.58]
+15:12:18.793 [restartedMain] INFO  [/][log:173] - Initializing Spring embedded WebApplicationContext
+15:12:18.793 [restartedMain] INFO  ServletWebServerApplicationContext[prepareWebApplicationContext:290] - Root WebApplicationContext: initialization completed in 1251 ms
+15:12:18.906 [restartedMain] INFO  LogHelper[logPersistenceUnitInformation:31] - HHH000204: Processing PersistenceUnitInfo [name: default]
+15:12:18.947 [restartedMain] INFO  Version[logVersion:44] - HHH000412: Hibernate ORM core version 5.6.5.Final
+15:12:19.048 [restartedMain] INFO  Version[<clinit>:56] - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+15:12:19.127 [restartedMain] INFO  HikariDataSource[getConnection:110] - HikariPool-1 - Starting...
+15:12:19.419 [restartedMain] INFO  HikariDataSource[getConnection:123] - HikariPool-1 - Start completed.
+15:12:19.435 [restartedMain] INFO  Dialect[<init>:175] - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+15:12:19.974 [restartedMain] INFO  JtaPlatformInitiator[initiateService:52] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+15:12:19.980 [restartedMain] INFO  LocalContainerEntityManagerFactoryBean[buildNativeEntityManagerFactory:437] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+15:12:20.011 [restartedMain] INFO  StdSchedulerFactory[instantiate:1220] - Using default implementation for ThreadExecutor
+15:12:20.019 [restartedMain] INFO  SchedulerSignalerImpl[<init>:61] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+15:12:20.020 [restartedMain] INFO  QuartzScheduler[<init>:229] - Quartz Scheduler v.2.3.2 created.
+15:12:20.020 [restartedMain] INFO  RAMJobStore[initialize:155] - RAMJobStore initialized.
+15:12:20.021 [restartedMain] INFO  QuartzScheduler[initialize:294] - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+15:12:20.021 [restartedMain] INFO  StdSchedulerFactory[instantiate:1374] - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+15:12:20.021 [restartedMain] INFO  StdSchedulerFactory[instantiate:1378] - Quartz scheduler version: 2.3.2
+15:12:20.021 [restartedMain] INFO  QuartzScheduler[setJobFactory:2293] - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@4704d939
+15:12:20.355 [restartedMain] WARN  JpaBaseConfiguration$JpaWebConfiguration[openEntityManagerInViewInterceptor:219] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+15:12:20.658 [restartedMain] WARN  ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration[checkTemplateLocationExists:106] - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+15:12:20.807 [restartedMain] INFO  OptionalLiveReloadServer[startServer:58] - LiveReload server is running on port 35729
+15:12:20.826 [restartedMain] INFO  Http11NioProtocol[log:173] - Starting ProtocolHandler ["http-nio-8080"]
+15:12:20.847 [restartedMain] INFO  TomcatWebServer[start:220] - Tomcat started on port(s): 8080 (http) with context path ''
+15:12:20.848 [restartedMain] INFO  SchedulerFactoryBean[startScheduler:729] - Starting Quartz Scheduler now
+15:12:20.849 [restartedMain] INFO  QuartzScheduler[start:547] - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+15:12:20.858 [restartedMain] INFO  ProjectApplication[logStarted:61] - Started ProjectApplication in 3.755 seconds (JVM running for 4.85)
+15:12:20.861 [restartedMain] INFO  OnStartup[runOnStartUp:20] - -------OnStartup class called-------
+15:12:20.870 [restartedMain] INFO  StdSchedulerFactory[instantiate:1036] - Using ConnectionProvider class 'org.quartz.utils.C3p0PoolingConnectionProvider' for data source 'myDS'
+15:12:20.885 [MLog-Init-Reporter] INFO  MLog[log:212] - MLog clients using slf4j logging.
+15:12:20.917 [restartedMain] INFO  C3P0Registry[log:212] - Initializing c3p0-0.9.5.5 [built 11-December-2019 22:18:33 -0800; debug? true; trace: 10]
+15:12:20.967 [restartedMain] INFO  StdSchedulerFactory[instantiate:1220] - Using default implementation for ThreadExecutor
+15:12:20.983 [restartedMain] INFO  SchedulerSignalerImpl[<init>:61] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+15:12:20.983 [restartedMain] INFO  QuartzScheduler[<init>:229] - Quartz Scheduler v.2.3.2 created.
+15:12:21.010 [restartedMain] INFO  JobStoreCMT[initialize:672] - Using db table-based data access locking (synchronization).
+15:12:21.016 [restartedMain] INFO  JobStoreCMT[initialize:145] - JobStoreCMT initialized.
+15:12:21.019 [restartedMain] INFO  QuartzScheduler[initialize:294] - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'MySchedulerGlobal' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 5 threads.
+  Using job-store 'org.quartz.impl.jdbcjobstore.JobStoreCMT' - which supports persistence. and is not clustered.
+
+15:12:21.020 [restartedMain] INFO  StdSchedulerFactory[instantiate:1374] - Quartz scheduler 'MySchedulerGlobal' initialized from the specified file : 'globalQuartz.properties' from the class resource path.
+15:12:21.020 [restartedMain] INFO  StdSchedulerFactory[instantiate:1378] - Quartz scheduler version: 2.3.2
+15:12:21.100 [restartedMain] INFO  AbstractPoolBackedDataSource[log:212] - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hge0z1aoky5re366cgg2|27f81842, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hge0z1aoky5re366cgg2|27f81842, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://localhost:3306/project, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 10, maxStatements -> 0, maxStatementsPerConnection -> 120, minPoolSize -> 1, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {password=******, user=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+15:12:21.183 [restartedMain] INFO  JobStoreCMT[recoverJobs:866] - Freed 0 triggers from 'acquired' / 'blocked' state.
+15:12:21.189 [restartedMain] INFO  JobStoreCMT[recoverJobs:876] - Recovering 0 jobs that were in-progress at the time of the last shut-down.
+15:12:21.190 [restartedMain] INFO  JobStoreCMT[recoverJobs:889] - Recovery complete.
+15:12:21.192 [restartedMain] INFO  JobStoreCMT[recoverJobs:896] - Removed 0 'complete' triggers.
+15:12:21.193 [restartedMain] INFO  JobStoreCMT[recoverJobs:901] - Removed 0 stale fired job entries.
+15:12:21.196 [restartedMain] INFO  QuartzScheduler[start:547] - Scheduler MySchedulerGlobal_$_NON_CLUSTERED started.
+15:12:21.196 [restartedMain] INFO  MainService[start:69] - Quartz Global Scheduler has started
+15:12:21.197 [restartedMain] INFO  StdSchedulerFactory[instantiate:1036] - Using ConnectionProvider class 'org.quartz.utils.C3p0PoolingConnectionProvider' for data source 'myDS'
+15:12:21.215 [restartedMain] INFO  StdSchedulerFactory[instantiate:1220] - Using default implementation for ThreadExecutor
+15:12:21.217 [restartedMain] INFO  SchedulerSignalerImpl[<init>:61] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+15:12:21.217 [restartedMain] INFO  QuartzScheduler[<init>:229] - Quartz Scheduler v.2.3.2 created.
+15:12:21.217 [restartedMain] INFO  RAMJobStore[initialize:155] - RAMJobStore initialized.
+15:12:21.217 [restartedMain] INFO  QuartzScheduler[initialize:294] - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'MySchedulerLocal' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 5 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+15:12:21.218 [restartedMain] INFO  StdSchedulerFactory[instantiate:1374] - Quartz scheduler 'MySchedulerLocal' initialized from the specified file : 'localQuartz.properties' from the class resource path.
+15:12:21.218 [restartedMain] INFO  StdSchedulerFactory[instantiate:1378] - Quartz scheduler version: 2.3.2
+15:12:21.218 [restartedMain] INFO  QuartzScheduler[start:547] - Scheduler MySchedulerLocal_$_NON_CLUSTERED started.
+15:12:21.218 [restartedMain] INFO  MainService[start:84] - Quartz Local Scheduler has started
+15:12:21.824 [http-nio-8080-exec-1] INFO  [/][log:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+15:12:21.824 [http-nio-8080-exec-1] INFO  DispatcherServlet[initServletBean:525] - Initializing Servlet 'dispatcherServlet'
+15:12:21.825 [http-nio-8080-exec-1] INFO  DispatcherServlet[initServletBean:547] - Completed initialization in 1 ms
+15:12:21.844 [http-nio-8080-exec-1] INFO  GlobalRestController[scheduleAllGlobalJobs:59] - Schedule all Global Jobs - Jobs Master Table
+15:12:21.844 [http-nio-8080-exec-1] INFO  MainService[scheduleAllGlobalJob:145] - Scheduling all Global jobs from Jobs master table
+15:12:21.975 [http-nio-8080-exec-1] INFO  AbstractPoolBackedDataSource[log:212] - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hge0z1aoky5re366cgg2|3b7c18b0, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hge0z1aoky5re366cgg2|3b7c18b0, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://localhost:3306/project, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 10, maxStatements -> 0, maxStatementsPerConnection -> 120, minPoolSize -> 1, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {password=******, user=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+15:12:22.019 [http-nio-8080-exec-1] INFO  MainService[scheduleJobMethod:226] - Job Scheduled Successfully
+15:13:00.043 [MySchedulerGlobal_Worker-1] INFO  GlobalJob1[handle:54] - GlobalJob1 started
+15:13:24.807 [MySchedulerGlobal_Worker-1] ERROR JobRunShell[run:211] - Job jdbc.Currency finder threw an unhandled Exception: 
+java.lang.NullPointerException: Cannot invoke "com.internship.Project.repository.JobsRepo.findByJobId(java.lang.Long)" because "this.jobsRepo" is null
+	at com.internship.Project.scheduler.GlobalJob1.handle(GlobalJob1.java:74)
+	at com.internship.Project.scheduler.GlobalJob1.execute(GlobalJob1.java:218)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+15:13:24.808 [MySchedulerGlobal_Worker-1] ERROR ErrorLogger[schedulerError:2407] - Job (jdbc.Currency finder threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception.
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.lang.NullPointerException: Cannot invoke "com.internship.Project.repository.JobsRepo.findByJobId(java.lang.Long)" because "this.jobsRepo" is null
+	at com.internship.Project.scheduler.GlobalJob1.handle(GlobalJob1.java:74)
+	at com.internship.Project.scheduler.GlobalJob1.execute(GlobalJob1.java:218)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 common frames omitted
+15:13:24.871 [SpringApplicationShutdownHook] INFO  QuartzScheduler[standby:585] - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+15:13:24.901 [SpringApplicationShutdownHook] INFO  OnDestroy[runOnDestroy:20] - -------OnDestroy class called-------
+15:13:24.955 [SpringApplicationShutdownHook] INFO  QuartzScheduler[shutdown:666] - Scheduler MySchedulerGlobal_$_NON_CLUSTERED shutting down.
+15:13:24.956 [SpringApplicationShutdownHook] INFO  QuartzScheduler[standby:585] - Scheduler MySchedulerGlobal_$_NON_CLUSTERED paused.
+15:13:24.958 [SpringApplicationShutdownHook] INFO  QuartzScheduler[shutdown:740] - Scheduler MySchedulerGlobal_$_NON_CLUSTERED shutdown complete.
+15:13:24.959 [SpringApplicationShutdownHook] INFO  QuartzScheduler[shutdown:666] - Scheduler MySchedulerLocal_$_NON_CLUSTERED shutting down.
+15:13:24.959 [SpringApplicationShutdownHook] INFO  QuartzScheduler[standby:585] - Scheduler MySchedulerLocal_$_NON_CLUSTERED paused.
+15:13:24.959 [SpringApplicationShutdownHook] INFO  QuartzScheduler[shutdown:740] - Scheduler MySchedulerLocal_$_NON_CLUSTERED shutdown complete.
+15:13:24.959 [SpringApplicationShutdownHook] INFO  MainService[stop:118] - Quartz Scheduler shutdown
+15:13:24.959 [SpringApplicationShutdownHook] INFO  MainService[stop:119] - The active jobs status updated to unscheduled, the jobs related to it have been deleted - Jobs Master Table, Quartz Job Tables(qrtz_triggers, qrtz_cron_triggers, qrtz_job_details)
+15:13:24.960 [SpringApplicationShutdownHook] INFO  SchedulerFactoryBean[destroy:847] - Shutting down Quartz Scheduler
+15:13:24.960 [SpringApplicationShutdownHook] INFO  QuartzScheduler[shutdown:666] - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+15:13:24.960 [SpringApplicationShutdownHook] INFO  QuartzScheduler[standby:585] - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+15:13:24.960 [SpringApplicationShutdownHook] INFO  QuartzScheduler[shutdown:740] - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+15:13:24.960 [SpringApplicationShutdownHook] INFO  LocalContainerEntityManagerFactoryBean[destroy:651] - Closing JPA EntityManagerFactory for persistence unit 'default'
+15:13:24.963 [SpringApplicationShutdownHook] INFO  HikariDataSource[close:350] - HikariPool-1 - Shutdown initiated...
+15:13:24.974 [SpringApplicationShutdownHook] INFO  HikariDataSource[close:352] - HikariPool-1 - Shutdown completed.

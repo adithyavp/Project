@@ -876,7 +876,7 @@ java.io.IOException: Cannot run program "uname": CreateProcess error=2, The syst
 	at java.base/java.lang.Runtime.exec(Runtime.java:594)
 	at java.base/java.lang.Runtime.exec(Runtime.java:418)
 	at java.base/java.lang.Runtime.exec(Runtime.java:315)
-	at com.internship.Project.scheduler.DataStore.getInstanceName(DataStore.java:21)
+	at com.internship.Project.scheduler.JobDetailsData.getInstanceName(DataStore.java:21)
 	at com.internship.Project.scheduler.LocalJob1.executeInternal(LocalJob1.java:129)
 	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:75)
 	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)

@@ -1,4 +1,4 @@
-package com.internship.Project.Component;
+package com.internship.Project.component;
 
 import com.internship.Project.service.MainService;
 import lombok.extern.slf4j.Slf4j;

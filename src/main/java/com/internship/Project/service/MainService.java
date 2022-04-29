@@ -1,14 +1,21 @@
 package com.internship.Project.service;
 
+import com.internship.Project.configuration.AutowiringSpringBeanJobFactory;
 import com.internship.Project.entity.Jobs;
-
+import com.internship.Project.repository.CurrencyDataRepo;
+import com.internship.Project.repository.EmailDetailsRepo;
+import com.internship.Project.repository.JobExecutedDetailsRepo;
 import com.internship.Project.repository.JobsRepo;
+
 import lombok.extern.slf4j.Slf4j;
 import org.quartz.*;
-import org.quartz.impl.StdSchedulerFactory;
 
+import org.quartz.spi.JobFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.PlatformTransactionManager;
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;
@@ -25,10 +32,19 @@ import java.util.Properties;
 public class MainService {
 
     @Autowired
-    Scheduler scheduler;
+    JobsRepo jobsRepo;
 
     @Autowired
-    JobsRepo jobsRepo;
+    JobExecutedDetailsRepo jobExecutedDetailsRepo;
+
+    @Autowired
+    CurrencyDataRepo currencyDataRepo;
+
+    @Autowired
+    ApplicationContext applicationContext;
+
+    @Autowired
+    PlatformTransactionManager transactionManager;
 
     Scheduler globalScheduler;
 
@@ -36,54 +52,82 @@ public class MainService {
 
     HashMap<Long, TriggerKey> mapOfJobIdAndTriggers = new HashMap<Long, TriggerKey>();
 
-    public MainService(JobsRepo jobsRepo) {
-        this.jobsRepo = jobsRepo;
-    }
-
-    public JobsRepo getJobsRepo() {
-        return jobsRepo;
-    }
-
-    public void setJobsRepo(JobsRepo jobsRepo) {
-        this.jobsRepo = jobsRepo;
-    }
+//    public MainService(JobsRepo jobsRepo) {
+//        this.jobsRepo = jobsRepo;
+//    }
+//
+//    public JobsRepo getJobsRepo() {
+//        return jobsRepo;
+//    }
+//
+//    public void setJobsRepo(JobsRepo jobsRepo) {
+//        this.jobsRepo = jobsRepo;
+//    }
 
     public void start() {
         try {
-//            scheduler.start();
+
+////            scheduler.start();
+//
+//            SchedulerFactoryBean factory = new SchedulerFactoryBean();
+//
+//            factory.setOverwriteExistingJobs(true);
+//
+//            AutowiringSpringBeanJobFactory jobFactory = new AutowiringSpringBeanJobFactory();
+//
+//            jobFactory.setApplicationContext(applicationContext);
+//
+//            factory.setJobFactory(jobFactory);
+//
+//            Properties overAllPropertiesGlobal = readQuartzProperties("globalQuartz.properties");
+//
+//            factory.setQuartzProperties(overAllPropertiesGlobal);
+//
+//            factory.afterPropertiesSet();
+
+            globalScheduler = (Scheduler) applicationContext.getBean("getGlobalJobScheduler");
+
+
+//            globalScheduler.getContext().put("jobRepository", jobsRepo);
+//
+//            globalScheduler.getContext().put("jobExecutedDetailsRepository", jobExecutedDetailsRepo);
+//
+//            globalScheduler.getContext().put("currencyDataRepository", currencyDataRepo);
 
             // This part is for the initialization of the scheduler instance for the Global Jobs
-            StdSchedulerFactory stdSchedulerFactoryGlobal = new StdSchedulerFactory("globalQuartz.properties");
+//            StdSchedulerFactory stdSchedulerFactoryGlobal = new StdSchedulerFactory("globalQuartz.properties");
 
 //            Properties overAllPropertiesGlobal = readQuartzProperties("globalQuartz.properties");
 //
 //            stdSchedulerFactoryGlobal.initialize(overAllPropertiesGlobal);
 
-            globalScheduler = stdSchedulerFactoryGlobal.getScheduler();
+//            globalScheduler = stdSchedulerFactoryGlobal.getScheduler();
 
-            globalScheduler.start();
+//            globalScheduler.start();
 
-            globalScheduler.getContext().put("jobRepository", jobsRepo);
+//            globalScheduler.getContext().put("jobRepository", jobsRepo);
 
             log.info("Quartz Global Scheduler has started");
 
-            // This part is for the initialization of the scheduler instance for the Local Jobs
-            StdSchedulerFactory stdSchedulerFactoryLocal = new StdSchedulerFactory("localQuartz.properties");
-
-//            Properties overAllPropertiesLocal = readQuartzProperties("localQuartz.properties");
+//            // This part is for the initialization of the scheduler instance for the Local Jobs
+//            StdSchedulerFactory stdSchedulerFactoryLocal = new StdSchedulerFactory("localQuartz.properties");
 //
-//            stdSchedulerFactoryLocal.initialize(overAllPropertiesLocal);
+////            Properties overAllPropertiesLocal = readQuartzProperties("localQuartz.properties");
+////
+////            stdSchedulerFactoryLocal.initialize(overAllPropertiesLocal);
+//
+//            localScheduler = stdSchedulerFactoryLocal.getScheduler();
 
-            localScheduler = stdSchedulerFactoryLocal.getScheduler();
+            localScheduler = (Scheduler) applicationContext.getBean("getLocalJobScheduler");
 
             localScheduler.start();
-
-            localScheduler.getContext().put("jobRepository", jobsRepo);
 
             log.info("Quartz Local Scheduler has started");
 
         } catch (SchedulerException e) {
             log.error("Exception while initializing/starting scheduler: ", e);
+        } catch (Exception e) {
+            throw new RuntimeException(e);
         }
     }
 
@@ -99,6 +143,7 @@ public class MainService {
 
                 if (job.getMemoryType().contains("jdbc")) {
                     globalScheduler.deleteJob(jobKey);
+                    globalScheduler.clear();
                 }
                 if (job.getMemoryType().contains("memory")) {
                     localScheduler.deleteJob(jobKey);
@@ -120,6 +165,13 @@ public class MainService {
         } catch (SchedulerException e) {
             log.error("Exception - Shutting down Quartz scheduler: ");
         }
+    }
+
+
+    public JobFactory jobFactory(ApplicationContext applicationContext, JobsRepo jobsRepo, JobExecutedDetailsRepo jobExecutedDetailsRepo, CurrencyDataRepo currencyDataRepo, EmailDetailsRepo emailDetailsRepo){
+        AutowiringSpringBeanJobFactory jobFactory = new AutowiringSpringBeanJobFactory();
+        jobFactory.setApplicationContext(applicationContext);
+        return jobFactory;
     }
 
     private Properties readQuartzProperties(String propertiesFileName) {
@@ -185,6 +237,11 @@ public class MainService {
         JobDataMap dataMap = new JobDataMap();
         dataMap.put("jobId", job.getJobId());
         dataMap.put("count", 0);
+//        dataMap.put("Configurations", new Configurations(jobsRepo, jobExecutedDetailsRepo, currencyDataRepo));
+
+
+        // This line of code is to check the constructor
+//        GlobalJob1 globalJob1 = new GlobalJob1(jobsRepo);
 
         JobDetail jobDetail = null;
 
@@ -200,9 +257,6 @@ public class MainService {
             log.error("Class not found during Scheduling Job", e);
         }
 
-        // This line of code is to check the constructor
-//        GlobalJob1 globalJob1 = new GlobalJob1(jobsRepo);
-
 
         Trigger jobTrigger = TriggerBuilder
                 .newTrigger()
@@ -214,9 +268,17 @@ public class MainService {
         // Key - Job Id, Value - trigger key
         mapOfJobIdAndTriggers.put(job.getJobId(), jobTrigger.getKey());
 
+//        AutowiringSpringBeanJobFactory customJobFactory = new AutowiringSpringBeanJobFactory();
+//
+//        customJobFactory.setApplicationContext(applicationContext);
+
         try {
             if (jobClass.contains("Global")) {
+//                globalScheduler.setJobFactory(customJobFactory);
+
                 globalScheduler.scheduleJob(jobDetail, jobTrigger);
+
+                globalScheduler.start();
             }
             if (jobClass.contains("Local")) {
                 localScheduler.scheduleJob(jobDetail, jobTrigger);
