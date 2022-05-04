@@ -71,7 +71,7 @@ The last packet sent successfully to the server was 0 milliseconds ago. The driv
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
-	at com.internship.Project.ProjectApplication.main(ProjectApplication.java:10)
+	at com.internship.project.ProjectApplication.main(ProjectApplication.java:10)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -159,7 +159,7 @@ The last packet sent successfully to the server was 0 milliseconds ago. The driv
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
-	at com.internship.Project.ProjectApplication.main(ProjectApplication.java:10)
+	at com.internship.project.ProjectApplication.main(ProjectApplication.java:10)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -216,7 +216,7 @@ org.springframework.beans.factory.BeanCreationException: Error creating bean wit
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
-	at com.internship.Project.ProjectApplication.main(ProjectApplication.java:10)
+	at com.internship.project.ProjectApplication.main(ProjectApplication.java:10)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -347,18 +347,18 @@ Caused by: org.hibernate.HibernateException: Access to DialectResolutionInfo can
 21:06:33.099 [http-nio-8080-exec-1] INFO  MainService[scheduleJobMethod:214] - Job Scheduled Successfully
 21:07:00.115 [MySchedulerGlobal_Worker-1] INFO  GlobalJob1[handle:45] - GlobalJob1 started
 21:07:00.123 [MySchedulerGlobal_Worker-1] ERROR JobRunShell[run:211] - Job jdbc.Currency finder threw an unhandled Exception: 
-java.lang.ClassCastException: class jdk.proxy3.$Proxy110 cannot be cast to class com.internship.Project.repository.JobsRepo (jdk.proxy3.$Proxy110 is in module jdk.proxy3 of loader org.springframework.boot.devtools.restart.classloader.RestartClassLoader @53fcfd07; com.internship.Project.repository.JobsRepo is in unnamed module of loader 'app')
-	at com.internship.Project.scheduler.GlobalJob1.handle(GlobalJob1.java:52)
-	at com.internship.Project.scheduler.GlobalJob1.execute(GlobalJob1.java:198)
+java.lang.ClassCastException: class jdk.proxy3.$Proxy110 cannot be cast to class com.internship.project.repository.JobsRepo (jdk.proxy3.$Proxy110 is in module jdk.proxy3 of loader org.springframework.boot.devtools.restart.classloader.RestartClassLoader @53fcfd07; com.internship.project.repository.JobsRepo is in unnamed module of loader 'app')
+	at com.internship.project.scheduler.GlobalJob1.handle(GlobalJob1.java:52)
+	at com.internship.project.scheduler.GlobalJob1.execute(GlobalJob1.java:198)
 	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
 	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
 21:07:00.125 [MySchedulerGlobal_Worker-1] ERROR ErrorLogger[schedulerError:2407] - Job (jdbc.Currency finder threw an exception.
 org.quartz.SchedulerException: Job threw an unhandled exception.
 	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
 	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
-Caused by: java.lang.ClassCastException: class jdk.proxy3.$Proxy110 cannot be cast to class com.internship.Project.repository.JobsRepo (jdk.proxy3.$Proxy110 is in module jdk.proxy3 of loader org.springframework.boot.devtools.restart.classloader.RestartClassLoader @53fcfd07; com.internship.Project.repository.JobsRepo is in unnamed module of loader 'app')
-	at com.internship.Project.scheduler.GlobalJob1.handle(GlobalJob1.java:52)
-	at com.internship.Project.scheduler.GlobalJob1.execute(GlobalJob1.java:198)
+Caused by: java.lang.ClassCastException: class jdk.proxy3.$Proxy110 cannot be cast to class com.internship.project.repository.JobsRepo (jdk.proxy3.$Proxy110 is in module jdk.proxy3 of loader org.springframework.boot.devtools.restart.classloader.RestartClassLoader @53fcfd07; com.internship.project.repository.JobsRepo is in unnamed module of loader 'app')
+	at com.internship.project.scheduler.GlobalJob1.handle(GlobalJob1.java:52)
+	at com.internship.project.scheduler.GlobalJob1.execute(GlobalJob1.java:198)
 	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
 	... 1 common frames omitted
 21:07:26.332 [SpringApplicationShutdownHook] INFO  QuartzScheduler[standby:585] - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
@@ -475,18 +475,18 @@ Caused by: java.lang.ClassCastException: class jdk.proxy3.$Proxy110 cannot be ca
 21:08:00.131 [MySchedulerGlobal_Worker-1] INFO  GlobalJob1[handle:45] - GlobalJob1 started
 21:10:41.358 [HikariPool-1 housekeeper] WARN  HikariPool[run:788] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m1s354ms773µs600ns).
 21:10:41.374 [MySchedulerGlobal_Worker-1] ERROR JobRunShell[run:211] - Job jdbc.Currency finder threw an unhandled Exception: 
-java.lang.ClassCastException: class jdk.proxy3.$Proxy110 cannot be cast to class com.internship.Project.repository.JobsRepo (jdk.proxy3.$Proxy110 is in module jdk.proxy3 of loader org.springframework.boot.devtools.restart.classloader.RestartClassLoader @1282599e; com.internship.Project.repository.JobsRepo is in unnamed module of loader 'app')
-	at com.internship.Project.scheduler.GlobalJob1.handle(GlobalJob1.java:52)
-	at com.internship.Project.scheduler.GlobalJob1.execute(GlobalJob1.java:198)
+java.lang.ClassCastException: class jdk.proxy3.$Proxy110 cannot be cast to class com.internship.project.repository.JobsRepo (jdk.proxy3.$Proxy110 is in module jdk.proxy3 of loader org.springframework.boot.devtools.restart.classloader.RestartClassLoader @1282599e; com.internship.project.repository.JobsRepo is in unnamed module of loader 'app')
+	at com.internship.project.scheduler.GlobalJob1.handle(GlobalJob1.java:52)
+	at com.internship.project.scheduler.GlobalJob1.execute(GlobalJob1.java:198)
 	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
 	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
 21:10:41.376 [MySchedulerGlobal_Worker-1] ERROR ErrorLogger[schedulerError:2407] - Job (jdbc.Currency finder threw an exception.
 org.quartz.SchedulerException: Job threw an unhandled exception.
 	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
 	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
-Caused by: java.lang.ClassCastException: class jdk.proxy3.$Proxy110 cannot be cast to class com.internship.Project.repository.JobsRepo (jdk.proxy3.$Proxy110 is in module jdk.proxy3 of loader org.springframework.boot.devtools.restart.classloader.RestartClassLoader @1282599e; com.internship.Project.repository.JobsRepo is in unnamed module of loader 'app')
-	at com.internship.Project.scheduler.GlobalJob1.handle(GlobalJob1.java:52)
-	at com.internship.Project.scheduler.GlobalJob1.execute(GlobalJob1.java:198)
+Caused by: java.lang.ClassCastException: class jdk.proxy3.$Proxy110 cannot be cast to class com.internship.project.repository.JobsRepo (jdk.proxy3.$Proxy110 is in module jdk.proxy3 of loader org.springframework.boot.devtools.restart.classloader.RestartClassLoader @1282599e; com.internship.project.repository.JobsRepo is in unnamed module of loader 'app')
+	at com.internship.project.scheduler.GlobalJob1.handle(GlobalJob1.java:52)
+	at com.internship.project.scheduler.GlobalJob1.execute(GlobalJob1.java:198)
 	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
 	... 1 common frames omitted
 21:10:41.461 [SpringApplicationShutdownHook] INFO  QuartzScheduler[standby:585] - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
@@ -602,18 +602,18 @@ Caused by: java.lang.ClassCastException: class jdk.proxy3.$Proxy110 cannot be ca
 21:10:57.447 [http-nio-8080-exec-2] INFO  MainService[scheduleJobMethod:214] - Job Scheduled Successfully
 21:11:00.114 [MySchedulerGlobal_Worker-1] INFO  GlobalJob1[handle:45] - GlobalJob1 started
 21:11:23.287 [MySchedulerGlobal_Worker-1] ERROR JobRunShell[run:211] - Job jdbc.Currency finder threw an unhandled Exception: 
-java.lang.ClassCastException: class jdk.proxy3.$Proxy110 cannot be cast to class com.internship.Project.repository.JobsRepo (jdk.proxy3.$Proxy110 is in module jdk.proxy3 of loader org.springframework.boot.devtools.restart.classloader.RestartClassLoader @4f442c16; com.internship.Project.repository.JobsRepo is in unnamed module of loader 'app')
-	at com.internship.Project.scheduler.GlobalJob1.handle(GlobalJob1.java:52)
-	at com.internship.Project.scheduler.GlobalJob1.execute(GlobalJob1.java:198)
+java.lang.ClassCastException: class jdk.proxy3.$Proxy110 cannot be cast to class com.internship.project.repository.JobsRepo (jdk.proxy3.$Proxy110 is in module jdk.proxy3 of loader org.springframework.boot.devtools.restart.classloader.RestartClassLoader @4f442c16; com.internship.project.repository.JobsRepo is in unnamed module of loader 'app')
+	at com.internship.project.scheduler.GlobalJob1.handle(GlobalJob1.java:52)
+	at com.internship.project.scheduler.GlobalJob1.execute(GlobalJob1.java:198)
 	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
 	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
 21:11:23.288 [MySchedulerGlobal_Worker-1] ERROR ErrorLogger[schedulerError:2407] - Job (jdbc.Currency finder threw an exception.
 org.quartz.SchedulerException: Job threw an unhandled exception.
 	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
 	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
-Caused by: java.lang.ClassCastException: class jdk.proxy3.$Proxy110 cannot be cast to class com.internship.Project.repository.JobsRepo (jdk.proxy3.$Proxy110 is in module jdk.proxy3 of loader org.springframework.boot.devtools.restart.classloader.RestartClassLoader @4f442c16; com.internship.Project.repository.JobsRepo is in unnamed module of loader 'app')
-	at com.internship.Project.scheduler.GlobalJob1.handle(GlobalJob1.java:52)
-	at com.internship.Project.scheduler.GlobalJob1.execute(GlobalJob1.java:198)
+Caused by: java.lang.ClassCastException: class jdk.proxy3.$Proxy110 cannot be cast to class com.internship.project.repository.JobsRepo (jdk.proxy3.$Proxy110 is in module jdk.proxy3 of loader org.springframework.boot.devtools.restart.classloader.RestartClassLoader @4f442c16; com.internship.project.repository.JobsRepo is in unnamed module of loader 'app')
+	at com.internship.project.scheduler.GlobalJob1.handle(GlobalJob1.java:52)
+	at com.internship.project.scheduler.GlobalJob1.execute(GlobalJob1.java:198)
 	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
 	... 1 common frames omitted
 21:11:23.362 [SpringApplicationShutdownHook] INFO  QuartzScheduler[standby:585] - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
@@ -834,18 +834,18 @@ Caused by: java.lang.ClassCastException: class jdk.proxy3.$Proxy110 cannot be ca
 21:15:47.216 [http-nio-8080-exec-2] INFO  MainService[scheduleJobMethod:214] - Job Scheduled Successfully
 21:16:00.051 [MySchedulerGlobal_Worker-1] INFO  GlobalJob1[handle:46] - GlobalJob1 started
 21:16:00.057 [MySchedulerGlobal_Worker-1] ERROR JobRunShell[run:211] - Job jdbc.Currency finder threw an unhandled Exception: 
-java.lang.ClassCastException: class jdk.proxy3.$Proxy110 cannot be cast to class com.internship.Project.repository.JobsRepo (jdk.proxy3.$Proxy110 is in module jdk.proxy3 of loader org.springframework.boot.devtools.restart.classloader.RestartClassLoader @3bc3851a; com.internship.Project.repository.JobsRepo is in unnamed module of loader 'app')
-	at com.internship.Project.scheduler.GlobalJob1.handle(GlobalJob1.java:53)
-	at com.internship.Project.scheduler.GlobalJob1.execute(GlobalJob1.java:199)
+java.lang.ClassCastException: class jdk.proxy3.$Proxy110 cannot be cast to class com.internship.project.repository.JobsRepo (jdk.proxy3.$Proxy110 is in module jdk.proxy3 of loader org.springframework.boot.devtools.restart.classloader.RestartClassLoader @3bc3851a; com.internship.project.repository.JobsRepo is in unnamed module of loader 'app')
+	at com.internship.project.scheduler.GlobalJob1.handle(GlobalJob1.java:53)
+	at com.internship.project.scheduler.GlobalJob1.execute(GlobalJob1.java:199)
 	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
 	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
 21:16:00.057 [MySchedulerGlobal_Worker-1] ERROR ErrorLogger[schedulerError:2407] - Job (jdbc.Currency finder threw an exception.
 org.quartz.SchedulerException: Job threw an unhandled exception.
 	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
 	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
-Caused by: java.lang.ClassCastException: class jdk.proxy3.$Proxy110 cannot be cast to class com.internship.Project.repository.JobsRepo (jdk.proxy3.$Proxy110 is in module jdk.proxy3 of loader org.springframework.boot.devtools.restart.classloader.RestartClassLoader @3bc3851a; com.internship.Project.repository.JobsRepo is in unnamed module of loader 'app')
-	at com.internship.Project.scheduler.GlobalJob1.handle(GlobalJob1.java:53)
-	at com.internship.Project.scheduler.GlobalJob1.execute(GlobalJob1.java:199)
+Caused by: java.lang.ClassCastException: class jdk.proxy3.$Proxy110 cannot be cast to class com.internship.project.repository.JobsRepo (jdk.proxy3.$Proxy110 is in module jdk.proxy3 of loader org.springframework.boot.devtools.restart.classloader.RestartClassLoader @3bc3851a; com.internship.project.repository.JobsRepo is in unnamed module of loader 'app')
+	at com.internship.project.scheduler.GlobalJob1.handle(GlobalJob1.java:53)
+	at com.internship.project.scheduler.GlobalJob1.execute(GlobalJob1.java:199)
 	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
 	... 1 common frames omitted
 21:16:16.276 [SpringApplicationShutdownHook] INFO  QuartzScheduler[standby:585] - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
@@ -980,18 +980,18 @@ Caused by: java.sql.SQLException: Not a navigable ResultSet.
 21:17:00.049 [MySchedulerGlobal_Worker-1] INFO  GlobalJob1[handle:45] - GlobalJob1 started
 21:17:23.560 [HikariPool-1 housekeeper] WARN  HikariPool[run:788] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=50s649ms307µs900ns).
 21:17:55.908 [MySchedulerGlobal_Worker-1] ERROR JobRunShell[run:211] - Job jdbc.Currency finder threw an unhandled Exception: 
-java.lang.ClassCastException: class jdk.proxy3.$Proxy110 cannot be cast to class com.internship.Project.repository.JobsRepo (jdk.proxy3.$Proxy110 is in module jdk.proxy3 of loader org.springframework.boot.devtools.restart.classloader.RestartClassLoader @1d5249fd; com.internship.Project.repository.JobsRepo is in unnamed module of loader 'app')
-	at com.internship.Project.scheduler.GlobalJob1.handle(GlobalJob1.java:52)
-	at com.internship.Project.scheduler.GlobalJob1.execute(GlobalJob1.java:198)
+java.lang.ClassCastException: class jdk.proxy3.$Proxy110 cannot be cast to class com.internship.project.repository.JobsRepo (jdk.proxy3.$Proxy110 is in module jdk.proxy3 of loader org.springframework.boot.devtools.restart.classloader.RestartClassLoader @1d5249fd; com.internship.project.repository.JobsRepo is in unnamed module of loader 'app')
+	at com.internship.project.scheduler.GlobalJob1.handle(GlobalJob1.java:52)
+	at com.internship.project.scheduler.GlobalJob1.execute(GlobalJob1.java:198)
 	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
 	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
 21:17:55.910 [MySchedulerGlobal_Worker-1] ERROR ErrorLogger[schedulerError:2407] - Job (jdbc.Currency finder threw an exception.
 org.quartz.SchedulerException: Job threw an unhandled exception.
 	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
 	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
-Caused by: java.lang.ClassCastException: class jdk.proxy3.$Proxy110 cannot be cast to class com.internship.Project.repository.JobsRepo (jdk.proxy3.$Proxy110 is in module jdk.proxy3 of loader org.springframework.boot.devtools.restart.classloader.RestartClassLoader @1d5249fd; com.internship.Project.repository.JobsRepo is in unnamed module of loader 'app')
-	at com.internship.Project.scheduler.GlobalJob1.handle(GlobalJob1.java:52)
-	at com.internship.Project.scheduler.GlobalJob1.execute(GlobalJob1.java:198)
+Caused by: java.lang.ClassCastException: class jdk.proxy3.$Proxy110 cannot be cast to class com.internship.project.repository.JobsRepo (jdk.proxy3.$Proxy110 is in module jdk.proxy3 of loader org.springframework.boot.devtools.restart.classloader.RestartClassLoader @1d5249fd; com.internship.project.repository.JobsRepo is in unnamed module of loader 'app')
+	at com.internship.project.scheduler.GlobalJob1.handle(GlobalJob1.java:52)
+	at com.internship.project.scheduler.GlobalJob1.execute(GlobalJob1.java:198)
 	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
 	... 1 common frames omitted
 21:17:59.611 [SpringApplicationShutdownHook] INFO  QuartzScheduler[standby:585] - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
@@ -1108,34 +1108,34 @@ Caused by: java.lang.ClassCastException: class jdk.proxy3.$Proxy110 cannot be ca
 21:26:00.073 [MySchedulerGlobal_Worker-1] INFO  GlobalJob1[handle:39] - GlobalJob1 started
 21:27:36.958 [HikariPool-1 housekeeper] WARN  HikariPool[run:788] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m6s165ms505µs500ns).
 21:27:36.973 [MySchedulerGlobal_Worker-1] ERROR JobRunShell[run:211] - Job jdbc.Currency finder threw an unhandled Exception: 
-java.lang.ClassCastException: class jdk.proxy3.$Proxy110 cannot be cast to class com.internship.Project.repository.JobsRepo (jdk.proxy3.$Proxy110 is in module jdk.proxy3 of loader org.springframework.boot.devtools.restart.classloader.RestartClassLoader @5be2f59c; com.internship.Project.repository.JobsRepo is in unnamed module of loader 'app')
-	at com.internship.Project.scheduler.GlobalJob1.handle(GlobalJob1.java:50)
-	at com.internship.Project.scheduler.GlobalJob1.execute(GlobalJob1.java:196)
+java.lang.ClassCastException: class jdk.proxy3.$Proxy110 cannot be cast to class com.internship.project.repository.JobsRepo (jdk.proxy3.$Proxy110 is in module jdk.proxy3 of loader org.springframework.boot.devtools.restart.classloader.RestartClassLoader @5be2f59c; com.internship.project.repository.JobsRepo is in unnamed module of loader 'app')
+	at com.internship.project.scheduler.GlobalJob1.handle(GlobalJob1.java:50)
+	at com.internship.project.scheduler.GlobalJob1.execute(GlobalJob1.java:196)
 	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
 	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
 21:27:36.974 [MySchedulerGlobal_Worker-1] ERROR ErrorLogger[schedulerError:2407] - Job (jdbc.Currency finder threw an exception.
 org.quartz.SchedulerException: Job threw an unhandled exception.
 	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
 	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
-Caused by: java.lang.ClassCastException: class jdk.proxy3.$Proxy110 cannot be cast to class com.internship.Project.repository.JobsRepo (jdk.proxy3.$Proxy110 is in module jdk.proxy3 of loader org.springframework.boot.devtools.restart.classloader.RestartClassLoader @5be2f59c; com.internship.Project.repository.JobsRepo is in unnamed module of loader 'app')
-	at com.internship.Project.scheduler.GlobalJob1.handle(GlobalJob1.java:50)
-	at com.internship.Project.scheduler.GlobalJob1.execute(GlobalJob1.java:196)
+Caused by: java.lang.ClassCastException: class jdk.proxy3.$Proxy110 cannot be cast to class com.internship.project.repository.JobsRepo (jdk.proxy3.$Proxy110 is in module jdk.proxy3 of loader org.springframework.boot.devtools.restart.classloader.RestartClassLoader @5be2f59c; com.internship.project.repository.JobsRepo is in unnamed module of loader 'app')
+	at com.internship.project.scheduler.GlobalJob1.handle(GlobalJob1.java:50)
+	at com.internship.project.scheduler.GlobalJob1.execute(GlobalJob1.java:196)
 	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
 	... 1 common frames omitted
 21:27:37.019 [MySchedulerGlobal_Worker-2] INFO  GlobalJob1[handle:39] - GlobalJob1 started
 21:27:37.019 [MySchedulerGlobal_Worker-2] ERROR JobRunShell[run:211] - Job jdbc.Currency finder threw an unhandled Exception: 
-java.lang.ClassCastException: class jdk.proxy3.$Proxy110 cannot be cast to class com.internship.Project.repository.JobsRepo (jdk.proxy3.$Proxy110 is in module jdk.proxy3 of loader org.springframework.boot.devtools.restart.classloader.RestartClassLoader @5be2f59c; com.internship.Project.repository.JobsRepo is in unnamed module of loader 'app')
-	at com.internship.Project.scheduler.GlobalJob1.handle(GlobalJob1.java:50)
-	at com.internship.Project.scheduler.GlobalJob1.execute(GlobalJob1.java:196)
+java.lang.ClassCastException: class jdk.proxy3.$Proxy110 cannot be cast to class com.internship.project.repository.JobsRepo (jdk.proxy3.$Proxy110 is in module jdk.proxy3 of loader org.springframework.boot.devtools.restart.classloader.RestartClassLoader @5be2f59c; com.internship.project.repository.JobsRepo is in unnamed module of loader 'app')
+	at com.internship.project.scheduler.GlobalJob1.handle(GlobalJob1.java:50)
+	at com.internship.project.scheduler.GlobalJob1.execute(GlobalJob1.java:196)
 	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
 	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
 21:27:37.020 [MySchedulerGlobal_Worker-2] ERROR ErrorLogger[schedulerError:2407] - Job (jdbc.Currency finder threw an exception.
 org.quartz.SchedulerException: Job threw an unhandled exception.
 	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
 	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
-Caused by: java.lang.ClassCastException: class jdk.proxy3.$Proxy110 cannot be cast to class com.internship.Project.repository.JobsRepo (jdk.proxy3.$Proxy110 is in module jdk.proxy3 of loader org.springframework.boot.devtools.restart.classloader.RestartClassLoader @5be2f59c; com.internship.Project.repository.JobsRepo is in unnamed module of loader 'app')
-	at com.internship.Project.scheduler.GlobalJob1.handle(GlobalJob1.java:50)
-	at com.internship.Project.scheduler.GlobalJob1.execute(GlobalJob1.java:196)
+Caused by: java.lang.ClassCastException: class jdk.proxy3.$Proxy110 cannot be cast to class com.internship.project.repository.JobsRepo (jdk.proxy3.$Proxy110 is in module jdk.proxy3 of loader org.springframework.boot.devtools.restart.classloader.RestartClassLoader @5be2f59c; com.internship.project.repository.JobsRepo is in unnamed module of loader 'app')
+	at com.internship.project.scheduler.GlobalJob1.handle(GlobalJob1.java:50)
+	at com.internship.project.scheduler.GlobalJob1.execute(GlobalJob1.java:196)
 	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
 	... 1 common frames omitted
 21:27:37.048 [SpringApplicationShutdownHook] INFO  QuartzScheduler[standby:585] - Scheduler quartzScheduler_$_NON_CLUSTERED paused.

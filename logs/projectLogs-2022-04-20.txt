@@ -96,18 +96,18 @@
 20:55:24.404 [http-nio-8080-exec-2] INFO  MainService[scheduleJobMethod:227] - Job Scheduled Successfully
 20:56:00.068 [MySchedulerGlobal_Worker-1] INFO  GlobalJob1[handle:54] - GlobalJob1 started
 20:56:00.071 [MySchedulerGlobal_Worker-1] ERROR JobRunShell[run:211] - Job jdbc.Currency finder threw an unhandled Exception: 
-java.lang.ClassCastException: class jdk.proxy3.$Proxy110 cannot be cast to class com.internship.Project.repository.JobsRepo (jdk.proxy3.$Proxy110 is in module jdk.proxy3 of loader org.springframework.boot.devtools.restart.classloader.RestartClassLoader @26475eff; com.internship.Project.repository.JobsRepo is in unnamed module of loader 'app')
-	at com.internship.Project.scheduler.GlobalJob1.handle(GlobalJob1.java:65)
-	at com.internship.Project.scheduler.GlobalJob1.execute(GlobalJob1.java:214)
+java.lang.ClassCastException: class jdk.proxy3.$Proxy110 cannot be cast to class com.internship.project.repository.JobsRepo (jdk.proxy3.$Proxy110 is in module jdk.proxy3 of loader org.springframework.boot.devtools.restart.classloader.RestartClassLoader @26475eff; com.internship.project.repository.JobsRepo is in unnamed module of loader 'app')
+	at com.internship.project.scheduler.GlobalJob1.handle(GlobalJob1.java:65)
+	at com.internship.project.scheduler.GlobalJob1.execute(GlobalJob1.java:214)
 	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
 	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
 20:56:00.071 [MySchedulerGlobal_Worker-1] ERROR ErrorLogger[schedulerError:2407] - Job (jdbc.Currency finder threw an exception.
 org.quartz.SchedulerException: Job threw an unhandled exception.
 	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
 	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
-Caused by: java.lang.ClassCastException: class jdk.proxy3.$Proxy110 cannot be cast to class com.internship.Project.repository.JobsRepo (jdk.proxy3.$Proxy110 is in module jdk.proxy3 of loader org.springframework.boot.devtools.restart.classloader.RestartClassLoader @26475eff; com.internship.Project.repository.JobsRepo is in unnamed module of loader 'app')
-	at com.internship.Project.scheduler.GlobalJob1.handle(GlobalJob1.java:65)
-	at com.internship.Project.scheduler.GlobalJob1.execute(GlobalJob1.java:214)
+Caused by: java.lang.ClassCastException: class jdk.proxy3.$Proxy110 cannot be cast to class com.internship.project.repository.JobsRepo (jdk.proxy3.$Proxy110 is in module jdk.proxy3 of loader org.springframework.boot.devtools.restart.classloader.RestartClassLoader @26475eff; com.internship.project.repository.JobsRepo is in unnamed module of loader 'app')
+	at com.internship.project.scheduler.GlobalJob1.handle(GlobalJob1.java:65)
+	at com.internship.project.scheduler.GlobalJob1.execute(GlobalJob1.java:214)
 	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
 	... 1 common frames omitted
 20:56:27.205 [SpringApplicationShutdownHook] INFO  QuartzScheduler[standby:585] - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
@@ -226,18 +226,18 @@ Caused by: java.lang.ClassCastException: class jdk.proxy3.$Proxy110 cannot be ca
 20:57:00.051 [MySchedulerGlobal_Worker-1] INFO  GlobalJob1[handle:54] - GlobalJob1 started
 20:57:36.502 [HikariPool-1 housekeeper] WARN  HikariPool[run:788] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=55s716ms519µs200ns).
 20:57:36.510 [MySchedulerGlobal_Worker-1] ERROR JobRunShell[run:211] - Job jdbc.Currency finder threw an unhandled Exception: 
-java.lang.NullPointerException: Cannot invoke "com.internship.Project.repository.JobsRepo.findByJobId(java.lang.Long)" because "this.jobsRepo" is null
-	at com.internship.Project.scheduler.GlobalJob1.handle(GlobalJob1.java:70)
-	at com.internship.Project.scheduler.GlobalJob1.execute(GlobalJob1.java:214)
+java.lang.NullPointerException: Cannot invoke "com.internship.project.repository.JobsRepo.findByJobId(java.lang.Long)" because "this.jobsRepo" is null
+	at com.internship.project.scheduler.GlobalJob1.handle(GlobalJob1.java:70)
+	at com.internship.project.scheduler.GlobalJob1.execute(GlobalJob1.java:214)
 	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
 	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
 20:57:36.510 [MySchedulerGlobal_Worker-1] ERROR ErrorLogger[schedulerError:2407] - Job (jdbc.Currency finder threw an exception.
 org.quartz.SchedulerException: Job threw an unhandled exception.
 	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
 	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
-Caused by: java.lang.NullPointerException: Cannot invoke "com.internship.Project.repository.JobsRepo.findByJobId(java.lang.Long)" because "this.jobsRepo" is null
-	at com.internship.Project.scheduler.GlobalJob1.handle(GlobalJob1.java:70)
-	at com.internship.Project.scheduler.GlobalJob1.execute(GlobalJob1.java:214)
+Caused by: java.lang.NullPointerException: Cannot invoke "com.internship.project.repository.JobsRepo.findByJobId(java.lang.Long)" because "this.jobsRepo" is null
+	at com.internship.project.scheduler.GlobalJob1.handle(GlobalJob1.java:70)
+	at com.internship.project.scheduler.GlobalJob1.execute(GlobalJob1.java:214)
 	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
 	... 1 common frames omitted
 20:57:36.572 [SpringApplicationShutdownHook] INFO  QuartzScheduler[standby:585] - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
@@ -356,18 +356,18 @@ Caused by: java.lang.NullPointerException: Cannot invoke "com.internship.Project
 20:58:00.059 [MySchedulerGlobal_Worker-1] INFO  GlobalJob1[handle:54] - GlobalJob1 started
 21:16:21.779 [HikariPool-1 housekeeper] WARN  HikariPool[run:788] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=18m32s816ms549µs900ns).
 21:16:21.788 [MySchedulerGlobal_Worker-1] ERROR JobRunShell[run:211] - Job jdbc.Currency finder threw an unhandled Exception: 
-java.lang.NullPointerException: Cannot invoke "com.internship.Project.repository.JobsRepo.findByJobId(java.lang.Long)" because "this.jobsRepo" is null
-	at com.internship.Project.scheduler.GlobalJob1.handle(GlobalJob1.java:70)
-	at com.internship.Project.scheduler.GlobalJob1.execute(GlobalJob1.java:214)
+java.lang.NullPointerException: Cannot invoke "com.internship.project.repository.JobsRepo.findByJobId(java.lang.Long)" because "this.jobsRepo" is null
+	at com.internship.project.scheduler.GlobalJob1.handle(GlobalJob1.java:70)
+	at com.internship.project.scheduler.GlobalJob1.execute(GlobalJob1.java:214)
 	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
 	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
 21:16:21.789 [MySchedulerGlobal_Worker-1] ERROR ErrorLogger[schedulerError:2407] - Job (jdbc.Currency finder threw an exception.
 org.quartz.SchedulerException: Job threw an unhandled exception.
 	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
 	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
-Caused by: java.lang.NullPointerException: Cannot invoke "com.internship.Project.repository.JobsRepo.findByJobId(java.lang.Long)" because "this.jobsRepo" is null
-	at com.internship.Project.scheduler.GlobalJob1.handle(GlobalJob1.java:70)
-	at com.internship.Project.scheduler.GlobalJob1.execute(GlobalJob1.java:214)
+Caused by: java.lang.NullPointerException: Cannot invoke "com.internship.project.repository.JobsRepo.findByJobId(java.lang.Long)" because "this.jobsRepo" is null
+	at com.internship.project.scheduler.GlobalJob1.handle(GlobalJob1.java:70)
+	at com.internship.project.scheduler.GlobalJob1.execute(GlobalJob1.java:214)
 	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
 	... 1 common frames omitted
 21:16:21.846 [SpringApplicationShutdownHook] INFO  QuartzScheduler[standby:585] - Scheduler quartzScheduler_$_NON_CLUSTERED paused.

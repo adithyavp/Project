@@ -1,0 +1,57 @@
+Currency Name                  1.00 INR               inv. 1.00 INR         
+
+Argentine Peso                 1.512789               0.661031              
+Australian Dollar              0.018577               53.830085             
+Bahraini Dinar                 0.004914               203.486252            
+Botswana Pula                  0.158361               6.314681              
+Brazilian Real                 0.066283               15.086726             
+Bruneian Dollar                0.018138               55.133800             
+Bulgarian Lev                  0.024353               41.062112             
+Canadian Dollar                0.016874               59.261679             
+Chilean Peso                   11.259456              0.088814              
+Chinese Yuan Renminbi          0.086376               11.577259             
+Colombian Peso                 52.407827              0.019081              
+Croatian Kuna                  0.094120               10.624719             
+Czech Koruna                   0.307663               3.250310              
+Danish Krone                   0.092625               10.796169             
+Euro                           0.012452               80.310511             
+Hong Kong Dollar               0.102573               9.749123              
+Hungarian Forint               4.760846               0.210047              
+Icelandic Krona                1.704228               0.586776              
+Indonesian Rupiah              189.789029             0.005269              
+Iranian Rial                   552.633630             0.001810              
+Israeli Shekel                 0.043946               22.755293             
+Japanese Yen                   1.700758               0.587973              
+Kazakhstani Tenge              5.795792               0.172539              
+South Korean Won               16.601006              0.060237              
+Kuwaiti Dinar                  0.004007               249.552382            
+Libyan Dinar                   0.062494               16.001469             
+Malaysian Ringgit              0.056910               17.571709             
+Mauritian Rupee                0.557746               1.792931              
+Mexican Peso                   0.267819               3.733871              
+Nepalese Rupee                 1.600750               0.624707              
+New Zealand Dollar             0.020368               49.097774             
+Norwegian Krone                0.123858               8.073766              
+Omani Rial                     0.005025               198.987856            
+Pakistani Rupee                2.427088               0.412016              
+Philippine Peso                0.686898               1.455820              
+Polish Zloty                   0.058485               17.098353             
+Qatari Riyal                   0.047575               21.019459             
+Romanian New Leu               0.061598               16.234207             
+Russian Ruble                  0.929778               1.075526              
+Saudi Arabian Riyal            0.049013               20.402888             
+Singapore Dollar               0.018138               55.133800             
+South African Rand             0.210865               4.742364              
+Sri Lankan Rupee               4.629212               0.216019              
+Swedish Krona                  0.129826               7.702624              
+Swiss Franc                    0.012786               78.207813             
+Taiwan New Dollar              0.386390               2.588059              
+Thai Baht                      0.450573               2.219396              
+Trinidadian Dollar             0.088899               11.248691             
+Turkish Lira                   0.194673               5.136832              
+Emirati Dirham                 0.048000               20.833446             
+British Pound                  0.010474               95.470775             
+US Dollar                      0.013070               76.510831             
+Venezuelan Bolivar             5869.325617            0.000170              
+
+The data was updated at May 02, 2022 18:42 UTC

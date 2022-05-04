@@ -1,0 +1,267 @@
+01:45:59.525 [restartedMain] INFO  ProjectApplication[logStarting:55] - Starting ProjectApplication using Java 17.0.2 on DESKTOP-L0Q733T with PID 7632 (E:\Internship\Project\target\classes started by adith in E:\Internship\Project)
+01:45:59.526 [background-preinit] INFO  Version[<clinit>:21] - HV000001: Hibernate Validator 6.2.2.Final
+01:45:59.527 [restartedMain] INFO  ProjectApplication[logStartupProfileInfo:640] - No active profile set, falling back to 1 default profile: "default"
+01:45:59.575 [restartedMain] INFO  ChangeableUrls[logTo:255] - The Class-Path manifest attribute in C:\Users\adith\.m2\repository\com\mchange\c3p0\0.9.5.5\c3p0-0.9.5.5.jar referenced one or more files that do not exist: file:/C:/Users/adith/.m2/repository/com/mchange/c3p0/0.9.5.5/mchange-commons-java-0.2.19.jar
+01:45:59.576 [restartedMain] INFO  DevToolsPropertyDefaultsPostProcessor[logTo:255] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+01:45:59.576 [restartedMain] INFO  DevToolsPropertyDefaultsPostProcessor[logTo:255] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+01:46:00.112 [restartedMain] INFO  RepositoryConfigurationDelegate[registerRepositoriesIn:132] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+01:46:00.154 [restartedMain] INFO  RepositoryConfigurationDelegate[registerRepositoriesIn:201] - Finished Spring Data repository scanning in 35 ms. Found 4 JPA repository interfaces.
+01:46:00.583 [restartedMain] INFO  TomcatWebServer[initialize:108] - Tomcat initialized with port(s): 8080 (http)
+01:46:00.589 [restartedMain] INFO  Http11NioProtocol[log:173] - Initializing ProtocolHandler ["http-nio-8080"]
+01:46:00.590 [restartedMain] INFO  StandardService[log:173] - Starting service [Tomcat]
+01:46:00.590 [restartedMain] INFO  StandardEngine[log:173] - Starting Servlet engine: [Apache Tomcat/9.0.58]
+01:46:00.658 [restartedMain] INFO  [/][log:173] - Initializing Spring embedded WebApplicationContext
+01:46:00.658 [restartedMain] INFO  ServletWebServerApplicationContext[prepareWebApplicationContext:290] - Root WebApplicationContext: initialization completed in 1081 ms
+01:46:00.738 [restartedMain] INFO  LogHelper[logPersistenceUnitInformation:31] - HHH000204: Processing PersistenceUnitInfo [name: default]
+01:46:00.769 [restartedMain] INFO  Version[logVersion:44] - HHH000412: Hibernate ORM core version 5.6.5.Final
+01:46:00.856 [restartedMain] INFO  Version[<clinit>:56] - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+01:46:00.917 [restartedMain] INFO  HikariDataSource[getConnection:110] - HikariPool-1 - Starting...
+01:46:01.174 [restartedMain] INFO  HikariDataSource[getConnection:123] - HikariPool-1 - Start completed.
+01:46:01.185 [restartedMain] INFO  Dialect[<init>:175] - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+01:46:01.692 [restartedMain] INFO  JtaPlatformInitiator[initiateService:52] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+01:46:01.699 [restartedMain] INFO  LocalContainerEntityManagerFactoryBean[buildNativeEntityManagerFactory:437] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+01:46:01.730 [restartedMain] INFO  StdSchedulerFactory[instantiate:1220] - Using default implementation for ThreadExecutor
+01:46:01.737 [restartedMain] INFO  SchedulerSignalerImpl[<init>:61] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+01:46:01.737 [restartedMain] INFO  QuartzScheduler[<init>:229] - Quartz Scheduler v.2.3.2 created.
+01:46:01.738 [restartedMain] INFO  RAMJobStore[initialize:155] - RAMJobStore initialized.
+01:46:01.738 [restartedMain] INFO  QuartzScheduler[initialize:294] - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 5 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+01:46:01.739 [restartedMain] INFO  StdSchedulerFactory[instantiate:1374] - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+01:46:01.739 [restartedMain] INFO  StdSchedulerFactory[instantiate:1378] - Quartz scheduler version: 2.3.2
+01:46:01.739 [restartedMain] INFO  QuartzScheduler[setJobFactory:2293] - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@36480c05
+01:46:02.082 [restartedMain] WARN  JpaBaseConfiguration$JpaWebConfiguration[openEntityManagerInViewInterceptor:219] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+01:46:02.265 [restartedMain] WARN  ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration[checkTemplateLocationExists:106] - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+01:46:02.347 [restartedMain] INFO  OptionalLiveReloadServer[startServer:58] - LiveReload server is running on port 35729
+01:46:02.366 [restartedMain] INFO  Http11NioProtocol[log:173] - Starting ProtocolHandler ["http-nio-8080"]
+01:46:02.391 [restartedMain] INFO  TomcatWebServer[start:220] - Tomcat started on port(s): 8080 (http) with context path ''
+01:46:02.399 [restartedMain] INFO  ProjectApplication[logStarted:61] - Started ProjectApplication in 3.279 seconds (JVM running for 4.142)
+01:46:02.403 [restartedMain] INFO  OnStartup[runOnStartUp:28] - -------OnStartup class called-------
+01:46:02.403 [restartedMain] INFO  QuartzScheduler[start:547] - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+01:46:02.404 [restartedMain] INFO  LocalSchedulerService[start:43] - Quartz Local Scheduler has started
+01:46:02.404 [restartedMain] INFO  LocalSchedulerService[scheduleAllLocalJob:82] - Scheduling all Local jobs from Jobs master table
+01:46:02.533 [restartedMain] INFO  LocalSchedulerService[scheduleJobMethod:138] - Job Scheduled Successfully
+01:47:00.017 [quartzScheduler_Worker-1] INFO  LocalJob1[executeInternal:64] - LocalJob1 started
+01:47:00.036 [quartzScheduler_Worker-1] INFO  LocalJob1[executeInternal:115] - File created and write completed, Path: E:\Internship\Project\LocalJob1\ServerLog_info_2022-04-30.txt
+01:47:03.316 [quartzScheduler_Worker-1] INFO  LocalJob1[sendEmail:222] - Email notification sent
+01:47:03.317 [quartzScheduler_Worker-1] INFO  LocalJob1[executeInternal:138] - LocalJob1 Completed
+01:48:00.019 [quartzScheduler_Worker-2] INFO  LocalJob1[executeInternal:64] - LocalJob1 started
+01:48:00.027 [quartzScheduler_Worker-2] WARN  LocalJob1[executeInternal:118] - ServerLog_info_2022-04-30.txt - File already present
+01:51:48.521 [quartzScheduler_Worker-2] WARN  LocalJob1[executeInternal:122] - Overwriting request for created file: ServerLog_info_2022-04-30.txt
+01:51:48.526 [quartzScheduler_Worker-2] INFO  LocalJob1[executeInternal:128] - Overwrite completed, Path: E:\Internship\Project\LocalJob1\ServerLog_info_2022-04-30.txt
+01:51:51.559 [quartzScheduler_Worker-2] INFO  LocalJob1[sendEmail:222] - Email notification sent
+01:51:51.559 [quartzScheduler_Worker-2] INFO  LocalJob1[executeInternal:138] - LocalJob1 Completed
+01:51:51.562 [quartzScheduler_Worker-3] INFO  LocalJob1[executeInternal:64] - LocalJob1 started
+01:51:51.574 [quartzScheduler_Worker-3] WARN  LocalJob1[executeInternal:118] - ServerLog_info_2022-04-30.txt - File already present
+01:51:55.522 [quartzScheduler_Worker-3] WARN  LocalJob1[executeInternal:122] - Overwriting request for created file: ServerLog_info_2022-04-30.txt
+01:51:55.526 [quartzScheduler_Worker-3] INFO  LocalJob1[executeInternal:128] - Overwrite completed, Path: E:\Internship\Project\LocalJob1\ServerLog_info_2022-04-30.txt
+01:51:58.462 [quartzScheduler_Worker-3] INFO  LocalJob1[sendEmail:222] - Email notification sent
+01:51:58.463 [quartzScheduler_Worker-3] INFO  LocalJob1[executeInternal:138] - LocalJob1 Completed
+01:52:00.004 [quartzScheduler_Worker-4] INFO  LocalJob1[executeInternal:64] - LocalJob1 started
+01:52:00.013 [quartzScheduler_Worker-4] WARN  LocalJob1[executeInternal:118] - ServerLog_info_2022-04-30.txt - File already present
+01:52:07.347 [quartzScheduler_Worker-4] WARN  LocalJob1[executeInternal:130] - Overwriting denied, file: ServerLog_info_2022-04-30.txt
+01:52:10.283 [quartzScheduler_Worker-4] INFO  LocalJob1[sendEmail:222] - Email notification sent
+01:52:10.284 [quartzScheduler_Worker-4] INFO  LocalJob1[executeInternal:138] - LocalJob1 Completed
+01:53:00.004 [quartzScheduler_Worker-5] INFO  LocalJob1[executeInternal:64] - LocalJob1 started
+01:53:00.030 [quartzScheduler_Worker-5] WARN  LocalJob1[executeInternal:118] - ServerLog_info_2022-04-30.txt - File already present
+01:53:38.602 [SpringApplicationShutdownHook] INFO  OnDestroy[runOnDestroy:28] - -------OnDestroy class called-------
+01:53:38.615 [SpringApplicationShutdownHook] INFO  QuartzScheduler[shutdown:666] - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+01:53:38.615 [SpringApplicationShutdownHook] INFO  QuartzScheduler[standby:585] - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+01:53:38.616 [SpringApplicationShutdownHook] INFO  QuartzScheduler[shutdown:740] - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+01:53:38.616 [SpringApplicationShutdownHook] INFO  LocalSchedulerService[stop:71] - Quartz Scheduler shutdown
+01:53:38.616 [SpringApplicationShutdownHook] INFO  LocalSchedulerService[stop:72] - The active jobs status updated to unscheduled, the jobs related to it have been deleted - Jobs Master Table, Quartz Job Tables(qrtz_triggers, qrtz_cron_triggers, qrtz_job_details)
+01:53:38.655 [SpringApplicationShutdownHook] INFO  SchedulerFactoryBean[destroy:847] - Shutting down Quartz Scheduler
+01:53:38.655 [SpringApplicationShutdownHook] INFO  LocalContainerEntityManagerFactoryBean[destroy:651] - Closing JPA EntityManagerFactory for persistence unit 'default'
+01:53:38.668 [SpringApplicationShutdownHook] INFO  HikariDataSource[close:350] - HikariPool-1 - Shutdown initiated...
+01:53:38.743 [SpringApplicationShutdownHook] INFO  HikariDataSource[close:352] - HikariPool-1 - Shutdown completed.
+01:53:46.268 [restartedMain] INFO  ProjectApplication[logStarting:55] - Starting ProjectApplication using Java 17.0.2 on DESKTOP-L0Q733T with PID 9124 (E:\Internship\Project\target\classes started by adith in E:\Internship\Project)
+01:53:46.269 [background-preinit] INFO  Version[<clinit>:21] - HV000001: Hibernate Validator 6.2.2.Final
+01:53:46.269 [restartedMain] INFO  ProjectApplication[logStartupProfileInfo:640] - No active profile set, falling back to 1 default profile: "default"
+01:53:46.309 [restartedMain] INFO  ChangeableUrls[logTo:255] - The Class-Path manifest attribute in C:\Users\adith\.m2\repository\com\mchange\c3p0\0.9.5.5\c3p0-0.9.5.5.jar referenced one or more files that do not exist: file:/C:/Users/adith/.m2/repository/com/mchange/c3p0/0.9.5.5/mchange-commons-java-0.2.19.jar
+01:53:46.310 [restartedMain] INFO  DevToolsPropertyDefaultsPostProcessor[logTo:255] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+01:53:46.310 [restartedMain] INFO  DevToolsPropertyDefaultsPostProcessor[logTo:255] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+01:53:46.798 [restartedMain] INFO  RepositoryConfigurationDelegate[registerRepositoriesIn:132] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+01:53:46.840 [restartedMain] INFO  RepositoryConfigurationDelegate[registerRepositoriesIn:201] - Finished Spring Data repository scanning in 35 ms. Found 4 JPA repository interfaces.
+01:53:47.257 [restartedMain] INFO  TomcatWebServer[initialize:108] - Tomcat initialized with port(s): 8080 (http)
+01:53:47.262 [restartedMain] INFO  Http11NioProtocol[log:173] - Initializing ProtocolHandler ["http-nio-8080"]
+01:53:47.262 [restartedMain] INFO  StandardService[log:173] - Starting service [Tomcat]
+01:53:47.265 [restartedMain] INFO  StandardEngine[log:173] - Starting Servlet engine: [Apache Tomcat/9.0.58]
+01:53:47.344 [restartedMain] INFO  [/][log:173] - Initializing Spring embedded WebApplicationContext
+01:53:47.345 [restartedMain] INFO  ServletWebServerApplicationContext[prepareWebApplicationContext:290] - Root WebApplicationContext: initialization completed in 1034 ms
+01:53:47.427 [restartedMain] INFO  LogHelper[logPersistenceUnitInformation:31] - HHH000204: Processing PersistenceUnitInfo [name: default]
+01:53:47.465 [restartedMain] INFO  Version[logVersion:44] - HHH000412: Hibernate ORM core version 5.6.5.Final
+01:53:47.548 [restartedMain] INFO  Version[<clinit>:56] - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+01:53:47.601 [restartedMain] INFO  HikariDataSource[getConnection:110] - HikariPool-1 - Starting...
+01:53:47.851 [restartedMain] INFO  HikariDataSource[getConnection:123] - HikariPool-1 - Start completed.
+01:53:47.861 [restartedMain] INFO  Dialect[<init>:175] - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+01:53:48.393 [restartedMain] INFO  JtaPlatformInitiator[initiateService:52] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+01:53:48.404 [restartedMain] INFO  LocalContainerEntityManagerFactoryBean[buildNativeEntityManagerFactory:437] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+01:53:48.435 [restartedMain] INFO  StdSchedulerFactory[instantiate:1220] - Using default implementation for ThreadExecutor
+01:53:48.442 [restartedMain] INFO  SchedulerSignalerImpl[<init>:61] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+01:53:48.442 [restartedMain] INFO  QuartzScheduler[<init>:229] - Quartz Scheduler v.2.3.2 created.
+01:53:48.443 [restartedMain] INFO  RAMJobStore[initialize:155] - RAMJobStore initialized.
+01:53:48.444 [restartedMain] INFO  QuartzScheduler[initialize:294] - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 5 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+01:53:48.444 [restartedMain] INFO  StdSchedulerFactory[instantiate:1374] - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+01:53:48.444 [restartedMain] INFO  StdSchedulerFactory[instantiate:1378] - Quartz scheduler version: 2.3.2
+01:53:48.444 [restartedMain] INFO  QuartzScheduler[setJobFactory:2293] - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@23c119a
+01:53:48.747 [restartedMain] WARN  JpaBaseConfiguration$JpaWebConfiguration[openEntityManagerInViewInterceptor:219] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+01:53:48.922 [restartedMain] WARN  ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration[checkTemplateLocationExists:106] - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+01:53:48.995 [restartedMain] INFO  OptionalLiveReloadServer[startServer:58] - LiveReload server is running on port 35729
+01:53:49.013 [restartedMain] INFO  Http11NioProtocol[log:173] - Starting ProtocolHandler ["http-nio-8080"]
+01:53:49.036 [restartedMain] INFO  TomcatWebServer[start:220] - Tomcat started on port(s): 8080 (http) with context path ''
+01:53:49.046 [restartedMain] INFO  ProjectApplication[logStarted:61] - Started ProjectApplication in 3.107 seconds (JVM running for 4.0)
+01:53:49.049 [restartedMain] INFO  OnStartup[runOnStartUp:28] - -------OnStartup class called-------
+01:53:49.049 [restartedMain] INFO  QuartzScheduler[start:547] - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+01:53:49.049 [restartedMain] INFO  LocalSchedulerService[start:43] - Quartz Local Scheduler has started
+01:53:49.049 [restartedMain] INFO  LocalSchedulerService[scheduleAllLocalJob:82] - Scheduling all Local jobs from Jobs master table
+01:53:49.152 [restartedMain] INFO  LocalSchedulerService[scheduleJobMethod:139] - Job Scheduled Successfully
+01:54:00.011 [quartzScheduler_Worker-1] INFO  LocalJob1[executeInternal:64] - LocalJob1 started
+01:54:00.026 [quartzScheduler_Worker-1] WARN  LocalJob1[executeInternal:119] - ServerLog_info_2022-04-30.txt - File already present
+01:54:19.467 [quartzScheduler_Worker-1] WARN  LocalJob1[executeInternal:123] - Overwriting request for created file: ServerLog_info_2022-04-30.txt
+01:54:19.471 [quartzScheduler_Worker-1] INFO  LocalJob1[executeInternal:129] - Overwrite completed, Path: E:\Internship\Project\LocalJob1\ServerLog_info_2022-04-30.txt
+01:54:22.657 [quartzScheduler_Worker-1] INFO  LocalJob1[sendEmail:223] - Email notification sent
+01:54:22.657 [quartzScheduler_Worker-1] INFO  LocalJob1[executeInternal:139] - LocalJob1 Completed
+01:54:40.590 [SpringApplicationShutdownHook] INFO  OnDestroy[runOnDestroy:28] - -------OnDestroy class called-------
+01:54:40.603 [SpringApplicationShutdownHook] INFO  QuartzScheduler[shutdown:666] - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+01:54:40.604 [SpringApplicationShutdownHook] INFO  QuartzScheduler[standby:585] - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+01:54:40.604 [SpringApplicationShutdownHook] INFO  QuartzScheduler[shutdown:740] - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+01:54:40.604 [SpringApplicationShutdownHook] INFO  LocalSchedulerService[stop:71] - Quartz Scheduler shutdown
+01:54:40.604 [SpringApplicationShutdownHook] INFO  LocalSchedulerService[stop:72] - The active jobs status updated to unscheduled, the jobs related to it have been deleted - Jobs Master Table, Quartz Job Tables(qrtz_triggers, qrtz_cron_triggers, qrtz_job_details)
+01:54:40.631 [SpringApplicationShutdownHook] INFO  SchedulerFactoryBean[destroy:847] - Shutting down Quartz Scheduler
+01:54:40.631 [SpringApplicationShutdownHook] INFO  LocalContainerEntityManagerFactoryBean[destroy:651] - Closing JPA EntityManagerFactory for persistence unit 'default'
+01:54:40.633 [SpringApplicationShutdownHook] INFO  HikariDataSource[close:350] - HikariPool-1 - Shutdown initiated...
+01:54:40.641 [SpringApplicationShutdownHook] INFO  HikariDataSource[close:352] - HikariPool-1 - Shutdown completed.
+01:55:53.918 [background-preinit] INFO  Version[<clinit>:21] - HV000001: Hibernate Validator 6.2.2.Final
+01:55:53.920 [restartedMain] INFO  ProjectApplication[logStarting:55] - Starting ProjectApplication using Java 17.0.2 on DESKTOP-L0Q733T with PID 3492 (E:\Internship\Project\target\classes started by adith in E:\Internship\Project)
+01:55:53.922 [restartedMain] INFO  ProjectApplication[logStartupProfileInfo:640] - No active profile set, falling back to 1 default profile: "default"
+01:55:53.971 [restartedMain] INFO  ChangeableUrls[logTo:255] - The Class-Path manifest attribute in C:\Users\adith\.m2\repository\com\mchange\c3p0\0.9.5.5\c3p0-0.9.5.5.jar referenced one or more files that do not exist: file:/C:/Users/adith/.m2/repository/com/mchange/c3p0/0.9.5.5/mchange-commons-java-0.2.19.jar
+01:55:53.971 [restartedMain] INFO  DevToolsPropertyDefaultsPostProcessor[logTo:255] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+01:55:53.971 [restartedMain] INFO  DevToolsPropertyDefaultsPostProcessor[logTo:255] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+01:55:54.525 [restartedMain] INFO  RepositoryConfigurationDelegate[registerRepositoriesIn:132] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+01:55:54.574 [restartedMain] INFO  RepositoryConfigurationDelegate[registerRepositoriesIn:201] - Finished Spring Data repository scanning in 39 ms. Found 4 JPA repository interfaces.
+01:55:55.016 [restartedMain] INFO  TomcatWebServer[initialize:108] - Tomcat initialized with port(s): 8080 (http)
+01:55:55.019 [restartedMain] INFO  Http11NioProtocol[log:173] - Initializing ProtocolHandler ["http-nio-8080"]
+01:55:55.021 [restartedMain] INFO  StandardService[log:173] - Starting service [Tomcat]
+01:55:55.021 [restartedMain] INFO  StandardEngine[log:173] - Starting Servlet engine: [Apache Tomcat/9.0.58]
+01:55:55.107 [restartedMain] INFO  [/][log:173] - Initializing Spring embedded WebApplicationContext
+01:55:55.107 [restartedMain] INFO  ServletWebServerApplicationContext[prepareWebApplicationContext:290] - Root WebApplicationContext: initialization completed in 1135 ms
+01:55:55.216 [restartedMain] INFO  LogHelper[logPersistenceUnitInformation:31] - HHH000204: Processing PersistenceUnitInfo [name: default]
+01:55:55.247 [restartedMain] INFO  Version[logVersion:44] - HHH000412: Hibernate ORM core version 5.6.5.Final
+01:55:55.340 [restartedMain] INFO  Version[<clinit>:56] - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+01:55:55.402 [restartedMain] INFO  HikariDataSource[getConnection:110] - HikariPool-1 - Starting...
+01:55:55.664 [restartedMain] INFO  HikariDataSource[getConnection:123] - HikariPool-1 - Start completed.
+01:55:55.675 [restartedMain] INFO  Dialect[<init>:175] - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+01:55:56.281 [restartedMain] INFO  JtaPlatformInitiator[initiateService:52] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+01:55:56.285 [restartedMain] INFO  LocalContainerEntityManagerFactoryBean[buildNativeEntityManagerFactory:437] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+01:55:56.332 [restartedMain] INFO  StdSchedulerFactory[instantiate:1220] - Using default implementation for ThreadExecutor
+01:55:56.340 [restartedMain] INFO  SchedulerSignalerImpl[<init>:61] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+01:55:56.340 [restartedMain] INFO  QuartzScheduler[<init>:229] - Quartz Scheduler v.2.3.2 created.
+01:55:56.341 [restartedMain] INFO  RAMJobStore[initialize:155] - RAMJobStore initialized.
+01:55:56.342 [restartedMain] INFO  QuartzScheduler[initialize:294] - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 5 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+01:55:56.342 [restartedMain] INFO  StdSchedulerFactory[instantiate:1374] - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+01:55:56.342 [restartedMain] INFO  StdSchedulerFactory[instantiate:1378] - Quartz scheduler version: 2.3.2
+01:55:56.342 [restartedMain] INFO  QuartzScheduler[setJobFactory:2293] - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@38aa2826
+01:55:56.679 [restartedMain] WARN  JpaBaseConfiguration$JpaWebConfiguration[openEntityManagerInViewInterceptor:219] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+01:55:56.900 [restartedMain] WARN  ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration[checkTemplateLocationExists:106] - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+01:55:56.978 [restartedMain] INFO  OptionalLiveReloadServer[startServer:58] - LiveReload server is running on port 35729
+01:55:56.996 [restartedMain] INFO  Http11NioProtocol[log:173] - Starting ProtocolHandler ["http-nio-8080"]
+01:55:57.014 [restartedMain] INFO  TomcatWebServer[start:220] - Tomcat started on port(s): 8080 (http) with context path ''
+01:55:57.023 [restartedMain] INFO  ProjectApplication[logStarted:61] - Started ProjectApplication in 3.548 seconds (JVM running for 4.439)
+01:55:57.025 [restartedMain] INFO  OnStartup[runOnStartUp:28] - -------OnStartup class called-------
+01:55:57.026 [restartedMain] INFO  QuartzScheduler[start:547] - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+01:55:57.026 [restartedMain] INFO  LocalSchedulerService[start:43] - Quartz Local Scheduler has started
+01:55:57.026 [restartedMain] INFO  LocalSchedulerService[scheduleAllLocalJob:82] - Scheduling all Local jobs from Jobs master table
+01:55:57.125 [restartedMain] INFO  LocalSchedulerService[scheduleJobMethod:139] - Job Scheduled Successfully
+01:56:00.012 [quartzScheduler_Worker-1] INFO  LocalJob1[executeInternal:64] - LocalJob1 started
+01:56:00.023 [quartzScheduler_Worker-1] WARN  LocalJob1[executeInternal:119] - ServerLog_info_2022-04-30.txt - File already present
+01:56:25.244 [quartzScheduler_Worker-1] WARN  LocalJob1[executeInternal:123] - Overwriting request for created file: ServerLog_info_2022-04-30.txt
+01:56:25.260 [quartzScheduler_Worker-1] INFO  LocalJob1[executeInternal:130] - Overwrite completed, Path: E:\Internship\Project\LocalJob1\ServerLog_info_2022-04-30.txt
+01:56:28.360 [quartzScheduler_Worker-1] INFO  LocalJob1[sendEmail:224] - Email notification sent
+01:56:28.361 [quartzScheduler_Worker-1] INFO  LocalJob1[executeInternal:140] - LocalJob1 Completed
+01:56:55.347 [SpringApplicationShutdownHook] INFO  OnDestroy[runOnDestroy:28] - -------OnDestroy class called-------
+01:56:55.361 [SpringApplicationShutdownHook] INFO  QuartzScheduler[shutdown:666] - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+01:56:55.362 [SpringApplicationShutdownHook] INFO  QuartzScheduler[standby:585] - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+01:56:55.362 [SpringApplicationShutdownHook] INFO  QuartzScheduler[shutdown:740] - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+01:56:55.362 [SpringApplicationShutdownHook] INFO  LocalSchedulerService[stop:71] - Quartz Scheduler shutdown
+01:56:55.362 [SpringApplicationShutdownHook] INFO  LocalSchedulerService[stop:72] - The active jobs status updated to unscheduled, the jobs related to it have been deleted - Jobs Master Table, Quartz Job Tables(qrtz_triggers, qrtz_cron_triggers, qrtz_job_details)
+01:56:55.389 [SpringApplicationShutdownHook] INFO  SchedulerFactoryBean[destroy:847] - Shutting down Quartz Scheduler
+01:56:55.390 [SpringApplicationShutdownHook] INFO  LocalContainerEntityManagerFactoryBean[destroy:651] - Closing JPA EntityManagerFactory for persistence unit 'default'
+01:56:55.391 [SpringApplicationShutdownHook] INFO  HikariDataSource[close:350] - HikariPool-1 - Shutdown initiated...
+01:56:55.397 [SpringApplicationShutdownHook] INFO  HikariDataSource[close:352] - HikariPool-1 - Shutdown completed.
+02:03:28.856 [background-preinit] INFO  Version[<clinit>:21] - HV000001: Hibernate Validator 6.2.2.Final
+02:03:28.859 [restartedMain] INFO  ProjectApplication[logStarting:55] - Starting ProjectApplication using Java 17.0.2 on DESKTOP-L0Q733T with PID 20816 (E:\Internship\Project\target\classes started by adith in E:\Internship\Project)
+02:03:28.863 [restartedMain] INFO  ProjectApplication[logStartupProfileInfo:640] - No active profile set, falling back to 1 default profile: "default"
+02:03:28.916 [restartedMain] INFO  ChangeableUrls[logTo:255] - The Class-Path manifest attribute in C:\Users\adith\.m2\repository\com\mchange\c3p0\0.9.5.5\c3p0-0.9.5.5.jar referenced one or more files that do not exist: file:/C:/Users/adith/.m2/repository/com/mchange/c3p0/0.9.5.5/mchange-commons-java-0.2.19.jar
+02:03:28.917 [restartedMain] INFO  DevToolsPropertyDefaultsPostProcessor[logTo:255] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+02:03:28.917 [restartedMain] INFO  DevToolsPropertyDefaultsPostProcessor[logTo:255] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+02:03:29.596 [restartedMain] INFO  RepositoryConfigurationDelegate[registerRepositoriesIn:132] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+02:03:29.643 [restartedMain] INFO  RepositoryConfigurationDelegate[registerRepositoriesIn:201] - Finished Spring Data repository scanning in 39 ms. Found 4 JPA repository interfaces.
+02:03:30.095 [restartedMain] INFO  TomcatWebServer[initialize:108] - Tomcat initialized with port(s): 8080 (http)
+02:03:30.098 [restartedMain] INFO  Http11NioProtocol[log:173] - Initializing ProtocolHandler ["http-nio-8080"]
+02:03:30.102 [restartedMain] INFO  StandardService[log:173] - Starting service [Tomcat]
+02:03:30.102 [restartedMain] INFO  StandardEngine[log:173] - Starting Servlet engine: [Apache Tomcat/9.0.58]
+02:03:30.176 [restartedMain] INFO  [/][log:173] - Initializing Spring embedded WebApplicationContext
+02:03:30.176 [restartedMain] INFO  ServletWebServerApplicationContext[prepareWebApplicationContext:290] - Root WebApplicationContext: initialization completed in 1259 ms
+02:03:30.264 [restartedMain] INFO  LogHelper[logPersistenceUnitInformation:31] - HHH000204: Processing PersistenceUnitInfo [name: default]
+02:03:30.302 [restartedMain] INFO  Version[logVersion:44] - HHH000412: Hibernate ORM core version 5.6.5.Final
+02:03:30.424 [restartedMain] INFO  Version[<clinit>:56] - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+02:03:30.499 [restartedMain] INFO  HikariDataSource[getConnection:110] - HikariPool-1 - Starting...
+02:03:30.821 [restartedMain] INFO  HikariDataSource[getConnection:123] - HikariPool-1 - Start completed.
+02:03:30.835 [restartedMain] INFO  Dialect[<init>:175] - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+02:03:31.379 [restartedMain] INFO  JtaPlatformInitiator[initiateService:52] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+02:03:31.385 [restartedMain] INFO  LocalContainerEntityManagerFactoryBean[buildNativeEntityManagerFactory:437] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+02:03:31.419 [restartedMain] INFO  StdSchedulerFactory[instantiate:1220] - Using default implementation for ThreadExecutor
+02:03:31.427 [restartedMain] INFO  SchedulerSignalerImpl[<init>:61] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+02:03:31.427 [restartedMain] INFO  QuartzScheduler[<init>:229] - Quartz Scheduler v.2.3.2 created.
+02:03:31.428 [restartedMain] INFO  RAMJobStore[initialize:155] - RAMJobStore initialized.
+02:03:31.428 [restartedMain] INFO  QuartzScheduler[initialize:294] - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 5 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+02:03:31.428 [restartedMain] INFO  StdSchedulerFactory[instantiate:1374] - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+02:03:31.429 [restartedMain] INFO  StdSchedulerFactory[instantiate:1378] - Quartz scheduler version: 2.3.2
+02:03:31.429 [restartedMain] INFO  QuartzScheduler[setJobFactory:2293] - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@4ed18c7f
+02:03:31.769 [restartedMain] WARN  JpaBaseConfiguration$JpaWebConfiguration[openEntityManagerInViewInterceptor:219] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+02:03:31.969 [restartedMain] WARN  ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration[checkTemplateLocationExists:106] - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+02:03:32.055 [restartedMain] INFO  OptionalLiveReloadServer[startServer:58] - LiveReload server is running on port 35729
+02:03:32.073 [restartedMain] INFO  Http11NioProtocol[log:173] - Starting ProtocolHandler ["http-nio-8080"]
+02:03:32.093 [restartedMain] INFO  TomcatWebServer[start:220] - Tomcat started on port(s): 8080 (http) with context path ''
+02:03:32.103 [restartedMain] INFO  ProjectApplication[logStarted:61] - Started ProjectApplication in 3.669 seconds (JVM running for 4.67)
+02:03:32.105 [restartedMain] INFO  OnStartup[runOnStartUp:28] - -------OnStartup class called-------
+02:03:32.106 [restartedMain] INFO  QuartzScheduler[start:547] - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+02:03:32.106 [restartedMain] INFO  LocalSchedulerService[start:43] - Quartz Local Scheduler has started
+02:03:32.106 [restartedMain] INFO  LocalSchedulerService[scheduleAllLocalJob:82] - Scheduling all Local jobs from Jobs master table
+02:03:32.222 [restartedMain] INFO  LocalSchedulerService[scheduleJobMethod:139] - Job Scheduled Successfully
+02:04:00.007 [quartzScheduler_Worker-1] INFO  LocalJob1[executeInternal:64] - LocalJob1 started
+02:04:00.069 [quartzScheduler_Worker-1] WARN  LocalJob1[executeInternal:118] - ServerLog_info_2022-04-30.txt - File already present
+02:04:11.348 [quartzScheduler_Worker-1] WARN  LocalJob1[executeInternal:122] - Overwriting request for created file: ServerLog_info_2022-04-30.txt
+02:04:11.355 [quartzScheduler_Worker-1] INFO  LocalJob1[executeInternal:128] - Overwrite completed, Path: E:\Internship\Project\LocalJob1\ServerLog_info_2022-04-30.txt
+02:04:14.858 [quartzScheduler_Worker-1] INFO  LocalJob1[sendEmail:222] - Email notification sent
+02:04:14.858 [quartzScheduler_Worker-1] INFO  LocalJob1[executeInternal:138] - LocalJob1 Completed
+02:05:00.004 [quartzScheduler_Worker-2] INFO  LocalJob1[executeInternal:64] - LocalJob1 started
+02:05:00.029 [quartzScheduler_Worker-2] INFO  LocalJob1[executeInternal:115] - File created and write completed, Path: E:\Internship\Project\LocalJob1\ServerLog_info_2022-04-30.txt
+02:05:03.122 [quartzScheduler_Worker-2] INFO  LocalJob1[sendEmail:222] - Email notification sent
+02:05:03.123 [quartzScheduler_Worker-2] INFO  LocalJob1[executeInternal:138] - LocalJob1 Completed

@@ -1,0 +1,230 @@
+00:16:10.611 [main] INFO  ProjectApplicationTests[logStarting:55] - Starting ProjectApplicationTests using Java 17.0.2 on DESKTOP-L0Q733T with PID 8544 (started by adith in E:\Internship\Project)
+00:16:10.614 [main] INFO  ProjectApplicationTests[logStartupProfileInfo:640] - No active profile set, falling back to 1 default profile: "default"
+00:16:10.624 [background-preinit] INFO  Version[<clinit>:21] - HV000001: Hibernate Validator 6.2.2.Final
+00:16:11.482 [main] INFO  RepositoryConfigurationDelegate[registerRepositoriesIn:132] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+00:16:11.571 [main] INFO  RepositoryConfigurationDelegate[registerRepositoriesIn:201] - Finished Spring Data repository scanning in 73 ms. Found 4 JPA repository interfaces.
+00:16:12.347 [main] INFO  LogHelper[logPersistenceUnitInformation:31] - HHH000204: Processing PersistenceUnitInfo [name: default]
+00:16:12.416 [main] INFO  Version[logVersion:44] - HHH000412: Hibernate ORM core version 5.6.5.Final
+00:16:12.638 [main] INFO  Version[<clinit>:56] - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+00:16:12.846 [main] INFO  HikariDataSource[getConnection:110] - HikariPool-1 - Starting...
+00:16:13.378 [main] INFO  HikariDataSource[getConnection:123] - HikariPool-1 - Start completed.
+00:16:13.419 [main] INFO  Dialect[<init>:175] - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+00:16:14.429 [main] INFO  JtaPlatformInitiator[initiateService:52] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+00:16:14.436 [main] INFO  LocalContainerEntityManagerFactoryBean[buildNativeEntityManagerFactory:437] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+00:16:14.508 [main] INFO  StdSchedulerFactory[instantiate:1220] - Using default implementation for ThreadExecutor
+00:16:14.526 [main] INFO  SchedulerSignalerImpl[<init>:61] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+00:16:14.526 [main] INFO  QuartzScheduler[<init>:229] - Quartz Scheduler v.2.3.2 created.
+00:16:14.528 [main] INFO  RAMJobStore[initialize:155] - RAMJobStore initialized.
+00:16:14.529 [main] INFO  QuartzScheduler[initialize:294] - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'MySchedulerLocal' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 5 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+00:16:14.529 [main] INFO  StdSchedulerFactory[instantiate:1374] - Quartz scheduler 'MySchedulerLocal' initialized from an externally provided properties instance.
+00:16:14.530 [main] INFO  StdSchedulerFactory[instantiate:1378] - Quartz scheduler version: 2.3.2
+00:16:14.530 [main] INFO  QuartzScheduler[setJobFactory:2293] - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@1b9c716f
+00:16:15.359 [main] WARN  JpaBaseConfiguration$JpaWebConfiguration[openEntityManagerInViewInterceptor:219] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+00:16:15.878 [main] WARN  ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration[checkTemplateLocationExists:106] - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+00:16:16.054 [main] INFO  ProjectApplicationTests[logStarted:61] - Started ProjectApplicationTests in 5.953 seconds (JVM running for 7.006)
+00:16:16.057 [main] INFO  OnStartup[runOnStartUp:28] - -------OnStartup class called-------
+00:16:16.058 [main] INFO  QuartzScheduler[start:547] - Scheduler MySchedulerLocal_$_NON_CLUSTERED started.
+00:16:16.062 [main] INFO  LocalSchedulerService[start:43] - Quartz Local Scheduler has started
+00:16:16.062 [main] INFO  LocalSchedulerService[scheduleAllLocalJob:76] - Scheduling all Local jobs from Jobs master table
+00:16:16.263 [main] INFO  LocalSchedulerService[scheduleJobMethod:133] - Job Scheduled Successfully
+00:16:16.705 [SpringApplicationShutdownHook] INFO  OnDestroy[runOnDestroy:28] - -------OnDestroy class called-------
+00:16:16.737 [SpringApplicationShutdownHook] INFO  QuartzScheduler[shutdown:666] - Scheduler MySchedulerLocal_$_NON_CLUSTERED shutting down.
+00:16:16.737 [SpringApplicationShutdownHook] INFO  QuartzScheduler[standby:585] - Scheduler MySchedulerLocal_$_NON_CLUSTERED paused.
+00:16:16.738 [SpringApplicationShutdownHook] INFO  QuartzScheduler[shutdown:740] - Scheduler MySchedulerLocal_$_NON_CLUSTERED shutdown complete.
+00:16:16.738 [SpringApplicationShutdownHook] INFO  LocalSchedulerService[stop:65] - Quartz Scheduler shutdown
+00:16:16.738 [SpringApplicationShutdownHook] INFO  LocalSchedulerService[stop:66] - The active jobs status updated to unscheduled, the jobs related to it have been deleted - Jobs Master Table, Quartz Job Tables(qrtz_triggers, qrtz_cron_triggers, qrtz_job_details)
+00:16:16.744 [SpringApplicationShutdownHook] INFO  SchedulerFactoryBean[destroy:847] - Shutting down Quartz Scheduler
+00:16:16.745 [SpringApplicationShutdownHook] INFO  LocalContainerEntityManagerFactoryBean[destroy:651] - Closing JPA EntityManagerFactory for persistence unit 'default'
+00:16:16.746 [SpringApplicationShutdownHook] INFO  HikariDataSource[close:350] - HikariPool-1 - Shutdown initiated...
+00:16:16.786 [SpringApplicationShutdownHook] INFO  HikariDataSource[close:352] - HikariPool-1 - Shutdown completed.
+00:23:37.580 [main] INFO  ProjectApplicationTests[logStarting:55] - Starting ProjectApplicationTests using Java 17.0.2 on DESKTOP-L0Q733T with PID 9608 (started by adith in E:\Internship\Project)
+00:23:37.596 [background-preinit] INFO  Version[<clinit>:21] - HV000001: Hibernate Validator 6.2.2.Final
+00:23:37.624 [main] INFO  ProjectApplicationTests[logStartupProfileInfo:640] - No active profile set, falling back to 1 default profile: "default"
+00:23:38.910 [main] INFO  RepositoryConfigurationDelegate[registerRepositoriesIn:132] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+00:23:39.013 [main] INFO  RepositoryConfigurationDelegate[registerRepositoriesIn:201] - Finished Spring Data repository scanning in 87 ms. Found 4 JPA repository interfaces.
+00:23:40.119 [main] INFO  LogHelper[logPersistenceUnitInformation:31] - HHH000204: Processing PersistenceUnitInfo [name: default]
+00:23:40.224 [main] INFO  Version[logVersion:44] - HHH000412: Hibernate ORM core version 5.6.5.Final
+00:23:40.548 [main] INFO  Version[<clinit>:56] - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+00:23:40.895 [main] INFO  HikariDataSource[getConnection:110] - HikariPool-1 - Starting...
+00:23:41.649 [main] INFO  HikariDataSource[getConnection:123] - HikariPool-1 - Start completed.
+00:23:41.703 [main] INFO  Dialect[<init>:175] - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+00:23:43.179 [main] INFO  JtaPlatformInitiator[initiateService:52] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+00:23:43.195 [main] INFO  LocalContainerEntityManagerFactoryBean[buildNativeEntityManagerFactory:437] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+00:23:43.302 [main] INFO  StdSchedulerFactory[instantiate:1220] - Using default implementation for ThreadExecutor
+00:23:43.327 [main] INFO  SchedulerSignalerImpl[<init>:61] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+00:23:43.328 [main] INFO  QuartzScheduler[<init>:229] - Quartz Scheduler v.2.3.2 created.
+00:23:43.330 [main] INFO  RAMJobStore[initialize:155] - RAMJobStore initialized.
+00:23:43.331 [main] INFO  QuartzScheduler[initialize:294] - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'MySchedulerLocal' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 5 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+00:23:43.333 [main] INFO  StdSchedulerFactory[instantiate:1374] - Quartz scheduler 'MySchedulerLocal' initialized from an externally provided properties instance.
+00:23:43.333 [main] INFO  StdSchedulerFactory[instantiate:1378] - Quartz scheduler version: 2.3.2
+00:23:43.334 [main] INFO  QuartzScheduler[setJobFactory:2293] - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@2a5efbb9
+00:23:44.510 [main] WARN  JpaBaseConfiguration$JpaWebConfiguration[openEntityManagerInViewInterceptor:219] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+00:23:45.226 [main] WARN  ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration[checkTemplateLocationExists:106] - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+00:23:45.502 [main] INFO  ProjectApplicationTests[logStarted:61] - Started ProjectApplicationTests in 8.574 seconds (JVM running for 10.127)
+00:23:45.507 [main] INFO  OnStartup[runOnStartUp:28] - -------OnStartup class called-------
+00:23:45.508 [main] INFO  QuartzScheduler[start:547] - Scheduler MySchedulerLocal_$_NON_CLUSTERED started.
+00:23:45.508 [main] INFO  LocalSchedulerService[start:43] - Quartz Local Scheduler has started
+00:23:45.509 [main] INFO  LocalSchedulerService[scheduleAllLocalJob:76] - Scheduling all Local jobs from Jobs master table
+00:23:45.786 [main] INFO  LocalSchedulerService[scheduleJobMethod:133] - Job Scheduled Successfully
+00:23:46.305 [SpringApplicationShutdownHook] INFO  OnDestroy[runOnDestroy:28] - -------OnDestroy class called-------
+00:23:46.353 [SpringApplicationShutdownHook] INFO  QuartzScheduler[shutdown:666] - Scheduler MySchedulerLocal_$_NON_CLUSTERED shutting down.
+00:23:46.354 [SpringApplicationShutdownHook] INFO  QuartzScheduler[standby:585] - Scheduler MySchedulerLocal_$_NON_CLUSTERED paused.
+00:23:46.355 [SpringApplicationShutdownHook] INFO  QuartzScheduler[shutdown:740] - Scheduler MySchedulerLocal_$_NON_CLUSTERED shutdown complete.
+00:23:46.355 [SpringApplicationShutdownHook] INFO  LocalSchedulerService[stop:65] - Quartz Scheduler shutdown
+00:23:46.356 [SpringApplicationShutdownHook] INFO  LocalSchedulerService[stop:66] - The active jobs status updated to unscheduled, the jobs related to it have been deleted - Jobs Master Table, Quartz Job Tables(qrtz_triggers, qrtz_cron_triggers, qrtz_job_details)
+00:23:46.363 [SpringApplicationShutdownHook] INFO  SchedulerFactoryBean[destroy:847] - Shutting down Quartz Scheduler
+00:23:46.364 [SpringApplicationShutdownHook] INFO  LocalContainerEntityManagerFactoryBean[destroy:651] - Closing JPA EntityManagerFactory for persistence unit 'default'
+00:23:46.366 [SpringApplicationShutdownHook] INFO  HikariDataSource[close:350] - HikariPool-1 - Shutdown initiated...
+00:23:46.400 [SpringApplicationShutdownHook] INFO  HikariDataSource[close:352] - HikariPool-1 - Shutdown completed.
+00:28:48.090 [main] INFO  ProjectApplicationTests[logStarting:55] - Starting ProjectApplicationTests using Java 17.0.2 on DESKTOP-L0Q733T with PID 19168 (started by adith in E:\Internship\Project)
+00:28:48.093 [main] INFO  ProjectApplicationTests[logStartupProfileInfo:640] - No active profile set, falling back to 1 default profile: "default"
+00:28:48.102 [background-preinit] INFO  Version[<clinit>:21] - HV000001: Hibernate Validator 6.2.2.Final
+00:28:49.024 [main] INFO  RepositoryConfigurationDelegate[registerRepositoriesIn:132] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+00:28:49.105 [main] INFO  RepositoryConfigurationDelegate[registerRepositoriesIn:201] - Finished Spring Data repository scanning in 69 ms. Found 4 JPA repository interfaces.
+00:28:49.857 [main] INFO  LogHelper[logPersistenceUnitInformation:31] - HHH000204: Processing PersistenceUnitInfo [name: default]
+00:28:49.940 [main] INFO  Version[logVersion:44] - HHH000412: Hibernate ORM core version 5.6.5.Final
+00:28:50.207 [main] INFO  Version[<clinit>:56] - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+00:28:50.482 [main] INFO  HikariDataSource[getConnection:110] - HikariPool-1 - Starting...
+00:28:50.966 [main] INFO  HikariDataSource[getConnection:123] - HikariPool-1 - Start completed.
+00:28:51.003 [main] INFO  Dialect[<init>:175] - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+00:28:52.024 [main] INFO  JtaPlatformInitiator[initiateService:52] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+00:28:52.035 [main] INFO  LocalContainerEntityManagerFactoryBean[buildNativeEntityManagerFactory:437] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+00:28:52.104 [main] INFO  StdSchedulerFactory[instantiate:1220] - Using default implementation for ThreadExecutor
+00:28:52.121 [main] INFO  SchedulerSignalerImpl[<init>:61] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+00:28:52.121 [main] INFO  QuartzScheduler[<init>:229] - Quartz Scheduler v.2.3.2 created.
+00:28:52.122 [main] INFO  RAMJobStore[initialize:155] - RAMJobStore initialized.
+00:28:52.124 [main] INFO  QuartzScheduler[initialize:294] - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'MySchedulerLocal' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 5 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+00:28:52.125 [main] INFO  StdSchedulerFactory[instantiate:1374] - Quartz scheduler 'MySchedulerLocal' initialized from an externally provided properties instance.
+00:28:52.125 [main] INFO  StdSchedulerFactory[instantiate:1378] - Quartz scheduler version: 2.3.2
+00:28:52.125 [main] INFO  QuartzScheduler[setJobFactory:2293] - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@2a5efbb9
+00:28:52.951 [main] WARN  JpaBaseConfiguration$JpaWebConfiguration[openEntityManagerInViewInterceptor:219] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+00:28:53.627 [main] WARN  ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration[checkTemplateLocationExists:106] - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+00:28:53.861 [main] INFO  ProjectApplicationTests[logStarted:61] - Started ProjectApplicationTests in 6.198 seconds (JVM running for 7.316)
+00:28:53.866 [main] INFO  OnStartup[runOnStartUp:28] - -------OnStartup class called-------
+00:28:53.867 [main] INFO  QuartzScheduler[start:547] - Scheduler MySchedulerLocal_$_NON_CLUSTERED started.
+00:28:53.867 [main] INFO  LocalSchedulerService[start:43] - Quartz Local Scheduler has started
+00:28:53.868 [main] INFO  LocalSchedulerService[scheduleAllLocalJob:76] - Scheduling all Local jobs from Jobs master table
+00:28:54.079 [main] INFO  LocalSchedulerService[scheduleJobMethod:133] - Job Scheduled Successfully
+00:28:54.499 [SpringApplicationShutdownHook] INFO  OnDestroy[runOnDestroy:28] - -------OnDestroy class called-------
+00:28:54.534 [SpringApplicationShutdownHook] INFO  QuartzScheduler[shutdown:666] - Scheduler MySchedulerLocal_$_NON_CLUSTERED shutting down.
+00:28:54.535 [SpringApplicationShutdownHook] INFO  QuartzScheduler[standby:585] - Scheduler MySchedulerLocal_$_NON_CLUSTERED paused.
+00:28:54.535 [SpringApplicationShutdownHook] INFO  QuartzScheduler[shutdown:740] - Scheduler MySchedulerLocal_$_NON_CLUSTERED shutdown complete.
+00:28:54.536 [SpringApplicationShutdownHook] INFO  LocalSchedulerService[stop:65] - Quartz Scheduler shutdown
+00:28:54.536 [SpringApplicationShutdownHook] INFO  LocalSchedulerService[stop:66] - The active jobs status updated to unscheduled, the jobs related to it have been deleted - Jobs Master Table, Quartz Job Tables(qrtz_triggers, qrtz_cron_triggers, qrtz_job_details)
+00:28:54.541 [SpringApplicationShutdownHook] INFO  SchedulerFactoryBean[destroy:847] - Shutting down Quartz Scheduler
+00:28:54.542 [SpringApplicationShutdownHook] INFO  LocalContainerEntityManagerFactoryBean[destroy:651] - Closing JPA EntityManagerFactory for persistence unit 'default'
+00:28:54.543 [SpringApplicationShutdownHook] INFO  HikariDataSource[close:350] - HikariPool-1 - Shutdown initiated...
+00:28:54.571 [SpringApplicationShutdownHook] INFO  HikariDataSource[close:352] - HikariPool-1 - Shutdown completed.
+00:31:14.223 [main] INFO  ProjectApplicationTests[logStarting:55] - Starting ProjectApplicationTests using Java 17.0.2 on DESKTOP-L0Q733T with PID 20836 (started by adith in E:\Internship\Project)
+00:31:14.250 [main] INFO  ProjectApplicationTests[logStartupProfileInfo:640] - No active profile set, falling back to 1 default profile: "default"
+00:31:14.291 [background-preinit] INFO  Version[<clinit>:21] - HV000001: Hibernate Validator 6.2.2.Final
+00:31:16.735 [main] INFO  RepositoryConfigurationDelegate[registerRepositoriesIn:132] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+00:31:16.841 [main] INFO  RepositoryConfigurationDelegate[registerRepositoriesIn:201] - Finished Spring Data repository scanning in 88 ms. Found 4 JPA repository interfaces.
+00:31:17.854 [main] INFO  LogHelper[logPersistenceUnitInformation:31] - HHH000204: Processing PersistenceUnitInfo [name: default]
+00:31:17.981 [main] INFO  Version[logVersion:44] - HHH000412: Hibernate ORM core version 5.6.5.Final
+00:31:18.203 [main] INFO  Version[<clinit>:56] - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+00:31:18.397 [main] INFO  HikariDataSource[getConnection:110] - HikariPool-1 - Starting...
+00:31:18.797 [main] INFO  HikariDataSource[getConnection:123] - HikariPool-1 - Start completed.
+00:31:18.836 [main] INFO  Dialect[<init>:175] - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+00:31:19.982 [main] INFO  JtaPlatformInitiator[initiateService:52] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+00:31:19.992 [main] INFO  LocalContainerEntityManagerFactoryBean[buildNativeEntityManagerFactory:437] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+00:31:20.059 [main] INFO  StdSchedulerFactory[instantiate:1220] - Using default implementation for ThreadExecutor
+00:31:20.078 [main] INFO  SchedulerSignalerImpl[<init>:61] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+00:31:20.078 [main] INFO  QuartzScheduler[<init>:229] - Quartz Scheduler v.2.3.2 created.
+00:31:20.080 [main] INFO  RAMJobStore[initialize:155] - RAMJobStore initialized.
+00:31:20.082 [main] INFO  QuartzScheduler[initialize:294] - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'MySchedulerLocal' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 5 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+00:31:20.082 [main] INFO  StdSchedulerFactory[instantiate:1374] - Quartz scheduler 'MySchedulerLocal' initialized from an externally provided properties instance.
+00:31:20.083 [main] INFO  StdSchedulerFactory[instantiate:1378] - Quartz scheduler version: 2.3.2
+00:31:20.086 [main] INFO  QuartzScheduler[setJobFactory:2293] - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@fcd3a6f
+00:31:20.962 [main] WARN  JpaBaseConfiguration$JpaWebConfiguration[openEntityManagerInViewInterceptor:219] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+00:31:21.666 [main] WARN  ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration[checkTemplateLocationExists:106] - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+00:31:21.917 [main] INFO  ProjectApplicationTests[logStarted:61] - Started ProjectApplicationTests in 8.427 seconds (JVM running for 9.46)
+00:31:21.921 [main] INFO  OnStartup[runOnStartUp:28] - -------OnStartup class called-------
+00:31:21.922 [main] INFO  QuartzScheduler[start:547] - Scheduler MySchedulerLocal_$_NON_CLUSTERED started.
+00:31:21.922 [main] INFO  LocalSchedulerService[start:43] - Quartz Local Scheduler has started
+00:31:21.923 [main] INFO  LocalSchedulerService[scheduleAllLocalJob:76] - Scheduling all Local jobs from Jobs master table
+00:31:22.095 [main] INFO  LocalSchedulerService[scheduleAllLocalJob:82] - Add new jobs for scheduling
+00:31:22.347 [SpringApplicationShutdownHook] INFO  OnDestroy[runOnDestroy:28] - -------OnDestroy class called-------
+00:31:22.452 [SpringApplicationShutdownHook] INFO  QuartzScheduler[shutdown:666] - Scheduler MySchedulerLocal_$_NON_CLUSTERED shutting down.
+00:31:22.453 [SpringApplicationShutdownHook] INFO  QuartzScheduler[standby:585] - Scheduler MySchedulerLocal_$_NON_CLUSTERED paused.
+00:31:22.454 [SpringApplicationShutdownHook] INFO  QuartzScheduler[shutdown:740] - Scheduler MySchedulerLocal_$_NON_CLUSTERED shutdown complete.
+00:31:22.455 [SpringApplicationShutdownHook] INFO  LocalSchedulerService[stop:65] - Quartz Scheduler shutdown
+00:31:22.455 [SpringApplicationShutdownHook] INFO  LocalSchedulerService[stop:66] - The active jobs status updated to unscheduled, the jobs related to it have been deleted - Jobs Master Table, Quartz Job Tables(qrtz_triggers, qrtz_cron_triggers, qrtz_job_details)
+00:31:22.460 [SpringApplicationShutdownHook] INFO  SchedulerFactoryBean[destroy:847] - Shutting down Quartz Scheduler
+00:31:22.461 [SpringApplicationShutdownHook] INFO  LocalContainerEntityManagerFactoryBean[destroy:651] - Closing JPA EntityManagerFactory for persistence unit 'default'
+00:31:22.463 [SpringApplicationShutdownHook] INFO  HikariDataSource[close:350] - HikariPool-1 - Shutdown initiated...
+00:31:22.492 [SpringApplicationShutdownHook] INFO  HikariDataSource[close:352] - HikariPool-1 - Shutdown completed.
+00:31:39.066 [main] INFO  ProjectApplicationTests[logStarting:55] - Starting ProjectApplicationTests using Java 17.0.2 on DESKTOP-L0Q733T with PID 4936 (started by adith in E:\Internship\Project)
+00:31:39.069 [main] INFO  ProjectApplicationTests[logStartupProfileInfo:640] - No active profile set, falling back to 1 default profile: "default"
+00:31:39.081 [background-preinit] INFO  Version[<clinit>:21] - HV000001: Hibernate Validator 6.2.2.Final
+00:31:40.878 [main] INFO  RepositoryConfigurationDelegate[registerRepositoriesIn:132] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+00:31:41.276 [main] INFO  RepositoryConfigurationDelegate[registerRepositoriesIn:201] - Finished Spring Data repository scanning in 346 ms. Found 4 JPA repository interfaces.
+00:31:42.373 [main] INFO  LogHelper[logPersistenceUnitInformation:31] - HHH000204: Processing PersistenceUnitInfo [name: default]
+00:31:42.445 [main] INFO  Version[logVersion:44] - HHH000412: Hibernate ORM core version 5.6.5.Final
+00:31:42.658 [main] INFO  Version[<clinit>:56] - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+00:31:42.888 [main] INFO  HikariDataSource[getConnection:110] - HikariPool-1 - Starting...
+00:31:43.395 [main] INFO  HikariDataSource[getConnection:123] - HikariPool-1 - Start completed.
+00:31:43.437 [main] INFO  Dialect[<init>:175] - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+00:31:44.498 [main] INFO  JtaPlatformInitiator[initiateService:52] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+00:31:44.509 [main] INFO  LocalContainerEntityManagerFactoryBean[buildNativeEntityManagerFactory:437] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+00:31:44.579 [main] INFO  StdSchedulerFactory[instantiate:1220] - Using default implementation for ThreadExecutor
+00:31:44.600 [main] INFO  SchedulerSignalerImpl[<init>:61] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+00:31:44.601 [main] INFO  QuartzScheduler[<init>:229] - Quartz Scheduler v.2.3.2 created.
+00:31:44.602 [main] INFO  RAMJobStore[initialize:155] - RAMJobStore initialized.
+00:31:44.603 [main] INFO  QuartzScheduler[initialize:294] - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'MySchedulerLocal' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 5 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+00:31:44.604 [main] INFO  StdSchedulerFactory[instantiate:1374] - Quartz scheduler 'MySchedulerLocal' initialized from an externally provided properties instance.
+00:31:44.605 [main] INFO  StdSchedulerFactory[instantiate:1378] - Quartz scheduler version: 2.3.2
+00:31:44.605 [main] INFO  QuartzScheduler[setJobFactory:2293] - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@5751e53e
+00:31:45.470 [main] WARN  JpaBaseConfiguration$JpaWebConfiguration[openEntityManagerInViewInterceptor:219] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+00:31:46.029 [main] WARN  ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration[checkTemplateLocationExists:106] - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+00:31:46.301 [main] INFO  ProjectApplicationTests[logStarted:61] - Started ProjectApplicationTests in 7.716 seconds (JVM running for 8.821)
+00:31:46.305 [main] INFO  OnStartup[runOnStartUp:28] - -------OnStartup class called-------
+00:31:46.306 [main] INFO  QuartzScheduler[start:547] - Scheduler MySchedulerLocal_$_NON_CLUSTERED started.
+00:31:46.307 [main] INFO  LocalSchedulerService[start:43] - Quartz Local Scheduler has started
+00:31:46.307 [main] INFO  LocalSchedulerService[scheduleAllLocalJob:76] - Scheduling all Local jobs from Jobs master table
+00:31:46.527 [main] INFO  LocalSchedulerService[scheduleJobMethod:133] - Job Scheduled Successfully
+00:31:46.950 [SpringApplicationShutdownHook] INFO  OnDestroy[runOnDestroy:28] - -------OnDestroy class called-------
+00:31:46.984 [SpringApplicationShutdownHook] INFO  QuartzScheduler[shutdown:666] - Scheduler MySchedulerLocal_$_NON_CLUSTERED shutting down.
+00:31:46.984 [SpringApplicationShutdownHook] INFO  QuartzScheduler[standby:585] - Scheduler MySchedulerLocal_$_NON_CLUSTERED paused.
+00:31:46.985 [SpringApplicationShutdownHook] INFO  QuartzScheduler[shutdown:740] - Scheduler MySchedulerLocal_$_NON_CLUSTERED shutdown complete.
+00:31:46.986 [SpringApplicationShutdownHook] INFO  LocalSchedulerService[stop:65] - Quartz Scheduler shutdown
+00:31:46.986 [SpringApplicationShutdownHook] INFO  LocalSchedulerService[stop:66] - The active jobs status updated to unscheduled, the jobs related to it have been deleted - Jobs Master Table, Quartz Job Tables(qrtz_triggers, qrtz_cron_triggers, qrtz_job_details)
+00:31:46.993 [SpringApplicationShutdownHook] INFO  SchedulerFactoryBean[destroy:847] - Shutting down Quartz Scheduler
+00:31:46.994 [SpringApplicationShutdownHook] INFO  LocalContainerEntityManagerFactoryBean[destroy:651] - Closing JPA EntityManagerFactory for persistence unit 'default'
+00:31:46.997 [SpringApplicationShutdownHook] INFO  HikariDataSource[close:350] - HikariPool-1 - Shutdown initiated...
+00:31:47.033 [SpringApplicationShutdownHook] INFO  HikariDataSource[close:352] - HikariPool-1 - Shutdown completed.

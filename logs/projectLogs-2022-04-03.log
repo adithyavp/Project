@@ -386,7 +386,7 @@
 java.net.SocketTimeoutException: Read timeout
 16:16:02.014 [MyClusteredScheduler_Worker-1] INFO  JobRunShell[run:207] - Job jdbc.Currency finder threw a JobExecutionException: 
 org.quartz.JobExecutionException: java.net.SocketTimeoutException: Read timeout
-	at com.internship.Project.scheduler.GlobalJob1.executeInternal(GlobalJob1.java:164)
+	at com.internship.project.scheduler.GlobalJob1.executeInternal(GlobalJob1.java:164)
 	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:75)
 	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
 	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
@@ -409,7 +409,7 @@ Caused by: java.net.SocketTimeoutException: Read timeout
 	at org.jsoup.helper.DataUtil.parseInputStream(DataUtil.java:216)
 	at org.jsoup.helper.HttpConnection$Response.parse(HttpConnection.java:962)
 	at org.jsoup.helper.HttpConnection.get(HttpConnection.java:355)
-	at com.internship.Project.scheduler.GlobalJob1.executeInternal(GlobalJob1.java:59)
+	at com.internship.project.scheduler.GlobalJob1.executeInternal(GlobalJob1.java:59)
 	... 3 common frames omitted
 16:16:03.531 [MyClusteredScheduler_Worker-1] INFO  GlobalJob1[executeInternal:45] - GlobalJob1 started
 16:16:08.672 [MyClusteredScheduler_Worker-1] INFO  GlobalJob1[executeInternal:87] - Currency Data Saved.
@@ -430,7 +430,7 @@ org.springframework.dao.InvalidDataAccessResourceUsageException: could not execu
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
 	at jdk.proxy3/jdk.proxy3.$Proxy121.setInstanceNameInDB(Unknown Source)
-	at com.internship.Project.scheduler.GlobalJob1.executeInternal(GlobalJob1.java:133)
+	at com.internship.project.scheduler.GlobalJob1.executeInternal(GlobalJob1.java:133)
 	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:75)
 	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
 	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
@@ -489,7 +489,7 @@ Caused by: org.springframework.dao.InvalidDataAccessResourceUsageException: coul
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
 	at jdk.proxy3/jdk.proxy3.$Proxy121.setInstanceNameInDB(Unknown Source)
-	at com.internship.Project.scheduler.GlobalJob1.executeInternal(GlobalJob1.java:133)
+	at com.internship.project.scheduler.GlobalJob1.executeInternal(GlobalJob1.java:133)
 	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:75)
 	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
 	... 1 common frames omitted
@@ -598,7 +598,7 @@ Caused by: java.sql.SQLSyntaxErrorException: Unknown column 'InstanceName' in 'f
 java.net.SocketException: An established connection was aborted by the software in your host machine
 16:31:44.456 [MyClusteredScheduler_Worker-1] INFO  JobRunShell[run:207] - Job jdbc.Currency finder threw a JobExecutionException: 
 org.quartz.JobExecutionException: java.net.SocketException: An established connection was aborted by the software in your host machine
-	at com.internship.Project.scheduler.GlobalJob1.executeInternal(GlobalJob1.java:164)
+	at com.internship.project.scheduler.GlobalJob1.executeInternal(GlobalJob1.java:164)
 	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:75)
 	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
 	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
@@ -630,7 +630,7 @@ Caused by: java.net.SocketException: An established connection was aborted by th
 	at org.jsoup.helper.HttpConnection$Response.execute(HttpConnection.java:829)
 	at org.jsoup.helper.HttpConnection.execute(HttpConnection.java:366)
 	at org.jsoup.helper.HttpConnection.get(HttpConnection.java:353)
-	at com.internship.Project.scheduler.GlobalJob1.executeInternal(GlobalJob1.java:59)
+	at com.internship.project.scheduler.GlobalJob1.executeInternal(GlobalJob1.java:59)
 	... 3 common frames omitted
 16:31:45.272 [MyClusteredScheduler_Worker-1] INFO  GlobalJob1[executeInternal:45] - GlobalJob1 started
 16:32:17.693 [MyClusteredScheduler_Worker-1] INFO  GlobalJob1[executeInternal:87] - Currency Data Saved.
@@ -651,7 +651,7 @@ org.springframework.dao.InvalidDataAccessResourceUsageException: could not execu
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
 	at jdk.proxy3/jdk.proxy3.$Proxy121.setInstanceNameInDB(Unknown Source)
-	at com.internship.Project.scheduler.GlobalJob1.executeInternal(GlobalJob1.java:133)
+	at com.internship.project.scheduler.GlobalJob1.executeInternal(GlobalJob1.java:133)
 	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:75)
 	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
 	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
@@ -710,7 +710,7 @@ Caused by: org.springframework.dao.InvalidDataAccessResourceUsageException: coul
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
 	at jdk.proxy3/jdk.proxy3.$Proxy121.setInstanceNameInDB(Unknown Source)
-	at com.internship.Project.scheduler.GlobalJob1.executeInternal(GlobalJob1.java:133)
+	at com.internship.project.scheduler.GlobalJob1.executeInternal(GlobalJob1.java:133)
 	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:75)
 	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
 	... 1 common frames omitted
@@ -1066,7 +1066,7 @@ org.springframework.dao.InvalidDataAccessResourceUsageException: could not execu
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
 	at jdk.proxy3/jdk.proxy3.$Proxy121.setInstanceNameInDB(Unknown Source)
-	at com.internship.Project.scheduler.GlobalJob1.executeInternal(GlobalJob1.java:133)
+	at com.internship.project.scheduler.GlobalJob1.executeInternal(GlobalJob1.java:133)
 	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:75)
 	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
 	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
@@ -1125,7 +1125,7 @@ Caused by: org.springframework.dao.InvalidDataAccessResourceUsageException: coul
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
 	at jdk.proxy3/jdk.proxy3.$Proxy121.setInstanceNameInDB(Unknown Source)
-	at com.internship.Project.scheduler.GlobalJob1.executeInternal(GlobalJob1.java:133)
+	at com.internship.project.scheduler.GlobalJob1.executeInternal(GlobalJob1.java:133)
 	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:75)
 	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
 	... 1 common frames omitted
@@ -1248,7 +1248,7 @@ org.springframework.dao.InvalidDataAccessResourceUsageException: could not execu
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
 	at jdk.proxy3/jdk.proxy3.$Proxy121.setInstanceNameInDB(Unknown Source)
-	at com.internship.Project.scheduler.GlobalJob1.executeInternal(GlobalJob1.java:133)
+	at com.internship.project.scheduler.GlobalJob1.executeInternal(GlobalJob1.java:133)
 	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:75)
 	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
 	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
@@ -1307,7 +1307,7 @@ Caused by: org.springframework.dao.InvalidDataAccessResourceUsageException: coul
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
 	at jdk.proxy3/jdk.proxy3.$Proxy121.setInstanceNameInDB(Unknown Source)
-	at com.internship.Project.scheduler.GlobalJob1.executeInternal(GlobalJob1.java:133)
+	at com.internship.project.scheduler.GlobalJob1.executeInternal(GlobalJob1.java:133)
 	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:75)
 	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
 	... 1 common frames omitted
@@ -1367,7 +1367,7 @@ org.springframework.dao.InvalidDataAccessResourceUsageException: could not execu
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
 	at jdk.proxy3/jdk.proxy3.$Proxy121.setInstanceNameInDB(Unknown Source)
-	at com.internship.Project.scheduler.GlobalJob1.executeInternal(GlobalJob1.java:133)
+	at com.internship.project.scheduler.GlobalJob1.executeInternal(GlobalJob1.java:133)
 	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:75)
 	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
 	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
@@ -1426,7 +1426,7 @@ Caused by: org.springframework.dao.InvalidDataAccessResourceUsageException: coul
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
 	at jdk.proxy3/jdk.proxy3.$Proxy121.setInstanceNameInDB(Unknown Source)
-	at com.internship.Project.scheduler.GlobalJob1.executeInternal(GlobalJob1.java:133)
+	at com.internship.project.scheduler.GlobalJob1.executeInternal(GlobalJob1.java:133)
 	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:75)
 	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
 	... 1 common frames omitted
@@ -1547,7 +1547,7 @@ org.springframework.dao.DataIntegrityViolationException: could not execute state
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
 	at jdk.proxy3/jdk.proxy3.$Proxy121.setInstanceNameInDB(Unknown Source)
-	at com.internship.Project.scheduler.GlobalJob1.executeInternal(GlobalJob1.java:133)
+	at com.internship.project.scheduler.GlobalJob1.executeInternal(GlobalJob1.java:133)
 	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:75)
 	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
 	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
@@ -1606,7 +1606,7 @@ Caused by: org.springframework.dao.DataIntegrityViolationException: could not ex
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
 	at jdk.proxy3/jdk.proxy3.$Proxy121.setInstanceNameInDB(Unknown Source)
-	at com.internship.Project.scheduler.GlobalJob1.executeInternal(GlobalJob1.java:133)
+	at com.internship.project.scheduler.GlobalJob1.executeInternal(GlobalJob1.java:133)
 	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:75)
 	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
 	... 1 common frames omitted

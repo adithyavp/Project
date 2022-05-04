@@ -90,18 +90,18 @@
 14:37:15.953 [restartedMain] INFO  MainService[start:63] - Quartz Global Scheduler has started
 14:37:16.013 [MySchedulerGlobal_Worker-1] INFO  GlobalJob1[handle:45] - GlobalJob1 started
 14:37:16.019 [MySchedulerGlobal_Worker-1] ERROR JobRunShell[run:211] - Job jdbc.Currency finder threw an unhandled Exception: 
-java.lang.NullPointerException: Cannot invoke "com.internship.Project.repository.JobsRepo.findByJobId(java.lang.Long)" because "this.JobsRepo" is null
-	at com.internship.Project.scheduler.GlobalJob1.handle(GlobalJob1.java:51)
-	at com.internship.Project.scheduler.GlobalJob1.execute(GlobalJob1.java:192)
+java.lang.NullPointerException: Cannot invoke "com.internship.project.repository.JobsRepo.findByJobId(java.lang.Long)" because "this.JobsRepo" is null
+	at com.internship.project.scheduler.GlobalJob1.handle(GlobalJob1.java:51)
+	at com.internship.project.scheduler.GlobalJob1.execute(GlobalJob1.java:192)
 	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
 	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
 14:37:16.021 [MySchedulerGlobal_Worker-1] ERROR ErrorLogger[schedulerError:2407] - Job (jdbc.Currency finder threw an exception.
 org.quartz.SchedulerException: Job threw an unhandled exception.
 	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
 	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
-Caused by: java.lang.NullPointerException: Cannot invoke "com.internship.Project.repository.JobsRepo.findByJobId(java.lang.Long)" because "this.JobsRepo" is null
-	at com.internship.Project.scheduler.GlobalJob1.handle(GlobalJob1.java:51)
-	at com.internship.Project.scheduler.GlobalJob1.execute(GlobalJob1.java:192)
+Caused by: java.lang.NullPointerException: Cannot invoke "com.internship.project.repository.JobsRepo.findByJobId(java.lang.Long)" because "this.JobsRepo" is null
+	at com.internship.project.scheduler.GlobalJob1.handle(GlobalJob1.java:51)
+	at com.internship.project.scheduler.GlobalJob1.execute(GlobalJob1.java:192)
 	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
 	... 1 common frames omitted
 14:37:22.949 [SpringApplicationShutdownHook] INFO  QuartzScheduler[standby:585] - Scheduler quartzScheduler_$_NON_CLUSTERED paused.

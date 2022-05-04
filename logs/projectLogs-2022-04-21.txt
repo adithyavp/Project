@@ -97,34 +97,34 @@
 12:58:00.042 [MySchedulerGlobal_Worker-1] INFO  GlobalJob1[handle:54] - GlobalJob1 started
 12:59:07.780 [HikariPool-1 housekeeper] WARN  HikariPool[run:788] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m33s118ms417µs500ns).
 12:59:07.787 [MySchedulerGlobal_Worker-1] ERROR JobRunShell[run:211] - Job jdbc.Currency finder threw an unhandled Exception: 
-java.lang.NullPointerException: Cannot invoke "com.internship.Project.repository.JobsRepo.findByJobId(java.lang.Long)" because "this.jobsRepo" is null
-	at com.internship.Project.scheduler.GlobalJob1.handle(GlobalJob1.java:72)
-	at com.internship.Project.scheduler.GlobalJob1.execute(GlobalJob1.java:216)
+java.lang.NullPointerException: Cannot invoke "com.internship.project.repository.JobsRepo.findByJobId(java.lang.Long)" because "this.jobsRepo" is null
+	at com.internship.project.scheduler.GlobalJob1.handle(GlobalJob1.java:72)
+	at com.internship.project.scheduler.GlobalJob1.execute(GlobalJob1.java:216)
 	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
 	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
 12:59:07.788 [MySchedulerGlobal_Worker-1] ERROR ErrorLogger[schedulerError:2407] - Job (jdbc.Currency finder threw an exception.
 org.quartz.SchedulerException: Job threw an unhandled exception.
 	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
 	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
-Caused by: java.lang.NullPointerException: Cannot invoke "com.internship.Project.repository.JobsRepo.findByJobId(java.lang.Long)" because "this.jobsRepo" is null
-	at com.internship.Project.scheduler.GlobalJob1.handle(GlobalJob1.java:72)
-	at com.internship.Project.scheduler.GlobalJob1.execute(GlobalJob1.java:216)
+Caused by: java.lang.NullPointerException: Cannot invoke "com.internship.project.repository.JobsRepo.findByJobId(java.lang.Long)" because "this.jobsRepo" is null
+	at com.internship.project.scheduler.GlobalJob1.handle(GlobalJob1.java:72)
+	at com.internship.project.scheduler.GlobalJob1.execute(GlobalJob1.java:216)
 	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
 	... 1 common frames omitted
 12:59:07.828 [MySchedulerGlobal_Worker-2] INFO  GlobalJob1[handle:54] - GlobalJob1 started
 12:59:07.828 [MySchedulerGlobal_Worker-2] ERROR JobRunShell[run:211] - Job jdbc.Currency finder threw an unhandled Exception: 
-java.lang.NullPointerException: Cannot invoke "com.internship.Project.repository.JobsRepo.findByJobId(java.lang.Long)" because "this.jobsRepo" is null
-	at com.internship.Project.scheduler.GlobalJob1.handle(GlobalJob1.java:72)
-	at com.internship.Project.scheduler.GlobalJob1.execute(GlobalJob1.java:216)
+java.lang.NullPointerException: Cannot invoke "com.internship.project.repository.JobsRepo.findByJobId(java.lang.Long)" because "this.jobsRepo" is null
+	at com.internship.project.scheduler.GlobalJob1.handle(GlobalJob1.java:72)
+	at com.internship.project.scheduler.GlobalJob1.execute(GlobalJob1.java:216)
 	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
 	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
 12:59:07.829 [MySchedulerGlobal_Worker-2] ERROR ErrorLogger[schedulerError:2407] - Job (jdbc.Currency finder threw an exception.
 org.quartz.SchedulerException: Job threw an unhandled exception.
 	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
 	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
-Caused by: java.lang.NullPointerException: Cannot invoke "com.internship.Project.repository.JobsRepo.findByJobId(java.lang.Long)" because "this.jobsRepo" is null
-	at com.internship.Project.scheduler.GlobalJob1.handle(GlobalJob1.java:72)
-	at com.internship.Project.scheduler.GlobalJob1.execute(GlobalJob1.java:216)
+Caused by: java.lang.NullPointerException: Cannot invoke "com.internship.project.repository.JobsRepo.findByJobId(java.lang.Long)" because "this.jobsRepo" is null
+	at com.internship.project.scheduler.GlobalJob1.handle(GlobalJob1.java:72)
+	at com.internship.project.scheduler.GlobalJob1.execute(GlobalJob1.java:216)
 	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
 	... 1 common frames omitted
 12:59:08.491 [SpringApplicationShutdownHook] INFO  QuartzScheduler[standby:585] - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
@@ -243,18 +243,18 @@ Caused by: java.lang.NullPointerException: Cannot invoke "com.internship.Project
 13:00:00.042 [MySchedulerGlobal_Worker-1] INFO  GlobalJob1[handle:54] - GlobalJob1 started
 13:00:42.850 [HikariPool-1 housekeeper] WARN  HikariPool[run:788] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=52s671ms913µs700ns).
 13:00:42.860 [MySchedulerGlobal_Worker-1] ERROR JobRunShell[run:211] - Job jdbc.Currency finder threw an unhandled Exception: 
-java.lang.NullPointerException: Cannot invoke "com.internship.Project.repository.JobsRepo.findByJobId(java.lang.Long)" because "this.jobsRepo" is null
-	at com.internship.Project.scheduler.GlobalJob1.handle(GlobalJob1.java:72)
-	at com.internship.Project.scheduler.GlobalJob1.execute(GlobalJob1.java:216)
+java.lang.NullPointerException: Cannot invoke "com.internship.project.repository.JobsRepo.findByJobId(java.lang.Long)" because "this.jobsRepo" is null
+	at com.internship.project.scheduler.GlobalJob1.handle(GlobalJob1.java:72)
+	at com.internship.project.scheduler.GlobalJob1.execute(GlobalJob1.java:216)
 	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
 	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
 13:00:42.861 [MySchedulerGlobal_Worker-1] ERROR ErrorLogger[schedulerError:2407] - Job (jdbc.Currency finder threw an exception.
 org.quartz.SchedulerException: Job threw an unhandled exception.
 	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
 	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
-Caused by: java.lang.NullPointerException: Cannot invoke "com.internship.Project.repository.JobsRepo.findByJobId(java.lang.Long)" because "this.jobsRepo" is null
-	at com.internship.Project.scheduler.GlobalJob1.handle(GlobalJob1.java:72)
-	at com.internship.Project.scheduler.GlobalJob1.execute(GlobalJob1.java:216)
+Caused by: java.lang.NullPointerException: Cannot invoke "com.internship.project.repository.JobsRepo.findByJobId(java.lang.Long)" because "this.jobsRepo" is null
+	at com.internship.project.scheduler.GlobalJob1.handle(GlobalJob1.java:72)
+	at com.internship.project.scheduler.GlobalJob1.execute(GlobalJob1.java:216)
 	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
 	... 1 common frames omitted
 13:00:42.921 [SpringApplicationShutdownHook] INFO  QuartzScheduler[standby:585] - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
@@ -373,34 +373,34 @@ Caused by: java.lang.NullPointerException: Cannot invoke "com.internship.Project
 14:29:00.060 [MySchedulerGlobal_Worker-1] INFO  GlobalJob1[handle:55] - GlobalJob1 started
 14:30:30.666 [HikariPool-1 housekeeper] WARN  HikariPool[run:788] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m49s942ms810µs300ns).
 14:30:30.680 [MySchedulerGlobal_Worker-1] ERROR JobRunShell[run:211] - Job jdbc.Currency finder threw an unhandled Exception: 
-java.lang.NullPointerException: Cannot invoke "com.internship.Project.repository.JobsRepo.findByJobId(java.lang.Long)" because "jobsRepo" is null
-	at com.internship.Project.scheduler.GlobalJob1.handle(GlobalJob1.java:73)
-	at com.internship.Project.scheduler.GlobalJob1.execute(GlobalJob1.java:217)
+java.lang.NullPointerException: Cannot invoke "com.internship.project.repository.JobsRepo.findByJobId(java.lang.Long)" because "jobsRepo" is null
+	at com.internship.project.scheduler.GlobalJob1.handle(GlobalJob1.java:73)
+	at com.internship.project.scheduler.GlobalJob1.execute(GlobalJob1.java:217)
 	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
 	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
 14:30:30.681 [MySchedulerGlobal_Worker-1] ERROR ErrorLogger[schedulerError:2407] - Job (jdbc.Currency finder threw an exception.
 org.quartz.SchedulerException: Job threw an unhandled exception.
 	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
 	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
-Caused by: java.lang.NullPointerException: Cannot invoke "com.internship.Project.repository.JobsRepo.findByJobId(java.lang.Long)" because "jobsRepo" is null
-	at com.internship.Project.scheduler.GlobalJob1.handle(GlobalJob1.java:73)
-	at com.internship.Project.scheduler.GlobalJob1.execute(GlobalJob1.java:217)
+Caused by: java.lang.NullPointerException: Cannot invoke "com.internship.project.repository.JobsRepo.findByJobId(java.lang.Long)" because "jobsRepo" is null
+	at com.internship.project.scheduler.GlobalJob1.handle(GlobalJob1.java:73)
+	at com.internship.project.scheduler.GlobalJob1.execute(GlobalJob1.java:217)
 	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
 	... 1 common frames omitted
 14:30:30.724 [MySchedulerGlobal_Worker-2] INFO  GlobalJob1[handle:55] - GlobalJob1 started
 14:30:30.724 [MySchedulerGlobal_Worker-2] ERROR JobRunShell[run:211] - Job jdbc.Currency finder threw an unhandled Exception: 
-java.lang.NullPointerException: Cannot invoke "com.internship.Project.repository.JobsRepo.findByJobId(java.lang.Long)" because "jobsRepo" is null
-	at com.internship.Project.scheduler.GlobalJob1.handle(GlobalJob1.java:73)
-	at com.internship.Project.scheduler.GlobalJob1.execute(GlobalJob1.java:217)
+java.lang.NullPointerException: Cannot invoke "com.internship.project.repository.JobsRepo.findByJobId(java.lang.Long)" because "jobsRepo" is null
+	at com.internship.project.scheduler.GlobalJob1.handle(GlobalJob1.java:73)
+	at com.internship.project.scheduler.GlobalJob1.execute(GlobalJob1.java:217)
 	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
 	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
 14:30:30.724 [MySchedulerGlobal_Worker-2] ERROR ErrorLogger[schedulerError:2407] - Job (jdbc.Currency finder threw an exception.
 org.quartz.SchedulerException: Job threw an unhandled exception.
 	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
 	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
-Caused by: java.lang.NullPointerException: Cannot invoke "com.internship.Project.repository.JobsRepo.findByJobId(java.lang.Long)" because "jobsRepo" is null
-	at com.internship.Project.scheduler.GlobalJob1.handle(GlobalJob1.java:73)
-	at com.internship.Project.scheduler.GlobalJob1.execute(GlobalJob1.java:217)
+Caused by: java.lang.NullPointerException: Cannot invoke "com.internship.project.repository.JobsRepo.findByJobId(java.lang.Long)" because "jobsRepo" is null
+	at com.internship.project.scheduler.GlobalJob1.handle(GlobalJob1.java:73)
+	at com.internship.project.scheduler.GlobalJob1.execute(GlobalJob1.java:217)
 	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
 	... 1 common frames omitted
 14:30:31.017 [SpringApplicationShutdownHook] INFO  QuartzScheduler[standby:585] - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
@@ -440,8 +440,8 @@ Caused by: java.lang.NullPointerException: Cannot invoke "com.internship.Project
 14:31:45.947 [restartedMain] INFO  HikariDataSource[getConnection:110] - HikariPool-1 - Starting...
 14:31:46.218 [restartedMain] INFO  HikariDataSource[getConnection:123] - HikariPool-1 - Start completed.
 14:31:46.232 [restartedMain] INFO  Dialect[<init>:175] - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
-14:31:46.539 [restartedMain] ERROR LocalContainerEntityManagerFactoryBean[buildNativeEntityManagerFactory:426] - Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not determine type for: com.internship.Project.repository.JobsRepo, at table: jobs, for columns: [org.hibernate.mapping.Column(jobs_repo)]
-14:31:46.541 [restartedMain] WARN  AnnotationConfigServletWebServerApplicationContext[refresh:591] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not determine type for: com.internship.Project.repository.JobsRepo, at table: jobs, for columns: [org.hibernate.mapping.Column(jobs_repo)]
+14:31:46.539 [restartedMain] ERROR LocalContainerEntityManagerFactoryBean[buildNativeEntityManagerFactory:426] - Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not determine type for: com.internship.project.repository.JobsRepo, at table: jobs, for columns: [org.hibernate.mapping.Column(jobs_repo)]
+14:31:46.541 [restartedMain] WARN  AnnotationConfigServletWebServerApplicationContext[refresh:591] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not determine type for: com.internship.project.repository.JobsRepo, at table: jobs, for columns: [org.hibernate.mapping.Column(jobs_repo)]
 14:31:46.546 [restartedMain] INFO  HikariDataSource[close:350] - HikariPool-1 - Shutdown initiated...
 14:31:46.556 [restartedMain] INFO  HikariDataSource[close:352] - HikariPool-1 - Shutdown completed.
 14:31:46.557 [restartedMain] INFO  StandardService[log:173] - Stopping service [Tomcat]
@@ -449,7 +449,7 @@ Caused by: java.lang.NullPointerException: Cannot invoke "com.internship.Project
 
 Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
 14:31:46.602 [restartedMain] ERROR SpringApplication[reportFailure:830] - Application run failed
-org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not determine type for: com.internship.Project.repository.JobsRepo, at table: jobs, for columns: [org.hibernate.mapping.Column(jobs_repo)]
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not determine type for: com.internship.project.repository.JobsRepo, at table: jobs, for columns: [org.hibernate.mapping.Column(jobs_repo)]
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
@@ -466,20 +466,20 @@ org.springframework.beans.factory.BeanCreationException: Error creating bean wit
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
-	at com.internship.Project.ProjectApplication.main(ProjectApplication.java:10)
+	at com.internship.project.ProjectApplication.main(ProjectApplication.java:10)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
-Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not determine type for: com.internship.Project.repository.JobsRepo, at table: jobs, for columns: [org.hibernate.mapping.Column(jobs_repo)]
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not determine type for: com.internship.project.repository.JobsRepo, at table: jobs, for columns: [org.hibernate.mapping.Column(jobs_repo)]
 	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:421)
 	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
 	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
 	... 21 common frames omitted
-Caused by: org.hibernate.MappingException: Could not determine type for: com.internship.Project.repository.JobsRepo, at table: jobs, for columns: [org.hibernate.mapping.Column(jobs_repo)]
+Caused by: org.hibernate.MappingException: Could not determine type for: com.internship.project.repository.JobsRepo, at table: jobs, for columns: [org.hibernate.mapping.Column(jobs_repo)]
 	at org.hibernate.mapping.SimpleValue.getType(SimpleValue.java:515)
 	at org.hibernate.mapping.SimpleValue.isValid(SimpleValue.java:482)
 	at org.hibernate.mapping.Property.isValid(Property.java:231)
@@ -592,18 +592,18 @@ Caused by: org.hibernate.MappingException: Could not determine type for: com.int
 15:11:00.045 [MySchedulerGlobal_Worker-1] INFO  GlobalJob1[handle:54] - GlobalJob1 started
 15:11:46.770 [HikariPool-1 housekeeper] WARN  HikariPool[run:788] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=51s882ms929µs600ns).
 15:11:46.782 [MySchedulerGlobal_Worker-1] ERROR JobRunShell[run:211] - Job jdbc.Currency finder threw an unhandled Exception: 
-java.lang.NullPointerException: Cannot invoke "com.internship.Project.repository.JobsRepo.findByJobId(java.lang.Long)" because "this.jobsRepo" is null
-	at com.internship.Project.scheduler.GlobalJob1.handle(GlobalJob1.java:74)
-	at com.internship.Project.scheduler.GlobalJob1.execute(GlobalJob1.java:218)
+java.lang.NullPointerException: Cannot invoke "com.internship.project.repository.JobsRepo.findByJobId(java.lang.Long)" because "this.jobsRepo" is null
+	at com.internship.project.scheduler.GlobalJob1.handle(GlobalJob1.java:74)
+	at com.internship.project.scheduler.GlobalJob1.execute(GlobalJob1.java:218)
 	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
 	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
 15:11:46.783 [MySchedulerGlobal_Worker-1] ERROR ErrorLogger[schedulerError:2407] - Job (jdbc.Currency finder threw an exception.
 org.quartz.SchedulerException: Job threw an unhandled exception.
 	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
 	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
-Caused by: java.lang.NullPointerException: Cannot invoke "com.internship.Project.repository.JobsRepo.findByJobId(java.lang.Long)" because "this.jobsRepo" is null
-	at com.internship.Project.scheduler.GlobalJob1.handle(GlobalJob1.java:74)
-	at com.internship.Project.scheduler.GlobalJob1.execute(GlobalJob1.java:218)
+Caused by: java.lang.NullPointerException: Cannot invoke "com.internship.project.repository.JobsRepo.findByJobId(java.lang.Long)" because "this.jobsRepo" is null
+	at com.internship.project.scheduler.GlobalJob1.handle(GlobalJob1.java:74)
+	at com.internship.project.scheduler.GlobalJob1.execute(GlobalJob1.java:218)
 	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
 	... 1 common frames omitted
 15:11:46.857 [SpringApplicationShutdownHook] INFO  QuartzScheduler[standby:585] - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
@@ -721,18 +721,18 @@ Caused by: java.lang.NullPointerException: Cannot invoke "com.internship.Project
 15:12:22.019 [http-nio-8080-exec-1] INFO  MainService[scheduleJobMethod:226] - Job Scheduled Successfully
 15:13:00.043 [MySchedulerGlobal_Worker-1] INFO  GlobalJob1[handle:54] - GlobalJob1 started
 15:13:24.807 [MySchedulerGlobal_Worker-1] ERROR JobRunShell[run:211] - Job jdbc.Currency finder threw an unhandled Exception: 
-java.lang.NullPointerException: Cannot invoke "com.internship.Project.repository.JobsRepo.findByJobId(java.lang.Long)" because "this.jobsRepo" is null
-	at com.internship.Project.scheduler.GlobalJob1.handle(GlobalJob1.java:74)
-	at com.internship.Project.scheduler.GlobalJob1.execute(GlobalJob1.java:218)
+java.lang.NullPointerException: Cannot invoke "com.internship.project.repository.JobsRepo.findByJobId(java.lang.Long)" because "this.jobsRepo" is null
+	at com.internship.project.scheduler.GlobalJob1.handle(GlobalJob1.java:74)
+	at com.internship.project.scheduler.GlobalJob1.execute(GlobalJob1.java:218)
 	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
 	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
 15:13:24.808 [MySchedulerGlobal_Worker-1] ERROR ErrorLogger[schedulerError:2407] - Job (jdbc.Currency finder threw an exception.
 org.quartz.SchedulerException: Job threw an unhandled exception.
 	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
 	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
-Caused by: java.lang.NullPointerException: Cannot invoke "com.internship.Project.repository.JobsRepo.findByJobId(java.lang.Long)" because "this.jobsRepo" is null
-	at com.internship.Project.scheduler.GlobalJob1.handle(GlobalJob1.java:74)
-	at com.internship.Project.scheduler.GlobalJob1.execute(GlobalJob1.java:218)
+Caused by: java.lang.NullPointerException: Cannot invoke "com.internship.project.repository.JobsRepo.findByJobId(java.lang.Long)" because "this.jobsRepo" is null
+	at com.internship.project.scheduler.GlobalJob1.handle(GlobalJob1.java:74)
+	at com.internship.project.scheduler.GlobalJob1.execute(GlobalJob1.java:218)
 	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
 	... 1 common frames omitted
 15:13:24.871 [SpringApplicationShutdownHook] INFO  QuartzScheduler[standby:585] - Scheduler quartzScheduler_$_NON_CLUSTERED paused.

@@ -930,7 +930,7 @@
 17:34:23.647 [restartedMain] INFO  QuartzScheduler[start:547] - Scheduler QuartzScheduler_$_NON_CLUSTERED started.
 17:34:23.648 [restartedMain] INFO  QuartzScheduler[start:547] - Scheduler QuartzScheduler_$_NON_CLUSTERED started.
 17:34:23.649 [restartedMain] INFO  MainService[postConstruct:67] - Quartz Global Scheduler and Local Scheduler has started
-17:34:23.673 [restartedMain] INFO  AutowiredAnnotationBeanPostProcessor[lambda$buildAutowiringMetadata$1:478] - Autowired annotation is not supported on static fields: static com.internship.Project.repository.JobsRepo com.internship.Project.scheduler.LocalJob1.qrtzJobsRepo
+17:34:23.673 [restartedMain] INFO  AutowiredAnnotationBeanPostProcessor[lambda$buildAutowiringMetadata$1:478] - Autowired annotation is not supported on static fields: static com.internship.project.repository.JobsRepo com.internship.project.scheduler.LocalJob1.qrtzJobsRepo
 17:34:23.730 [restartedMain] WARN  JpaBaseConfiguration$JpaWebConfiguration[openEntityManagerInViewInterceptor:219] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 17:34:24.108 [restartedMain] WARN  ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration[checkTemplateLocationExists:106] - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
 17:34:24.286 [restartedMain] INFO  StdSchedulerFactory[instantiate:1220] - Using default implementation for ThreadExecutor
@@ -996,9 +996,9 @@
 17:35:19.632 [restartedMain] INFO  QuartzScheduler[start:547] - Scheduler QuartzScheduler_$_NON_CLUSTERED started.
 17:35:19.635 [restartedMain] INFO  QuartzScheduler[start:547] - Scheduler QuartzScheduler_$_NON_CLUSTERED started.
 17:35:19.637 [restartedMain] INFO  MainService[postConstruct:67] - Quartz Global Scheduler and Local Scheduler has started
-17:35:19.643 [restartedMain] INFO  AutowiredAnnotationBeanPostProcessor[lambda$buildAutowiringMetadata$1:478] - Autowired annotation is not supported on static fields: static com.internship.Project.repository.CurrencyDataRepo com.internship.Project.scheduler.GlobalJob1.currencyDataRepo
-17:35:19.644 [restartedMain] INFO  AutowiredAnnotationBeanPostProcessor[lambda$buildAutowiringMetadata$1:478] - Autowired annotation is not supported on static fields: static com.internship.Project.repository.JobExecutedDetailsRepo com.internship.Project.scheduler.GlobalJob1.jobExecutedDetailsRepo
-17:35:19.644 [restartedMain] INFO  AutowiredAnnotationBeanPostProcessor[lambda$buildAutowiringMetadata$1:478] - Autowired annotation is not supported on static fields: static com.internship.Project.repository.JobsRepo com.internship.Project.scheduler.GlobalJob1.qrtzJobsRepo
+17:35:19.643 [restartedMain] INFO  AutowiredAnnotationBeanPostProcessor[lambda$buildAutowiringMetadata$1:478] - Autowired annotation is not supported on static fields: static com.internship.project.repository.CurrencyDataRepo com.internship.project.scheduler.GlobalJob1.currencyDataRepo
+17:35:19.644 [restartedMain] INFO  AutowiredAnnotationBeanPostProcessor[lambda$buildAutowiringMetadata$1:478] - Autowired annotation is not supported on static fields: static com.internship.project.repository.JobExecutedDetailsRepo com.internship.project.scheduler.GlobalJob1.jobExecutedDetailsRepo
+17:35:19.644 [restartedMain] INFO  AutowiredAnnotationBeanPostProcessor[lambda$buildAutowiringMetadata$1:478] - Autowired annotation is not supported on static fields: static com.internship.project.repository.JobsRepo com.internship.project.scheduler.GlobalJob1.qrtzJobsRepo
 17:35:19.701 [restartedMain] WARN  JpaBaseConfiguration$JpaWebConfiguration[openEntityManagerInViewInterceptor:219] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 17:35:20.046 [restartedMain] WARN  ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration[checkTemplateLocationExists:106] - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
 17:35:20.148 [restartedMain] INFO  StdSchedulerFactory[instantiate:1220] - Using default implementation for ThreadExecutor
@@ -1932,7 +1932,7 @@
 23:25:03.585 [restartedMain] INFO  ProjectApplication[logStarted:61] - Started ProjectApplication in 4.007 seconds (JVM running for 5.679)
 23:25:14.109 [http-nio-8080-exec-2] INFO  DispatcherServlet[initServletBean:547] - Completed initialization in 1 ms
 	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:145)
-	at com.internship.Project.service.GlobalRestService.startGlobalJobScheduling(GlobalRestService.java:92)
+	at com.internship.project.service.GlobalRestService.startGlobalJobScheduling(GlobalRestService.java:92)
 23:26:21.729 [SpringApplicationShutdownHook] INFO  QuartzScheduler[standby:585] - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
 23:26:21.759 [SpringApplicationShutdownHook] INFO  QuartzScheduler[shutdown:666] - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
 23:26:21.759 [SpringApplicationShutdownHook] INFO  QuartzScheduler[standby:585] - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
